@@ -29,6 +29,21 @@
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
       <link href="css/styles_navbar.css" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <style>
+         article[data-categories] {
+            transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+            overflow: hidden;
+         }
+         article[data-categories].hidden {
+            opacity: 0;
+            max-height: 0;
+            margin: 0;
+            padding: 0;
+         }
+         .btn-group button {
+            margin-right: 5px;
+         }
+      </style>
    </head>
 
    <body id="page-top">
@@ -73,17 +88,25 @@
             <div class="row container" id="content">
                <hr class="my-3">     
 
-           <!-- ====== TRAVEL NOTICE ====== -->
-           <div class="alert alert-info text-center mb-0" role="alert">
-              <strong>On the road:</strong> I'll be in <b>Bonn</b> (June&nbsp;5–15), <b>Bergen</b> (June&nbsp;16–21), <b>Toronto</b> (June&nbsp;27–29), and <b>Boston</b> (July&nbsp;21–24). If you'll be nearby and would like to talk research, reach out!
-           </div>
-           <!-- =========================== -->
+               <!-- Filter buttons 
+                  <div class="btn-group mb-3" role="group" aria-label="Paper filters">
+                     <button type="button" class="btn btn-outline-primary active" onclick="filterPapers('all')">All</button>
+                     <button type="button" class="btn btn-outline-primary" onclick="filterPapers('behavioral')">Behavioral Economics</button>
+                     <button type="button" class="btn btn-outline-primary" onclick="filterPapers('education')">Education</button>
+                     <button type="button" class="btn btn-outline-primary" onclick="filterPapers('AI')">Generative AI</button>
+                     <button type="button" class="btn btn-outline-primary" onclick="filterPapers('inequality')">Inequality</button>
+                  </div>
+               -->
+
+               
+
 
                <div class="col-md">
                   <h5 class="section">Working Papers </h5>
 
+
       <!-- ELITES -->
-      <article>
+      <article data-categories="behavioral inequality">
          <h6><a href="/papers/psrw_elites.pdf" role="button" target="_blank">
             Are Elites Meritocratic and Efficiency-Seeking? Evidence from MBA Students
             </a></h6>
@@ -98,10 +121,10 @@
             <a class="collapse-show showAbstract" data-toggle="collapse" href="#abstract-elites" role="button" aria-expanded="false" aria-controls="collapse-elites">Abstract</a> |
             <a href="https://arxiv.org/abs/2503.15443" class="n_link" role="button" target="_blank">arXiv:2503.15443</a> |
             <a href="https://www.iza.org/publications/dp/17788" class="n_link" role="button" target="_blank"> IZA WP #17788</a> |
-            <a>Updated May 2025</a> 
+            <a>Updated July 2025</a> 
          <div class="px-4 collapse card info" id="abstract-elites">
             <p class="text-justify">
-Elites disproportionately influence policymaking, yet little is known about their fairness and efficiency preferences—key determinants of individuals' support for redistributive policies. We investigate these preferences using an incentivized lab experiment with a group of future elites—Ivy League MBA students. We find that MBA students implement substantially more unequal earnings distributions than the average American, regardless of whether inequality stems from luck or merit. Their redistributive choices are also highly responsive to efficiency costs, with an elasticity an order of magnitude larger than that found in representative US samples. Analyzing fairness ideals, we find that MBA students are less likely to be strict meritocrats than the general public. These findings provide novel insights into how elites' redistributive preferences may shape high levels of inequality and limited redistributive policy in the United States.</p>
+            Elites disproportionately influence policymaking, yet little is known about their fairness and efficiency preferences—key determinants of individuals' support for redistributive policies. We investigate these preferences using an incentivized lab experiment with a group of future elites—Ivy League MBA students. We find that MBA students implement substantially more unequal earnings distributions than the average American, regardless of whether inequality stems from luck or merit. Their redistributive choices are also highly responsive to efficiency costs, with an elasticity an order of magnitude larger than that found in representative US samples. Analyzing fairness ideals, we find that MBA students are less likely to be strict meritocrats than the general public. These findings provide novel insights into how elites' redistributive preferences may shape high levels of inequality and limited redistributive policy in the United States.</p>
          </div>
       </article>
 
@@ -128,7 +151,7 @@ Elites disproportionately influence policymaking, yet little is known about thei
 
                 <!-- MUDDLE INFO -->
 
-                <article>
+                <article data-categories="education inequality">
                   <h6><a href="/papers/rrx_muddled_info.pdf" role="button" target="_blank">
                      Stakes and Signals: An Empirical Investigation of Muddled Information in Standardized Testing
                   </a></h6>
@@ -152,7 +175,7 @@ Elites disproportionately influence policymaking, yet little is known about thei
 
                 <!-- COGNITIVE ENDURANCE -->
 
-                <article>
+                <article data-categories="education behavioral">
                   <h6><a href="/papers/reyes_endurance.pdf" role="button" target="_blank">
                      Cognitive Endurance, Talent Selection, and the Labor Market Returns to Human Capital
                      </a></h6>
@@ -173,7 +196,7 @@ Elites disproportionately influence policymaking, yet little is known about thei
 <article>
    <h6>
       <a href="/papers/cer_speeches.pdf" role="button" target="_blank">
-         Voices of Power: Tracing Policy Shifts in Presidential Speeches Across Two Centuries
+         From War to Welfare: Tracing Policy Shifts in Presidential Speeches Across Two Centuries
       </a>
    </h6>
    <p class="p_title_p" style="padding-left: 10px;">
@@ -208,7 +231,7 @@ Elites disproportionately influence policymaking, yet little is known about thei
 
                 <!-- WAGE-SETTING -->
 
-                <article>
+                <article data-categories="behavioral">
                   <h6>
                      <a href="/papers/reyes_wage_setting.pdf" role="button" target="_blank">
                         Coarse Wage-Setting and Behavioral Firms
@@ -232,7 +255,7 @@ Elites disproportionately influence policymaking, yet little is known about thei
                
                                <!-- IOP -->
 
-                               <article>
+                               <article data-categories="behavioral inequality">
                                  <h6>
                                     <a href="/papers/psrw_ineq_opp.pdf" role="button" target="_blank">
                                        Inequality of Opportunity and Income Redistribution
@@ -261,7 +284,7 @@ Elites disproportionately influence policymaking, yet little is known about thei
                
 
                 <!-- AA UERJ -->
-                <article>
+                <article data-categories="education inequality">
                   <h6>
                      <a href="/papers/mrr_affirmative_action.pdf" role="button" target="_blank">
                         The Direct and Spillover Effects of Large-Scale Affirmative Action at an Elite Brazilian University
@@ -289,7 +312,7 @@ Elites disproportionately influence policymaking, yet little is known about thei
                
                 <!-- Fairness -->
 
-                <article>
+                <article data-categories="inequality behavioral">
                   <h6>
                      <a href="/papers/gr_fairness.pdf" role="button" target="_blank">
                         Are Fairness Perceptions Shaped by Income Inequality? Evidence from Latin America
@@ -341,5 +364,33 @@ Elites disproportionately influence policymaking, yet little is known about thei
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="js/scripts.js"></script>
+      <script>
+         function filterPapers(category) {
+            // Update active button
+            document.querySelectorAll('.btn-group button').forEach(btn => {
+               btn.classList.remove('active');
+               if (btn.textContent.toLowerCase().includes(category) || 
+                   (category === 'all' && btn.textContent === 'All')) {
+                  btn.classList.add('active');
+               }
+            });
+            
+            // Filter papers
+            const articles = document.querySelectorAll('article[data-categories]');
+            
+            articles.forEach(article => {
+               if (category === 'all') {
+                  article.classList.remove('hidden');
+               } else {
+                  const categories = article.getAttribute('data-categories');
+                  if (categories && categories.includes(category)) {
+                     article.classList.remove('hidden');
+                  } else {
+                     article.classList.add('hidden');
+                  }
+               }
+            });
+         }
+      </script>
    </body>
 </html>
