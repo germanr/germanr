@@ -21,11 +21,12 @@
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8H97RM6C9H"></script>
@@ -36,10 +37,7 @@
         gtag('config', 'G-8H97RM6C9H');
     </script>
 
-    <!-- Stylesheets - Using Bootstrap 4 only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
     <link href="css/styles_navbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/custom.css">
@@ -110,14 +108,65 @@
             background-color: #f8fafc;
             border-radius: 0 4px 4px 0;
             margin-top: 0.5rem;
-            padding: 1rem 1.25rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1.25rem;
         }
         .card.info.show {
             display: block;
         }
         .card.info p {
-            margin-bottom: 0;
+            margin: 0;
             line-height: 1.7;
+            max-width: 65ch;
+        }
+
+        /* Bootstrap 5 dropped .text-justify; restore it for the bio paragraph and abstract text */
+        .text-justify {
+            text-align: justify;
+        }
+
+        /* Move inline padding-left to a class on the title/abstract metadata rows */
+        .p_title_p,
+        .p_abstract_p {
+            padding-left: 10px;
+        }
+
+        /* Visible focus ring for keyboard navigation only */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        /* Dark mode (respects OS preference) */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0f172a;
+                color: #e2e8f0;
+            }
+            a, .n_link {
+                color: #93c5fd;
+            }
+            .n_link:hover {
+                color: #d8b4fe;
+            }
+            .navbar.bg-white {
+                background-color: #0f172a !important;
+            }
+            .site-title {
+                color: #e2e8f0;
+            }
+            .card.info {
+                background-color: #1e293b;
+                border-left-color: #60a5fa;
+            }
+            hr {
+                border-color: #334155;
+            }
+            a:focus-visible, button:focus-visible {
+                outline-color: #93c5fd;
+            }
         }
 
         /* Print styles */
@@ -213,7 +262,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 d-flex justify-content-left">
+                        <div class="col-md-3 d-flex justify-content-start">
                             <img src="images/german_reyes.jpg" 
                                  alt="Germán Reyes, Assistant Professor of Economics at Middlebury College"
                                  style="max-width: 90%; max-height: 31ex; object-fit: scale-down;" 
@@ -252,7 +301,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md">
+                            <div class="col-md-10">
                                 <h2 class="section" id="working-papers-heading">Working Papers</h2>
 
                                 <!-- ELITES -->
@@ -263,20 +312,28 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         (with <a href="https://sites.google.com/view/marcelpreuss" class="n_link" target="_blank" rel="noopener">Marcel Preuss</a>,
                                         <a href="https://www.jason-somerville.com/" class="n_link" target="_blank" rel="noopener">Jason Somerville</a>, and
                                         <a href="https://joyzwu.github.io/" class="n_link" target="_blank" rel="noopener">Joy Wu</a>)
                                     </p>
-                                    <p class="p_title_p" style="padding-left: 10px;">Revise &amp; Resubmit, <i>Journal of Public Economics</i></p>
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">Revise &amp; Resubmit, <i>Journal of Public Economics</i></p>
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-elites"
                                             role="button" aria-expanded="false" aria-controls="abstract-elites" aria-label="Toggle abstract for Are Elites Meritocratic paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-elites"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-elites" aria-label="Toggle public writing for Are Elites Meritocratic paper">Public writing</a> |
                                         <a href="https://arxiv.org/abs/2503.15443" class="n_link" target="_blank" rel="noopener">arXiv:2503.15443</a> |
                                         <a href="https://www.iza.org/publications/dp/17788" class="n_link" target="_blank" rel="noopener">IZA WP #17788</a> |
                                         <a href="/papers/md/psrw_elites.md" class="n_link" target="_blank" rel="noopener">Markdown</a> |
                                         <span>Updated May 2026</span>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-elites">
+                                        <p>
+                                            <a href="https://www.promarket.org/2025/07/22/what-mba-students-reveal-about-inequality-in-america/" class="n_link" target="_blank" rel="noopener"><i>ProMarket</i></a> |
+                                            <a href="https://newsroom.iza.org/en/archive/research/how-do-future-elites-view-inequality/" class="n_link" target="_blank" rel="noopener"><i>IZA Newsroom</i></a>
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-elites">
                                         <p class="text-justify">
                                             Elites disproportionately influence policymaking, yet little is known about their fairness and efficiency preferences—key determinants of support for redistributive policies. We investigate these preferences in an incentivized lab experiment with future elites: Ivy League MBA students. We find that MBA students implement substantially more unequal earnings distributions than the average American, regardless of whether inequality stems from luck or merit. Their redistributive choices are also far more responsive to efficiency costs than the near-zero response found in representative U.S. samples. These patterns partly reflect distinct fairness ideals: a large share of MBA students falls outside standard classifications, instead displaying "weak meritocratic" tendencies that tolerate inequality even when it stems from luck. These findings identify a channel through which elite preferences may sustain U.S. inequality.
@@ -292,18 +349,28 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         (with <a href="https://www.zaracontractor.net/" class="n_link" target="_blank" rel="noopener">Zara Contractor</a>)
                                     </p>
 
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-ai"
                                             role="button" aria-expanded="false" aria-controls="abstract-ai" aria-label="Toggle abstract for Generative AI in Higher Education paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-ai"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-ai" aria-label="Toggle public writing for Generative AI in Higher Education paper">Public writing</a> |
                                         <a href="https://arxiv.org/abs/2508.00717" class="n_link" target="_blank" rel="noopener">arXiv:2508.00717</a> |
                                         <a href="https://www.iza.org/publications/dp/18055" class="n_link" target="_blank" rel="noopener">IZA WP #18055</a> |
                                         <a href="/papers/md/cr_ai_adoption.md" class="n_link" target="_blank" rel="noopener">Markdown</a> |
                                         <span>Updated April 2026</span>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-ai">
+                                        <p>
+                                            <a href="https://theconversation.com/at-one-elite-college-over-80-of-students-now-use-ai-but-its-not-all-about-outsourcing-their-work-262856" class="n_link" target="_blank" rel="noopener"><i>The Conversation</i></a> |
+                                            <a href="https://www.fastcompany.com/91387634/middlebury-college-students-ai-use-enhance-learning-research" class="n_link" target="_blank" rel="noopener"><i>Fast Company</i></a> |
+                                            <a href="https://www.usnews.com/opinion/articles/2025-09-18/college-students-artificial-intelligence-middlebury-coursework" class="n_link" target="_blank" rel="noopener"><i>U.S. News</i></a> |
+                                            <a href="https://newsroom.iza.org/en/archive/research/ai-is-changing-higher-education-but-students-arent-using-it-how-youd-expect/" class="n_link" target="_blank" rel="noopener"><i>IZA Newsroom</i></a>
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-ai">
                                         <p class="text-justify">
                                             Generative AI is transforming higher education, yet systematic evidence on student adoption, usage patterns, and perceived learning impacts remains scarce. Using survey data from a selective U.S. college, we document rapid generative-AI adoption, reaching over 80 percent within two years of ChatGPT's release. Adoption varies sharply across disciplines, demographics, and achievement levels. Students use AI both to augment their learning—by obtaining explanations and feedback—and to automate coursework by generating final outputs, with augmentation more common than automation. Students generally perceive AI as benefiting their learning, and these beliefs are strongly correlated with adoption. Institutional policies shape usage but have uneven effects, in part because awareness and compliance vary across student groups. These findings suggest that effective AI policies must distinguish between uses that enhance learning and those that substitute for it.
@@ -319,18 +386,25 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         (with <a href="https://evanriehl.github.io/" class="n_link" target="_blank" rel="noopener">Evan Riehl</a> and
                                         <a href="https://ruqing-xu.github.io/" class="n_link" target="_blank" rel="noopener">Ruqing Xu</a>)
                                     </p>
 
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-stakes"
                                             role="button" aria-expanded="false" aria-controls="abstract-stakes" aria-label="Toggle abstract for Stakes and Signals paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-stakes"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-stakes" aria-label="Toggle public writing for Stakes and Signals paper">Public writing</a> |
                                         <a href="https://www.nber.org/papers/w32608" class="n_link" target="_blank" rel="noopener">NBER WP #32608</a> |
                                         <a href="/papers/md/rrx_muddled_info.md" class="n_link" target="_blank" rel="noopener">Markdown</a> |
                                         <span>Updated June 2024</span>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-stakes">
+                                        <p>
+                                            <a href="https://voxdev.org/topic/education/trade-between-informativeness-and-equality-high-stakes-standardised-testing" class="n_link" target="_blank" rel="noopener"><i>VoxDev</i></a>
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-stakes">
                                         <p class="text-justify">
                                             We examine a natural experiment in Brazil in which similar students took the same standardized test as either a low-stakes school accountability exam or a high-stakes admission exam for the country's top universities. Using administrative data and a difference-in-differences design, we find that test score gaps between high- and low-income students expanded on the high-stakes exam, consistent with wealthy students engaging in test prep. Yet the increase in stakes made scores <i>more</i> informative for students' college outcomes. Thus the "muddling" of information on natural ability and test prep improved the quality of the score signal, although it also exacerbated inequality.
@@ -346,13 +420,20 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-endurance"
                                             role="button" aria-expanded="false" aria-controls="abstract-endurance" aria-label="Toggle abstract for Cognitive Endurance paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-endurance"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-endurance" aria-label="Toggle public writing for Cognitive Endurance paper">Public writing</a> |
                                         <a href="https://arxiv.org/abs/2301.02575" class="n_link" target="_blank" rel="noopener">arXiv:2301.02575</a> |
                                         <a href="/papers/md/reyes_endurance.md" class="n_link" target="_blank" rel="noopener">Markdown</a> |
                                         <span>Updated January 2024</span>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-endurance">
+                                        <p>
+                                            <a href="https://www.econthatmatters.com/2023/05/cognitive-endurance-and-long-run-outcomes/" class="n_link" target="_blank" rel="noopener"><i>Economics That Really Matters</i></a>
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-endurance">
                                         <p class="text-justify">
                                             Cognitive endurance—the ability to sustain performance on a cognitively-demanding task over time—is thought to be a crucial productivity determinant. However, a lack of data on this variable has limited researchers' ability to understand its role for success in college and the labor market. This paper uses college-admission-exam records from 15 million Brazilian high school students to measure cognitive endurance based on changes in performance throughout the exam. By exploiting exogenous variation in the order of exam questions, I show that students are 7.1 percentage points more likely to correctly answer a given question when it appears at the beginning of the day versus the end (relative to a sample mean of 34.3%). I develop a method to decompose test scores into fatigue-adjusted ability and cognitive endurance. I then merge these measures into a higher-education census and the earnings records of the universe of Brazilian formal-sector workers to quantify the association between endurance and long-run outcomes. I find that cognitive endurance has a statistically and economically significant wage return. Controlling for fatigue-adjusted ability and other student characteristics, a one-standard-deviation higher endurance predicts a 5.4% wage increase. This wage return to endurance is sizable, equivalent to a third of the wage return to ability. I also document positive associations between endurance and college attendance, college quality, college graduation, firm quality, and other outcomes. Finally, I show how systematic differences in endurance across students interact with the exam design to determine the sorting of students to colleges. I discuss the implications of these findings for the use of cognitive assessments for talent selection and investments in interventions that build cognitive endurance.
@@ -372,7 +453,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md">
+                            <div class="col-md-10">
                                 <h2 class="section" id="publications-heading">Accepted, Forthcoming, and Published Papers</h2>
 
                                 <!-- WAGE-SETTING -->
@@ -382,16 +463,23 @@
                                             Coarse Wage-Setting and Behavioral Firms
                                         </a>
                                     </h3>
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         Accepted, <i>Review of Economics and Statistics</i>
                                     </p>
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-wagesetting"
                                             role="button" aria-expanded="false" aria-controls="abstract-wagesetting" aria-label="Toggle abstract for Coarse Wage-Setting paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-wagesetting"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-wagesetting" aria-label="Toggle public writing for Coarse Wage-Setting paper">Public writing</a> |
                                         <a href="https://arxiv.org/abs/2206.01114" class="n_link" target="_blank" rel="noopener">arXiv:2206.01114</a> |
                                         <a href="https://www.iza.org/publications/dp/17039" class="n_link" target="_blank" rel="noopener">IZA WP #17039</a> |
                                         <a href="/papers/md/reyes_wage_setting.md" class="n_link" target="_blank" rel="noopener">Markdown</a>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-wagesetting">
+                                        <p>
+                                            <a href="https://newsroom.iza.org/en/archive/research/why-are-wages-often-set-at-round-numbers/" class="n_link" target="_blank" rel="noopener"><i>IZA Newsroom</i></a>
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-wagesetting">
                                         <p class="text-justify">
                                             This paper shows that the bunching of wages at round numbers is partly driven by firm coarse wage-setting. Using data from over 200 million new hires in Brazil, I first establish that contracted salaries tend to cluster at round numbers. Then, I show that firms that tend to hire workers at round-numbered salaries have worse market outcomes. Next, I develop a wage-posting model in which optimization costs lead to the adoption of coarse rounded wages and provide evidence supporting two model predictions using two research designs. Finally, I examine some consequences of coarse wage-setting for relevant economic outcomes.
@@ -406,23 +494,30 @@
                                             Inequality of Opportunity and Income Redistribution
                                         </a>
                                     </h3>
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         (with
                                         <a href="https://sites.google.com/view/marcelpreuss" class="n_link" target="_blank" rel="noopener">Marcel Preuss</a>,
                                         <a href="https://www.jason-somerville.com/" class="n_link" target="_blank" rel="noopener">Jason Somerville</a>,
                                         and
                                         <a href="https://joyzwu.github.io/" class="n_link" target="_blank" rel="noopener">Joy Wu</a>)
                                     </p>
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         Accepted, <i>Journal of Political Economy Microeconomics</i>
                                     </p>
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-iop"
                                             role="button" aria-expanded="false" aria-controls="abstract-iop" aria-label="Toggle abstract for Inequality of Opportunity paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-iop"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-iop" aria-label="Toggle public writing for Inequality of Opportunity paper">Public writing</a> |
                                         <a href="https://arxiv.org/abs/2209.00534" class="n_link" target="_blank" rel="noopener">arXiv:2209.00534</a> |
                                         <a href="https://www.iza.org/publications/dp/17155" class="n_link" target="_blank" rel="noopener">IZA WP #17155</a> |
                                         <a href="/papers/md/psrw_ineq_opp.md" class="n_link" target="_blank" rel="noopener">Markdown</a>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-iop">
+                                        <p>
+                                            <a href="https://newsroom.iza.org/en/archive/research/how-do-unequal-opportunities-impact-support-for-redistribution/" class="n_link" target="_blank" rel="noopener"><i>IZA Newsroom</i></a>
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-iop">
                                         <p class="text-justify">
                                             Opportunities, such as access to education or family background, shape income inequality by influencing the chances of economic success. Unequal opportunities create uncertainty about whether success is merit- or luck-based. We examine how uncertainty impacts preferences for redistribution, comparing it to more transparent forms of luck. Using a U.S.-representative sample, we elicit redistribution decisions in two environments: when workers' earnings are influenced by luck directly ("lucky outcomes") or indirectly ("lucky opportunities"). Spectators redistribute less and are less sensitive to differences in luck under opportunities. Inferential challenges drive this gap, which implies that individuals are less meritocratic than previous findings suggest.
@@ -437,21 +532,29 @@
                                             The Direct and Spillover Effects of Large-Scale Affirmative Action at an Elite Brazilian University
                                         </a>
                                     </h3>
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         (with
                                         <a href="https://sites.google.com/site/machadoc/cecilia-machado" class="n_link" target="_blank" rel="noopener">Cecilia Machado</a> and
                                         <a href="https://evanriehl.github.io/" class="n_link" target="_blank" rel="noopener">Evan Riehl</a>)
                                     </p>
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         <i>Journal of Labor Economics</i>, 43(2): 391-431, 2025
                                     </p>
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-affact"
                                             role="button" aria-expanded="false" aria-controls="abstract-affact" aria-label="Toggle abstract for Affirmative Action paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-affact"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-affact" aria-label="Toggle public writing for Affirmative Action paper">Public writing</a> |
                                         <a href="https://arxiv.org/abs/2305.02513" class="n_link" target="_blank" rel="noopener">arXiv:2305.02513</a> |
                                         <a href="https://www.iza.org/publications/dp/15026" class="n_link" target="_blank" rel="noopener">IZA WP #15026</a> |
                                         <a href="/papers/md/mrr_affirmative_action.md" class="n_link" target="_blank" rel="noopener">Markdown</a>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-affact">
+                                        <p>
+                                            <a href="https://newsroom.iza.org/en/archive/research/who-benefits-and-who-loses-from-affirmative-action-in-elite-universities/" class="n_link" target="_blank" rel="noopener"><i>IZA Newsroom</i></a> |
+                                            <a href="https://voxdev.org/topic/education/impacts-large-scale-affirmative-action-elite-universities" class="n_link" target="_blank" rel="noopener"><i>VoxDev</i></a>
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-affact">
                                         <p class="text-justify">
                                             We examine the effects of an affirmative action policy at an elite Brazilian university that reserved 45 percent of admission slots for Black and low-income students. We find that marginally-admitted students who enrolled through the affirmative action tracks experienced a 14 percent increase in early-career earnings. But the adoption of affirmative action also caused a large decrease in earnings for the university's most highly-ranked students. We present evidence that the negative spillover effects on highly-ranked students' earnings were driven by both a reduction in human capital accumulation and a decline in the value of networking.
@@ -466,19 +569,26 @@
                                             Are Fairness Perceptions Shaped by Income Inequality? Evidence from Latin America
                                         </a>
                                     </h3>
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         (with
                                         <a href="https://www.cedlas.econo.unlp.edu.ar/wp/en/lgasparini/" class="n_link" target="_blank" rel="noopener">Leonardo Gasparini</a>)
                                     </p>
-                                    <p class="p_title_p" style="padding-left: 10px;">
+                                    <p class="p_title_p">
                                         <i>The Journal of Economic Inequality</i>, 20: 893-913, 2022
                                     </p>
-                                    <p class="p_abstract_p" style="padding-left: 10px;">
+                                    <p class="p_abstract_p">
                                         <a class="collapse-show showAbstract" href="#abstract-fairness"
                                             role="button" aria-expanded="false" aria-controls="abstract-fairness" aria-label="Toggle abstract for Fairness Perceptions paper">Abstract</a> |
+                                        <a class="collapse-show showAbstract" href="#publicwriting-fairness"
+                                            role="button" aria-expanded="false" aria-controls="publicwriting-fairness" aria-label="Toggle public writing for Fairness Perceptions paper">Public writing</a> |
                                         <a href="https://arxiv.org/abs/2202.04591" class="n_link" target="_blank" rel="noopener">arXiv:2202.04591</a> |
                                         <a href="/papers/md/gr_fairness.md" class="n_link" target="_blank" rel="noopener">Markdown</a>
                                     </p>
+                                    <div class="px-4 card info" id="publicwriting-fairness">
+                                        <p>
+                                            <a href="https://www.cedlas.econo.unlp.edu.ar/wp/son-las-percepciones-subjetivas-de-la-desigualdad-consistentes-con-la-evidencia/" class="n_link" target="_blank" rel="noopener"><i>CEDLAS</i></a> (Spanish)
+                                        </p>
+                                    </div>
                                     <div class="px-4 card info" id="abstract-fairness">
                                         <p class="text-justify">
                                             A common assumption in the literature is that the level of income inequality shapes individuals' beliefs about whether the income distribution is fair ("fairness views," for short). However, individuals do not directly observe income inequality (which often leads to large misperceptions), nor do they consider all inequities to be unfair. In this paper, we empirically assess the link between objective measures of income inequality and fairness views in a context of high but decreasing income inequality. We combine opinion poll data with harmonized data from household surveys of 18 Latin American countries from 1997–2015. We report three main findings. First, we find a strong and statistically significant relationship between income inequality and unfairness views across countries and over time. Unfairness views evolved in the same direction as income inequality for 17 out of the 18 countries in our sample. Second, individuals who are older, unemployed, and left-wing are, on average, more likely to perceive the income distribution as very unfair. Third, fairness views and income inequality have predictive power for individuals' self-reported propensity to mobilize and protest independent of each other, suggesting that these two variables capture different channels through which changes in the income distribution can affect social unrest.
@@ -494,25 +604,17 @@
         </div>
     </div>
 
-    <!-- Scripts - Bootstrap 4 only -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
     <script>
-        // Simple instant toggle for abstracts (no animation)
-        $(document).ready(function() {
-            $('.showAbstract').on('click', function(e) {
-                e.preventDefault();
-                var target = $(this).attr('href');
-                $(target).toggleClass('show');
-                var isExpanded = $(target).hasClass('show');
-                $(this).attr('aria-expanded', isExpanded);
+        // Toggle handler for Abstract / Public writing reveal cards
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.showAbstract').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var target = document.querySelector(link.getAttribute('href'));
+                    if (!target) return;
+                    target.classList.toggle('show');
+                    link.setAttribute('aria-expanded', target.classList.contains('show'));
+                });
             });
         });
     </script>
