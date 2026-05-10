@@ -139,34 +139,11 @@
             border-radius: 2px;
         }
 
-        /* Dark mode (respects OS preference) */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #0f172a;
-                color: #e2e8f0;
-            }
-            a, .n_link {
-                color: #93c5fd;
-            }
-            .n_link:hover {
-                color: #d8b4fe;
-            }
-            .navbar.bg-white {
-                background-color: #0f172a !important;
-            }
-            .site-title {
-                color: #e2e8f0;
-            }
-            .card.info {
-                background-color: #1e293b;
-                border-left-color: #60a5fa;
-            }
-            hr {
-                border-color: #334155;
-            }
-            a:focus-visible, button:focus-visible {
-                outline-color: #93c5fd;
-            }
+        /* Body font: styles_navbar.css defines the BS5 font variables
+           but has no body{} rule, so we set it explicitly. Open Sans
+           is already loaded via Google Fonts above. */
+        body {
+            font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         }
 
         /* Print styles */
