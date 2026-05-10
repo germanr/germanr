@@ -2782,7 +2782,7 @@ There are some notable differences between the SAT/ACT and the ENEM. First, the 
 The Brazilian Testing Agency grades the ENEM exam based on the three-parameter item response theory (IRT). According to IRT, the probability that an individual $i$ with ability $\theta_i$ correctly answers question $j$ is:
 
 $$\begin{align}
-\Pr(C_{ij} = 1 | \theta_i) = p_{j}({\theta_i }) = c_{j} + {\frac {1-c_{j}}{1+e^{{-a_{j}({\theta_i }-b_{i})}}}},
+\Pr(C_{ij} = 1 | \theta_i) = p_{j}({\theta_i }) = c_{j} + {\frac {1-c_{j}}{1+e^{ {-a_{j}({\theta_i }-b_{i})} }}},
 \end{align}$$
 
 where $a_j$, $b_j$, and $c_j$ are three question-level parameters that represent, respectively, a question's "discrimination," "difficulty," and "pseudo-guess." A question's discrimination refers to its ability to discriminate between low- and high-ability individuals; the difficulty represents the value of $\theta$ at which $p_{j}({\theta_i})$ has the maximum slope, and the pseudo-guess parameter indicates the likelihood that a student with an infinitely negative ability has to correctly respond to the question. Notice that in equation eq:irt, the probability of correctly answering a question does not depend on its position. Thus, the type of position effects documented above suggests that the IRT estimates of individual-level ability are biased. Modern IRT approaches (e.g., Debeer and Janssen, 2013) include item position into the framework.
