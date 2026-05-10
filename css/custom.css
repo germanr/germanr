@@ -27,11 +27,13 @@ a {
 }
 
 .showAbstract[aria-expanded="false"]::after {
-  content: " \25BE";
+  font-family: FontAwesome;
+  content: " \f078";
 }
 
 .showAbstract[aria-expanded="true"]::after {
-  content: " \25B4";
+  font-family: FontAwesome;
+  content: " \f077";
 }
 
 .section_top {

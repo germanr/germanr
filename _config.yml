@@ -1,8 +1,0 @@
-# Disable Liquid templating for paper markdown files so LaTeX math
-# expressions like {{-a_{j}}} aren't parsed as Liquid variables.
-# Markdown-to-HTML rendering still works.
-defaults:
-  - scope:
-      path: "papers/md"
-    values:
-      render_with_liquid: false

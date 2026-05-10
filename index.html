@@ -21,12 +21,11 @@
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8H97RM6C9H"></script>
@@ -37,7 +36,10 @@
         gtag('config', 'G-8H97RM6C9H');
     </script>
 
-    <!-- Stylesheets -->
+    <!-- Stylesheets - Using Bootstrap 4 only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
     <link href="css/styles_navbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/custom.css">
@@ -117,33 +119,6 @@
         .card.info p {
             margin: 0;
             line-height: 1.7;
-            max-width: 65ch;
-        }
-
-        /* Bootstrap 5 dropped .text-justify; restore it for the bio paragraph and abstract text */
-        .text-justify {
-            text-align: justify;
-        }
-
-        /* Move inline padding-left to a class on the title/abstract metadata rows */
-        .p_title_p,
-        .p_abstract_p {
-            padding-left: 10px;
-        }
-
-        /* Visible focus ring for keyboard navigation only */
-        a:focus-visible,
-        button:focus-visible {
-            outline: 2px solid #2563eb;
-            outline-offset: 2px;
-            border-radius: 2px;
-        }
-
-        /* Body font: styles_navbar.css defines the BS5 font variables
-           but has no body{} rule, so we set it explicitly. Open Sans
-           is already loaded via Google Fonts above. */
-        body {
-            font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         }
 
         /* Print styles */
@@ -239,7 +214,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 d-flex justify-content-start">
+                        <div class="col-md-3 d-flex justify-content-left">
                             <img src="images/german_reyes.jpg" 
                                  alt="Germán Reyes, Assistant Professor of Economics at Middlebury College"
                                  style="max-width: 90%; max-height: 31ex; object-fit: scale-down;" 
@@ -289,13 +264,13 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         (with <a href="https://sites.google.com/view/marcelpreuss" class="n_link" target="_blank" rel="noopener">Marcel Preuss</a>,
                                         <a href="https://www.jason-somerville.com/" class="n_link" target="_blank" rel="noopener">Jason Somerville</a>, and
                                         <a href="https://joyzwu.github.io/" class="n_link" target="_blank" rel="noopener">Joy Wu</a>)
                                     </p>
-                                    <p class="p_title_p">Revise &amp; Resubmit, <i>Journal of Public Economics</i></p>
-                                    <p class="p_abstract_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">Revise &amp; Resubmit, <i>Journal of Public Economics</i></p>
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-elites"
                                             role="button" aria-expanded="false" aria-controls="abstract-elites" aria-label="Toggle abstract for Are Elites Meritocratic paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-elites"
@@ -326,11 +301,11 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         (with <a href="https://www.zaracontractor.net/" class="n_link" target="_blank" rel="noopener">Zara Contractor</a>)
                                     </p>
 
-                                    <p class="p_abstract_p">
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-ai"
                                             role="button" aria-expanded="false" aria-controls="abstract-ai" aria-label="Toggle abstract for Generative AI in Higher Education paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-ai"
@@ -363,12 +338,12 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         (with <a href="https://evanriehl.github.io/" class="n_link" target="_blank" rel="noopener">Evan Riehl</a> and
                                         <a href="https://ruqing-xu.github.io/" class="n_link" target="_blank" rel="noopener">Ruqing Xu</a>)
                                     </p>
 
-                                    <p class="p_abstract_p">
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-stakes"
                                             role="button" aria-expanded="false" aria-controls="abstract-stakes" aria-label="Toggle abstract for Stakes and Signals paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-stakes"
@@ -397,7 +372,7 @@
                                         </a>
                                     </h3>
 
-                                    <p class="p_abstract_p">
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-endurance"
                                             role="button" aria-expanded="false" aria-controls="abstract-endurance" aria-label="Toggle abstract for Cognitive Endurance paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-endurance"
@@ -440,10 +415,10 @@
                                             Coarse Wage-Setting and Behavioral Firms
                                         </a>
                                     </h3>
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         Accepted, <i>Review of Economics and Statistics</i>
                                     </p>
-                                    <p class="p_abstract_p">
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-wagesetting"
                                             role="button" aria-expanded="false" aria-controls="abstract-wagesetting" aria-label="Toggle abstract for Coarse Wage-Setting paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-wagesetting"
@@ -471,17 +446,17 @@
                                             Inequality of Opportunity and Income Redistribution
                                         </a>
                                     </h3>
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         (with
                                         <a href="https://sites.google.com/view/marcelpreuss" class="n_link" target="_blank" rel="noopener">Marcel Preuss</a>,
                                         <a href="https://www.jason-somerville.com/" class="n_link" target="_blank" rel="noopener">Jason Somerville</a>,
                                         and
                                         <a href="https://joyzwu.github.io/" class="n_link" target="_blank" rel="noopener">Joy Wu</a>)
                                     </p>
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         Accepted, <i>Journal of Political Economy Microeconomics</i>
                                     </p>
-                                    <p class="p_abstract_p">
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-iop"
                                             role="button" aria-expanded="false" aria-controls="abstract-iop" aria-label="Toggle abstract for Inequality of Opportunity paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-iop"
@@ -509,15 +484,15 @@
                                             The Direct and Spillover Effects of Large-Scale Affirmative Action at an Elite Brazilian University
                                         </a>
                                     </h3>
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         (with
                                         <a href="https://sites.google.com/site/machadoc/cecilia-machado" class="n_link" target="_blank" rel="noopener">Cecilia Machado</a> and
                                         <a href="https://evanriehl.github.io/" class="n_link" target="_blank" rel="noopener">Evan Riehl</a>)
                                     </p>
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         <i>Journal of Labor Economics</i>, 43(2): 391-431, 2025
                                     </p>
-                                    <p class="p_abstract_p">
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-affact"
                                             role="button" aria-expanded="false" aria-controls="abstract-affact" aria-label="Toggle abstract for Affirmative Action paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-affact"
@@ -546,14 +521,14 @@
                                             Are Fairness Perceptions Shaped by Income Inequality? Evidence from Latin America
                                         </a>
                                     </h3>
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         (with
                                         <a href="https://www.cedlas.econo.unlp.edu.ar/wp/en/lgasparini/" class="n_link" target="_blank" rel="noopener">Leonardo Gasparini</a>)
                                     </p>
-                                    <p class="p_title_p">
+                                    <p class="p_title_p" style="padding-left: 10px;">
                                         <i>The Journal of Economic Inequality</i>, 20: 893-913, 2022
                                     </p>
-                                    <p class="p_abstract_p">
+                                    <p class="p_abstract_p" style="padding-left: 10px;">
                                         <a class="collapse-show showAbstract" href="#abstract-fairness"
                                             role="button" aria-expanded="false" aria-controls="abstract-fairness" aria-label="Toggle abstract for Fairness Perceptions paper">Abstract</a> |
                                         <a class="collapse-show showAbstract" href="#publicwriting-fairness"
@@ -581,17 +556,25 @@
         </div>
     </div>
 
+    <!-- Scripts - Bootstrap 4 only -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script>
-        // Toggle handler for Abstract / Public writing reveal cards
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.showAbstract').forEach(function (link) {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    var target = document.querySelector(link.getAttribute('href'));
-                    if (!target) return;
-                    target.classList.toggle('show');
-                    link.setAttribute('aria-expanded', target.classList.contains('show'));
-                });
+        // Simple instant toggle for abstracts (no animation)
+        $(document).ready(function() {
+            $('.showAbstract').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                $(target).toggleClass('show');
+                var isExpanded = $(target).hasClass('show');
+                $(this).attr('aria-expanded', isExpanded);
             });
         });
     </script>
