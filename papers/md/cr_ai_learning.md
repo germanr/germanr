@@ -1,108 +1,108 @@
 # Experimental Evidence on the Learning Impact of Generative AI
 
 *Zara Contractor, Germán Reyes*  
-*July 2026*
+*October 2026*
 
-**Abstract.** We study how generative AI affects student learning in a randomized experiment. In proctored, in-person sessions, undergraduates learn about an unfamiliar topic and write an analytical essay with or without access to off-the-shelf generative AI, then complete unaided assessments immediately and one week later. We measure learning with knowledge tests (factual and conceptual understanding) and open-ended essays (higher-order skills). AI access raises immediate test scores by 0.27 standard deviations. These gains persist one week later. Essay quality, by contrast, changes little while students have AI access but improves in style and relevance one week later, when students write unaided. These delayed gains are larger among augmentation users—who use AI to explain concepts rather than generate text—whereas automation users' short-run quality gains vanish once AI is removed. We find evidence for two mechanisms behind the learning gains: students shift time away from drafting text and toward reading and searching for information, and they report greater learning enjoyment.
+**Abstract.** We study whether access to off-the-shelf generative AI changes how much students learn in a timed assignment. In a proctored, in-person randomized experiment, undergraduates study an unfamiliar topic and write an essay with or without AI, then complete unaided assessments immediately and one week later. AI access raises test scores, and a smaller gain persists a week later. Gains remain for students who use AI as a tutor ("augmentation") and fade for students who have AI write for them ("automation"). We document two mechanisms: students shift time from writing toward reading and searching for information, and report greater learning enjoyment.
 
 # Introduction
 
-Generative artificial intelligence (AI) is now widely used in higher education. ChatGPT has over 900 million weekly users, college-age users send nearly half of its messages, and more than a quarter of those messages relate to learning (Chatterji et al., 2025; OpenAI, 2025). Despite this widespread use, evidence on whether AI helps students learn is scarce. Much of the available evidence comes from workplace settings, in which a growing literature documents large productivity gains from AI access (e.g., Noy and Zhang, 2023; Brynjolfsson, Li, and Raymond, 2025). However, these studies measure job performance and not human-capital accumulation. AI tools could enhance learning by acting as on-demand tutors that explain difficult concepts and provide personalized feedback (Nickow, Oreopoulos, and Quan, 2024), or undermine learning by offloading the cognitive effort that learning requires (Risko and Gilbert, 2016). Whether generative AI builds or erodes human capital remains an open empirical question.
+Generative artificial intelligence (AI) is now widely used in higher education. ChatGPT has over 900 million weekly users (OpenAI, 2026), college-age users send nearly half of its messages, and more than a quarter of those messages relate to learning (Chatterji et al., 2025; OpenAI, 2025). Despite this widespread use, evidence on whether the off-the-shelf chatbots students use help them learn is scarce.
 
-We study whether off-the-shelf AI affects immediate and longer-term learning in a common class of academic tasks: time-bounded assignments in which students must learn unfamiliar material, identify relevant information, and demonstrate understanding through writing and tests. Our randomized experiment with 211 undergraduates unfolds over two sessions approximately one week apart. In the first session, students learn about a technical topic and write an analytical essay. We randomly assign students to an *AI-allowed* or an *AI-forbidden* condition. The AI-allowed group may use any generative AI tool along with traditional resources, while the AI-forbidden group may use only traditional resources. We monitor AI usage and compliance through direct proctor observation, ChatGPT conversation logs, and self-reports. In the second session, all students complete another test and write an essay on the same topic, this time without AI or any other resources.
+Generative AI can change how much students learn through two margins. The first is time allocation: students may spend less time on academic tasks when AI can automate some of them (Kazemitabaar et al., 2023; Kestin et al., 2025; Kreijkes et al., 2026), and whether that helps or harms learning depends on what students do with the time they save. The second margin is how much students learn from a fixed amount of study time (henceforth, "learning productivity"). Holding time fixed, AI may raise learning by, for example, acting as an on-demand tutor that explains difficult concepts and provides personalized feedback (Nickow, Oreopoulos, and Quan, 2024), or lower it by offloading the cognitive effort that builds durable knowledge (Chi and Wylie, 2014; Risko and Gilbert, 2016).
 
-We measure learning along two dimensions. Knowledge tests target factual and conceptual understanding: we ask students to recall key information and identify core mechanisms. Open-ended essays target higher-order skills: we ask students to analyze relationships between concepts and support their arguments with specific evidence. Human and AI graders evaluate each essay along several dimensions, such as writing style and accuracy of content. Beyond these subjective assessments, we also measure objective linguistic features of the essays, such as length, readability, lexical diversity, textual similarity among student essays, and the fraction of text flagged as AI-generated by a state-of-the-art AI detector.
+In this paper, we focus on the second margin and study how AI affects learning productivity in a common class of academic tasks: time-bounded assignments in which students must learn unfamiliar material, identify relevant information, and demonstrate understanding through writing and tests. Our randomized experiment with 211 undergraduates unfolds over two in-person sessions approximately one week apart. In the first session, all students have the same amount of time to learn about a technical topic and write an analytical essay, and then take a knowledge test. We randomly assign students to an *AI-allowed* or an *AI-forbidden* condition. The AI-allowed group may use any generative AI tool along with traditional resources, while the AI-forbidden group may use only traditional resources. We monitor AI usage and compliance through direct proctor observation, ChatGPT conversation logs, and self-reports. In the second session, all students complete another test and write an essay on the same topic, this time without AI or any other resources.
 
-We first document that our random assignment generated substantial variation in AI usage. About 68 percent of students in the AI-allowed condition used generative AI during the first session, compared with near-zero usage in the control group. Users value this access: 88 percent report that AI is helpful for the learning task. ChatGPT conversation logs reveal that students use AI most often to explain concepts (57 percent of treated students), followed by drafting responses (31 percent) and summarizing readings (17 percent).
+We measure learning in two ways. Knowledge tests target factual and conceptual understanding: we ask students to recall key information and identify core mechanisms. The open-ended essays measure understanding of the material beyond memorization: we ask students to analyze relationships between concepts and to support their arguments with specific evidence. Graders give each essay an overall quality rating and scores on five dimensions: accuracy of content, use of evidence and examples, relevance to the prompt, organization and structure, and writing style and clarity. Students complete all tests and the Session Two essay without AI or other resources, so these assessments measure what they learned. The Session One essay, which AI can help write, measures the work they submit. We also measure characteristics of the essay text: the fraction flagged as AI-generated by a state-of-the-art detector, length, readability, lexical diversity, and textual similarity among student essays.
 
-We turn next to our main result: AI access improves learning outcomes. Students with AI access score 6.7 percentage points (pp) higher on the immediate knowledge test on a baseline of 56.3 percent. Standardized by the control-group standard deviation (SD), this is equivalent to a 0.27 SD gain in test scores. Point estimates are largest in the middle of the performance distribution, with smaller effects at the tails. Turning from where in the performance distribution gains land to which students gain, gains tend to be larger in the upper ability quartiles (by GPA and SAT) than at the bottom, suggesting that AI access may widen learning gaps. The gains persist approximately one week later: AI-allowed students score 5.1 pp higher on the retention test. Thus, about 76 percent of the immediate effect persists.
+We first document that our random assignment generated substantial variation in AI usage. About 70 percent of students in the AI-allowed condition used generative AI during the first session, compared with near-zero usage in the control group. Users value this access: 88 percent report that AI is helpful for the learning task. ChatGPT conversation logs reveal that students use AI most often to explain concepts (56 percent of treated students). Drafting responses (29 percent), editing responses (23 percent), and summarizing readings (16 percent) are the next most common substantive uses.
 
-AI access also strengthens the higher-order skills that essays measure, but the gain surfaces only after AI is removed. In Session One, a higher share of treated students' text is flagged as AI-generated and their essays trend longer, with shorter sentences and simpler vocabulary. Their essays are no more homogeneous than control students', contrary to the convergence documented in workplace settings (Brynjolfsson, Li, and Raymond, 2025). Overall quality rises only slightly: averaging human and AI graders, the gain is small and imprecise. Because these essays were partly generated by AI, these differences blend AI-produced text with any learning. To separate the two, we turn to the Session Two essays, written one week later without AI. There, the AI-detection and stylistic effects fade, while quality gains emerge: writing style and clarity and relevance to the prompt both rise significantly. These quality gains are consistent with the persistent test-score effects.
+We turn next to our main result: AI access improves learning outcomes, and a smaller gain remains after the tool is removed. Students with AI access score 7.2 percentage points (pp) higher on the immediate knowledge test (relative to a control mean of 56.3 percent). Standardized by the control-group standard deviation (SD), this is equivalent to a 0.28 SD gain in test scores. One week later, AI-allowed students score 3.9 pp higher on the Session Two test (relative to a control mean of 50.0 percent), or 0.21 SD.
 
-Treatment effects—and their persistence—vary substantially with how students use AI. Using treated students' ChatGPT conversation patterns, we classify 49 percent of AI users as "augmentation" users (who work *with* AI) and 32 percent as "automation" users (who use AI to do the work *for* them). This distinction shows up in both usage and output: augmentation users prompt AI mainly as a personalized tutor, while automation users prompt it to draft their essays for them and have substantially higher AI-detection rates in their submissions. Augmentation users' Session One test-score gains persist one week after AI is removed, and their unaided Session Two essays trend higher in quality. Automation users' Session One essay-quality gains, by contrast, fade entirely.
+The essays provide further evidence that AI access improves learning. In Session One, the share of treated students' text flagged as AI-generated rises by 22.2 pp, consistent with some treated students delegating the writing to AI. Graders assess these essays as 0.34 SD higher in overall quality, yet the essays are no more homogeneous than control students' essays. This gain could reflect AI-generated text, learning, or both. We separate the two with the Session Two essays, which students write one week later without AI. In those essays, the AI-detection effect disappears. Consistent with the test-score results, overall quality is 0.24 SD higher, and the point estimates for all five dimensions are positive, with the largest effects on use of evidence and examples and on writing style and clarity.
 
-To investigate mechanisms, we examine the inputs to learning. AI access does not change total learning time but tilts its mix away from producing text: treated students spend 12 percent less time on writing activities (consistent with AI doing some of the writing for them) and 10 percent more time reading and searching for information. AI access also makes learning more enjoyable: treated students report 13 percent higher enjoyment ratings. We also find that AI access raises rule violations on the first test, though these violations account for at most a modest share of the test-score gains.
+To understand why AI access improves learning, we examine time use and the learning experience. Although both groups spend the same amount of time learning on average, AI access shifts the composition of learning time away from producing text: treated students report spending 5.3 pp less of their learning time on writing activities and 4.4 pp more on reading and searching for information, relative to control-group shares of 53.4 and 44.5 percent. AI access also makes learning more enjoyable: treated students report 11 percent higher enjoyment ratings.
 
-We also study students' beliefs about AI's effect on their learning by asking them to estimate how much AI access changed (or would have changed) their test scores. Both treated and control students expect positive effects, but only the treated group's prediction comes close to our estimate; the control group overestimates it. Across subgroups, perceived gains track actual gains: the subgroups that benefit most perceive the largest gains. To understand why students expect these effects, we elicit an open-ended account of how AI affects student learning in general and, following Andre et al. (2026), code each response as a causal graph from AI use to learning. Most students name both a channel through which AI helps learning and one through which it harms it, condition the effect on how AI is used, and spontaneously organize the channels around the augmentation-versus-automation distinction that moderates our treatment effects. Students, in short, grasp the mechanisms from the outset but only gauge the magnitudes accurately after using AI themselves.
+To interpret these results, we write down a model in which a student divides effort between research (reading and searching) and writing. Both activities produce knowledge, and writing also produces the essay, whose quality depends on the student's writing and on what the student knows. We model AI as giving the student two capabilities. Used as a tutor, it raises the return to research effort; used to write the essay, it lets the student delegate, so the student's own work no longer raises the essay's quality. With that incentive gone, the student exerts less effort on both activities and, consequently, learns less. The model rationalizes the test-score gain, the shift in learning time, and the higher enjoyment. The test-score gain implies that, averaged across treated students, the tutoring gain exceeded the losses from delegation. Both capabilities lower the share of effort spent on writing, which produces the shift from writing toward research. Both also raise the utility the student obtains from the task, consistent with the higher enjoyment.
 
-Our results contribute to an emerging literature on the learning impacts of AI. We contextualize our estimates through a meta-analysis in the main text, but note two challenges for interpreting existing evidence. First, many studies evaluate AI systems that are scaffolded, restricted, or otherwise customized beyond a standard off-the-shelf chatbot.[^1] These designs inform the particular system studied but speak less directly to the chatbots students use in practice. Second, some studies compare AI with active alternatives rather than a business-as-usual counterfactual, so the estimates reflect AI's value relative to those alternatives rather than its absolute effect on learning.[^2] Our design addresses both challenges: treated students access off-the-shelf AI tools, while control students learn the same material without any AI access. Beyond this design, we contribute by measuring knowledge persistence; distinguishing augmentation from automation uses; tracing how AI shifts the inputs to learning; assessing multiple learning dimensions rather than test scores alone; and comparing students' beliefs about AI's effects with those we estimate.
+The model also predicts that outcomes should differ with how students use AI. To test this implication, we use treated students' ChatGPT conversation logs and classify 61 percent of AI users as "augmentation" users (who work *with* AI), 9 percent as "automation" users (who use AI to do the work *for* them), and 27 percent as "mixed" users (who do both). This distinction shows up in both usage and output: augmentation users prompt AI mainly to explain concepts, automation users prompt it to draft their essays for them, mixed users do both, and AI-detection rates rise from augmentation to mixed to automation users. Automation and mixed users submit higher-rated essays in Session One, but automation users' advantage is absent from their unaided essays one week later. Augmentation and mixed users show positive test-score differences relative to the control group in both sessions, and both groups' point estimates exceed automation users' on every Session Two outcome. These patterns are consistent with the model's prediction that what students learn from AI depends on how they use it.
 
-We also contribute to the literature on digital technologies and student learning. Prior research has examined laptops and personal computers (Malamud and Pop-Eleches, 2011; Carter, Greenberg, and Walker, 2017; Cristia et al., 2017); online courses (Figlio, Rush, and Yin, 2013; Bettinger et al., 2017); internet access (Vigdor, Ladd, and Martinez, 2014; Dettling, Goodman, and Smith, 2018); and interactive classroom technologies such as clickers and whiteboards (Caldwell, 2007; Lewin, Somekh, and Steadman, 2008). Expanding access to general-purpose technologies tends to yield limited, mixed, or negative effects on academic performance. Computer-assisted learning systems—which tailor content to students' levels and provide immediate feedback—produce larger and more consistent gains (see Bulman and Fairlie, 2016; Escueta et al., 2020, for reviews). Generative AI offers these capabilities: it can generate personalized explanations and respond flexibly to students' questions in real time, but it can also do the work for students. Whether these capabilities translate into learning gains depends on how students use AI—actively constructing understanding builds more durable knowledge than passively accepting AI output (Chi and Wylie, 2014)—as our augmentation-versus-automation results show.
+Students choose whether and how to use AI, and those choices may depend on what they believe AI does to their learning. Are those beliefs accurate? At the end of the experiment, we ask students to estimate how much AI access changed (or would have changed) their test scores. Both treated and control students expect positive effects, but only the treated group's prediction comes close to our estimate; the control group overestimates it. To understand why students expect these effects, we elicit an open-ended account of how AI affects student learning in general and code each response as a causal graph from AI use to learning. Most students name both a channel through which AI helps learning and one through which it harms it, say the effect depends on how AI is used, and organize the channels around the augmentation-versus-automation distinction along which our use-type results differ.
 
-Finally, we contribute to the literature on the productivity effects of AI. Prior studies document substantial productivity gains from AI access in professional writing, software development, consulting, customer support, legal work, team-based problem solving, radiology, and taxi driving (Noy and Zhang, 2023; Peng et al., 2023; Choi, Monahan, and Schwarcz, 2024; Jia et al., 2024; Brynjolfsson, Li, and Raymond, 2025; Dell'Acqua et al., 2025; Kanazawa et al., 2025; Baird et al., 2026; Cruces et al., 2026; Cui et al., 2026; Dell'Acqua et al., 2026; Goldsmith-Pinkham, Tan, and Zentefis, 2026). This literature measures task performance: how well workers complete tasks when given access to AI. Yet productivity gains can also accrue through skill accumulation—how effectively individuals build durable human capital—but the few studies that speak directly to learning in work settings provide mixed results. Brynjolfsson, Li, and Raymond (2025) show that AI facilitates worker learning among customer-support agents, while Budzyń et al. (2025) document patterns consistent with deskilling among endoscopists after routine AI exposure, and Shen and Tamkin (2026) find that software engineers who learned an unfamiliar programming library with an AI assistant scored substantially worse on a subsequent unassisted test. We provide experimental evidence that AI access can improve skill accumulation in an academic context, and thereby identify a channel through which AI may raise long-run productivity beyond its immediate effects on task performance.
+We contribute to an emerging literature on the learning impacts of AI (e.g., Bastani et al., 2025; Franco, Irmert, and Isaksson, 2026; Strömberg, Lei, and Wu, 2026). We benchmark our estimates against the experimental literature in Section 4.2, but note three challenges for interpreting existing evidence. First, many studies evaluate AI systems that are scaffolded, restricted, or otherwise customized beyond a standard off-the-shelf chatbot.[^1] These designs inform the particular system studied but speak less directly to the chatbots students use in practice. Second, some studies compare AI with active alternatives rather than a business-as-usual counterfactual, so the estimates reflect AI's value relative to those alternatives rather than its absolute effect on learning.[^2] Third, in many designs students choose how much time to spend on the task (e.g., Kazemitabaar et al., 2023; Kestin et al., 2025; Kreijkes et al., 2026), so the estimated effects combine the two margins: time allocation and learning productivity. Our design addresses all three. Beyond these design features, we contribute by measuring what students retain one week later, after AI is removed; distinguishing augmentation from automation uses; tracing how AI shifts time use and the learning experience; assessing learning with essays as well as test scores; and comparing students' beliefs about AI's effects with those we estimate.
+
+We also contribute to the literature on digital technologies and student learning. Prior research has examined laptops and personal computers (Malamud and Pop-Eleches, 2011; Carter, Greenberg, and Walker, 2017; Cristia et al., 2017); online courses (Figlio, Rush, and Yin, 2013; Bettinger et al., 2017); internet access (Vigdor, Ladd, and Martinez, 2014; Dettling, Goodman, and Smith, 2018); and interactive classroom technologies such as clickers and whiteboards (Caldwell, 2007; Lewin, Somekh, and Steadman, 2008). Simply expanding access to computers and internet connectivity has not consistently improved academic achievement (Bulman and Fairlie, 2016). More encouraging evidence comes from computer-assisted learning programs that adapt instruction to students' levels or provide targeted practice and immediate feedback, particularly in mathematics (Escueta et al., 2020). Generative AI combines features of both kinds of technology: it is a general-purpose tool that can give personalized explanations and respond to students' questions in real time, but it can also do the work for students. We study what students learn when both capabilities are available and students choose how to use them.
+
+Finally, we contribute to the literature on the productivity effects of AI. Prior studies show that AI assistance can generate substantial productivity gains in professional writing, software development, consulting, customer support, legal work, sales, team-based problem solving, and taxi driving.[^3] Much of this research measures task performance while AI is available. But AI may also raise productivity by facilitating skill accumulation. A few studies examine whether AI-assisted work improves subsequent unassisted performance, with mixed results. Brynjolfsson, Li, and Raymond (2025) provide evidence consistent with learning among customer-support agents, and Cruces et al. (2026) find that adults with lower levels of education retain some performance gains on an unassisted follow-up task. Autor et al. (2026) also find that an AI drafting assistant improves subsequent unassisted performance among senior patent lawyers, though not among junior patent lawyers. Shen and Tamkin (2026) find that developers who used AI to learn an unfamiliar programming library scored substantially worse on a subsequent unassisted test. We provide evidence that AI access can raise learning productivity in an academic context: given the same amount of time, students acquire more knowledge, with gains evident on unassisted assessments immediately and one week later. These findings suggest a human-capital channel through which AI may raise longer-run productivity beyond its immediate effects on task performance.
 
 # Experimental Design
-The experiment consists of two in-person sessions conducted approximately one week apart. Survey instruments are available in the [Supplementary Materials](https://www.dropbox.com/scl/fi/pzzmqwikxweqzrofrnzt9/ai-learning-supplementary.pdf?rlkey=zjg1lf7cmzno304na3bgq58bn&st=gtj3nlqa&dl=0).
+The experiment consists of two in-person sessions conducted approximately one week apart. Survey instruments (including tests) are available in the [Supplementary Materials](https://www.dropbox.com/scl/fi/pzzmqwikxweqzrofrnzt9/ai-learning-supplementary.pdf?rlkey=zjg1lf7cmzno304na3bgq58bn&st=gtj3nlqa&dl=0).
 
 ## Session One
 ### Overview.
 
-The first session employs a between-subjects design with random assignment to either an AI-allowed or AI-forbidden condition. We schedule eight time slots with two parallel labs per slot, one for each treatment arm. For each time slot, we randomly assign one lab to the AI-allowed condition and the other to the AI-forbidden condition. We randomly assign each student who signed up for a time slot to a specific computer in one of these two labs. Each workstation has a privacy divider to minimize distractions and prevent students from viewing other screens (see Appendix Figure 6). We administer all components of the session through Qualtrics, a survey platform that tracks each student's progress, enforces section time limits, and records how long students spend on each component.
+The first session employs a between-subjects design with random assignment to either an AI-allowed or AI-forbidden condition. We schedule eight time slots with two parallel labs per slot. We randomly assign each student who signed up for a time slot to a specific computer in one of two labs. For each time slot, we then randomly assign one lab to the AI-allowed condition and the other to the AI-forbidden condition. Each workstation has a privacy divider to minimize distractions and prevent students from viewing other screens (see Appendix Figure 7). We administer all components of the session through Qualtrics, a survey platform that tracks each student's progress, enforces section time limits, and records how long students spend on each component.
 
 ### Session Structure.
 
 The first session follows a fixed 60-minute structure with the following components (Figure 1, Panel A).
 
-*Welcome and Instructions.* Each session begins with a staff member reading a condition-specific welcome script and asking students to put their phones away for the duration of the session. We tell students that their primary task involves learning about a prespecified topic and that they will demonstrate their understanding through a series of assessments. To ensure comprehension of the experimental procedures, students complete a series of comprehension checks, with laboratory staff providing clarification if needed. Students correctly answer an average of 4.77 out of 5 comprehension questions, and the median student answers all questions correctly.
+*Welcome and Instructions.* Each session begins with a staff member reading a condition-specific welcome script and asking students to put their phones away for the duration of the session. We tell students that their primary task is to learn about a prespecified topic and that they will demonstrate their understanding through a series of assessments. To ensure comprehension of the experimental procedures, students complete a series of comprehension checks, with laboratory staff providing clarification if needed. Students correctly answer an average of 4.76 out of 5 comprehension questions, and the median student answers all questions correctly.
 
-*Topic Assignment and Baseline Assessment.* We select three topics rich in factual content, about which most students have limited prior knowledge: blockchain technology, carbon capture systems, and CRISPR gene editing. Students are randomly assigned to one of these three topics and cannot change their assignment. Students then complete a five-question multiple-choice test to assess their baseline knowledge of the assigned topic. In all tests, the order of questions and answer options within each question is randomized. Students may not use notes, the internet, or AI tools during tests.
+*Topic Assignment and Baseline Assessment.* We select three topics rich in factual content, about which most students have limited prior knowledge: blockchain technology, carbon capture systems, and CRISPR gene editing. We randomly assign each student to one of these three topics, and students cannot change their assignment. Students then complete a five-question multiple-choice test to assess their baseline knowledge of the assigned topic. In all tests, we randomize the order of questions and of the answer options within each question. Students may not use notes, the internet, or AI tools during tests.
 
 *Learning Phase.* Following the baseline test, students enter the learning phase. During this phase, they have up to 35 minutes to learn about their assigned topic. We instruct them to "use the same learning approach you would typically follow for a college assignment" and emphasize that their performance affects their payoffs, as described below.
 
-During this phase, students also write an approximately 500-word analytical essay demonstrating their understanding of the topic. Each essay prompt asks students to apply critical thinking skills by analyzing relationships between concepts, comparing elements, and supporting their analysis with specific evidence (see Appendix 9.2).[^3] For each topic, we develop two prompts; each student is randomly assigned one for Session One and the other for Session Two. We provide all students with a link to an introductory reading about their assigned topic, created to be of comparable length and reading difficulty across the three topics.[^4]
+During this phase, students also write an approximately 500-word analytical essay demonstrating their understanding of the topic. Each essay prompt asks students to apply critical thinking skills by analyzing relationships between concepts, comparing elements, and supporting their analysis with specific evidence (see Appendix 9.2).[^4] For each topic, we develop two prompts and randomly assign each student one for Session One and the other for Session Two. We provide all students with a link to an introductory reading about their assigned topic, created to be of comparable length and reading difficulty across the three topics.[^5]
 
 Students can allocate their time freely across reading, searching, drafting, editing, or other activities such as surfing the web. Students can finish before the 35-minute maximum but cannot exceed it. The interface automatically advances at 35 minutes.
 
-*Post-Learning Survey.* After the learning phase, students complete a brief survey that measures self-assessed current knowledge of the topic (0–10 scale); time allocation during the learning phase; subjective task assessment (enjoyment, feeling skilled or effective); whether they had previously done similar tasks in their current academic year; and an attention check.
+*Post-Learning Survey.* After the learning phase, students complete a brief survey that measures self-assessed current knowledge of the topic (0–10 scale); time allocation during the learning phase; subjective task assessment (enjoyment, feeling skilled or effective); and whether they had previously done similar tasks in their current academic year. The survey also includes an attention check.
 
-*Post-Learning Test.* Students next complete five multiple-choice questions to test factual knowledge and conceptual understanding of the assigned topic. These questions differ from the baseline test. Students complete this assessment without access to external resources, the internet, or AI tools regardless of treatment condition.
+*Post-Learning Test.* Students next complete five multiple-choice questions to test factual knowledge and conceptual understanding of the assigned topic. These questions differ from those on the baseline test. Students complete this assessment without access to external resources, the internet, or AI tools regardless of treatment condition.
 
-*Waiting Room.* Students who complete all tasks before the 60-minute session ends are directed to a virtual waiting room. The "Finish Session 1" button is enabled only after 50 minutes have elapsed from the session start time. We tell students that we record their responses only after they click this button. This prevents early departures from disrupting others or creating social pressure effects. During this waiting period, students may browse the internet freely.
+*Waiting Room.* Students who complete all tasks before the 60-minute session ends are directed to a virtual waiting room. The "Finish Session 1" button is enabled only after 50 minutes have elapsed from the session start time. We tell students that we record their responses only after they click this button. This rule prevents early departures from disrupting others or pressuring them to finish early. During this waiting period, students may browse the internet freely.
 
 ### Treatment.
 
 We randomly vary students' access to generative AI tools during the learning phase. The treatment has two components: explicit instructions about whether AI use is permitted, and a logged-in ChatGPT account for students in the AI-allowed condition.
 
-Students in the *AI-allowed* condition receive explicit instructions that permit the use of any generative AI tools during the learning phase. The instructions are delivered orally through the proctor-read welcome script and in writing through the survey interface (Appendix Figure 7, Panel A). The script states: "If you typically use generative AI tools such as ChatGPT, feel free to use them here as well. Using ChatGPT or other generative AI is completely allowed. We provide you with a ChatGPT account, already logged in on one of the tabs, so you don't need to use your personal account." To ease access, each computer has three browser tabs already open: a dedicated ChatGPT (GPT-4o) account, Wikipedia, and the Middlebury College Library website.
+Students in the *AI-allowed* condition receive explicit instructions that permit the use of any generative AI tools during the learning phase. The instructions are delivered orally through the proctor-read welcome script and in writing through the survey interface (Appendix Figure 8, Panel A). The script states: "If you typically use generative AI tools such as ChatGPT, feel free to use them here as well. Using ChatGPT or other generative AI is completely allowed. We provide you with a ChatGPT account, already logged in on one of the tabs, so you don't need to use your personal account." To ease access, each computer has three browser tabs already open: a dedicated ChatGPT (GPT-4o) account, Wikipedia, and the Middlebury College Library website.
 
-Students in the *AI-forbidden* condition receive explicit instructions prohibiting use of generative AI tools. The instructions are delivered orally through the proctor-read welcome script and in writing through the survey interface (Appendix Figure 7, Panel B). The script states: "You are not allowed to use generative AI tools such as ChatGPT, Claude, or other AI assistants." Each computer has three browser tabs already open: Google, Wikipedia, and the Middlebury College Library website.
+Students in the *AI-forbidden* condition receive explicit instructions prohibiting use of generative AI tools. The instructions are delivered orally through the proctor-read welcome script and in writing through the survey interface (Appendix Figure 8, Panel B). The script states: "You are not allowed to use generative AI tools such as ChatGPT, Claude, or other AI assistants." Each computer has three browser tabs already open: Google, Wikipedia, and the Middlebury College Library website.
 
 ### Compliance Monitoring.
 
-We enforce treatment compliance through multiple mechanisms. First, two proctors per lab directly observe students throughout the session using classroom seating charts to record any unauthorized resource use (Appendix Figure fig:map_labs). Proctors note instances of students accessing AI tools in the AI-forbidden condition or violating other experimental protocols such as accessing external resources during the tests. Second, the exit survey elicits self-reported AI usage during the learning phase, including which specific AI tools were used (ChatGPT, Claude, Gemini, etc.). Third, the platform periodically captures students' writing interfaces to detect sudden appearances of large text blocks that may indicate copying from external sources.
+We monitor treatment compliance through three mechanisms. First, two proctors per lab directly observe students throughout the session using classroom seating charts to record any unauthorized resource use (Appendix Figure fig:map_labs). Proctors note instances of students accessing AI tools in the AI-forbidden condition or violating other experimental protocols such as accessing external resources during the tests. Second, the Session Two exit survey elicits self-reported AI usage during the learning phase, including which specific AI tools were used (ChatGPT, Claude, Gemini, etc.). Third, the platform periodically captures students' writing interfaces to detect sudden appearances of large text blocks that may indicate copying from external sources.
 
 ### Compensation and Incentives.
 
-Students receive both attendance compensation and performance-based incentives. For attendance, students receive $5 for completing Session One alone but $50 for completing both sessions. For performance, students earn lottery tickets: one ticket per correct response on each test and one per point on their rounded quality score. At the end of the experiment, we conduct a drawing in which 30 lottery tickets are randomly selected, with each winning ticket worth $100. To further support attendance, we send email and text reminders on the day of each scheduled session and let students schedule the second session flexibly, rather than requiring exactly seven days between sessions.
+Students receive both attendance compensation and performance-based incentives. For attendance, students receive $5 for completing Session One alone but $50 for completing both sessions. For performance, students earn lottery tickets: one ticket per correct response on each test and one per point on their rounded essay-quality score. At the end of the experiment, we randomly draw 30 lottery tickets, each worth $100. To further support attendance, we send email and text reminders on the day of each scheduled session and let students schedule the second session flexibly, rather than requiring exactly seven days between sessions.
 
 ## Session Two
-Session Two takes place approximately one week after Session One.[^5] This session measures knowledge retention when all students—regardless of Session One treatment assignment—work without access to AI or external resources.
+Session Two takes place approximately one week after Session One.[^6] This session measures knowledge retention when all students, regardless of Session One treatment assignment, work without access to AI or external resources. We did not tell students that they would complete additional assessments, and we find no evidence that students prepared between sessions: only 5 percent of students reported looking up extra information about the topic, with no significant difference between treatment and control groups, and no student reported studying it.
 
-### Session Structure. The session includes two assessments presented in randomized order (Figure 1, Panel B): a 10-item multiple-choice knowledge test with questions distinct from Session One, and a 20-minute analytical essay that uses the complementary prompt developed for each topic.
+### Session Structure. The session includes two assessments presented in randomized order (Figure 1, Panel B): a ten-item multiple-choice knowledge test and a 20-minute analytical essay that uses the complementary prompt developed for each topic.
 
-Session Two concludes with a questionnaire on four topics. First, beliefs about AI's impact on their own and others' test scores. Second, self-reported AI skills (Likert scale), frequency of use across academic tasks, and when students began using AI. Third, retrospective Session One behavior, including which tools they used and for what purposes (explaining concepts, summarizing, drafting, proofreading, editing) and whether they studied the topic between sessions. Fourth, an open-ended question about generative AI's impact on learning.[^6]
+Session Two concludes with an exit survey on four topics. First, students' beliefs about AI's impact on their own and others' test scores. Second, self-reported AI skills (Likert scale), frequency of use across academic tasks, and when students began using AI. Third, retrospective Session One behavior, including which tools they used and for what purposes (explaining concepts, summarizing, drafting, proofreading, editing) and whether they studied the topic between sessions. Fourth, an open-ended question about generative AI's impact on learning.[^7]
 
 # Data and Research Design
 ## Sample and Recruitment
 
-The experiment took place at Middlebury College during Spring 2025. At the time of the experiment, AI adoption at Middlebury exceeded 80 percent (Contractor and Reyes, 2026), so our treatment varies AI access among students already familiar with the tool. We recruited students through campus-wide email announcements, posted flyers, student group chats, and a dedicated recruitment website. To minimize selection concerns, we framed the study as "a study on learning" without mentioning AI in any recruitment materials.
+The experiment took place at Middlebury College during Spring 2025. At the time of the experiment, AI adoption at Middlebury exceeded 80 percent (Contractor and Reyes, 2025), so our treatment varies AI access among students already familiar with the tool. We recruited students through campus-wide email announcements, posted flyers, student group chats, and a dedicated recruitment website. To minimize selection concerns, we framed the study as "a study on learning" without mentioning AI in any recruitment materials.
 
 ## Summary Statistics and Balance
 
-Table 1 reports summary statistics for three groups: the 256 students who completed the sign-up survey (column 1), the 211 (82.4 percent) who attended Session One (column 2), and the 204 (79.7 percent) who attended both sessions (column 3). We focus on column 2. The typical student is 20.1 years old, 35.1 percent are male, 49.8 percent white, 26.5 percent international, and just over half (54.0 percent) attended a public high school (Panel A). The mean GPA is 3.68 and the mean SAT score is 1386 (Panel B).[^7] The majority of students (96.7 percent) returned for Session Two (Panel C). Students self-reported little baseline knowledge of their assigned topic (1.5 on a 0–10 scale) and, consistent with this self-assessment, answered only 30.3 percent of baseline multiple-choice questions correctly (Panel D).
+Table 1 reports summary statistics for three groups: the 256 students who completed the sign-up survey and scheduled a Session One slot (column 1), the 211 (82.4 percent) who attended Session One (column 2), and the 205 (80.1 percent) who attended both sessions (column 3).[^8] We focus on column 2. The average age is 20.1, and 35.1 percent of students are male, 50.0 percent white, 26.9 percent international, and just over half (54.3 percent) attended a public high school (Panel A).[^9] The mean GPA is 3.68 and the mean SAT score is 1386 (Panel B).[^10] Most students (97.2 percent) returned for Session Two (Panel C). Students self-reported little baseline knowledge of their assigned topic (1.5 on a 0–10 scale) and, consistent with this self-assessment, answered only 30.3 percent of baseline multiple-choice questions correctly (Panel D).
 
-The sample is balanced on most observable characteristics across treatment groups. Table 2 compares mean characteristics of students in the AI-forbidden versus AI-allowed conditions (columns 1 and 2). Only the coefficient on age is statistically significant at the 10 percent level. An $F$-test does not reject joint balance ($F = 1.34$, $p = 0.173$). Measures of academic ability—strong predictors of learning outcomes—are well balanced: mean GPA (3.69 versus 3.67) and SAT scores (1392 versus 1383) are nearly identical across groups. To address any residual imbalance, we use the double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014), as described below. We find no differential attendance in Session One (82.5 versus 82.3 percent) and no differential attrition between sessions.
+The sample is balanced on most observable characteristics across treatment groups. Table 2 compares mean characteristics of students in the AI-forbidden versus AI-allowed conditions (columns 1 and 2). Only the coefficients on age and on having declared a major are statistically significant at the 10 percent level. Measures of academic ability, strong predictors of learning outcomes, are well balanced: mean GPA (3.69 versus 3.67) and SAT scores (1392 versus 1383) are nearly identical across groups. To address any residual imbalance, we use the double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014), as described below. We find no differential attendance in Session One (82.5 versus 82.3 percent) and no differential attrition between sessions.
 
 ## Regression Model
-We estimate linear models of the form
-
-$$\begin{align}
+We estimate linear models of the form $$\begin{align}
 Y_{i} = \alpha + \beta \text{AI-Allowed}_{i} + \mathbf{X}_i'\gamma + \varepsilon_{i},
-\end{align}$$
+\end{align}$$ where $Y_{i}$ is an outcome for student $i$, $\text{AI-Allowed}_{i}$ is an indicator that equals one if the student was randomly assigned to the AI-allowed condition, $\mathbf{X}_i$ is a vector of baseline control variables to improve precision, and $\varepsilon_{i}$ is an error term. The vector $\mathbf{X}_i$ contains fixed effects for the randomization strata (the eight Session One time slots) and additional controls selected through the double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014), which selects controls that predict either the outcome or the treatment assignment from a pool of potential covariates.[^11] We report heteroskedasticity-robust standard errors.
 
-where $Y_{i}$ is an outcome for student $i$, $\text{AI-Allowed}_{i}$ is an indicator that equals one if the student was randomly assigned to the AI-allowed condition, $\mathbf{X}_i$ is a vector of baseline control variables to improve precision, and $\varepsilon_{i}$ is an error term. The vector $\mathbf{X}_i$ contains fixed effects for the randomization strata (the eight Session One time slots) and additional controls selected through the double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014), which selects controls that predict either the outcome or the treatment assignment from a pool of potential covariates.[^8] We report heteroskedasticity-robust standard errors.
-
-The coefficient of interest, $\beta$, measures the causal effect of AI access on a given outcome. This intent-to-treat (ITT) estimate captures the effect of being *allowed* to use AI during the learning phase, regardless of whether students actually used AI. This may be the relevant parameter for policy evaluation: institutions can choose whether to permit AI use, but they cannot force students to use it. To estimate the effect of actual AI use rather than assignment, we complement our ITT estimates with a treatment-on-the-treated (TOT) analysis. We instrument actual AI use with the randomly assigned treatment status (AI-allowed) and estimate by two-stage least squares (2SLS). These estimates identify the local average treatment effect (LATE) for compliers—students whose treatment assignment influenced their AI use.
+The coefficient of interest, $\beta$, measures the causal effect of AI access on a given outcome. This intent-to-treat (ITT) estimate captures the effect of being *allowed* to use AI during the learning phase, regardless of whether students actually used AI. The ITT may be the relevant parameter for policy evaluation: institutions can choose whether to permit AI use, but they cannot force students to use it. To estimate the effect of actual AI use rather than assignment, we complement our ITT estimates with a treatment-on-the-treated (TOT) analysis. We instrument actual AI use with the randomly assigned treatment status (AI-allowed) and estimate by two-stage least squares (2SLS). These estimates identify the local average treatment effect (LATE) for compliers, students whose treatment assignment influenced their AI use.
 
 ## Main Outcomes
 We estimate equation eq:main separately for several categories of outcomes:
@@ -113,157 +113,142 @@ As a first-stage measure, we examine whether students used generative AI during 
 
 ### Test-Based Learning Outcomes.
 
-We measure knowledge acquisition and retention using self-reported and objective measures. Self-assessed knowledge captures students' subjective evaluation of their understanding on a 0–10 scale, with 0 indicating "I know nothing about this topic" and 10 indicating "I am an expert."[^9] The fraction correct is the proportion of multiple-choice questions answered correctly (out of five questions in Session One, and ten in Session Two). We construct standardized test scores by normalizing raw scores to have mean zero and standard deviation (SD) one in the control group (separately for each session). We also define binary indicators for scoring above multiple thresholds to trace treatment effects across the score distribution.
+We measure knowledge acquisition and retention using self-reported and objective measures. Self-assessed knowledge captures students' subjective evaluation of their understanding on a 0–10 scale, with 0 indicating "I know nothing about this topic" and 10 indicating "I am an expert." The fraction correct is the proportion of multiple-choice questions answered correctly (out of five questions in Session One, and ten in Session Two). We construct standardized test scores by normalizing raw scores to have mean zero and standard deviation (SD) one in the control group (separately for each session). We also define binary indicators for scoring at or above multiple thresholds to trace treatment effects across the score distribution.
 
 ### Essay-Based Learning Outcomes.
 
-Essays measure higher-order skills such as analytical reasoning, synthesis, and argumentation. We recruited 311 graders through Prolific, restricting eligibility to individuals holding a master's or PhD degree. Each essay was independently evaluated on a 0–10 scale by three or four graders blind to treatment condition and student identity; each grader scored five essays. Graders provided an overall quality rating and scores on five dimensions: accuracy of content, use of evidence and examples, relevance to the prompt, organization and structure, and writing style and clarity (see Appendix 9.3 for details and [Supplementary Materials](https://www.dropbox.com/scl/fi/pzzmqwikxweqzrofrnzt9/ai-learning-supplementary.pdf?rlkey=zjg1lf7cmzno304na3bgq58bn&st=gtj3nlqa&dl=0) for the grading instrument). We also constructed a quality index as the average of the five dimension scores, each on the 0–10 scale; we standardize it by the control-group standard deviation when we report it in SD units. We complement human grading with AI grading: a large language model (LLM) evaluates each essay on the same dimensions and rubric (see Appendix 9.4 for the procedure and prompts).[^10] For our main regressions, we use the average of human and AI grader scores for each dimension and show robustness to using only the human or only the AI ratings.
+Essays measure students' ability to reason with, synthesize, and argue from the information they learned. To evaluate the essays, we recruited 309 graders through Prolific, restricting eligibility to people with a master's or PhD degree. We exclude 23 graders who failed a comprehension check. Each essay was independently evaluated on a 0–10 scale by three or four graders blind to treatment condition and student identity; each grader scored five essays. Graders provided an overall quality rating and scores on five dimensions: accuracy of content, use of evidence and examples, relevance to the prompt, organization and structure, and writing style and clarity (see Appendix 9.3 for details). We also construct a quality index as the average of the five dimension scores, each on the 0–10 scale; we standardize it by the control-group standard deviation when we report it in SD units. As specified in our pre-analysis plan, the overall quality rating and the quality index are our primary essay-based outcomes, and the individual dimensions are secondary outcomes. We complement human grading with AI grading: a large language model (LLM) evaluates each essay on the same dimensions and rubric (see Appendix 9.4 for the procedure and prompts).[^12] For our main estimates, we use the average of human and AI grader scores for each dimension and show robustness to using only the human or only the AI ratings.
 
-### Objective Linguistic Features.
+### Essay Writing Characteristics.
 
-In addition to subjective grader ratings, we compute three objective dimensions of students' writing style: length, readability, and lexical diversity. We measure length through token, word, and sentence counts. We measure readability through sentence length, syllables per word, the Flesch-Kincaid grade level, and the Flesch Reading Ease score. We measure lexical diversity through the type-token ratio (ratio of unique words to total words) and the hapax proportion (share of words appearing only once). To reduce dimensionality, we standardize each component to have mean zero and SD one in the control group and aggregate them into three indices: a length index, a readability index (with difficulty measures reversed so that higher values indicate easier-to-read text), and a lexical diversity index.
+Beyond quality, we measure three characteristics of each essay to examine how AI access changes the writing students submit. First, we use Pangram 4, a commercial AI content detector (Emi and Spero, 2024; Masrour, Emi, and Spero, 2025; Thai et al., 2026; Glickenhaus et al., 2026), to measure the fraction of text classified as AI-generated.[^13] We also use Pangram to measure the fraction flagged as plagiarized.[^14] Second, we measure writing style through three indices: a length index (number of tokens, words, and sentences), a readability index (sentence length, syllables per word, the Flesch–Kincaid grade level, and the Flesch Reading Ease score, with difficulty measures reversed so that higher values indicate easier-to-read text), and a lexical diversity index (the ratio of unique to total words and the share of words used only once). Each index averages its components after standardizing them to mean zero and SD one in the control group. Third, to examine whether AI access homogenizes student writing, we follow Brynjolfsson, Li, and Raymond (2025) in computing sentence embeddings. We measure within-group textual similarity as the average pairwise cosine similarity between a student's essay and all other essays in the same treatment group, topic, and prompt cell, and reading material similarity as the cosine similarity between the essay and the provided reading material.[^15]
 
-To examine whether AI access homogenizes student writing, we follow Brynjolfsson, Li, and Raymond (2025) in computing sentence embeddings. We measure within-group textual similarity as the average pairwise cosine similarity between a student's essay and all other essays in the same treatment group, topic, and prompt cell, and reading material similarity as the cosine similarity between the essay and the provided reading material.[^11] Finally, we use Pangram, a state-of-the-art AI content detector (Emi and Spero, 2024; Masrour, Emi, and Spero, 2025; Thai et al., 2026), to measure the fraction of text classified as AI-generated.[^12] We also use Pangram to measure the fraction flagged as plagiarized.[^13]
-
-# Immediate Effects of AI Access on Learning
+# Effects of AI Access on Learning
 ## First Stage: AI Adoption and Usage Patterns
 
-We begin with the first-stage estimates of how random assignment to AI access translated into AI use. Table 3 reports estimates from equation eq:main using several measures of AI usage as outcomes. Panel A presents the revealed-preference measure based on activity in treated students' ChatGPT accounts. Panel B presents self-reported measures. Figure 2 illustrates these first-stage effects.
+We begin with the first-stage estimates of how random assignment to AI access translated into AI use. Table 3 reports estimates from equation eq:main using several measures of AI usage as outcomes. Panel A presents measures recorded in treated students' ChatGPT accounts. Panel B presents self-reported measures. Figure 2 illustrates these first-stage effects.
 
-The experimental manipulation generated substantial variation in AI usage. Assignment to the AI-allowed group increased AI usage by $\hat{\beta} = 67.3$ pp as measured by activity in the provided ChatGPT account ($p < 0.001$). This effect represents a large increase from the near-zero baseline in the control group. Self-reported measures yield similar though slightly attenuated effects: any generative AI use increased by $\hat{\beta} = 59.9$ pp ($p < 0.001$). This adoption was almost entirely ChatGPT: a $60.2$ pp increase in ChatGPT use ($p < 0.001$), versus just a $1.9$ pp increase in the use of other AI models ($p = 0.432$).[^14] Consistent with this strong first stage, 88 percent of AI users reported that AI was somewhat or very helpful for the learning task.[^15]
+The experimental manipulation generated substantial variation in AI usage. Assignment to the AI-allowed group increased AI usage by $\hat{\beta} = 65.9$ pp as measured by activity in the provided ChatGPT account ($p < 0.001$). Self-reported measures yield similar though slightly attenuated effects: any generative AI use increased by $\hat{\beta} = 60.9$ pp ($p < 0.001$). This effect represents a large increase from the near-zero baseline in the control group. AI adoption was almost entirely ChatGPT: a $60.2$ pp increase in ChatGPT use ($p < 0.001$), versus just a $2.9$ pp increase in the use of other AI models ($p = 0.182$).[^16] Consistent with this strong first stage, 88 percent of AI users reported that AI was somewhat or very helpful for the learning task.[^17]
 
-Treated students use AI for a mix of purposes—most often to explain concepts, but also to draft and edit text. Figure fig:ai_usage_type reports the fraction of treated students who used AI for each of six purposes, measured through self-reports (Panel A) and ChatGPT conversation logs (Panel B), which we classify using LLMs (see Appendix 9.6). Both sources agree that explaining concepts is the most common use (46 percent by self-report, 57 percent in the logs), followed by drafting responses and summarizing readings. The ChatGPT usage logs show higher rates of drafting and editing than the self-reports, which suggests that students underreport text-generation uses.[^16]
+Treated students use AI for a mix of purposes: most often to explain concepts, but also to draft and edit text. Figure fig:ai_usage_type reports the fraction of treated students who used AI for each of six purposes, measured through self-reports (Panel A) and ChatGPT conversation logs (Panel B), which we classify using an LLM (see Appendix 9.6). In the logs, explaining concepts is the most common use (56 percent of treated students), followed among the substantive categories by drafting responses (29 percent), editing responses (23 percent), and summarizing readings (16 percent). The self-reports give a similar picture except for writing: explaining concepts is again the most common use (46 percent), but students report drafting (17 percent) and editing (14 percent) less often than the logs show.[^18]
 
 ## Effects on Test Scores
-AI access improves students' test performance but not their self-assessed knowledge (Table 4, columns 1–3). Both treated and control students perform better after the learning phase, consistent with skill accumulation. Self-assessed knowledge in the control group rises sharply, from 1.56 to 4.79 on the 0–10 scale ($p < 0.001$). The rise is nearly identical among treated students, leaving an ITT of $\hat{\beta} = 0.02$ points, which is statistically indistinguishable from zero. Test performance, by contrast, responds to AI access. Control students' fraction of questions answered correctly rises from 30.6 percent to 56.3 percent ($p < 0.001$); AI access adds a further $\hat{\beta} = 6.7$ pp, a 12 percent improvement over the control mean. In standardized units, this is a $\hat{\beta} = 0.27$ SD effect (column 2, $p = 0.034$). The corresponding TOT estimate is $10.0$ pp, or $0.40$ SD ($p = 0.036$, column 3). These effects are similar across the three topics (Appendix Table 10) and robust to excluding students who failed attention or comprehension checks (Appendix Table 11).
+AI access improves students' test performance but not their self-assessed knowledge (Table 4, columns 1–3). Both treated and control students perform better after the learning phase, consistent with skill accumulation. Self-assessed knowledge in the control group rises sharply, from 1.56 to 4.79 on the 0–10 scale ($p < 0.001$). The rise is nearly identical among treated students, leaving an ITT of $\hat{\beta} = -0.10$ points, which is statistically indistinguishable from zero. Test performance, by contrast, responds to AI access. Control students' fraction of questions answered correctly rises from 30.6 percent to 56.3 percent ($p < 0.001$); AI access adds a further $\hat{\beta} = 7.2$ pp, a 13 percent improvement over the control mean. In standardized units, this is a $\hat{\beta} = 0.28$ SD effect (column 2, $p = 0.021$). The corresponding TOT estimate is $10.4$ pp, or $0.41$ SD ($p = 0.022$, column 3). The test-score estimates are robust to excluding any one time slot (Appendix Figure fig:loo_slots) or any one test item (Appendix Figure fig:item_level).[^19]
 
-The learning gains from AI access are concentrated among middle-performing students. Students with AI access are 8.0 pp more likely to score at least 40 percent correct ($p = 0.098$) and 9.6 pp more likely to score at least 60 percent correct ($p = 0.133$), though both estimates are imprecise (Appendix Table 12). AI access has minimal effects on reaching the 80 percent threshold or achieving perfect scores. Figure fig:distributional illustrates these effects: AI access shifts the middle of the performance distribution rightward while leaving the tails largely unchanged. This pattern is consistent with previous work showing that AI's gains tend to concentrate in the lower half of the performance distribution (Noy and Zhang, 2023; Choi, Monahan, and Schwarcz, 2024; Doshi and Hauser, 2024; Brynjolfsson, Li, and Raymond, 2025; Kanazawa et al., 2025; Dell'Acqua et al., 2026).
+A smaller learning gain remains one week later (Table 4, columns 4–6). Both treated and control students perform worse in Session Two than in Session One, consistent with skill depreciation. Self-assessed knowledge among control students who attended both sessions falls from 4.77 to 3.83 on the 0–10 scale ($p < 0.001$). The decline is of similar size among treated students, leaving an ITT of $\hat{\beta} = 0.22$ points ($p = 0.250$). Test performance shows a similar fade-out pattern. Among these control students, the fraction of questions answered correctly falls from 56.9 percent in Session One to 50.0 percent in Session Two ($p = 0.012$). Treated students decline as well but remain ahead of the control group. The resulting ITT of $\hat{\beta} = 3.9$ pp ($p = 0.068$) is 54 percent of the 7.2 pp Session One effect (though given the standard errors, the two estimates are not statistically distinguishable, $p = 0.321$). Standardized, this corresponds to a $\hat{\beta} = 0.21$ SD effect. AI-assisted learning therefore produces knowledge gains that are still present one week later.
+
+The point estimates place the learning gains from AI access in the middle of the performance distribution in both sessions (Figure fig:distributional, Panel A). In Session One, treated students are 8.3 pp more likely to score at least 40 percent correct ($p = 0.071$) and 10.6 pp more likely to score at least 60 percent correct ($p = 0.094$). The estimates at higher thresholds are also positive, but smaller and imprecise. In Session Two, the largest threshold estimate is an increase of $\hat{\beta} = 9.8$ pp at the 60 percent threshold; the other threshold estimates are smaller. Panels B and C of Figure fig:distributional show the underlying score distributions: AI access shifts the middle of the performance distribution rightward while leaving the tails largely unchanged.
 
 ### Benchmarking the Test-Score Effect.
 
-The effect of AI access on Session One test scores is large by the standards of the educational-intervention literature. Kraft (2020) reports a median effect of 0.10 SD among 747 RCTs; our ITT of $\hat{\beta} = 0.27$ SD is more than double this median. Two in-sample benchmarks make this magnitude concrete. A single learning session raises AI-forbidden students' test scores by 1.02 SD above baseline, and AI access adds roughly another quarter of that gain. Among control students, a one-SD increase in college GPA predicts about 0.22 SD higher test performance, so AI access is comparable to a one-SD increase in GPA. Our estimate is similar to the 0.29 SD pooled gain from structured human tutoring programs (Nickow, Oreopoulos, and Quan, 2024), with the advantage that AI access is not constrained by the supply of qualified tutors. Producing a similar effect through school spending would cost roughly $8,600 per student over four years (Jackson and Mackevicius, 2024).[^17]
+The effect of AI access on test scores is large by the standards of the educational-intervention literature. Kraft (2020) reports a median effect of 0.10 SD across 1,942 effect sizes from 747 RCTs with standardized test outcomes. Our ITT of $\hat{\beta} = 0.28$ SD is substantially larger. To make this magnitude concrete, we compare it with two in-sample benchmarks. A single learning session raises AI-forbidden students' test scores by 1.02 SD above baseline, and AI access adds roughly another quarter of that gain. Among control students, a one-SD increase in college GPA predicts about 0.22 SD higher test performance, so the effect of AI access exceeds the gain associated with a one-SD increase in GPA. Our estimate is similar to the 0.29 SD pooled gain from structured human tutoring programs (Nickow, Oreopoulos, and Quan, 2024).
 
-Figure 3 places our estimates alongside 22 others from 13 randomized experiments (see Appendix 9.7 for the studies and inclusion criteria). The random-effects grand mean is $0.18$ SD. The estimates span a wide range, and the spread tracks the role AI plays during practice. The losses often come from settings where AI could do the practice in the learner's place: high-school students with base GPT-4 solve more practice problems yet score $-$0.19 SD on a later unassisted exam (Bastani et al., 2025). The gains often come from designs that cast AI as a coach: teacher-guided classroom practice with a chatbot raises test scores by 0.21–0.26 SD (De Simone et al., 2025; LearnLM Team, 2026), an AI tutor grounded in the course text raises exam performance by 0.34 SD (Fischer, Rau, and Rilke, 2025), and guided AI study outperforms unguided access (Hou et al., 2026). Students in our sample receive an unrestricted configuration, yet their gains are positive and persistent. Section 5.3 traces this to how students use AI—whether to augment their effort or automate it.
+Figure 3 places our estimates alongside 24 others from 14 studies (see Appendix 9.7 for the studies and inclusion criteria). Aggregating estimates within each study and excluding our own, the random-effects grand mean across the 14 studies is $0.19$ SD (95 percent confidence interval $0.08$ to $0.29$). Thus, our estimates are in line with the AI-and-learning experiments.
 
 ## Effects on Essay-Based Outcomes
 
-We examine how AI access affects students' writing in three steps. First, we check whether AI traces appear in treated students' essays. Second, we document changes in writing style: length, readability, lexical diversity, and textual similarity. Third, we ask whether AI access improves essay quality. Because Session One essays are written during the learning phase—when treated students have AI access—these estimates reflect three channels: direct AI output, changes in how students approach the writing task, and any learning accumulated during the session itself. We isolate the learning channel in Section 5 by examining Session Two essays, which students write without AI.
+We examine how AI access affects students' writing in three steps. First, we check whether AI-generated text enters treated students' essays. Second, we ask whether AI homogenizes the writing students submit. Third, we ask whether AI access improves essay quality. Because Session One essays are written during the learning phase, when treated students have AI access, the Session One estimates reflect both AI-generated text and any learning that occurred during the session. With the Session Two essays, which students write one week later without AI, we isolate the learning channel.
 
-### AI Detection and Plagiarism.
+### AI Detection.
 
-AI use is detectable in treated students' essays (Figure 4 and Table 5, Panel A). The fraction of text classified as AI-generated rises by $\hat{\beta} = 12.3$ pp in the AI-allowed group ($p = 0.019$), a 96 percent increase over the control mean of 12.8 percent.[^18] The corresponding TOT estimate is $18.3$ pp ($p = 0.017$). We find no evidence of copying from online sources: the fraction of text flagged by Pangram's plagiarism checker is near zero in both groups, with no significant treatment effect.
+AI use is detectable in treated students' essays (Figure 4 and Table 5, Panel A). The fraction of text classified as AI-generated rises by $\hat{\beta} = 22.2$ pp in the AI-allowed group ($p < 0.001$), a 337 percent increase over the control mean of 6.6 percent.[^20] The corresponding TOT estimate is $31.8$ pp ($p < 0.001$). Despite this large increase in the fraction of AI-generated text, we find little evidence of stylistic changes in student essays: the effects on the length, readability, and lexical diversity indices are small and statistically insignificant (Appendix Table 11 and Appendix Figure 9). By Session Two, AI traces disappear, consistent with students writing without AI access (Table 5, Panel A). The treatment effect collapses from $\hat{\beta} = 22.2$ pp to $\hat{\beta} = 0.7$ pp ($p = 0.494$). We find no evidence of copying from online sources: the fraction of text flagged by Pangram's plagiarism checker is near zero in both groups, with no significant treatment effect in either session.
 
-### Linguistic Features.
+### Homogenization.
 
-Treated students' essays trend longer and become easier to read, though none of these style effects is statistically significant (Figure 4 and Table 5, Panel B). The length index rises by $\hat{\beta} = 0.13$ SD (column 2). Unpacking the index components, treated students write about 18 more tokens on average, a 9 percent increase over the control mean of 203 tokens (Appendix Table 13, Panel A).[^19] The readability index rises by $\hat{\beta} = 0.06$ SD, reflecting similar movements across its components: the Flesch Reading Ease score rises by 4.2 points and mean sentence length falls by 4.7 words (Appendix Table 13, Panel B). The lexical diversity index shows a small positive effect of $\hat{\beta} = 0.05$ SD (column 2). Taken at face value, these estimates suggest AI-driven shifts toward clearer, more accessible writing.
-
-Despite concerns that AI homogenizes writing (Doshi and Hauser, 2024; Meincke, Nave, and Terwiesch, 2025; Moon, Green, and Kushlev, 2025; Moon et al., 2026), we see no such effect in our data (Table 5, Panel C). Treatment effects on cosine similarity are near zero and statistically insignificant: within-group similarity changes by $\hat{\beta} = 0.001$, a 0.1 percent change relative to the control mean of 0.774. Similarity to the provided reading material changes by $\hat{\beta} = -0.004$, a 0.5 percent change relative to the control mean of 0.746. These null results contrast with the convergence patterns documented by Brynjolfsson, Li, and Raymond (2025) among customer-support agents and with the reductions in collective creative diversity observed in lab studies of AI-assisted writing and brainstorming (Doshi and Hauser, 2024; Meincke, Nave, and Terwiesch, 2025; Moon, Green, and Kushlev, 2025). One possible explanation is task structure: customer-service and ideation tasks have well-defined correct answers or converge on common AI-suggested ideas, whereas essay prompts are open-ended and admit multiple valid responses.
+Despite concerns that AI homogenizes writing (Doshi and Hauser, 2024; Meincke, Nave, and Terwiesch, 2025; Moon, Green, and Kushlev, 2025; Moon et al., 2026), we see no such effect in our data (Table 5, Panel B). Treatment effects on cosine similarity, our measure of homogeneity, are near zero and statistically insignificant: within-group textual similarity changes by $\hat{\beta} = 0.003$, a 0.4 percent change relative to the control mean of 0.788. Similarity to the provided reading material changes by less than 0.001, relative to a control mean of 0.814. Both similarity effects remain near zero in Session Two (columns 4–6). These null results contrast with the convergence patterns documented by Brynjolfsson, Li, and Raymond (2025) among customer-support agents and with the reductions in collective creative diversity observed in experiments on AI-assisted writing and brainstorming (Doshi and Hauser, 2024; Meincke, Nave, and Terwiesch, 2025). One possible explanation is task structure: customer-support and ideation tasks have well-defined correct answers or converge on common AI-suggested ideas, whereas essay prompts are open-ended and admit multiple valid responses.
 
 ### Essay Quality and Dimension-Level Ratings.
 
-Essay quality is largely unchanged in Session One (Table 6 and Appendix Figure 8). All five dimensions show positive but imprecise effects. Organization and structure ($\hat{\beta} = 0.25$ points on the raw 0–10 scale, or $0.17$ SD, $p = 0.237$), accuracy of content ($\hat{\beta} = 0.20$ points, or $0.17$ SD), and writing style and clarity ($\hat{\beta} = 0.20$ points, or $0.15$ SD) show the largest gains, while the effects on relevance to the prompt ($\hat{\beta} = 0.12$ points, or $0.08$ SD) and use of evidence ($\hat{\beta} = 0.08$ points, or $0.05$ SD) are smaller. Overall quality shows a small, if imprecise, positive effect: treated essays score $\hat{\beta} = 0.25$ points higher (or $0.17$ SD, $p = 0.245$).[^20]
+Effects on overall essay quality are positive in both sessions (Figure 4 and Table 5, Panel C). In Session One, treated essays score $\hat{\beta} = 0.45$ points higher in overall quality (or $0.34$ SD, $p = 0.024$), an 8 percent increase over the control mean of 5.50 points, with a similar effect on the quality index ($\hat{\beta} = 0.34$ points, or $0.28$ SD, $p = 0.058$). All five dimension-level point estimates are positive (Appendix Table 12 and Appendix Figure 10). Organization and structure shows the largest effect ($\hat{\beta} = 0.45$ points, or $0.31$ SD, $p = 0.036$), followed by writing style and clarity ($\hat{\beta} = 0.40$ points, or $0.29$ SD, $p = 0.042$) and accuracy of content ($\hat{\beta} = 0.34$ points, or $0.29$ SD, $p = 0.052$). The estimates for use of evidence and examples ($\hat{\beta} = 0.23$ points, or $0.16$ SD, $p = 0.271$) and relevance to the prompt ($\hat{\beta} = 0.17$ points, or $0.12$ SD, $p = 0.448$) are smaller and imprecise. In Session Two, overall quality rises by $\hat{\beta} = 0.33$ points (or $0.24$ SD, $p = 0.083$), with a similar effect on the quality index ($\hat{\beta} = 0.30$ points, or $0.24$ SD, $p = 0.084$). Use of evidence and examples shows the largest effect ($\hat{\beta} = 0.43$ points, or $0.35$ SD, $p = 0.018$), followed by writing style and clarity ($\hat{\beta} = 0.38$ points, or $0.27$ SD, $p = 0.029$). The estimates for relevance to the prompt ($\hat{\beta} = 0.29$ points, or $0.20$ SD, $p = 0.133$) and accuracy of content ($\hat{\beta} = 0.26$ points, or $0.22$ SD, $p = 0.124$) are smaller and imprecise, and organization and structure shows the smallest effect ($\hat{\beta} = 0.24$ points, or $0.15$ SD, $p = 0.261$).
 
-## Mechanisms: How AI Transforms the Production Function of Learning
+Together with the test-score gains of Section 4.2, these estimates indicate that treated students learn more about the topic and express that learning in two ways: in the facts they recall and in how clearly they explain the topic and argue about it in their own writing.
 
-We examine four mechanisms through which AI access affects learning: total time spent learning, how that time is allocated across activities, the learning experience, and academic integrity.
+# How AI Changes the Learning Process
+To understand why AI access improves learning, we first examine changes in the way students work during the learning phase: the time they allocate across learning activities and how they experience the task. We then present a model that organizes these findings and yields one further implication: outcomes should differ with how students use AI. We examine that implication with descriptive evidence from our experiment and with evidence from other experiments.
 
-### Time Spent Learning.
-
-AI access does not change total time spent on the learning phase (Table 7, Panel A). We measure time in two ways: Qualtrics records the duration of the learning phase, and the post-learning survey provides a self-reported measure. Control students spend an average of 32.6 minutes by the Qualtrics measure and 34.3 minutes by self-report. Treatment effects are small and not statistically significant: a 0.2-minute decrease by Qualtrics and a 0.5-minute decrease by self-report. This null contrasts with Noy and Zhang (2023), who find that ChatGPT access reduces task completion time by 0.80 SD among knowledge workers, and with similar time savings documented in other workplace settings (Peng et al., 2023; Dell'Acqua et al., 2026). One possible reason is that workers in those settings often automate task production directly by pasting ChatGPT responses as final output or accepting Copilot's tab completions. Students in our sample, by contrast, primarily use AI for explanation rather than text generation.
-
+## Effects on How Students Learn
 ### Time Allocation Across Learning Activities.
 
-Although total learning time is unchanged, its composition shifts away from producing text (Table 7, Panel B). Treated students spend about 5.3 pp less of their learning time on writing activities (drafting, editing, note-taking, and organizing), down from a control-group share of 53.4 percent ($p = 0.028$), and about 4.4 pp more on research activities (reading and searching), up from 44.5 percent ($p = 0.050$). The activity-level breakdown is consistent but individually imprecise: drafting falls the most as a share of time, and note-taking and organizing also decline, while editing and reading rise (Appendix Figure 10). The dominant shift is away from generating text and toward reviewing and absorbing it, with editing the one writing activity that rises, which plausibly reflects students revising AI-generated text rather than drafting their own. This pattern is consistent with a broader finding in professional settings: AI shifts effort from task execution to task stewardship (Lee et al., 2025). For example, Mozannar et al. (2024) find that GitHub Copilot users spend more than half their coding time verifying and editing AI-generated suggestions rather than writing code.
+AI access does not change time spent on the learning phase (Table 6, Panel A). We measure time in two ways: Qualtrics records the duration of the learning phase, and the post-learning survey provides a self-reported measure. Control students spend an average of 32.6 minutes by the Qualtrics measure and 34.3 minutes by self-report. Most students use the full 35 minutes (Appendix Figure 11). Treatment effects are small and not statistically significant: a 0.2-minute decrease by Qualtrics and a 0.5-minute decrease by self-report.
 
-### Learning Experience.
+Although total learning time is unchanged, its composition shifts away from producing text (Table 6, Panel B). Treated students spend about 5.3 pp less of their learning time on writing activities (drafting, editing, note-taking, and organizing), down from a control-group share of 53.4 percent ($p = 0.028$), and about 4.4 pp more on research activities (reading and searching), up from 44.5 percent ($p = 0.050$). The corresponding TOT effects are a 7.7 pp decrease in the writing share ($p = 0.026$) and a 6.4 pp increase in the research share ($p = 0.050$). Activity by activity, students move from writing text to finding information and reading (Appendix Figure 12). Editing is the one writing activity that rises, which plausibly reflects students revising AI-generated text rather than drafting their own. This pattern is consistent with a broader finding in professional settings: AI shifts effort from task execution to task stewardship (Lee et al., 2025). For example, Mozannar et al. (2024) find that GitHub Copilot users spend about a third of their coding time double-checking and editing AI-generated suggestions, and more than half on Copilot-related activities.
 
-One potential concern about AI is that it makes learning feel mechanical and alienating, and thus reduces student engagement. We find the opposite. AI access makes learning more enjoyable (Table 7, Panel C): enjoyment of the learning task rises by $\hat{\beta} = 0.66$ points on the 0–10 scale ($p = 0.031$), a 13 percent improvement over the control mean of 5.22; the likelihood of reporting above-median enjoyment rises by 14.1 pp ($p = 0.038$). Effects on how skilled or effective students feel are positive but small: perceived effectiveness on the continuous scale is essentially zero ($\hat{\beta} = 0.13$ points, $p = 0.649$), though the above-median measure rises by 12.1 pp ($p = 0.078$). These findings align with Noy and Zhang (2023), who find that ChatGPT access increases task satisfaction by $0.40$ SD and self-efficacy by $0.20$ SD among knowledge workers (though the latter is not statistically significant).
+### The Learning Experience.
 
-### Academic Integrity.
+AI access makes learning more enjoyable but does not change how effective students feel (Table 6, Panel C). Enjoyment of the learning task rises by $\hat{\beta} = 0.58$ points on the 0–10 scale ($p = 0.063$), an 11 percent improvement over the control mean of 5.22. Consistent with this, the share of students rating their enjoyment at or above the sample median rises by 12.1 pp ($p = 0.082$). The effect on how skilled or effective students feel is also positive, but small and statistically insignificant ($\hat{\beta} = 0.06$ points, $p = 0.834$). These findings align with Noy and Zhang (2023), who find that ChatGPT access increases enjoyment of the task by $0.47$ SD and self-efficacy by $0.19$ SD among knowledge workers (though the latter is not statistically significant).
 
-AI access increases the likelihood of rule violations on the test (Table 7, Panel D). We examine three measures: proctor-observed cheating, self-reported cheating, and an indicator for any cheating detected by either method. Proctor-observed violations rise by $\hat{\beta} = 5.7$ pp ($p = 0.078$), more than doubling the control mean of 2.9 percent. Self-reported violations rise by $\hat{\beta} = 8.6$ pp ($p = 0.012$), more than quadrupling the control mean of 2.0 percent. On the combined measure, treated students are $\hat{\beta} = 12.6$ pp more likely to cheat ($p = 0.005$), relative to a control mean of 4.9 percent.[^21] A back-of-the-envelope calculation suggests that cheating accounts for at most a modest fraction of the test-score effect: multiplying the $\hat{\beta} = 12.6$ pp treatment effect on cheating by the 17.4 pp test-score gap between cheaters and non-cheaters yields roughly 2.2 pp, or about a third of the ITT, under the assumption that the entire score gap between cheaters and non-cheaters reflects cheating itself.
+## A Model of Learning with AI
+The evidence so far shows that AI access raises test scores, shifts time from writing toward research, and makes the task more enjoyable. To organize this evidence, we build a model in which a student produces two outputs during the learning phase: the essay the student submits and the knowledge the student acquires. The goal of the model is to rationalize these results and to generate additional testable implications. Here, we provide an abbreviated version of the model and its implications and present the complete model in Appendix 11.
 
-# Learning Retention and Heterogeneity
-AI access raises test scores during Session One. We next examine Session Two outcomes measured about one week later without AI to assess whether the gains from AI-assisted learning persist when AI is removed.[^22]
+### Summary of the Model.
 
-## Persistence of Effects on Test Scores
-The learning gains from AI access persist one week later (Table 4, columns 4–6). Both treated and control students perform worse in Session Two than in Session One, consistent with skill depreciation. Self-assessed knowledge in the control group falls from 4.79 to 3.83 on the 0–10 scale ($p < 0.001$). The decline is smaller among treated students, with an ITT of $\hat{\beta} = 0.18$ points, though this difference is small and not statistically distinguishable from zero. Test performance shows a similar fade-out pattern. Control students' fraction of questions answered correctly falls from 56.3 percent in Session One to 49.5 percent in Session Two ($p = 0.008$). Treated students decline as well but remain ahead of the control group. The resulting ITT of $\hat{\beta} = 5.1$ pp ($p = 0.027$) is about 76 percent of the 6.7 pp Session One effect (though, given the standard errors, the two effects are not statistically distinguishable). Standardized, this corresponds to a $\hat{\beta} = 0.27$ SD effect.[^23]
+In the model, a student chooses how much cognitive effort to exert on two activities: "research" (which includes reading and searching) and "writing" (which includes drafting, editing, and note-taking). Effort in these activities produces two outputs. Both activities produce knowledge, and writing also produces the essay the student submits, whose quality reflects both the student's writing and the knowledge the student has acquired. The student chooses the two effort levels to maximize a weighted sum of knowledge and essay quality, net of the cost of effort. In our experiment, the performance incentives contribute to these weights, alongside the student's own interest in learning about the topic and any intrinsic motivation to write a high-quality essay.
 
-Session Two learning gains appear in the middle of the score distribution (Appendix Table 12, columns 4–6). Treated students are $\hat{\beta} = 12.2$ pp more likely to score at least 60 percent correct ($p = 0.051$). Effects at the other thresholds are smaller and statistically insignificant. Panel B of Figure fig:distributional illustrates these patterns. Across sessions, the test-score gains remain in the middle of the distribution, echoing the Session One pattern. AI-assisted learning therefore produces durable, though partially decaying, knowledge gains.
+We model AI as a technology that gives the student two non-mutually exclusive capabilities (Brynjolfsson and Mitchell, 2017; Acemoglu and Restrepo, 2019). First, we assume that AI used as a personalized tutor raises the return to research effort: with AI, each unit of reading and searching produces more knowledge, because the student can ask for explanations and pose follow-up questions. Second, we assume that the student can delegate the essay to AI, which replaces the student's own writing with an AI-written essay of a given quality. We model delegation as a choice variable and show that a student delegates when the AI-written essay is good enough relative to the essay the student would write, and the delegation threshold rises with the value the student places on knowledge.
 
-## Persistence of Effects on Essay-Based Outcomes
+The model shows that, under these assumptions, the effect of AI on learning combines a gain from tutoring with two losses from delegation. Tutoring raises knowledge because each unit of research effort produces more of it and because the student endogenously supplies more research effort in response. Delegation removes the essay-quality reward from the student's own work, so the student supplies less effort in both activities and forgoes the knowledge that this effort would have produced. Delegation also lowers the gain from tutoring: the knowledge that tutoring produces no longer improves the submitted essay, so research effort responds less to the higher return.
 
-### AI Detection and Plagiarism.
+### Model Implications.
 
-AI traces are minimal in Session Two, consistent with students writing without AI access (Table 5, Panel A). The treatment effect collapses from $\hat{\beta} = 12.3$ pp to $\hat{\beta} = 0.0$ pp ($p = 0.991$). Plagiarism remains near zero in both groups, with no significant treatment effect.
+The model can rationalize the three main facts documented so far. The test-score gain (Section 4.2) implies that, averaged across treated students, the tutoring gain exceeded the losses from delegation. The shift of learning time from writing toward research (Table 6, Panel B) follows from both capabilities: tutoring raises research effort, and delegation lowers writing effort by a larger proportion than research effort, so each lowers the share of effort spent on writing. The enjoyment gain (Table 6, Panel C) is consistent with each capability raising the utility the student obtains from the task and with a lower cost of effort.
 
-### Linguistic Features.
+The model also predicts that outcomes should differ with how students use AI. In the model, an AI-written essay raises the quality of the submitted essay without adding knowledge. Because students write the Session Two essays without AI, the essay advantage of students who delegated in Session One should be absent from their unaided work one week later, whereas the knowledge that tutoring produces should persist and show up on the tests and in the unaided essay. We next examine this implication.
 
-Effects on essay style fade in Session Two (Table 5): most Session Two coefficients are smaller than the Session One estimates. The length index falls from $\hat{\beta} = 0.13$ SD in Session One to $\hat{\beta} = 0.05$ SD in Session Two. Readability remains at $\hat{\beta} = 0.06$ SD. Lexical diversity reverses direction, falling from $0.05$ SD to $-0.13$ SD. The widespread fade-out suggests that the modest Session One style differences arise from AI writing entering students' essays rather than from durable changes in how students write: the differences appear when students have AI and vanish when they do not.
+## Outcomes by Type of AI Use
+We provide two types of evidence on whether the learning effect of AI depends on how students use it: how outcomes in our experiment vary with the way students use AI, and experiments in the AI-and-learning literature that randomize or observe how learners use AI.
 
-### Essay Quality.
+### Evidence from Our Experiment.
 
-AI access improves essays in Session Two, when students write without AI (Figure 4 and Table 6, columns 4–6). Writing style and clarity and relevance to the prompt both show statistically significant gains ($\hat{\beta} = 0.41$ points, or $0.30$ SD, $p = 0.016$; and $\hat{\beta} = 0.41$ points, or $0.26$ SD, $p = 0.041$, respectively). The remaining dimensions—accuracy, evidence, and organization and structure—show positive but imprecise effects (with $p$-values of 0.101, 0.111, and 0.240, respectively). Overall quality rises by $\hat{\beta} = 0.31$ points (or $0.20$ SD), though this holistic rating is imprecisely estimated ($p = 0.143$). These effects suggest that AI access improves students' higher-order learning, not just how many facts they recall.
+To classify how students use AI, we had a research assistant read each ChatGPT conversation log and label it *Automation* if the AI does the work *for* the student, *Augmentation* if the AI works *with* the student, *Mixed* if AI does both, or *Other* if the conversation is off-topic. Of treated AI users, 61 percent are pure augmentation users, 9 percent are pure automation users, 27 percent are mixed, and the remaining 3 percent are classified as *Other*. In the results below we compare each of these groups with the control group.[^21]
 
-## Automation versus Augmentation
-AI is a general-purpose technology with many uses, so the learning effects of AI—and whether they persist over time—may depend on how students use it. One framework (Brynjolfsson and Mitchell, 2017; Acemoglu and Restrepo, 2019) groups these uses into "augmentation" (AI works *with* the student) versus "automation" (AI does the work *for* the student). Automation may reduce the cognitive effort students invest in learning. Augmentation may instead raise the productivity of that effort.
+Three pieces of evidence support this classification. First, the three groups prompt AI differently: automation users use AI mainly for drafting and editing, augmentation users mainly for explaining concepts, and mixed users for both (Appendix Figure fig:ai_usage_by_type). Second, automation users spend about 32 percent less time on research activities than augmentation users ($p = 0.010$), and 15 percent less time overall ($p = 0.080$). Mixed users' time use is indistinguishable from augmentation users' ($p = 0.578$ for research activities, $p = 0.190$ overall). Third, these behavioral differences show up in essay outputs: Pangram flags 85.7 percent of automation users' text as AI-generated, 57.3 percent of mixed users' text, and 21.3 percent of augmentation users' text.
 
-To identify augmentation versus automation empirically, we asked an LLM to read each ChatGPT conversation log and label it *Automation* if the AI does the work *for* the student, *Augmentation* if the AI works *with* the student, *Mixed* if AI does both, or *Other* if the conversation is off-topic (see Appendix 9.6 for the full prompt). Of treated AI users, 49 percent are pure augmentation users, 32 percent are pure automation users, 8 percent are mixed, and the remaining 11 percent are classified as "other," having engaged AI only off-topic.[^24]
+Students show different patterns of effects depending on how they use AI (Table 7). On the Session One test, the two groups that used AI for explanation score above the control group: mixed users by $\hat{\beta} = 0.58$ SD ($p = 0.009$) and augmentation users by $\hat{\beta} = 0.34$ SD ($p = 0.031$), compared with $\hat{\beta} = 0.29$ SD for automation users. On the Session One essay, the pattern reverses: the two groups that had AI do some of the writing are rated above the control group, automation users by $\hat{\beta} = 1.50$ SD ($p = 0.006$) and mixed users by $\hat{\beta} = 0.89$ SD ($p = 0.005$), compared with $\hat{\beta} = 0.09$ SD for augmentation users.
 
-Three pieces of evidence validate this classification. First, the two groups prompt AI differently: automation users rely on AI more for drafting and editing, while augmentation users turn to AI more for explaining concepts (Appendix Figure fig:ai_usage_by_type). Second, automation users reallocate time during the learning phase: relative to augmentation users, they spend about 17 percent less time on research activities (reading and searching; $p = 0.034$) and 8 percent less time overall ($p = 0.045$). Third, these behavioral differences show up in essay outputs: Pangram flags 53.6 percent of automation users' text as AI-generated, versus 20.9 percent for augmentation users.
+A week later, when students work without AI, augmentation users' test-score difference remains positive ($\hat{\beta} = 0.24$ SD, $p = 0.095$) and does not change significantly between sessions, and their essay-quality difference is positive but imprecise in both sessions ($\hat{\beta} = 0.09$ SD and $0.23$ SD). Mixed users' Session Two differences are positive but imprecise ($\hat{\beta} = 0.28$ SD, $p = 0.220$, on the test and $\hat{\beta} = 0.25$ SD, $p = 0.320$, on essay quality). In contrast, automation users' advantages disappear: their essay-quality difference falls by 1.64 SD ($p = 0.023$) to $\hat{\beta} = -0.14$ SD, and their test-score difference is negative but imprecise ($\hat{\beta} = -0.24$ SD, $p = 0.538$). The fall for automation users exceeds the change for augmentation users by 1.78 SD ($p = 0.014$). While descriptive, these results suggest that the durability of learning gains depends on how students use AI, and that the gains are less durable for students who had AI do the work for them.
 
-Automation and augmentation users show sharply different patterns of effects (Table 8). In Session One, the effect of AI access on essay quality is large for automation users but small for augmentation users ($\hat{\beta} = 0.54$ SD, $p = 0.029$, versus $\hat{\beta} = 0.05$ SD on overall quality), while the effect on test scores is slightly smaller for automation than for augmentation users ($\hat{\beta} = 0.33$ SD versus $\hat{\beta} = 0.44$ SD)—consistent with AI doing the writing rather than teaching the student. By Session Two—when students write without AI access—the patterns diverge. The effects on essay quality for automation users fade out entirely, with point estimates indistinguishable from zero ($\hat{\beta} = 0.02$ SD on overall quality, $\hat{\beta} = 0.04$ SD on the quality index), and their test-score effect attenuates to $\hat{\beta} = 0.19$ SD ($p = 0.330$). Augmentation users, in contrast, retain a positive—though imprecise—essay-quality effect in Session Two ($\hat{\beta} = 0.22$ SD on overall quality, $p = 0.216$) and show large test-score gains ($\hat{\beta} = 0.29$ SD, $p = 0.061$). In short, automation's Session One advantage reflects AI-produced output and does not survive its removal, whereas augmentation's gains persist unaided, consistent with skill accumulation.
+### Evidence from Other Experiments.
 
-These findings are consistent with Strömberg, Lei, and Wu (2026), who find that AI raises homework scores but lowers exam performance, with the learning losses concentrated among students whose unusually short completion times and high homework scores indicate they outsource their work to AI—the field analogue of our automation users. This divergence matches a recurring pattern in the AI-and-learning literature: AI access can boost short-term output while reducing what students learn from the task (Bastani et al., 2025; Liu et al., 2026; Shen and Tamkin, 2026; Strömberg, Lei, and Wu, 2026). The contrast between our augmentation and automation users shows that this tradeoff is not inevitable: when students use AI to scaffold their cognitive effort rather than substitute for it, learning gains can persist.
+To assess whether the use-type pattern extends beyond our experiment, and in particular to settings that randomize how students use AI, we turn to other experiments. We identified six experiments that randomize how learners are steered to use the same AI tool: a tutoring prompt that withholds answers (Bastani et al., 2025), a scaffolded tutor (Bassner et al., 2026), a structured sequence of prompts (Hou et al., 2026), written guidance (Gallegos, 2026; Franco, Irmert, and Isaksson, 2026), and a note-taking requirement (Kreijkes et al., 2026). We also identified four studies that compare learners by their observed use of the same tool, as we do (Liu et al., 2026; Shen and Tamkin, 2026; Franco, Irmert, and Isaksson, 2026; Strömberg, Lei, and Wu, 2026).
 
-## Heterogeneity of Treatment Effects
-
-Does AI access widen or narrow pre-existing gaps among students? To assess this, we examine heterogeneity along several dimensions: academic ability (GPA and SAT quartiles), prior AI experience, and demographic characteristics (gender, race, nationality, and field of study).
-
-### Academic Ability.
-
-AI access raises test scores more among higher-ability than lowest-ability students (Appendix Figure fig:test_by_quartile). Gains are smallest in the bottom quartile of either measure ($\hat{\beta} = 0.06$ SD for SAT and $\hat{\beta} = 0.05$ SD for GPA) and larger in the upper quartiles: the SAT gain peaks in the third quartile ($\hat{\beta} = 0.40$ SD), and the GPA gain is spread across the upper three quartiles (0.19–0.29 SD). This suggests that AI access may widen gaps relative to the lowest-ability students.
-
-### AI Experience and Demographics.
-
-Neither prior AI experience nor demographic characteristics systematically moderate the test-score effect (Appendix Figure fig:heterogeneity_figure and Appendix Table 15). We find no evidence that essay-quality gains systematically vary with students' self-assessed AI proficiency or frequency of use. We find suggestive differences by gender (women gain $0.46$ SD more than men on Session One tests, $p = 0.079$) but no systematic differences by race, nationality, or field of study.
+The divergence between assisted output and unaided learning that we find for automation users recurs across settings. Steering learners toward augmentation raises subsequent test scores in four of the six experiments: by 0.18 SD in Bastani et al. (2025), 0.22 SD in Gallegos (2026), 0.78 SD in Hou et al. (2026), and 0.13 to 0.14 SD in Kreijkes et al. (2026). The exceptions are a scaffolded tutor whose knowledge gains are indistinguishable from ChatGPT's (Bassner et al., 2026) and written guidance that reduces question pasting without raising exam scores (Franco, Irmert, and Isaksson, 2026). Comparisons by observed use of the same tool point the same way as ours. Participants who ask for hints score 0.29 SD higher on unaided problems than those who ask for answers (Liu et al., 2026), programmers who ask the assistant to explain generated code perform better than those who delegate or debug by repeated queries (Shen and Tamkin, 2026), heavy copy-pasters score below the control mean (Franco, Irmert, and Isaksson, 2026), and the exam-score loss from AI among Chinese secondary students is concentrated among the fastest homework finishers, while users who take as long as non-AI students score the same (Strömberg, Lei, and Wu, 2026). Taken together, the evidence supports the model's distinction between AI that produces the output and AI that raises the return to the student's own effort.
 
 # Beliefs About AI's Impact on Learning
-Students' beliefs about AI's effect on learning may shape their adoption decisions. In observational data, students report that AI improves their learning (Stöhr, Ou, and Malmström, 2024; Ravšelj et al., 2025). Yet these beliefs may not track actual effects: students hold biased beliefs in other educational settings (Jensen, 2010; Wiswall and Zafar, 2015), and even experienced professionals misjudge AI's productivity effects.[^25]
+Students' beliefs about AI's effect on learning may shape their adoption decisions. In surveys, about half of students say AI chatbots improve their learning (Stöhr, Ou, and Malmström, 2024; Ravšelj et al., 2025). Yet these beliefs may not track actual effects: students hold biased beliefs in other educational settings (Jensen, 2010; Wiswall and Zafar, 2015), and even experienced professionals misjudge AI's productivity effects.[^22]
 
-We test the accuracy of students' beliefs—and how treatment shapes them—in two ways. First, after the Session Two test, students estimate (1) how many questions they answered correctly, (2) how many they would have answered under the opposite treatment condition, (3) how many questions other students in their group answered correctly, and (4) the same for students in the opposite group. From these we compute perceived treatment effects on own and others' performance and compare them with the actual estimates from Section 5, overall and across subgroups. Second, we analyze responses to an open-ended question about the effects of generative AI on student learning in college. We validate students' open-ended responses against their AI usage patterns (Appendix 10.1) and, following Andre et al. (2026), code each response as a causal graph of the mechanisms it describes (Appendix 10.2).
+We test the accuracy of students' beliefs—and how treatment shapes them—in two ways. First, after the Session Two test, students estimate (1) how many questions they answered correctly, (2) how many they would have answered correctly under the opposite treatment condition, (3) how many questions other students in their group answered correctly, and (4) the same for students in the opposite group. From these we compute perceived treatment effects on own and others' performance, in percentage points, and compare them with the actual estimates from Section 4.2. Second, we analyze responses to an open-ended question about the effects of generative AI on student learning in college. We validate students' open-ended responses against their AI usage patterns (Appendix 10.1) and code each response as a causal graph of the mechanisms it describes (Appendix 10.2).
 
 ## Beliefs About AI's Effect on Test Scores
 
-Both groups believe AI improves test performance, but only treated students gauge the magnitude correctly (Figure fig:beliefs, Panel A, and Appendix Table 16). We examine two measures: the perceived AI gain in the student's own performance and in others', both measured in percentage points. The actual ITT, for reference, is $\hat{\beta} = 5.1$ pp. Both groups give similar predictions of their own raw score (control 37.5 percent correct, treated 37.2 percent, both below the actual mean of 51.0 percent); what differs is what they attribute to AI. Control students predict an AI gain for themselves of 25.2 pp, about five times the actual effect; treated students, who experienced AI firsthand, predict only 3.8 pp, close to the effect we estimate.[^26] Predictions about others' performance show the same pattern in muted form: control students predict 14.1 pp and treated 10.6 pp, both still inflated relative to the actual effect. Beliefs also track actual gains across subgroups: the subgroups that benefit most from AI perceive the largest gains (Figure fig:beliefs, Panel B).
+Control students overestimate the effect of AI on their test performance, whereas treated students predict an effect close to the one we estimate (Figure 5). Both groups give similar predictions of their own raw score (control 37.8 percent correct, treated 37.2 percent, both below the actual mean of 51.2 percent); what differs is what they attribute to AI. Control students predict an AI gain for themselves of 25.5 pp, 6.5 times the actual effect of 3.9 pp. Treated students, most of whom used AI in Session One, predict only 3.0 pp, close to the effect we estimate. The lower average perceived effect among treated students reflects two shifts in the distribution of beliefs relative to control students (Appendix Figure 13): more mass at zero (no perceived effect) and less mass at large positive values (five or more questions). Predictions about others' performance show the same pattern in muted form: control students predict 14.2 pp and treated 11.2 pp, both still inflated relative to the actual effect.
 
 ## Students' Mental Models of AI and Learning
 
-The above beliefs capture students' expected test-score gains from AI, not the mechanisms by which they think AI affects learning. To recover these mental models, we asked an open-ended question on the exit survey: "In your opinion, how does generative AI (e.g., ChatGPT) affect student learning in college? Please explain your reasoning." Following Andre et al. (2026), we code each short narrative as a causal graph running from AI use to learning through the mechanisms the student names (see Appendix 10.2 for the coding procedure and its reliability, and Appendix 10.3 for additional results). Figure 5 aggregates students' mental models into a single causal graph in which each node is one such mechanism (sized by how often students name it), and each link is green where they describe the mechanism as promoting learning and maroon where it harms it.
+From these predictions we learn how much students expect AI to help, but not the mechanisms through which they think it works. To recover these "mental models," we asked an open-ended question on the exit survey: "In your opinion, how does generative AI (e.g., ChatGPT) affect student learning in college? Please explain your reasoning." Following Andre et al. (2026), we code each short narrative as a causal graph running from AI use to learning through the mechanisms the student names (see Appendix 10.2 for the coding procedure and its reliability, and Appendix 10.3 for additional results). We aggregate students' mental models into a single causal graph (Figure 6), in which each node is one such mechanism (sized by how often students name it), and each link is green where they describe the mechanism as promoting learning and red where they describe it as harming learning.
 
-The augmentation-versus-automation distinction that moderates our treatment effects is also the structure most students use to reason about the effects of AI on learning. Among students naming any learning channel, 69 percent name both one through which AI helps and one through which it harms. The single most common element, present in 54 percent of coded responses, is that the effect depends on how AI is used; as one student put it, AI is "a double-edged sword, with each individual student's use determining whether it is helpful or hurtful for their education." The two most common mechanisms map onto the two sides of this distinction: AI explaining concepts and tutoring, as an augmentation channel (40 percent of coded responses), and AI shortcutting the work, as an automation channel (42 percent).[^27] Taken together, students' reasoning mirrors our estimates: they expect AI to raise their learning—accurately so once they have used it—and they locate the gains where our treatment effects concentrate, in AI that augments their work rather than does it for them.
+Most students reason about the effects of AI on learning through the same augmentation-versus-automation distinction along which outcomes differ in Section 5.3. Among students naming any learning channel, 69 percent name both one through which AI helps and one through which it harms. The most common single node, present in 55 percent of coded responses, is mode of use, through which the helping and harming channels branch according to how AI is used; as one student put it, AI is "a double-edged sword, with each individual student's use determining whether it is helpful or hurtful for their education." The two most common channels are the two sides of this distinction: AI explaining concepts and tutoring, as an augmentation channel (40 percent of coded responses), and AI shortcutting the work, as an automation channel (43 percent).[^23] Taken together, students' reasoning matches our estimates: they expect AI to raise their learning, their average estimate of the magnitude moves toward ours once they have access to AI, and they locate the gains in AI that augments their work rather than does it for them.
 
 # Conclusion
 
-This paper provides causal evidence on how access to generative AI affects student learning. In a randomized experiment with undergraduate students, AI access produces learning gains that, on average, persist one week later. Gains are concentrated in the middle of the score distribution on both the immediate and retention tests. AI access also reshapes how students approach learning a new topic: they spend less time drafting text and more time reading and searching for information, and report higher enjoyment. Taken together, these results provide proof of concept that off-the-shelf AI can improve learning, with effects that depend on how students use it.
+We provide causal evidence on how access to generative AI affects student learning. In a randomized experiment with undergraduate students, AI access produces learning gains, and a smaller gain remains one week later. AI access also changes how students approach learning a new topic: they spend less time writing and more time reading and searching for information, and report higher enjoyment. Taken together, these results provide proof of concept that off-the-shelf AI can improve learning, with outcomes that differ by how students choose to use it.
 
-We do not view our findings as implying that widespread AI adoption will raise learning overall. Our estimates capture learning per unit of time. We find no effect on total learning time—likely because the lab setting offered few competing uses of time—so the learning gains hold time-on-task fixed. In ordinary academic work, students choose how long to spend on each task, and many use AI to save time. Whether AI raises or lowers total learning therefore depends on how students reallocate the time they save and on whether productivity gains per unit of time more than compensate for any reduction in time spent learning.
+We do not view our findings as implying that widespread AI adoption will raise learning overall. We find no effect on total learning time (likely because the lab setting offered few competing uses of time), so we estimate the learning gains holding time on task fixed. In ordinary academic work, students choose how long to spend on each task, and many likely use AI to save time. Whether AI raises or lowers total learning therefore depends on how students reallocate the time they save and on whether learning-productivity gains more than compensate for any reduction in time spent learning.
 
-Our findings have implications for incentive design in higher education. Augmentation uses are more likely to raise learning than automation uses, but how students choose between them is endogenous to the incentives they face. For example, grade inflation weakens the link between effort and grades, pushes students to differentiate themselves through extracurriculars or other non-academic activities, and gives them reason to automate coursework with AI to free up time. Similarly, students who view college primarily as a signaling mechanism rather than as human-capital accumulation have weaker incentives to use AI as a learning tool, since learning itself plays a smaller role in their perceived returns to education. How higher-education incentives shape AI usage—and, through it, learning—is a promising avenue for future research.
+Our findings have implications for incentive design in higher education. In our model, using AI as a tutor raises knowledge, while delegating the essay to AI displaces the learning that writing would have produced. Before AI, students who cared only about their grade still learned, because earning a good grade required reading, searching, and writing, the activities through which students build knowledge. With AI, students who place less value on learning are more likely to delegate. That value combines students' own interest in learning with external rewards for it, such as grades and the returns to skill, so how students use AI depends on the incentives they face. These incentives differ across colleges and across students. For example, grade inflation weakens the link between effort and grades (Babcock, 2010; Bowden, Rodriguez, and Weingarten, 2026), which may push students to seek distinction outside their courses (Claybaugh, 2025) and to delegate coursework to AI to free up time. Similarly, students who view college primarily as a signal rather than as human-capital accumulation have more reason to delegate, since learning matters less for their perceived returns to education. How colleges can design incentives under which AI raises learning is a question for future research.
 
 # Figures and Tables
 <figure id="fig:timelines" data-latex-placement="H">
 <p><strong>Panel A. Session One timeline</strong></p>
 <p><strong>Panel B. Session Two timeline</strong></p>
 <div class="singlespace">
-<p><em>Notes:</em> This figure shows the timeline of the two experimental sessions. Panel A shows the structure of Session One, during which students were randomly assigned to AI-allowed or AI-forbidden conditions. Panel B shows Session Two, conducted approximately one week later (mean of 6.99 days), during which all students completed tasks without AI access. The red dashed box in Panel B indicates that the order of the Endline Test and the Essay was randomized across students. The Baseline Test and Post-Learning Test in Session One each contained 5 multiple-choice questions. The Endline Test in Session Two contained 10 multiple-choice questions.</p>
+<p><em>Notes:</em> This figure shows the timeline of the two experimental sessions. Panel A shows the structure of Session One, during which students were randomly assigned to AI-allowed or AI-forbidden conditions. Panel B shows Session Two, conducted approximately one week later (mean of 6.98 days), during which all students completed tasks without AI access. The red dashed box in Panel B indicates that the order of the Endline Test and the Essay was randomized across students. The Baseline Test and Post-Learning Test in Session One each contained five multiple-choice questions. The Endline Test in Session Two contained ten multiple-choice questions.</p>
 </div>
-<figcaption>Experimental Sessions Timelines</figcaption>
+<figcaption>Experimental Session Timelines</figcaption>
 </figure>
 
 <figure id="fig:ai_impact_usage" data-latex-placement="H">
 <embed src="results/ai_impact_usage.pdf" />
-<p><em>Notes:</em> This figure shows the impact of AI access on generative AI usage during the learning phase in Session One. Gray bars represent control group means, while red outlines show treatment effects. The first measure is constructed from activity in the ChatGPT account provided to each student. The remaining three measures are based on self-reported usage collected in the exit survey. Vertical bars represent 95 percent confidence intervals.</p>
+<p><em>Notes:</em> This figure shows the impact of AI access on generative AI usage during the learning phase in Session One. Gray bars represent control-group means, while red outlines show treatment effects. The first measure is constructed from activity in the ChatGPT account provided to each student. The remaining three measures are based on self-reported usage collected in the exit survey. Vertical bars represent 95 percent confidence intervals.</p>
 <figcaption>The Impact of AI Access on Generative AI Usage During the Learning Phase</figcaption>
 </figure>
 
@@ -276,51 +261,48 @@ Our findings have implications for incentive design in higher education. Augment
 <embed src="results/ai_usage_type_revealed.pdf" />
 <figcaption>Panel B. ChatGPT logs</figcaption>
 </figure>
-<p><em>Notes:</em> This figure shows AI usage types among treated students. Panel A presents self-reported usage types collected in the exit survey; students could select multiple categories. Panel B is constructed from the actual ChatGPT conversation logs. We first use LLMs to classify each student prompt into one of six categories: explaining concepts, summarizing readings, drafting responses, proofreading, editing responses, and other uses (see Appendix <a href="#app:chatgpt_classification" data-reference-type="ref" data-reference="app:chatgpt_classification">9.6</a> for the classification procedure). We then construct student-level indicators: for each category, the indicator equals one if any of the student’s prompts fell into that category. Students who were assigned to the AI-allowed condition but did not use the provided ChatGPT account are coded as zero for all categories.</p>
+<p><em>Notes:</em> This figure shows AI usage types among treated students. Panel A presents self-reported usage types collected in the exit survey; students could select multiple categories. Panel B is constructed from the actual ChatGPT conversation logs. We first use an LLM to classify each student prompt into one of six categories: explaining concepts, summarizing readings, drafting responses, proofreading, editing responses, and other uses (see Appendix <a href="#app:chatgpt_classification" data-reference-type="ref" data-reference="app:chatgpt_classification">9.6</a> for the classification procedure). We then construct student-level indicators: for each category, the indicator equals one if any of the student’s prompts fell into that category. Students who were assigned to the AI-allowed condition but did not use the provided ChatGPT account are coded as zero for all categories.</p>
 <figcaption>Panel B. ChatGPT logs</figcaption>
 </figure>
 
 <figure data-latex-placement="H">
 <figure>
+<embed src="results/fig_distributional_effects.pdf" />
+<figcaption>Panel A. Treatment effects by score threshold</figcaption>
+</figure>
+<figure>
 <embed src="results/hist_test_s1.pdf" />
-<figcaption>Panel A. Session One (knowledge acquisition)</figcaption>
+<figcaption>Panel B. Session One (knowledge acquisition)</figcaption>
 </figure>
 <figure>
 <embed src="results/hist_test_s2.pdf" />
-<figcaption>Panel B. Session Two (knowledge retention)</figcaption>
+<figcaption>Panel C. Session Two (knowledge retention)</figcaption>
 </figure>
-<p><em>Notes:</em> This figure shows the distribution of test scores by treatment assignment. The <span class="math inline"><em>x</em></span>-axis shows the number of correct responses; the <span class="math inline"><em>y</em></span>-axis shows the percentage of students achieving each score. The Session One test had 5 questions; the Session Two test had 10 questions.</p>
-<figcaption>Panel B. Session Two (knowledge retention)</figcaption>
+<p><em>Notes:</em> Panel A plots ITT estimates of the effect of AI access on indicators for scoring at or above each threshold, separately for Session One (navy circles) and Session Two (maroon diamonds). Each estimate comes from a regression that includes strata fixed effects and controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Vertical bars show 95 percent confidence intervals based on heteroskedasticity-robust standard errors. Panels B and C show the distribution of test scores by treatment assignment. The <span class="math inline"><em>x</em></span>-axis shows the number of correct responses; the <span class="math inline"><em>y</em></span>-axis shows the percentage of students achieving each score. The Session One test had five questions; the Session Two test had ten questions.</p>
+<figcaption>Panel C. Session Two (knowledge retention)</figcaption>
 </figure>
 
 <figure id="fig:literature_comparison" data-latex-placement="H">
 <embed src="results/literature_comparison.pdf" />
-<p><em>Notes:</em> This figure compares treatment effect sizes (in standard deviations) across randomized experiments that provide students with AI tools during a learning task and measure performance on unassisted assessments. Marker shapes indicate the outcome domain: diamonds for this paper, circles for math, squares for coding, crosses for language learning, triangles for economics, hollow circles for medicine, and hollow squares for science and engineering. Our estimates include both knowledge test scores and essay quality for Session One (immediate) and Session Two (retention), shown above the dashed separator line. Literature estimates come from the 13 randomized experiments described in Appendix <a href="#app:literature_comparison" data-reference-type="ref" data-reference="app:literature_comparison">9.7</a> and summarized in Appendix Table <a href="#tab:literature_summary" data-reference-type="ref" data-reference="tab:literature_summary">19</a>. Horizontal lines show 95 percent confidence intervals. The shaded band and vertical line show the random-effects grand mean and its 95 percent confidence interval, estimated via the DerSimonian and Laird (1986) method. The dashed vertical line marks zero.</p>
+<p><em>Notes:</em> This figure compares treatment effect sizes (in standard deviations) across randomized experiments that provide students with AI tools during a learning task and measure performance on unassisted assessments. Marker shapes indicate the outcome domain: diamonds for this paper, circles for math, squares for coding, crosses for language learning, triangles for economics, hollow circles for medicine, and hollow squares for science and engineering. Our estimates include both knowledge test scores and essay quality for Session One (immediate) and Session Two (retention), shown above the dashed separator line. Literature estimates come from the 14 studies described in Appendix <a href="#app:literature_comparison" data-reference-type="ref" data-reference="app:literature_comparison">9.7</a> and summarized in Appendix Table <a href="#tab:literature_summary" data-reference-type="ref" data-reference="tab:literature_summary">16</a>. Horizontal lines show 95 percent confidence intervals. The shaded band and vertical line show the random-effects grand mean across the other studies and its 95 percent confidence interval, estimated via the DerSimonian and Laird (1986) method after aggregating each study’s estimates by inverse-variance weighting (our own estimates are excluded from the pool). The dashed vertical line marks zero.</p>
 <figcaption>Effect Sizes Across AI-and-Learning Experiments</figcaption>
 </figure>
 
 <figure id="fig:essay_quality" data-latex-placement="H">
 <embed src="results/ai_impact_combined_2est.pdf" />
-<p><em>Notes:</em> This figure presents treatment effects of AI access on writing style (top panel), individual quality dimensions (middle panel), and overall essay quality (bottom panel), measured in standard deviations. The writing style indices are: the AI-detected fraction (the share of text classified as AI-generated by Pangram, standardized in the control group); the length index (averaging standardized number of tokens, words, and sentences); the readability index (averaging standardized sentence length, syllables per word, Flesch-Kincaid grade level, and Flesch Reading Ease score, with difficulty measures reversed); the lexical diversity index (averaging standardized type-token ratio and hapax proportion); within-group similarity (the average pairwise cosine similarity within treatment<span class="math inline">×</span>topic<span class="math inline">×</span>prompt cells); and reading material similarity (between the student essay and the provided reading material). The quality dimensions are the five sub-components of a standardized rubric—accuracy of content, use of evidence and examples, relevance to the prompt, organization and structure, and writing style and clarity—each averaged across the human and AI graders. The overall quality measures are overall quality (the grader’s holistic assessment) and the quality index (averaging the five dimensions above), each averaged across the human and AI graders. Circles represent Session One effects (essays written with or without AI access); diamonds represent Session Two effects (essays written one week later without AI access). Horizontal lines represent 95 percent confidence intervals. Point estimates underlying each coefficient in raw units are reported in Tables <a href="#tab:writ_index_long" data-reference-type="ref" data-reference="tab:writ_index_long">5</a> and <a href="#tab:essay_quality_long" data-reference-type="ref" data-reference="tab:essay_quality_long">6</a>. The five quality dimensions split by grader appear in Appendix Figure <a href="#fig:essay_quality_detailed" data-reference-type="ref" data-reference="fig:essay_quality_detailed">8</a>, and the individual essay characteristics underlying the writing style indices appear in Appendix Figure <a href="#fig:writing_char_detailed" data-reference-type="ref" data-reference="fig:writing_char_detailed">9</a>.</p>
-<figcaption>Effects of AI Access on Essay Quality and Linguistic Features</figcaption>
+<p><em>Notes:</em> This figure presents treatment effects of AI access on AI detection and textual similarity (top panel), overall essay quality (middle panel), and individual quality dimensions (bottom panel), measured in standard deviations. The top-panel measures are the AI-detected fraction (the share of text classified as AI-generated by Pangram 4, standardized in the control group), within-group similarity (the average pairwise cosine similarity within treatment<span class="math inline">×</span>topic<span class="math inline">×</span>prompt cells), and reading material similarity (between the student essay and the provided reading material). The overall quality measures are overall quality (the grader’s holistic assessment) and the quality index (averaging the five dimensions below), each averaged across the human and AI graders. The quality dimensions are the five sub-components of a standardized rubric (accuracy of content, use of evidence and examples, relevance to the prompt, organization and structure, and writing style and clarity), each averaged across the human and AI graders. Circles represent Session One effects (essays written with or without AI access); diamonds represent Session Two effects (essays written one week later without AI access). Horizontal lines represent 95 percent confidence intervals. Point estimates underlying each coefficient in raw units are reported in Table <a href="#tab:writ_index_long" data-reference-type="ref" data-reference="tab:writ_index_long">5</a> and Appendix Table <a href="#tab:essay_quality_dims" data-reference-type="ref" data-reference="tab:essay_quality_dims">12</a>. The five quality dimensions split by grader appear in Appendix Figure <a href="#fig:essay_quality_detailed" data-reference-type="ref" data-reference="fig:essay_quality_detailed">10</a>.</p>
+<figcaption>Effects of AI Access on Essay Outcomes</figcaption>
 </figure>
 
-<figure data-latex-placement="H">
-<figure>
-<embed src="results/beliefs_vs_effects.pdf" />
-<figcaption>Panel A. Beliefs versus actual effects</figcaption>
-</figure>
-<figure>
-<embed src="results/beliefs_vs_actual.pdf" />
-<figcaption>Panel B. Perceived versus actual effects by subgroup</figcaption>
-</figure>
-<p><em>Notes:</em> This figure shows actual and perceived treatment effects of AI access on test performance. In Panel A, the first bar shows observed performance—gray is the control mean, and green is the estimated treatment effect. The remaining bars show students’ beliefs about own and others’ performance, separately by treatment group. Panel B plots the mean perceived treatment effect (own performance) against the actual treatment effect for each demographic, academic, and AI-usage subgroup with at least 40 observations; the dashed line is a linear fit. Vertical bars represent 95 percent confidence intervals.</p>
-<figcaption>Panel B. Perceived versus actual effects by subgroup</figcaption>
+<figure id="fig:beliefs" data-latex-placement="H">
+<embed src="results/beliefs_vs_effects.pdf" style="width:70.0%" />
+<p><em>Notes:</em> This figure shows actual and perceived treatment effects of AI access on test performance. The first bar shows observed performance: gray is the control mean, and green is the estimated treatment effect. The remaining bars show students’ beliefs about own and others’ performance, separately by treatment group: gray is the believed score without AI and green the perceived AI gain. AI-forbidden and AI-allowed belief bars are group means. Vertical bars represent 95 percent confidence intervals.</p>
+<figcaption>Actual and Perceived Treatment Effects on Test Performance</figcaption>
 </figure>
 
 <figure id="fig:avg_narrative" data-latex-placement="H">
 <embed src="results/fig_average_dag.pdf" />
-<p><em>Notes:</em> This figure shows the aggregate signed causal graph across the 200 open-ended responses codable as a narrative, constructed following Andre et al. (2026). We code each student’s answer to the question “in your opinion, how does generative AI (e.g., ChatGPT) affect student learning in college? Please explain your reasoning” as a causal graph from AI use (left) to learning (right) through the mechanisms the student names; the figure overlays these graphs. Node size is proportional to the share of students who name a mechanism, and link width to the share drawing the link; we omit mechanisms below 10 percent and links below 2 percent. Green links denote mechanisms described as promoting learning, maroon links mechanisms that harm it, and navy the mode-of-use node. Appendix <a href="#app:open_ended_method" data-reference-type="ref" data-reference="app:open_ended_method">10.2</a> describes the coding and its reliability.</p>
+<p><em>Notes:</em> This figure shows the aggregate signed causal graph across the 201 open-ended responses codable as a narrative, constructed following Andre et al. (2026). We code each student’s answer to the question “In your opinion, how does generative AI (e.g., ChatGPT) affect student learning in college? Please explain your reasoning” as a causal graph from AI use (left) to learning (right) through the mechanisms the student names; the figure overlays these graphs. Node size is proportional to the share of students who name a mechanism, and link width to the share drawing the link; we omit mechanisms below 10 percent and links below 2 percent. Green links denote mechanisms described as promoting learning, red links mechanisms that harm it, and navy the mode-of-use node. Appendix <a href="#app:open_ended_method" data-reference-type="ref" data-reference="app:open_ended_method">10.2</a> describes the coding and its reliability.</p>
 <figcaption>The Average Narrative About AI’s Effect on Learning</figcaption>
 </figure>
 
@@ -328,81 +310,81 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div id="tab:summ">
 
-+:----------------------------------------+:-----------:+:--------------------:+:----------------------:+
-|                                         | Signed-up   | Attended Session One | Attended Both Sessions |
-+-----------------------------------------+-------------+----------------------+------------------------+
-|                                         | \(1\)       | \(2\)                | \(3\)                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| **Panel A. Demographic characteristics**                                                              |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Age                                     | 20.211      | 20.147               | 20.132                 |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Male                                    | 0.359       | 0.351                | 0.353                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| White                                   | 0.496       | 0.498                | 0.510                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| International student                   | 0.270       | 0.265                | 0.275                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Public high school                      | 0.539       | 0.540                | 0.534                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| **Panel B. Academic background**                                                                      |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Took SAT/ACT                            | 0.742       | 0.763                | 0.770                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| SAT score (conditional)                 | 1387.593    | 1385.969             | 1386.571               |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| SAT score (including predicted)         | 1386.802    | 1385.403             | 1386.716               |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| College GPA                             | 3.680       | 3.683                | 3.686                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Freshman                                | 0.359       | 0.374                | 0.382                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Already declared major                  | 0.780       | 0.780                | 0.777                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Natural-science major                   | 0.301       | 0.308                | 0.314                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Social-science major                    | 0.359       | 0.355                | 0.348                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Humanities/Arts/Languages major         | 0.109       | 0.104                | 0.103                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Study hours per week                    | 16.929      | 16.668               | 16.686                 |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| **Panel C. Attendance and comprehension**                                                             |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Attended Session One                    | 0.824       | 1.000                | 1.000                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Attended Session Two                    | 0.797       | 0.967                | 1.000                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Attended Session Two (conditional S1)   | 0.967       | 0.967                | 1.000                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Attended both sessions                  | 0.797       | 0.967                | 1.000                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Days between sessions                   | 6.951       | 6.986                | 6.971                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Comprehension score (0-5)               | 4.768       | 4.768                | 4.765                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| **Panel D. Experimental conditions**                                                                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Assigned Blockchain topic               | 0.365       | 0.365                | 0.368                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Assigned CRISPR topic                   | 0.327       | 0.327                | 0.324                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Assigned Carbon-capture topic           | 0.308       | 0.308                | 0.309                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Baseline self-assessed knowledge (0-10) | 1.517       | 1.517                | 1.520                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Fraction correct (baseline)             | 0.303       | 0.303                | 0.310                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Shared info between sessions            | 0.063       | 0.063                | 0.064                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Looked up info about topic              | 0.049       | 0.049                | 0.049                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Studied topic for Session Two           | 0.005       | 0.005                | 0.005                  |
-+-----------------------------------------+-------------+----------------------+------------------------+
-| Number of students                      | 256         | 211                  | 204                    |
-+-----------------------------------------+-------------+----------------------+------------------------+
-|                                         |             |                      |                        |
-+-----------------------------------------+-------------+----------------------+------------------------+
++:-----------------------------------------+:-----------:+:--------------------:+:----------------------:+
+|                                          | Signed up   | Attended Session One | Attended Both Sessions |
++------------------------------------------+-------------+----------------------+------------------------+
+|                                          | \(1\)       | \(2\)                | \(3\)                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| **Panel A. Demographic characteristics**                                                               |
++------------------------------------------+-------------+----------------------+------------------------+
+| Age                                      | 20.211      | 20.147               | 20.127                 |
++------------------------------------------+-------------+----------------------+------------------------+
+| Male                                     | 0.359       | 0.351                | 0.351                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| White                                    | 0.498       | 0.500                | 0.510                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| International student                    | 0.273       | 0.269                | 0.277                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Public high school                       | 0.541       | 0.543                | 0.539                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| **Panel B. Academic background**                                                                       |
++------------------------------------------+-------------+----------------------+------------------------+
+| Took SAT/ACT                             | 0.760       | 0.778                | 0.777                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| SAT score (conditional)                  | 1387.593    | 1385.969             | 1386.571               |
++------------------------------------------+-------------+----------------------+------------------------+
+| SAT score (including predicted)          | 1379.218    | 1375.322             | 1375.656               |
++------------------------------------------+-------------+----------------------+------------------------+
+| College GPA                              | 3.680       | 3.683                | 3.686                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Freshman                                 | 0.359       | 0.374                | 0.385                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Already declared major                   | 0.780       | 0.780                | 0.773                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Natural-science major                    | 0.301       | 0.308                | 0.312                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Social-science major                     | 0.367       | 0.365                | 0.356                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Humanities/Arts/Languages major          | 0.105       | 0.100                | 0.098                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Study hours per week                     | 16.890      | 16.621               | 16.585                 |
++------------------------------------------+-------------+----------------------+------------------------+
+| **Panel C. Attendance and comprehension**                                                              |
++------------------------------------------+-------------+----------------------+------------------------+
+| Attended Session One                     | 0.824       | 1.000                | 1.000                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Attended Session Two                     | 0.801       | 0.972                | 1.000                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Attended Session Two (conditional on S1) | 0.972       | 0.972                | 1.000                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Attended both sessions                   | 0.801       | 0.972                | 1.000                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Days between sessions                    | 6.939       | 6.971                | 6.980                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Comprehension score (0–5)               | 4.763       | 4.763                | 4.761                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| **Panel D. Experimental conditions**                                                                   |
++------------------------------------------+-------------+----------------------+------------------------+
+| Assigned blockchain topic                | 0.365       | 0.365                | 0.371                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Assigned CRISPR topic                    | 0.327       | 0.327                | 0.322                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Assigned carbon capture topic            | 0.308       | 0.308                | 0.307                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Baseline self-assessed knowledge (0–10) | 1.517       | 1.517                | 1.512                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Fraction correct (baseline)              | 0.303       | 0.303                | 0.308                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Shared info between sessions             | 0.059       | 0.059                | 0.059                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Looked up info about topic               | 0.049       | 0.049                | 0.049                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| Studied topic for Session Two            | 0.000       | 0.000                | 0.000                  |
++------------------------------------------+-------------+----------------------+------------------------+
+| $N$ (Students)                           | 256         | 211                  | 205                    |
++------------------------------------------+-------------+----------------------+------------------------+
+|                                          |             |                      |                        |
++------------------------------------------+-------------+----------------------+------------------------+
 
 : Summary Statistics
 
@@ -412,7 +394,7 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div class="singlespace">
 
-*Notes:* This table presents summary statistics for three groups of students: students who completed the sign-up survey (column 1), those who attended Session One (column 2), and those who attended both sessions (column 3). GPA is on the $0$–$4$ scale; SAT and ACT scores are shown only for students who took the respective test.
+*Notes:* This table presents summary statistics for three groups of students: students who completed the sign-up survey and scheduled a Session One slot (column 1), those who attended Session One (column 2), and those who attended both sessions (column 3). GPA is on the $0$–$4$ scale. SAT score (conditional) is the mean among students with an SAT score or an ACT score converted to the SAT scale, and SAT score (including predicted) adds the imputed scores described in Appendix 9.5.
 
 </div>
 
@@ -420,75 +402,75 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div id="tab:bal">
 
-+-----------------------------------------+---------------------------+-----------+---------------------------+---+
-|                                         | Treatment group:          |           | Difference:               |   |
-+:========================================+:============:+:==========:+:=========:+==============:+:=========:+:==+
-| 2-3                                     | AI-forbidden | AI-allowed |           | $\hat{\beta}$ | (SE)      |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-|                                         | \(1\)        | \(2\)      |           | \(3\)         | \(4\)     |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| **Panel A. Demographic characteristics**                                                        |           |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Age                                     | 20.016       | 20.400     |           | 0.382         | (0.227)\* |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Male                                    | 0.405        | 0.315      |           | -0.091        | (0.060)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| White                                   | 0.524        | 0.469      |           | -0.055        | (0.063)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| International student                   | 0.286        | 0.254      |           | -0.033        | (0.055)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Public high school                      | 0.540        | 0.538      |           | -0.001        | (0.063)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| **Panel B. Academic background**                                                                |           |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Took SAT/ACT                            | 0.778        | 0.708      |           | -0.067        | (0.054)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| SAT score (conditional)                 | 1392.371     | 1382.554   |           | -7.862        | (21.039)  |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| SAT score (including predicted)         | 1391.418     | 1382.382   |           | -8.849        | (17.999)  |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| College GPA                             | 3.694        | 3.666      |           | -0.025        | (0.038)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Freshman                                | 0.357        | 0.362      |           | 0.007         | (0.061)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Already declared major                  | 0.817        | 0.742      |           | -0.075        | (0.052)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Natural-science major                   | 0.302        | 0.300      |           | -0.002        | (0.058)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Social-science major                    | 0.397        | 0.323      |           | -0.077        | (0.061)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Humanities/Arts/Languages major         | 0.111        | 0.108      |           | -0.000        | (0.039)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Study hours per week                    | 16.864       | 16.992     |           | 0.230         | (1.197)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| **Panel C. Attendance and comprehension**                                                       |           |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Attended Session One                    | 0.825        | 0.823      |           | -0.006        | (0.048)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Attended Session Two                    | 0.810        | 0.785      |           | -0.027        | (0.050)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Attended Session Two (conditional S1)   | 0.981        | 0.953      |           | -0.026        | (0.024)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Attended both sessions                  | 0.810        | 0.785      |           | -0.027        | (0.050)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Days between sessions                   | 6.975        | 6.929      |           | -0.030        | (0.156)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Comprehension score (0-5)               | 4.769        | 4.766      |           | -0.009        | (0.065)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| **Panel D. Experimental conditions**                                                            |           |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Assigned Blockchain topic               | 0.375        | 0.355      |           | -0.023        | (0.066)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Assigned CRISPR topic                   | 0.327        | 0.327      |           | 0.002         | (0.064)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Assigned Carbon-capture topic           | 0.298        | 0.318      |           | 0.021         | (0.062)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Baseline self-assessed knowledge (0-10) | 1.558        | 1.477      |           | -0.086        | (0.251)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| Fraction correct (baseline)             | 0.306        | 0.301      |           | -0.007        | (0.038)   |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
-| $N$ (Students)                          | 126          | 130        |           | 256           |           |   |
-+-----------------------------------------+--------------+------------+-----------+---------------+-----------+---+
++------------------------------------------+---------------------------+-----------+-----------------------------+---+
+|                                          | Treatment group:          |           | Difference:                 |   |
++:=========================================+:============:+:==========:+:=========:+=================:+:========:+:==+
+| 2-3                                      | AI-forbidden | AI-allowed |           | $\hat{\beta}$    | (SE)     |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+|                                          | \(1\)        | \(2\)      |           | \(3\)            | \(4\)    |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| **Panel A. Demographic characteristics**                                                            |          |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Age                                      | 20.016       | 20.400     |           | 0.382            | (0.227)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Male                                     | 0.405        | 0.315      |           | $-$0.091 | (0.060)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| White                                    | 0.528        | 0.469      |           | $-$0.059 | (0.063)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| International student                    | 0.286        | 0.260      |           | $-$0.027 | (0.056)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Public high school                       | 0.540        | 0.543      |           | 0.004            | (0.063)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| **Panel B. Academic background**                                                                    |          |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Took SAT/ACT                             | 0.790        | 0.730      |           | $-$0.059 | (0.054)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| SAT score (conditional)                  | 1392.371     | 1382.554   |           | $-$7.862 | (21.039) |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| SAT score (including predicted)          | 1377.516     | 1380.868   |           | 2.615            | (18.855) |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| College GPA                              | 3.694        | 3.666      |           | $-$0.025 | (0.038)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Freshman                                 | 0.357        | 0.362      |           | 0.007            | (0.061)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Already declared major                   | 0.825        | 0.734      |           | $-$0.092 | (0.052)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Natural-science major                    | 0.302        | 0.300      |           | $-$0.002 | (0.058)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Social-science major                     | 0.413        | 0.323      |           | $-$0.093 | (0.061)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Humanities/Arts/Languages major          | 0.111        | 0.100      |           | $-$0.009 | (0.038)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Study hours per week                     | 16.864       | 16.915     |           | 0.146            | (1.200)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| **Panel C. Attendance and comprehension**                                                           |          |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Attended Session One                     | 0.825        | 0.823      |           | $-$0.006 | (0.048)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Attended Session Two                     | 0.810        | 0.792      |           | $-$0.020 | (0.050)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Attended Session Two (conditional on S1) | 0.981        | 0.963      |           | $-$0.017 | (0.022)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Attended both sessions                   | 0.810        | 0.792      |           | $-$0.020 | (0.050)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Days between sessions                    | 6.966        | 6.913      |           | $-$0.036 | (0.155)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Comprehension score (0–5)               | 4.760        | 4.766      |           | 0.001            | (0.065)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| **Panel D. Experimental conditions**                                                                |          |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Assigned blockchain topic                | 0.375        | 0.355      |           | $-$0.023 | (0.066)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Assigned CRISPR topic                    | 0.327        | 0.327      |           | 0.002            | (0.064)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Assigned carbon capture topic            | 0.298        | 0.318      |           | 0.021            | (0.062)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Baseline self-assessed knowledge (0–10) | 1.558        | 1.477      |           | $-$0.086 | (0.251)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| Fraction correct (baseline)              | 0.306        | 0.301      |           | $-$0.007 | (0.038)  |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
+| $N$ (Students)                           | 126          | 130        |           | 256              |          |   |
++------------------------------------------+--------------+------------+-----------+------------------+----------+---+
 
 : Balance of Baseline Characteristics by Treatment Assignment
 
@@ -515,33 +497,33 @@ Our findings have implications for incentive design in higher education. Augment
 +-------------------------+---------+---------+---------+------------------------+----------+
 | **Panel A. Revealed measures**                                                 |          |
 +-------------------------+---------+---------+---------+------------------------+----------+
-| Used ChatGPT account    |         | 0.010   |         | 0.673                  | $^{***}$ |
+| Used ChatGPT account    |         | 0.000   |         | 0.659                  | $^{***}$ |
 +-------------------------+---------+---------+---------+------------------------+----------+
-|                         |         |         |         | (0.046                 | )        |
+|                         |         |         |         | (0.049                 | )        |
 +-------------------------+---------+---------+---------+------------------------+----------+
-| Number of prompts       |         | 0.000   |         | 3.909                  | $^{***}$ |
+| Number of prompts       |         | 0.000   |         | 4.073                  | $^{***}$ |
 +-------------------------+---------+---------+---------+------------------------+----------+
-|                         |         |         |         | (0.426                 | )        |
+|                         |         |         |         | (0.454                 | )        |
 +-------------------------+---------+---------+---------+------------------------+----------+
-| Number of conversations |         | 0.000   |         | 0.745                  | $^{***}$ |
+| Number of conversations |         | 0.000   |         | 0.759                  | $^{***}$ |
 +-------------------------+---------+---------+---------+------------------------+----------+
-|                         |         |         |         | (0.061                 | )        |
+|                         |         |         |         | (0.059                 | )        |
 +-------------------------+---------+---------+---------+------------------------+----------+
 | **Panel B. Self-reported measures**                                            |          |
 +-------------------------+---------+---------+---------+------------------------+----------+
-| Used any AI             |         | 0.020   |         | 0.599                  | $^{***}$ |
+| Used any AI             |         | 0.010   |         | 0.609                  | $^{***}$ |
 +-------------------------+---------+---------+---------+------------------------+----------+
-|                         |         |         |         | (0.051                 | )        |
+|                         |         |         |         | (0.050                 | )        |
 +-------------------------+---------+---------+---------+------------------------+----------+
 | Used ChatGPT            |         | 0.010   |         | 0.602                  | $^{***}$ |
 +-------------------------+---------+---------+---------+------------------------+----------+
 |                         |         |         |         | (0.050                 | )        |
 +-------------------------+---------+---------+---------+------------------------+----------+
-| Used other AI tool      |         | 0.020   |         | 0.019                  |          |
+| Used other AI model     |         | 0.010   |         | 0.029                  |          |
 +-------------------------+---------+---------+---------+------------------------+----------+
-|                         |         |         |         | (0.024                 | )        |
+|                         |         |         |         | (0.022                 | )        |
 +-------------------------+---------+---------+---------+------------------------+----------+
-| $N$                     |         | 104     |         | 211                    |          |
+| $N$ (Students)          |         | 104     |         | 211                    |          |
 +-------------------------+---------+---------+---------+------------------------+----------+
 
 : The First-Stage Impact of Generative AI Access on AI Usage
@@ -560,31 +542,31 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div id="tab:test_score_long">
 
-+------------------+---+-------------------------------------------+---------+-------------------------------------------+---------+
-|                  |   | Session One                               |         | Session Two                               |         |
-+:=================+:==+========:+:====+=======:+:========+=======:+:========+========:+:====+=======:+:========+=======:+:========+
-| 3-7              |   | Control |     |        |         |        |         | Control |     |        |         |        |         |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-| Outcome          |   | mean    |     | ITT    |         | TOT    |         | mean    |     | ITT    |         | TOT    |         |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-|                  |   | \(1\)   |     | \(2\)  |         | \(3\)  |         | \(4\)   |     | \(5\)  |         | \(6\)  |         |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-| Self$-$assessed  |   | 4.788   |     | 0.021  |         | 0.030  |         | 3.833   |     | 0.185  |         | 0.270  |         |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-|                  |   |         |     | (0.195 | )       | (0.287 | )       |         |     | (0.201 | )       | (0.292 | )       |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-| Fraction correct |   | 0.563   |     | 0.067  | $^{**}$ | 0.100  | $^{**}$ | 0.495   |     | 0.051  | $^{**}$ | 0.075  | $^{**}$ |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-|                  |   |         |     | (0.032 | )       | (0.048 | )       |         |     | (0.023 | )       | (0.034 | )       |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-| Test score (SD)  |   | 0.000   |     | 0.266  | $^{**}$ | 0.396  | $^{**}$ | 0.000   |     | 0.268  | $^{**}$ | 0.393  | $^{**}$ |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-|                  |   |         |     | (0.125 | )       | (0.188 | )       |         |     | (0.120 | )       | (0.181 | )       |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
-| $N$              |   | 104     |     | 211    |         | 211    |         | 102     |     | 204    |         | 204    |         |
-+------------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
++------------------+---+---------------------------------------------------------------+---------+------------------------------------------+--------+
+|                  |   | Session One                                                   |         | Session Two                              |        |
++:=================+:==+========:+:====+=================:+:========+=================:+:========+========:+:====+=======:+:=======+=======:+:=======+
+| 3-7              |   | Control |     |                  |         |                  |         | Control |     |        |        |        |        |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+| Outcome          |   | mean    |     | ITT              |         | TOT              |         | mean    |     | ITT    |        | TOT    |        |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+|                  |   | \(1\)   |     | \(2\)            |         | \(3\)            |         | \(4\)   |     | \(5\)  |        | \(6\)  |        |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+| Self-assessed    |   | 4.788   |     | $-$0.098 |         | $-$0.142 |         | 3.833   |     | 0.223  |        | 0.310  |        |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+|                  |   |         |     | (0.203           | )       | (0.296           | )       |         |     | (0.193 | )      | (0.268 | )      |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+| Fraction correct |   | 0.563   |     | 0.072            | $^{**}$ | 0.104            | $^{**}$ | 0.500   |     | 0.039  | $^{*}$ | 0.055  | $^{*}$ |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+|                  |   |         |     | (0.031           | )       | (0.045           | )       |         |     | (0.021 | )      | (0.031 | )      |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+| Test score (SD)  |   | 0.000   |     | 0.285            | $^{**}$ | 0.408            | $^{**}$ | 0.000   |     | 0.213  | $^{*}$ | 0.300  | $^{*}$ |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+|                  |   |         |     | (0.123           | )       | (0.176           | )       |         |     | (0.116 | )      | (0.166 | )      |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
+| $N$ (Students)   |   | 104     |     | 210              |         | 210              |         | 102     |     | 205    |        | 205    |        |
++------------------+---+---------+-----+------------------+---------+------------------+---------+---------+-----+--------+--------+--------+--------+
 
-: The Impact of Generative AI on Test Scores
+: The Impact of Generative AI Access on Test Scores
 
 </div>
 
@@ -592,7 +574,7 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div class="singlespace">
 
-*Notes:* This table reports treatment effects of AI access on learning outcomes in Session One (with AI) and Session Two (without AI). Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Self-assessed knowledge is measured on a 0–10 scale, with 0 indicating "I know nothing about this topic" and 10 indicating "I am an expert." Fraction correct is measured on a 0–1 scale. Test score (SD) is the fraction correct standardized to have mean zero and standard deviation one in the control group. Columns 1 and 4 report the control group mean. Columns 2 and 5 report intent-to-treat (ITT) estimates. Columns 3 and 6 report treatment-on-the-treated (TOT) estimates from two-stage least squares, instrumenting actual ChatGPT use with random treatment assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports treatment effects of AI access on learning outcomes in Session One, immediately after the learning phase, and in Session Two, one week later. Students took both tests without access to any resources. The AI-allowed group had AI access only during the Session One learning phase. Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Self-assessed knowledge is measured on a 0–10 scale, with 0 indicating "I know nothing about this topic" and 10 indicating "I am an expert." Fraction correct is measured on a 0–1 scale. Test score (SD) is the fraction correct standardized to have mean zero and standard deviation one in the control group. Columns 1 and 4 report the control-group mean. Columns 2 and 5 report intent-to-treat (ITT) estimates. Columns 3 and 6 report treatment-on-the-treated (TOT) estimates from two-stage least squares, instrumenting actual ChatGPT use with random treatment assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
@@ -600,113 +582,53 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div id="tab:writ_index_long">
 
-+--------------------------+------+-----------------------------------------------------------------+---------+----------------------------------------------------------------------+---+
-|                          |      | Session One (with AI)                                           |         | Session Two (without AI)                                             |   |
-+:=========================+:=====+========:+:======+=================:+:========+=================:+:========+=========:+:=========+=================:+:=========+=================:+:==+
-| 3-7                      |      | Control |       |                  |         |                  |         | Control  |          |                  |          |                  |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| Outcome                  |      | mean    |       | ITT              |         | TOT              |         | mean     |          | ITT              |          | TOT              |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      | \(1\)   |       | \(2\)            |         | \(3\)            |         | \(4\)    |          | \(5\)            |          | \(6\)            |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| **Panel A. AI detection and plagiarism**                                                                                                                                           |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| AI$-$detected (fraction) |      | 0.128   |       | 0.123            | $^{**}$ | 0.183            | $^{**}$ | 0.040    |          | 0.000            |          | 0.000            |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      |         |       | (0.052           | )       | (0.076           | )       |          |          | (0.028           | )        | (0.041           | ) |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| Plagiarism (fraction)    |      | 0.000   |       | 0.000            |         | 0.000            |         | 0.000    |          | 0.000            |          | 0.000            |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      |         |       | (0.000           | )       | (0.000           | )       |          |          | (0.000           | )        | (0.001           | ) |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| **Panel B. Writing style**                                                                                                                                                         |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| Length index             |      | 0.000   |       | 0.131            |         | 0.199            |         | 0.000    |          | 0.053            |          | 0.078            |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      |         |       | (0.125           | )       | (0.190           | )       |          |          | (0.118           | )        | (0.174           | ) |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| Readability index        |      | 0.000   |       | 0.061            |         | 0.090            |         | 0.000    |          | 0.065            |          | 0.097            |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      |         |       | (0.088           | )       | (0.132           | )       |          |          | (0.103           | )        | (0.153           | ) |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| Lex. diversity index     |      | 0.000   |       | 0.054            |         | 0.083            |         | 0.000    |          | $-$0.132 |          | $-$0.195 |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      |         |       | (0.114           | )       | (0.177           | )       |          |          | (0.128           | )        | (0.190           | ) |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| **Panel C. Homogeneity and similarity**                                                                                                                                            |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| Within$-$group sim.      |      | 0.774   |       | 0.001            |         | 0.001            |         | 0.762    |          | $-$0.005 |          | $-$0.007 |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      |         |       | (0.007           | )       | (0.010           | )       |          |          | (0.013           | )        | (0.019           | ) |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| Reading material sim.    |      | 0.746   |       | $-$0.004 |         | $-$0.006 |         | 0.704    |          | 0.001            |          | 0.001            |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-|                          |      |         |       | (0.009           | )       | (0.014           | )       |          |          | (0.013           | )        | (0.019           | ) |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
-| $N$                      |      | 104     |       | 210              |         | 210              |         | 99       |          | 199              |          | 199              |   |
-+--------------------------+------+---------+-------+------------------+---------+------------------+---------+----------+----------+------------------+----------+------------------+---+
++---------------------------+------+----------------------------------------------+----------+------------------------------------------------------+--------+
+|                           |      | Session One (with AI)                        |          | Session Two (without AI)                             |        |
++:==========================+:=====+========:+:======+=======:+:=========+=======:+:=========+=========:+:=========+=========:+:=========+=========:+:=======+
+| 3-7                       |      | Control |       |        |          |        |          | Control  |          |          |          |          |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| Outcome                   |      | mean    |       | ITT    |          | TOT    |          | mean     |          | ITT      |          | TOT      |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+|                           |      | \(1\)   |       | \(2\)  |          | \(3\)  |          | \(4\)    |          | \(5\)    |          | \(6\)    |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| **Panel A. AI detection and plagiarism**                                                                                                          |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| AI-detected (fraction)    |      | 0.066   |       | 0.222  | $^{***}$ | 0.318  | $^{***}$ | 0.003    |          | 0.007    |          | 0.010    |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+|                           |      |         |       | (0.048 | )        | (0.066 | )        |          |          | (0.010   | )        | (0.014   | )      |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| Plagiarism (fraction)     |      | 0.000   |       | 0.000  |          | 0.000  |          | 0.000    |          | 0.000    |          | 0.000    |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+|                           |      |         |       | (0.000 | )        | (0.000 | )        |          |          | (0.000   | )        | (0.001   | )      |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| $N$ (Students)            |      | 104     |       | 210    |          | 210    |          | 102      |          | 204      |          | 204      |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| **Panel B. Homogeneity and similarity**                                                                                                           |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| Within-group sim.         |      | 0.788   |       | 0.003  |          | 0.004  |          | 0.753    |          | 0.000    |          | 0.001    |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+|                           |      |         |       | (0.007 | )        | (0.010 | )        |          |          | (0.016   | )        | (0.022   | )      |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| Reading material sim.     |      | 0.814   |       | 0.000  |          | 0.000  |          | 0.761    |          | 0.010    |          | 0.014    |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+|                           |      |         |       | (0.009 | )        | (0.013 | )        |          |          | (0.014   | )        | (0.020   | )      |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| $N$ (Students)            |      | 104     |       | 210    |          | 210    |          | 102      |          | 204      |          | 204      |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| **Panel C. Overall quality**                                                                                                                      |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| Overall quality (average) |      | 5.503   |       | 0.453  | $^{**}$  | 0.657  | $^{**}$  | 4.466    |          | 0.327    | $^{*}$   | 0.470    | $^{*}$ |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+|                           |      |         |       | (0.200 | )        | (0.290 | )        |          |          | (0.188   | )        | (0.274   | )      |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| Quality index (average)   |      | 5.758   |       | 0.344  | $^{*}$   | 0.498  | $^{*}$   | 4.645    |          | 0.301    | $^{*}$   | 0.431    | $^{*}$ |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+|                           |      |         |       | (0.180 | )        | (0.262 | )        |          |          | (0.173   | )        | (0.253   | )      |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
+| $N$ (Students)            |      | 103     |       | 207    |          | 207    |          | 97       |          | 198      |          | 198      |        |
++---------------------------+------+---------+-------+--------+----------+--------+----------+----------+----------+----------+----------+----------+--------+
 
-: Effects of Generative AI Access on Essay Linguistic Features
-
-</div>
-
-</div>
-
-<div class="singlespace">
-
-*Notes:* This table reports treatment effects of AI access on essay characteristics, including AI-detection and plagiarism measures, writing-style indices, and textual similarity. Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Panel A reports AI detection and plagiarism measures: AI-detected (fraction) is the fraction of text classified as AI-generated by the Pangram AI content detector; Plagiarism (fraction) is the fraction of text flagged as plagiarized by Pangram's plagiarism checker. Panel B reports z-scored writing style indices, standardized relative to the control group (Appendix Table 13 reports results for individual writing characteristics). Length index averages the z-scores of tokens, words, and sentences. Readability index averages four z-scored measures (sentence length, syllables per word, Flesch-Kincaid grade level, and Flesch Reading Ease), with signs oriented so that higher values indicate easier readability. Lexical diversity index averages the z-scored type-token ratio and hapax proportion. Panel C reports homogeneity and similarity measures: within-group similarity is the average pairwise cosine similarity between a student's essay embedding and all other essays in the same treatment $\times$ topic $\times$ prompt cell; reading material similarity is the cosine similarity between a student's essay embedding and the embedding of the provided reading material. Both are computed using a sentence-embedding model (Reimers and Gurevych, 2019) fine-tuned from the MPNet architecture (Song et al., 2020). Columns 1 and 4 report the control group mean. Columns 2 and 5 report intent-to-treat (ITT) estimates. Columns 3 and 6 report treatment-on-the-treated (TOT) estimates from two-stage least squares, instrumenting actual ChatGPT use with random treatment assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
-
-</div>
-
-<div class="center">
-
-<div id="tab:essay_quality_long">
-
-+---------------------------+------------+----------------------------------------------------------------+------------+----------------------------------------------------------------+---------+
-|                           |            | Session One                                                    |            | Session Two                                                    |         |
-+:==========================+:===========+===========:+:===========+===========:+:===========+===========:+:===========+===========:+:===========+===========:+:===========+===========:+:========+
-| 3-7                       |            | Control    |            |            |            |            |            | Control    |            |            |            |            |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Outcome                   |            | mean       |            | ITT        |            | TOT        |            | mean       |            | ITT        |            | TOT        |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            | \(1\)      |            | \(2\)      |            | \(3\)      |            | \(4\)      |            | \(5\)      |            | \(6\)      |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| **Panel A. Individual dimensions (human and AI averaged)**                                                                                                                            |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Accuracy                  |            | 6.745      |            | 0.198      |            | 0.296      |            | 5.204      |            | 0.312      |            | 0.466      |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            |            |            | (0.182     | )          | (0.271     | )          |            |            | (0.189     | )          | (0.288     | )       |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Evidence                  |            | 6.143      |            | 0.076      |            | 0.114      |            | 4.095      |            | 0.314      |            | 0.473      |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            |            |            | (0.223     | )          | (0.333     | )          |            |            | (0.196     | )          | (0.302     | )       |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Relevance                 |            | 6.957      |            | 0.118      |            | 0.178      |            | 6.073      |            | 0.409      | $^{**}$    | 0.597      | $^{**}$ |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            |            |            | (0.214     | )          | (0.322     | )          |            |            | (0.198     | )          | (0.295     | )       |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Organization              |            | 5.930      |            | 0.249      |            | 0.382      |            | 5.310      |            | 0.244      |            | 0.355      |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            |            |            | (0.210     | )          | (0.322     | )          |            |            | (0.207     | )          | (0.305     | )       |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Writing style             |            | 6.475      |            | 0.202      |            | 0.304      |            | 5.806      |            | 0.411      | $^{**}$    | 0.618      | $^{**}$ |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            |            |            | (0.180     | )          | (0.271     | )          |            |            | (0.169     | )          | (0.264     | )       |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| **Panel B. Overall quality**                                                                                                                                                          |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Overall quality (average) |            | 6.190      |            | 0.246      |            | 0.373      |            | 5.076      |            | 0.308      |            | 0.459      |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            |            |            | (0.211     | )          | (0.321     | )          |            |            | (0.210     | )          | (0.317     | )       |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| Quality index (average)   |            | 6.450      |            | 0.190      |            | 0.289      |            | 5.297      |            | 0.281      |            | 0.419      |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-|                           |            |            |            | (0.183     | )          | (0.279     | )          |            |            | (0.183     | )          | (0.276     | )       |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-| $N$                       |            | 104        |            | 209        |            | 209        |            | 97         |            | 197        |            | 197        |         |
-+---------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------+
-
-: Effects of Generative AI Access on Essay Quality
+: Effects of Generative AI Access on Essay Outcomes
 
 </div>
 
@@ -714,7 +636,7 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div class="singlespace">
 
-*Notes:* This table reports treatment effects of AI access on essay quality, scored across five sub-component dimensions and overall, averaging human and AI grades. Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Each dimension is scored on a 0–10 scale. Panel A reports individual dimension scores averaged across human and AI graders. Panel B reports overall quality and the average of the five sub-component scores (accuracy, evidence, relevance, organization, and writing style), each averaged across human and AI graders. Both human- and AI-grading regressions are at the student level; human grades are averaged across each essay's graders before estimation. Columns 1–3 report Session One results (when AI-allowed students had access to ChatGPT); columns 4–6 report Session Two results (when all students wrote without AI access). Intent-to-treat (ITT) estimates report the effect of being assigned to the AI-allowed group; treatment-on-the-treated (TOT) estimates instrument ChatGPT use with random assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports treatment effects of AI access on essay outcomes: AI-detection and plagiarism measures, textual similarity, and overall quality. Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Panel A reports AI-detection and plagiarism measures: AI-detected (fraction) is the fraction of text classified as AI-generated by the Pangram 4 AI content detector; Plagiarism (fraction) is the fraction of text flagged as plagiarized by Pangram's plagiarism checker. Panel B reports homogeneity and similarity measures: within-group similarity is the average pairwise cosine similarity between a student's essay embedding and all other essays in the same treatment $\times$ topic $\times$ prompt cell; reading material similarity is the cosine similarity between a student's essay embedding and the embedding of the provided reading material. Both are computed using a sentence-embedding model (Reimers and Gurevych, 2019) fine-tuned from the MPNet architecture (Song et al., 2020). Panel C reports overall quality (the grader's holistic assessment) and the quality index (the average of the five dimension scores: accuracy, evidence, relevance, organization, and writing style), each scored on a 0–10 scale and averaged across human and AI graders; human grades are averaged across each essay's graders before estimation, and Appendix Table 12 reports the five dimensions separately. The number of observations is reported below each panel. Columns 1 and 4 report the control-group mean. Columns 2 and 5 report intent-to-treat (ITT) estimates. Columns 3 and 6 report treatment-on-the-treated (TOT) estimates from two-stage least squares, instrumenting actual ChatGPT use with random treatment assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
@@ -722,69 +644,51 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div id="tab:mech_long">
 
-+:-----------------------------------------------+:---------+---------:+:---------+-----------------:+:---------+-----------------:+:---------+
-|                                                |          | Control  |          |                  |          |                  |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Outcome                                        |          | mean     |          | ITT              |          | TOT              |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          | \(1\)    |          | \(2\)            |          | \(3\)            |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| **Panel A. Time spent learning**                                                                                                 |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Time spent learning (Qualtrics, minutes)       |          | 32.611   |          | $-$0.205 |          | $-$0.304 |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.678           | )        | (1.008           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Time spent learning (self$-$reported, minutes) |          | 34.312   |          | $-$0.532 |          | $-$0.802 |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.669           | )        | (1.009           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| **Panel B. Time allocation**                                                                                                     |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Share on research activities (percent)         |          | 44.462   |          | 4.435            | $^{**}$  | 6.683            | $^{**}$  |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (2.245           | )        | (3.362           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Share on writing activities (percent)          |          | 53.381   |          | $-$5.347 | $^{**}$  | $-$8.056 | $^{**}$  |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (2.407           | )        | (3.571           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| **Panel C. Learning experience**                                                                                                 |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Enjoyed learning (continuous)                  |          | 5.221    |          | 0.665            | $^{**}$  | 1.008            | $^{**}$  |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.306           | )        | (0.474           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Enjoyed learning (above median)                |          | 0.481    |          | 0.141            | $^{**}$  | 0.211            | $^{**}$  |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.067           | )        | (0.103           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Found effective (continuous)                   |          | 5.000    |          | 0.129            |          | 0.191            |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.282           | )        | (0.420           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Found effective (above median)                 |          | 0.529    |          | 0.121            | $^{*}$   | 0.181            | $^{*}$   |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.068           | )        | (0.103           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| **Panel D. Academic integrity**                                                                                                  |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Caught by proctor                              |          | 0.029    |          | 0.057            | $^{*}$   | 0.085            | $^{*}$   |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.032           | )        | (0.047           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Self$-$reported AI use                         |          | 0.020    |          | 0.086            | $^{**}$  | 0.126            | $^{**}$  |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.034           | )        | (0.050           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| Any integrity violation                        |          | 0.049    |          | 0.126            | $^{***}$ | 0.185            | $^{***}$ |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-|                                                |          |          |          | (0.044           | )        | (0.064           | )        |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
-| $N$                                            |          | 102      |          | 205              |          | 205              |          |
-+------------------------------------------------+----------+----------+----------+------------------+----------+------------------+----------+
++:---------------------------------------------+:---------+---------:+:---------+-----------------:+:---------+-----------------:+:--------+
+|                                              |          | Control  |          |                  |          |                  |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Outcome                                      |          | mean     |          | ITT              |          | TOT              |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          | \(1\)    |          | \(2\)            |          | \(3\)            |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| **Panel A. Time spent learning**                                                                                               |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Time spent learning (Qualtrics, minutes)     |          | 32.611   |          | $-$0.205 |          | $-$0.292 |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          |          |          | (0.678           | )        | (0.968           | )       |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Time spent learning (self-reported, minutes) |          | 34.312   |          | $-$0.532 |          | $-$0.769 |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          |          |          | (0.669           | )        | (0.966           | )       |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| **Panel B. Time allocation**                                                                                                   |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Share on research activities (percent)       |          | 44.462   |          | 4.435            | $^{**}$  | 6.403            | $^{**}$ |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          |          |          | (2.245           | )        | (3.244           | )       |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Share on writing activities (percent)        |          | 53.381   |          | $-$5.347 | $^{**}$  | $-$7.719 | $^{**}$ |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          |          |          | (2.407           | )        | (3.450           | )       |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Share on other activities (percent)          |          | 2.157    |          | 0.911            |          | 1.316            |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          |          |          | (1.310           | )        | (1.883           | )       |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| **Panel C. Learning experience**                                                                                               |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Enjoyed learning (0–10)                     |          | 5.221    |          | 0.579            | $^{*}$   | 0.847            | $^{*}$  |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          |          |          | (0.310           | )        | (0.461           | )       |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| Found effective (0–10)                      |          | 5.000    |          | 0.059            |          | 0.084            |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+|                                              |          |          |          | (0.283           | )        | (0.400           | )       |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
+| $N$ (Students)                               |          | 104      |          | 210              |          | 210              |         |
++----------------------------------------------+----------+----------+----------+------------------+----------+------------------+---------+
 
-: Mechanisms: Time Use, Experience, and Academic Integrity
+: Time Use and Experience
 
 </div>
 
@@ -792,7 +696,7 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div class="singlespace">
 
-*Notes:* This table reports treatment effects of AI access on four mechanisms: total time spent learning (Panel A), how that time is allocated across activities (Panel B), the learning experience (Panel C), and academic integrity (Panel D). Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Time on task (Qualtrics) and Time on task (self-reported) are the duration of the learning phase in minutes, recorded by Qualtrics and in the post-learning survey, respectively. The Share on research, writing, and other activities rows express each category's self-reported minutes as a percentage of the student's total self-reported learning time; these rows report effects in percentage points (the control-mean column shows the control-group share). Enjoyed learning and Found effective are 0–10 self-reports; the (above median) rows are the corresponding binary indicators. Caught by proctor, Self-reported AI use, and Any integrity violation are indicators for being flagged by a proctor during the knowledge tests, admitting unauthorized AI use on the exit survey, and either occurring; the knowledge tests prohibited all students from using external resources. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports treatment effects of AI access on total time spent learning (Panel A), how that time is allocated across activities (Panel B), and the learning experience (Panel C). Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. The two time spent learning rows give the duration of the learning phase in minutes, recorded by Qualtrics and in the post-learning survey, respectively. The share on research, writing, and other activities rows express each category's self-reported minutes as a percentage of the student's total self-reported learning time; these rows report effects in percentage points. Enjoyed learning and Found effective are 0–10 self-reports. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
@@ -800,39 +704,45 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div id="tab:heterogeneity_ai">
 
-+--------------------+---------------+-------------------------------------------------------------------------------+---------------+-------------------------------------------------------------------------------+---+
-|                    |               | Session One                                                                   |               | Session Two                                                                   |   |
-+:===================+:==============+==============:+:==============+==============:+:==============+==============:+:==============+==============:+:==============+==============:+:==============+==============:+:==+
-| 3-7                |               | Test          |               | Overall       |               | Quality       |               | Test          |               | Overall       |               | Quality       |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-|                    |               | score         |               | quality       |               | index         |               | score         |               | quality       |               | index         |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-|                    |               | \(1\)         |               | \(2\)         |               | \(3\)         |               | \(4\)         |               | \(5\)         |               | \(6\)         |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| **Panel A. All students**                                                                                                                                                                                          |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| Overall (TOT)      |               | 0.396         | $^{**}$       | 0.263         |               | 0.238         |               | 0.393         | $^{**}$       | 0.300         |               | 0.310         |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-|                    |               | (0.188        | )             | (0.226        | )             | (0.229        | )             | (0.181        | )             | (0.207        | )             | (0.213        | ) |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| $N$                |               | 211           |               | 209           |               | 209           |               | 204           |               | 197           |               | 197           |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| **Panel B. By type of AI use**                                                                                                                                                                                     |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| Automation users   |               | 0.326         |               | 0.536         | $^{**}$       | 0.524         | $^{**}$       | 0.189         |               | 0.017         |               | 0.036         |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-|                    |               | (0.229        | )             | (0.242        | )             | (0.241        | )             | (0.193        | )             | (0.237        | )             | (0.246        | ) |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| $N$                |               | 133           |               | 132           |               | 132           |               | 131           |               | 126           |               | 126           |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| Augmentation users |               | 0.444         | $^{***}$      | 0.055         |               | 0.037         |               | 0.292         | $^{*}$        | 0.220         |               | 0.249         |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-|                    |               | (0.169        | )             | (0.191        | )             | (0.193        | )             | (0.154        | )             | (0.177        | )             | (0.186        | ) |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
-| $N$                |               | 147           |               | 147           |               | 147           |               | 143           |               | 136           |               | 136           |   |
-+--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---+
++--------------------+---------------+-------------------------------------------------------------------------------+---------------+----------------------------------------------------------------------------------------+--------+
+|                    |               | Session One                                                                   |               | Session Two                                                                            |        |
++:===================+:==============+==============:+:==============+==============:+:==============+==============:+:==============+=================:+:==============+=================:+:==============+=================:+:=======+
+| 3-7                |               | Test          |               | Overall       |               | Quality       |               | Test             |               | Overall          |               | Quality          |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+|                    |               | score         |               | quality       |               | index         |               | score            |               | quality          |               | index            |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+|                    |               | \(1\)         |               | \(2\)         |               | \(3\)         |               | \(4\)            |               | \(5\)            |               | \(6\)            |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| **Panel A. All students**                                                                                                                                                                                                   |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| Overall (TOT)      |               | 0.408         | $^{**}$       | 0.486         | $^{**}$       | 0.405         | $^{*}$        | 0.300            | $^{*}$        | 0.348            | $^{*}$        | 0.341            | $^{*}$ |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+|                    |               | (0.176        | )             | (0.215        | )             | (0.213        | )             | (0.166           | )             | (0.203           | )             | (0.200           | )      |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| $N$ (Students)     |               | 210           |               | 207           |               | 207           |               | 205              |               | 198              |               | 198              |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| **Panel B. By type of AI use**                                                                                                                                                                                              |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| Automation users   |               | 0.293         |               | 1.498         | $^{***}$      | 1.279         | $^{**}$       | $-$0.244 |               | $-$0.144 |               | $-$0.091 |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+|                    |               | (0.292        | )             | (0.535        | )             | (0.514        | )             | (0.395           | )             | (0.451           | )             | (0.484           | )      |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| $N$ (Students)     |               | 111           |               | 110           |               | 110           |               | 109              |               | 104              |               | 104              |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| Augmentation users |               | 0.345         | $^{**}$       | 0.092         |               | 0.062         |               | 0.243            | $^{*}$        | 0.231            |               | 0.142            |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+|                    |               | (0.158        | )             | (0.152        | )             | (0.160        | )             | (0.145           | )             | (0.186           | )             | (0.179           | )      |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| $N$ (Students)     |               | 150           |               | 147           |               | 147           |               | 147              |               | 140              |               | 140              |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| Mixed users        |               | 0.581         | $^{***}$      | 0.890         | $^{***}$      | 0.780         | $^{***}$      | 0.282            |               | 0.246            |               | 0.282            |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+|                    |               | (0.218        | )             | (0.312        | )             | (0.290        | )             | (0.228           | )             | (0.247           | )             | (0.251           | )      |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
+| $N$ (Students)     |               | 124           |               | 122           |               | 122           |               | 121              |               | 116              |               | 116              |        |
++--------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+------------------+---------------+------------------+---------------+------------------+--------+
 
-: Effects of AI Access by Type of AI Use: Automation versus Augmentation
+: Outcomes by Type of AI Use: Automation versus Augmentation
 
 </div>
 
@@ -840,194 +750,7 @@ Our findings have implications for incentive design in higher education. Augment
 
 <div class="singlespace">
 
-*Notes:* This table reports treatment effects on test scores and essay quality, separately for the full sample (Panel A) and by how students used AI (Panel B). Overall (TOT) is the treatment-on-the-treated estimate, instrumenting actual ChatGPT use with random assignment to the AI-allowed group. Treated students' conversation logs are classified into four mutually exclusive categories (see Appendix 9.6): *Automation*, if the AI did the work *for* the student; *Augmentation*, if the AI worked *with* the student (e.g., explaining concepts or giving feedback on the student's own writing); *Mixed*, if both occurred within the same conversation; and *Other*, if the conversation was off-topic. Panel B reports effects for two subgroups, each pooled with the control group as the comparison: *Automation users* (Automation + Mixed) and *Augmentation users* (Augmentation + Mixed). A student belongs to a subgroup if any of their conversations falls in it, so students with a Mixed conversation—or with separate Automation and Augmentation conversations—appear in both rows; the two subgroups are therefore not mutually exclusive, and the coefficients need not average to the Panel A overall effect. Treated students whose conversations were classified as Other, or who did not use ChatGPT at all, appear only in Panel A. All specifications use controls selected by double-lasso on the full sample (Belloni, Chernozhukov, and Hansen, 2014), with strata fixed effects. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
-
-</div>
-
-<div class="singlespace">
-
-# References
-Acemoglu, Daron, and Restrepo, Pascual (2019). Automation and New Tasks: How Technology Displaces and Reinstates Labor. *Journal of Economic Perspectives* 33(2):3–30.
-
-Ammari, Tawfiq, Chen, Meilun, Zaman, S M Mehedi, and Garimella, Kiran (2025). How Students (Really) Use ChatGPT: Uncovering Experiences Among Undergraduate Students.
-
-Andre, Peter, Haaland, Ingar, Roth, Christopher, Wiederholt, Mirko, and Wohlfart, Johannes (2026). Narratives about the Macroeconomy. *Review of Economic Studies*. Forthcoming.
-
-Ba, H., Zhang, L., and Yi, Z. (2024). Enhancing Clinical Skills in Pediatric Trainees: A Comparative Study of ChatGPT-Assisted and Traditional Teaching Methods. *BMC Medical Education* 24:558.
-
-Baird, Matthew, Carpanelli, Mar, Xu, Brian, and Xu, Kevin (2026). Firms' GitHub Copilot Adoption and Labor Market Outcomes for Software Engineers. *Contemporary Economic Policy*.
-
-Bassner, Patrick, Lenk-Ostendorf, Ben, Beinstingel, Ramona, Wasner, Tobias, and Krusche, Stephan (2026). Less Stress, Better Scores, Same Learning: The Dissociation of Performance and Learning in AI-Supported Programming Education. *Computers and Education: Artificial Intelligence* 10:100537.
-
-Bastani, Hamsa, Bastani, Osbert, Sungu, Alp, Ge, Haosen, Kabakc, Özge, and Mariman, Rei (2025). Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics. *Proceedings of the National Academy of Sciences* 122(26):e2422633122. Correction at rlhttps://doi.org/10.1073/pnas.2518204122.
-
-Becker, Joel, Rush, Nate, Barnes, Beth, and Rein, David (2025). Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity. *METR*.
-
-Belloni, Alexandre, Chernozhukov, Victor, and Hansen, Christian (2014). High-Dimensional Methods and Inference on Structural and Treatment Effects. *Journal of Economic Perspectives* 28(2):29–50.
-
-Bettinger, Eric P., Fox, Lindsay, Loeb, Susanna, and Taylor, Eric S. (2017). Virtual Classrooms: How Online College Courses Affect Student Success. *American Economic Review* 107(9):2855–2875.
-
-Bick, Alexander, Blandin, Adam, and Deming, David J. (2026). The Rapid Adoption of Generative AI. *Management Science*.
-
-Brynjolfsson, Erik, and Mitchell, Tom (2017). What Can Machine Learning Do? Workforce Implications. *Science* 358(6370):1530–1534.
-
-Brynjolfsson, Erik, Li, Danielle, and Raymond, Lindsey (2025). Generative AI at Work. *The Quarterly Journal of Economics* 140(2):889–942.
-
-Brysbaert, Marc (2019). How many words do we read per minute? A review and meta-analysis of reading rate. *Journal of Memory and Language* 109:104047.
-
-Budzyń, Krzysztof, Romańczyk, Marcin, Kitala, Diana, Kołodziej, Paweł, Bugajski, Marek, Adami, Hans O., Blom, Johannes, Buszkiewicz, Marek, Halvorsen, Natalie, Hassan, Cesare, Romańczyk, Tomasz, Holme, Øyvind, Jarus, Krzysztof, Fielding, Shona, Kunar, Melina, Pellise, Maria, Pilonis, Nastazja, Kamiński, Michał Filip, Kalager, Mette, Bretthauer, Michael, and Mori, Yuichi (2025). Endoscopist Deskilling Risk After Exposure to Artificial Intelligence in Colonoscopy: A Multicentre, Observational Study. *The Lancet Gastroenterology & Hepatology* 10(10):896–903.
-
-Bulman, George, and Fairlie, Robert W. (2016). Technology and Education: Computers, Software, and the Internet. *Handbook of the Economics of Education* 5:239–280.
-
-Caldwell, Jane E. (2007). Clickers in the Large Classroom: Current Research and Best-Practice Tips. *CBE—Life Sciences Education* 6(1):9–20.
-
-Carter, Susan Payne, Greenberg, Kyle, and Walker, Michael S. (2017). The Impact of Computer Usage on Academic Performance: Evidence from a Randomized Trial at the United States Military Academy. *Economics of Education Review* 56:118–132.
-
-Carver, Ronald P (1992). Reading rate: Theory, research, and practical implications. *Journal of Reading* 36(2):84–95.
-
-Chatterji, Aaron, Cunningham, Thomas, Deming, David J., Hitzig, Zoë, Ong, Christopher, Shan, Carl Yan, and Wadman, Kevin (2025). How People Use ChatGPT. *National Bureau of Economic Research*.
-
-Chi, Michelene T. H., and Wylie, Ruth (2014). The ICAP Framework: Linking Cognitive Engagement to Active Learning Outcomes. *Educational Psychologist* 49(4):219–243.
-
-Chiang, Cheng-Han, and Lee, Hung-yi (2023). Can Large Language Models Be an Alternative to Human Evaluations?. *Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics* 15607–15631.
-
-Choi, Jonathan H., Monahan, Amy B., and Schwarcz, Daniel (2024). Lawyering in the Age of Artificial Intelligence. *Minnesota Law Review* 109(1):147–218.
-
-Chung, Angel Tsai-Hsuan, Zhang, Botong, Kung, Ling-Chieh, Bastani, Hamsa, and Bastani, Osbert (2026). Effective Personalized AI Tutors via LLM-Guided Reinforcement Learning. *University of Pennsylvania*.
-
-Contractor, Zara, and Reyes, Germán (2026). Generative AI in Higher Education: Evidence from an Elite College. IZA Discussion Paper Nr. 18055.
-
-Cristia, Julian, Ibarrarán, Pablo, Cueto, Santiago, Santiago, Ana, and Severín, Eugenio (2017). Technology and Child Development: Evidence from the One Laptop per Child Program. *American Economic Journal: Applied Economics* 9(3):295–320.
-
-Cruces, Guillermo, Fernández Meijide, Diego, Galiani, Sebastian, Gálvez, Ramiro H., and Lombardi, María (2026). Does Generative AI Narrow Education-Based Productivity Gaps? Evidence from a Randomized Experiment. *National Bureau of Economic Research*.
-
-Cui, Zheyuan (Kevin), Demirer, Mert, Jaffe, Sonia, Musolff, Leon, Peng, Sida, and Salz, Tobias (2026). The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers. *Management Science*.
-
-Dai, Xusheng, Wen, Zhaochun, Jiang, Jianxiao, Liu, Huiqin, and Zhang, Yu (2025). How Students Use AI Feedback Matters: Experimental Evidence on Physics Achievement and Autonomy.
-
-De Simone, Martín E., Tiberti, Federico, Barrón Rodríguez, María, Manolio, Federico, Mosuro, Wuraola, and Dikoru, Eliot Jolomi (2025). From Chalkboards to Chatbots: Evaluating the Impact of Generative AI on Learning Outcomes in Nigeria. *World Bank*.
-
-Dell'Acqua, Fabrizio, Ayoubi, Charles, Lifshitz, Hila, Sadun, Raffaella, Mollick, Ethan, Mollick, Lilach, Han, Yi, Goldman, Jeff, Nair, Hari, Taub, Stewart, and Lakhani, Karim R. (2025). The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise. *National Bureau of Economic Research*.
-
-Dell'Acqua, Fabrizio, McFowland, Edward, Mollick, Ethan R., Lifshitz-Assaf, Hila, Kellogg, Katherine, Rajendran, Saran, Krayer, Lisa, Candelon, François, and Lakhani, Karim R. (2026). Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality. *Organization Science*.
-
-DerSimonian, Rebecca, and Laird, Nan (1986). Meta-Analysis in Clinical Trials. *Controlled Clinical Trials* 7(3):177–188.
-
-Dettling, Lisa J., Goodman, Sarena, and Smith, Jonathan (2018). Every Little Bit Counts: The Impact of High-Speed Internet on the Transition to College. *The Review of Economics and Statistics* 100(2):260–273.
-
-Doshi, Anil R., and Hauser, Oliver P. (2024). Generative AI Enhances Individual Creativity but Reduces the Collective Diversity of Novel Content. *Science Advances* 10(28):eadn5290.
-
-Emi, Bradley, and Spero, Max (2024). Technical Report on the Pangram AI-Generated Text Classifier. *Pangram Labs*.
-
-Escueta, Maya, Nickow, Andre Joshua, Oreopoulos, Philip, and Quan, Vincent (2020). Upgrading education with technology: Insights from experimental research. *Journal of Economic Literature* 58(4):897–996.
-
-Figlio, David N., Rush, Mark, and Yin, Lu (2013). Is It Live or Is It Internet? Experimental Estimates of the Effects of Online Instruction on Student Learning. *Journal of Labor Economics* 31(4):763–784.
-
-Fischer, Mira, Rau, Holger A., and Rilke, Rainer Michael (2025). AI Tutoring Enhances Student Learning Without Crowding Out Reading Effort. *IZA Institute of Labor Economics*.
-
-Gan, W., Ouyang, J., Li, H., Xue, Z., Zhang, Y., Dong, Q., Huang, J., Zheng, X., and Zhang, Y. (2024). Integrating ChatGPT in Orthopedic Education for Medical Undergraduates: Randomized Controlled Trial. *Journal of Medical Internet Research* 26:e57037.
-
-Goldsmith-Pinkham, Paul, Tan, Chenhao, and Zentefis, Alexander K. (2026). Human-AI Collaboration in Radiology: The Case of Pulmonary Embolism. *arXiv preprint arXiv:2601.13379*.
-
-Kunal Handa, Drew Bent, Alex Tamkin, Miles McCain, Esin Durmus, Michael Stern, Mike Schiraldi, Saffron Huang, Stuart Ritchie, Steven Syverud, Kamya Jagadish, Margaret Vo, Matt Bell, and Deep Ganguli (2025). Anthropic Education Report: How University Students Use Claude.
-
-Hirabayashi, Shikoh, Jain, Rishab, Jurkovic, Nikola, and Wu, Gabriel (2024). Harvard undergraduate survey on generative AI. *arXiv preprint arXiv:2406.00833*.
-
-Hou, Xiaoyu, Xiao, Bo, Liu, Hexu, and Mueller, Shane (2026). The Role of Instructional Guidance in Generative AI-Assisted Learning: Empirical Evidence from Construction Engineering Education.
-
-Huang, S., Wen, C., Bai, X., Li, S., Wang, S., Wang, X., and Yang, D. (2025). Exploring the Application Capability of ChatGPT as an Instructor in Skills Education for Dental Medical Students: Randomized Controlled Trial. *Journal of Medical Internet Research* 27:e68538.
-
-Hutto, Clayton, and Gilbert, Eric (2014). Vader: A parsimonious rule-based model for sentiment analysis of social media text. *Proceedings of the International AAAI Conference on Weblogs and Social Media (ICWSM)* 8:216–225.
-
-Jabarian, Brian, and Imas, Alex (2025). Artificial Writing and Automated Detection. *National Bureau of Economic Research*.
-
-Jackson, C. Kirabo, and Mackevicius, Claire L. (2024). What Impacts Can We Expect from School Spending Policy? Evidence from Evaluations in the U.S. *American Economic Journal: Applied Economics* 16(1):412–446.
-
-Jensen, Robert (2010). The (perceived) returns to education and the demand for schooling. *The Quarterly Journal of Economics* 125(2):515–548.
-
-Jia, Nan, Luo, Xueming, Fang, Zheng, and Liao, Chengcheng (2024). When and How Artificial Intelligence Augments Employee Creativity. *Academy of Management Journal* 67(1):5–32.
-
-Kanazawa, Kyogo, Kawaguchi, Daiji, Shigeoka, Hitoshi, and Watanabe, Yasutora (2025). AI, Skill, and Productivity: The Case of Taxi Drivers. *Management Science*.
-
-Kavadella, Argyro, Dias da Silva, Marco Antonio, Kaklamanos, Eleftherios G., Stamatopoulos, Vasileios, and Giannakopoulos, Kostis (2024). Evaluation of ChatGPT's Real-Life Implementation in Undergraduate Dental Education: Mixed Methods Study. *JMIR Medical Education* 10:e51344.
-
-Kazemitabaar, Majeed, Chow, Justin, Ma, Carl Ka To, Ericson, Barbara J., Weintrop, David, and Grossman, Tovi (2023). Studying the Effect of AI Code Generators on Supporting Novice Learners in Introductory Programming. *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*.
-
-Kestin, Greg, Miller, Kelly, Klales, Anna, Milbourne, Timothy, and Ponti, Gregorio (2025). AI Tutoring Outperforms In-Class Active Learning: An RCT Introducing a Novel Research-Based Design in an Authentic Educational Setting. *Scientific Reports* 15:17458.
-
-Kim, Donggwan, Mitrofanov, Dmitry, Wen, Qingsong, and Xu, Tianlong (2025). Generative AI Can Improve Performance and Engagement Without Harming Learning.
-
-Kraft, Matthew A. (2020). Interpreting Effect Sizes of Education Interventions. *Educational Researcher* 49(4):241–253.
-
-Kreijkes, Pia, Kewenig, Viktor, Kuvalja, Martina, Lee, Mina, Vitello, Sylvia, Hofman, Jake M., Sellen, Abigail, Rintel, Sean, Goldstein, Daniel G., Rothschild, David M., Tankelevitch, Lev, and Oates, Tim (2026). Effects of LLM Use and Note-Taking on Reading Comprehension and Memory: A Randomised Experiment in Secondary Schools. *Computers & Education* 243:105514.
-
-Kumar, Harsh, Rothschild, David M., Goldstein, Daniel G., and Hofman, Jake M. (2025). Math Education With Large Language Models: Peril or Promise?. *Artificial Intelligence in Education (AIED 2025)*.
-
-LearnLM Team (2024). LearnLM: Improving Gemini for Learning.
-
-LearnLM Team (2026). Teaching with Gemini: Measuring the Impact of Guided Learning on Student Mathematics Progress in Sierra Leone. *Google DeepMind and Fab AI*.
-
-Lee, Hao-Ping (Hank), Sarkar, Advait, Tankelevitch, Lev, Drosos, Ian, Rintel, Sean, Banks, Richard, and Wilson, Nicholas (2025). The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*.
-
-Lehmann, Matthias, Cornelius, Philipp B., and Sting, Fabian J. (2025). AI Meets the Classroom: When Do Large Language Models Harm Learning?.
-
-Lewin, Cathy, Somekh, Bridget, and Steadman, Stephen (2008). Embedding Interactive Whiteboards in Teaching and Learning: The Process of Change in Pedagogic Practice. *Education and Information Technologies* 13(4):291–303.
-
-Lira, Benjamin, Rogers, Todd, Goldstein, Daniel G., Ungar, Lyle, and Duckworth, Angela L. (2025). Coach Not Crutch: Evidence that AI Can Improve Writing Skill Despite Reducing Effort. *University of Pennsylvania*. arXiv:2502.02880.
-
-Liu, Yang, Iter, Dan, Xu, Yichong, Wang, Shuohang, Xu, Ruochen, and Zhu, Chenguang (2023). G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment. *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing* 2511–2522.
-
-Liu, Grace, Christian, Brian, Dumbalska, Tsvetomira, Bakker, Michiel A., and Dubey, Rachit (2026). AI Assistance Reduces Persistence and Hurts Independent Performance.
-
-Malamud, Ofer, and Pop-Eleches, Cristian (2011). Home Computer Use and the Development of Human Capital. *The Quarterly Journal of Economics* 126(2):987–1027.
-
-Masrour, Elyas (2025). Introducing Pangram's Plagiarism Detection.
-
-Masrour, Elyas, Emi, Bradley N., and Spero, Max (2025). DAMAGE: Detecting Adversarially Modified AI Generated Text. *Proceedings of the 1st Workshop on Detecting AI Generated Content (GenAIDetect), COLING* 71–86.
-
-Meincke, Lennart, Nave, Gideon, and Terwiesch, Christian (2025). ChatGPT Decreases Idea Diversity in Brainstorming. *Nature Human Behaviour* 9(6):1107–1109.
-
-Moon, Kibum, Kushlev, Kostadin, Bank, Andrew, Lira Luttges, Benjamin, Viskontas, Indre, Kaufman, James C., Johnson, Dan Richard, Duckworth, Angela, and Green, Adam (2026). The Creative Link Between Words and Ideas Is Weakening in the AI Era. PsyArXiv preprint.
-
-Moon, Kibum, Green, Adam E., and Kushlev, Kostadin (2025). Homogenizing Effect of Large Language Models (LLMs) on Creative Diversity: An Empirical Comparison of Human and ChatGPT Writing. *Computers in Human Behavior: Artificial Humans* 6:100207.
-
-Mozannar, Hussein, Bansal, Gagan, Fourney, Adam, and Horvitz, Eric (2024). Reading Between the Lines: Modeling User Behavior and Costs in AI-Assisted Programming. *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems*.
-
-Nickow, Andre, Oreopoulos, Philip, and Quan, Vincent (2024). The Promise of Tutoring for PreK–12 Learning: A Systematic Review and Meta-Analysis of the Experimental Evidence. *American Educational Research Journal* 61(1):74–107.
-
-Noy, Shakked, and Zhang, Whitney (2023). Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence. *Science* 381(6654):187–192.
-
-OpenAI (2025). Building an AI-Ready Workforce: A Look at College Student ChatGPT Adoption in the US. *OpenAI*.
-
-Peng, Sida, Kalliamvakou, Eirini, Cihon, Peter, and Demirer, Mert (2023). The Impact of AI on Developer Productivity: Evidence from GitHub Copilot.
-
-Poulidis, Stefanos, Bastani, Hamsa, and Bastani, Osbert (2025). Self-Regulated AI Use Hinders Long-Term Learning. *University of Pennsylvania*.
-
-Ravšelj, Dejan, Keržič, Damijana, Tomaževič, Nina, Umek, Lan, Brezovar, Nejc, and others (2025). Higher Education Students' Perceptions of ChatGPT: A Global Study of Early Reactions. *PLOS ONE* 20(2):e0315011.
-
-Reimers, Nils, and Gurevych, Iryna (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing* 3982–3992.
-
-Risko, Evan F., and Gilbert, Sam J. (2016). Cognitive Offloading. *Trends in Cognitive Sciences* 20(9):676–688.
-
-Shen, Judy Hanwen, and Tamkin, Alex (2026). How AI Impacts Skill Formation.
-
-Song, Kaitao, Tan, Xu, Qin, Tao, Lu, Jianfeng, and Liu, Tie-Yan (2020). MPNet: Masked and Permuted Pre-training for Language Understanding. *Advances in Neural Information Processing Systems (NeurIPS)* 33:16857–16867.
-
-Strömberg, David, Lei, Victor, and Wu, Yanhui (2026). The Generative AI Learning Penalty: Evidence from Chinese Secondary Education. *Centre for Economic Policy Research*.
-
-Stöhr, Christian, Ou, Amy Wanyu, and Malmström, Hans (2024). Perceptions and Usage of AI Chatbots Among Students in Higher Education Across Genders, Academic Levels and Fields of Study. *Computers and Education: Artificial Intelligence* 7:100259.
-
-Thai, Katherine, Emi, Bradley, Masrour, Elyas, and Iyyer, Mohit (2026). EditLens: Quantifying the Extent of AI Editing in Text. *International Conference on Learning Representations (ICLR)*.
-
-Vigdor, Jacob L., Ladd, Helen F., and Martinez, Erika (2014). Scaling the Digital Divide: Home Computer Technology and Student Achievement. *Economic Inquiry* 52(3):1103–1119.
-
-Wiswall, Matthew, and Zafar, Basit (2015). Determinants of college major choice: Identification using an information experiment. *The Review of Economic Studies* 82(2):791–824.
-
-Xu, Xiaoqing, Qiao, Lifang, Cheng, Nuo, Liu, Hongxia, and Zhao, Wei (2025). Enhancing Self-Regulated Learning and Learning Experience in Generative AI Environments: The Critical Role of Metacognitive Support. *British Journal of Educational Technology* 56(5):1842–1863.
-
-Yakura, Hiromu, Lopez-Lopez, Ezequiel, Brinkmann, Levin, Serna, Ignacio, Gupta, Prateek, Soraperra, Ivan, and Rahwan, Iyad (2024). Empirical evidence of large language model's influence on human spoken communication.
-
-Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhuang, Yonghao, Lin, Zi, Li, Zhuohan, Li, Dacheng, Xing, Eric P., Zhang, Hao, Gonzalez, Joseph E., and Stoica, Ion (2023). Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena. *Advances in Neural Information Processing Systems* 36.
+*Notes:* This table reports treatment effects on test scores and essay quality, separately for the full sample (Panel A) and by how students used AI (Panel B). Overall (TOT) is the treatment-on-the-treated estimate, instrumenting actual ChatGPT use with random assignment to the AI-allowed group. A research assistant classified treated students' conversation logs into four mutually exclusive categories (Section 5.3): *Automation*, if the AI did the work *for* the student; *Augmentation*, if the AI worked *with* the student (e.g., explaining concepts or giving feedback on the student's own writing); *Mixed*, if both occurred within the same conversation; and *Other*, if the conversation was off-topic. Students with more than one conversation pool the labels: a student is a mixed user if any conversation is labeled Mixed or if the conversations include both an Automation and an Augmentation label, and otherwise takes the single substantive label; off-topic conversations do not affect the classification. Panel B reports differences between each of three mutually exclusive groups of treated students and the full control group. Treated students whose conversations were classified as Other, or who did not use ChatGPT at all, appear only in Panel A. All six outcomes are standardized by the control-group mean and standard deviation of the corresponding session, so the coefficients are in control-group SD units. All specifications use controls selected by double-lasso on the full sample (Belloni, Chernozhukov, and Hansen, 2014), with strata fixed effects. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
@@ -1067,21 +790,65 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 <figcaption>Panel B. Language Building computer lab (SDL 122)</figcaption>
 </figure>
 
-<figure id="fig:essay_quality_detailed" data-latex-placement="H">
-<embed src="results/ai_impact_quality_detailed.pdf" />
-<p><em>Notes:</em> This figure presents treatment effects of AI access on individual essay quality dimensions, measured in standard deviations. The top panel shows human-graded dimensions: essays were evaluated by independent graders on five rubric dimensions plus an overall quality rating (factual accuracy, use of evidence and examples, relevance to the prompt, structure and organization, writing style and clarity, and overall quality). Human-graded regressions are at the student level, averaging each essay’s scores across its graders. The bottom panel shows the same dimensions as scored by an AI grader (see Appendix <a href="#app:ai_grading" data-reference-type="ref" data-reference="app:ai_grading">9.4</a>). Each dimension is scored on a scale from 0 to 10 and standardized to have mean zero and standard deviation one in the control group. Circles represent Session One effects (essays written with or without AI access); diamonds represent Session Two effects (essays written one week later without AI access). Horizontal lines represent 95 percent confidence intervals based on heteroskedasticity-robust standard errors.</p>
-<figcaption>Effects of AI Access on Essay Quality, by Dimension</figcaption>
+<figure data-latex-placement="H">
+<figure>
+<embed src="results/fig_loo_slots_s1.pdf" />
+<figcaption>Panel A. Session One</figcaption>
+</figure>
+<figure>
+<embed src="results/fig_loo_slots_s2.pdf" />
+<figcaption>Panel B. Session Two</figcaption>
+</figure>
+<p><em>Notes:</em> This figure re-estimates the test-score ITT for Session One (Panel A) and Session Two (Panel B) excluding one of the eight time slots (the student’s Session One time slot, the randomization stratum) at a time. The hollow marker keeps all slots and reproduces the estimates in Table <a href="#tab:test_score_long" data-reference-type="ref" data-reference="tab:test_score_long">4</a> (the dashed line marks that benchmark). Each estimate re-selects double-lasso controls on its subsample (Belloni, Chernozhukov, and Hansen, 2014) and includes strata fixed effects. Vertical bars represent 95 percent confidence intervals from heteroskedasticity-robust standard errors. Excluding a slot leaves 173–190 students in Session One and 171–185 in Session Two.</p>
+<figcaption>Panel B. Session Two</figcaption>
+</figure>
+
+<figure data-latex-placement="H">
+<p><strong>Session One</strong><br />
+</p>
+<figure>
+<embed src="results/fig_item_level_s1_items.pdf" />
+<figcaption>Panel A. Effect by item</figcaption>
+</figure>
+<figure>
+<embed src="results/fig_item_level_s1_loo.pdf" />
+<figcaption>Panel B. Leave one item out</figcaption>
+</figure>
+<p><strong>Session Two</strong><br />
+</p>
+<figure>
+<embed src="results/fig_item_level_s2_items.pdf" />
+<figcaption>Panel C. Effect by item</figcaption>
+</figure>
+<figure>
+<embed src="results/fig_item_level_s2_loo.pdf" />
+<figcaption>Panel D. Leave one item out</figcaption>
+</figure>
+<p><em>Notes:</em> This figure decomposes the test-score effects of Table <a href="#tab:test_score_long" data-reference-type="ref" data-reference="tab:test_score_long">4</a> by item. The Session One post-learning test has five items and the Session Two test has ten. Panels A and C report the ITT on the probability of answering each item correctly, in percentage points. Panels B and D report the ITT on the fraction of items answered correctly when one item at a time is excluded. The hollow marker keeps all items and reproduces the fraction-correct estimates in Table <a href="#tab:test_score_long" data-reference-type="ref" data-reference="tab:test_score_long">4</a> (in percentage points), and the dashed line marks that benchmark. Each estimate selects double-lasso controls for its own outcome (Belloni, Chernozhukov, and Hansen, 2014) and includes strata fixed effects. Vertical bars are 95 percent confidence intervals from heteroskedasticity-robust standard errors.</p>
+<figcaption>Panel D. Leave one item out</figcaption>
 </figure>
 
 <figure id="fig:writing_char_detailed" data-latex-placement="H">
 <embed src="results/ai_impact_essay_detailed.pdf" />
-<p><em>Notes:</em> This figure presents treatment effects of AI access on individual essay characteristics, measured in standard deviations. Each variable is standardized to have mean zero and standard deviation one in the control group. Variables are grouped into four categories, indicated by colored vertical bars: length (number of tokens, words, and sentences), ease of readability (sentence length, syllables per word, Flesch-Kincaid grade level, and Flesch Reading Ease score, with difficulty measures reversed so that higher values indicate easier readability), lexical diversity (type-token ratio and hapax proportion), and homogeneity and similarity (within-group cosine similarity and reading material cosine similarity). Circles represent Session One effects; diamonds represent Session Two effects. Horizontal lines represent 95 percent confidence intervals based on heteroskedasticity-robust standard errors.</p>
+<p><em>Notes:</em> This figure presents treatment effects of AI access on individual essay characteristics, measured in standard deviations. Each variable is standardized to have mean zero and standard deviation one in the control group. Variables are grouped into four categories, indicated by colored vertical bars: length (number of tokens, words, and sentences), ease of reading (sentence length, syllables per word, Flesch–Kincaid grade level, and Flesch Reading Ease score, with difficulty measures reversed so that higher values indicate easier readability), lexical diversity (type–token ratio and hapax proportion), and homogeneity and similarity (within-group cosine similarity and reading material cosine similarity). Circles represent Session One effects; diamonds represent Session Two effects. Horizontal lines represent 95 percent confidence intervals based on heteroskedasticity-robust standard errors.</p>
 <figcaption>Effects of AI Access on Essay Characteristics, by Dimension</figcaption>
+</figure>
+
+<figure id="fig:essay_quality_detailed" data-latex-placement="H">
+<embed src="results/ai_impact_quality_detailed.pdf" />
+<p><em>Notes:</em> This figure presents treatment effects of AI access on individual essay quality dimensions, measured in standard deviations. The top panel shows human-graded dimensions: essays were evaluated by independent graders on five rubric dimensions plus an overall quality rating (accuracy of content, use of evidence and examples, relevance to the prompt, organization and structure, writing style and clarity, and overall quality). Human-graded regressions are at the student level, averaging each essay’s scores across its graders. The bottom panel shows the same dimensions as scored by an AI grader (see Appendix <a href="#app:ai_grading" data-reference-type="ref" data-reference="app:ai_grading">9.4</a>). Each dimension is scored on a scale from 0 to 10 and standardized to have mean zero and standard deviation one in the control group. Circles represent Session One effects (essays written with or without AI access); diamonds represent Session Two effects (essays written one week later without AI access). Horizontal lines represent 95 percent confidence intervals based on heteroskedasticity-robust standard errors.</p>
+<figcaption>Effects of AI Access on Essay Quality, by Dimension and Grader</figcaption>
+</figure>
+
+<figure id="fig:time_learning_dist" data-latex-placement="H">
+<embed src="results/fig_time_learning_dist.pdf" />
+<p><em>Notes:</em> This figure plots the distribution of the Qualtrics-recorded duration of the Session One learning phase, by whole minute, separately for the AI-forbidden and AI-allowed conditions.</p>
+<figcaption>Distribution of Learning-Phase Duration by Treatment Arm</figcaption>
 </figure>
 
 <figure id="fig:mech_inputs" data-latex-placement="H">
 <embed src="results/ai_impact_inputs_share.pdf" />
-<p><em>Notes:</em> This figure presents treatment effects of AI access on self-reported time allocation across different learning activities, measured as each activity’s share of the student’s total self-reported learning time (in percentage points). Students reported how many minutes they spent on each activity during the 35-minute learning phase; each activity’s share is its minutes divided by the sum of minutes across all activities. The survey labels were: “Writing a first draft of your write-up” (Drafting), “Revising and editing your draft” (Editing), “Taking notes on key concepts and facts” (Note-taking), “Planning your writing task structure and arguments” (Organizing), “Finding information about the topic, searching for relevant sources” (Searching), “Reading and comprehending information about the topic” (Reading), and “Casually browsing the web, unrelated to the topic” and “Other activities” combined (Other). Navy bars represent writing activities, maroon bars represent research activities, and orange bars represent other activities. Bars represent the estimated treatment effect for each activity, with horizontal lines showing 95 percent confidence intervals. Numbers in parentheses indicate the control group mean share.</p>
+<p><em>Notes:</em> This figure presents treatment effects of AI access on self-reported time allocation across different learning activities, measured as each activity’s share of the student’s total self-reported learning time (in percentage points). Students reported how many minutes they spent on each activity during the 35-minute learning phase; each activity’s share is its minutes divided by the sum of minutes across all activities. The survey labels were: “Writing a first draft of your write-up” (Drafting), “Revising and editing your draft” (Editing), “Taking notes on key concepts and facts” (Note-taking), “Planning your writing task structure and arguments” (Organizing), “Finding information about the topic, searching for relevant sources” (Searching), “Reading and comprehending information about the topic” (Reading), and “Casually browsing the web, unrelated to the topic” and “Other activities” combined (Other). Navy bars represent writing activities, maroon bars represent research activities, and orange bars represent other activities. Bars represent the estimated treatment effect for each activity, with horizontal lines showing 95 percent confidence intervals. Numbers in parentheses indicate the control-group mean share.</p>
 <figcaption>Mechanisms: Time Allocation Across Learning Activities</figcaption>
 </figure>
 
@@ -1094,7 +861,7 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 </figure>
 <figure>
 <embed src="results/ai_usage_by_type_act_aug.pdf" />
-<figcaption>Panel B. Revealed usage (ChatGPT logs)</figcaption>
+<figcaption>Panel B. ChatGPT logs</figcaption>
 </figure>
 <p><strong>Automation users</strong><br />
 </p>
@@ -1104,56 +871,20 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 </figure>
 <figure>
 <embed src="results/ai_usage_by_type_act_auto.pdf" />
-<figcaption>Panel D. Revealed usage (ChatGPT logs)</figcaption>
+<figcaption>Panel D. ChatGPT logs</figcaption>
 </figure>
-<p><em>Notes:</em> This figure replicates the analysis from Figure <a href="#fig:ai_usage_type" data-reference-type="ref" data-reference="fig:ai_usage_type">[fig:ai_usage_type]</a>, separately for augmentation and automation users as classified by Claude Opus (see Appendix <a href="#app:chatgpt_classification" data-reference-type="ref" data-reference="app:chatgpt_classification">9.6</a>). Panels A and C present self-reported usage types from the exit survey; participants could select multiple categories. Panels B and D show the fraction of students with at least one prompt classified into each category from the actual ChatGPT conversation logs. Mixed users (with both augmentation and automation conversations) are included in both groups. Vertical bars denote 95 percent confidence intervals.</p>
-<figcaption>Panel D. Revealed usage (ChatGPT logs)</figcaption>
-</figure>
-
-<figure data-latex-placement="H">
-<p><strong>Session One</strong><br />
+<p><strong>Mixed users</strong><br />
 </p>
 <figure>
-<embed src="results/test_s1_by_gpa_quartile.pdf" />
-<figcaption>Panel A. By GPA quartile</figcaption>
+<embed src="results/ai_usage_by_type_self_mixed.pdf" />
+<figcaption>Panel E. Self-reported usage</figcaption>
 </figure>
 <figure>
-<embed src="results/test_s1_by_sat_quartile.pdf" />
-<figcaption>Panel B. By SAT quartile</figcaption>
+<embed src="results/ai_usage_by_type_act_mixed.pdf" />
+<figcaption>Panel F. ChatGPT logs</figcaption>
 </figure>
-<p><strong>Session Two</strong><br />
-</p>
-<figure>
-<embed src="results/test_s2_by_gpa_quartile.pdf" />
-<figcaption>Panel C. By GPA quartile</figcaption>
-</figure>
-<figure>
-<embed src="results/test_s2_by_sat_quartile.pdf" />
-<figcaption>Panel D. By SAT quartile</figcaption>
-</figure>
-<p><em>Notes:</em> This figure shows mean test scores by treatment status across quartiles of GPA (Panels A and C) and SAT scores (Panels B and D). The SAT panels are restricted to students who reported an SAT score; quartiles of GPA include all attendees. Numbers in parentheses below each tick label are within-quartile means of the splitting variable. The four SAT quartile means (1185, 1380, 1464, 1530) correspond approximately to the 75th, 92nd, 97th, and 99th percentiles of the College Board user-percentile distribution for SAT test-takers. Test scores are standardized to have mean zero and standard deviation one in the control group. Vertical bars denote 95 percent confidence intervals.</p>
-<figcaption>Panel D. By SAT quartile</figcaption>
-</figure>
-
-<figure data-latex-placement="H">
-<figure>
-<embed src="results/heterogeneity_test_s1.pdf" />
-<figcaption>Panel A. Test score, Session One</figcaption>
-</figure>
-<figure>
-<embed src="results/heterogeneity_test_s2.pdf" />
-<figcaption>Panel B. Test score, Session Two</figcaption>
-</figure>
-<figure>
-<embed src="results/heterogeneity_essay_s1.pdf" />
-<figcaption>Panel C. Essay quality, Session One</figcaption>
-</figure>
-<figure>
-<embed src="results/heterogeneity_essay_s2.pdf" />
-<figcaption>Panel D. Essay quality, Session Two</figcaption>
-</figure>
-<p><em>Notes:</em> This figure presents heterogeneity in the intent-to-treat effect of AI access across student subgroups. Panels A and B show effects on test score performance in Sessions One and Two; Panels C and D show effects on overall essay quality (the average of the human-graded and AI-graded overall scores) in Sessions One and Two. Within each panel, the top point (“All students”) reports the full-sample ITT, while subsequent points report subgroup-specific ITT estimates from separate regressions on each subgroup. All effects are expressed in standard deviations of the control-group outcome distribution. Each regression includes strata fixed effects and controls selected by double-lasso within the subgroup sample (Belloni, Chernozhukov, and Hansen, 2014), with heteroskedasticity-robust standard errors. Subgroups defined by median splits use the full-sample median; “AI use” splits students by frequency of AI use for academics. Horizontal dashed bars denote 95 percent confidence intervals.</p>
-<figcaption>Panel D. Essay quality, Session Two</figcaption>
+<p><em>Notes:</em> This figure replicates Figure <a href="#fig:ai_usage_type" data-reference-type="ref" data-reference="fig:ai_usage_type">[fig:ai_usage_type]</a> separately for augmentation, automation, and mixed users, as classified in Section <a href="#sub:aug_auto" data-reference-type="ref" data-reference="sub:aug_auto">5.3</a>. See notes to that figure for details.</p>
+<figcaption>Panel F. ChatGPT logs</figcaption>
 </figure>
 
 <figure id="fig:hist_perceived_te" data-latex-placement="H">
@@ -1164,79 +895,118 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 
 <div class="center">
 
+<div id="tab:sample_vs_body">
+
+  --------------------------------- -- -------------- -- --------- --
+                                         Experimental      Student 
+                                               sample         body 
+                                                \(1\)        \(2\) 
+  Female                                        0.635        0.533 
+  Male                                          0.351        0.463 
+  White                                         0.500        0.538 
+  Black                                         0.086        0.052 
+  Hispanic/Latino                               0.243        0.124 
+  Asian                                         0.286        0.073 
+  International student                         0.269           – 
+  Freshman                                      0.374        0.255 
+  Sophomore                                     0.137        0.257 
+  Junior                                        0.223        0.201 
+  Senior                                        0.265        0.287 
+  College GPA                                   3.683        3.670 
+  Has not declared major                        0.220        0.417 
+  Natural-science major                         0.308        0.244 
+  Social-science major                          0.365        0.243 
+  Humanities/Arts/Languages major               0.100        0.145 
+  $N$ (Students)                                  211        2,760 
+  --------------------------------- -- -------------- -- --------- --
+
+  : Experimental Sample Versus the Middlebury Student Body
+
+</div>
+
+</div>
+
+<div class="singlespace">
+
+*Notes:* Column 1 reports means among the Session One attendees; characteristics are self-reported at intake. Column 2 reports the Middlebury student-body figures compiled in Contractor and Reyes (2025), Table 1, from administrative enrollment records (Fall 2024) and the Middlebury Common Data Set 2024–25. The race rows are not strictly comparable: the sample indicators are self-reported and not mutually exclusive, while the administrative categories are exclusive and exclude international students, so the Asian and Hispanic/Latino rows overstate the difference. College GPA is self-reported in column 1 and the registrar's Spring 2024 grade point average in column 2. Fields of study in column 2 are classified by declared degree; the humanities row sums the compilation's arts, humanities, languages, and literature categories.
+
+</div>
+
+<div class="center">
+
 <div id="tab:compliance">
 
-+-----------------------------------------+----------+-----------------------------------------------------------+-----------------------------------------------------------+
-|                                         |          | Bivariate regression                                      | Multivariate regression                                   |
-+:========================================+:=========+=================:+:=========+=================:+:========:+=================:+:=========+=================:+:========:+
-| 3-5                                     |          | Used account     |          | Self-reported    |          | Used account     |          | Self-reported    |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | \(1\)            |          | \(2\)            |          | \(3\)            |          | \(4\)            |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| **Panel A. Demographic characteristics**                                                                                                                        |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Male                                    |          | 0.138            |          | 0.113            |          | 0.098            |          | 0.031            |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.104           | )        | (0.110           | )        | (0.110           | )        | (0.109           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| White                                   |          | $-$0.218 | $^{**}$  | $-$0.065 |          | $-$0.194 | $^{*}$   | 0.051            |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.107           | )        | (0.112           | )        | (0.114           | )        | (0.138           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| International student                   |          | 0.166            |          | 0.093            |          | 0.169            |          | 0.134            |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.115           | )        | (0.127           | )        | (0.150           | )        | (0.146           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Private high school                     |          | $-$0.043 |          | $-$0.083 |          | $-$0.176 |          | $-$0.208 | $^{**}$  |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.096           | )        | (0.106           | )        | (0.109           | )        | (0.100           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| **Panel B. Academic background**                                                                                                                                |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Natural Sciences major                  |          | $-$0.088 |          | $-$0.167 |          | $-$0.121 |          | $-$0.125 |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.100           | )        | (0.106           | )        | (0.127           | )        | (0.129           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Social Sciences major                   |          | 0.103            |          | 0.258            | $^{**}$  | 0.088            |          | 0.274            | $^{**}$  |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.099           | )        | (0.101           | )        | (0.121           | )        | (0.125           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| High GPA (above median)                 |          | $-$0.142 |          | $-$0.101 |          | $-$0.004 |          | 0.010            |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.090           | )        | (0.100           | )        | (0.110           | )        | (0.128           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Freshman                                |          | $-$0.112 |          | $-$0.071 |          | $-$0.209 |          | $-$0.004 |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.099           | )        | (0.109           | )        | (0.136           | )        | (0.147           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Sophomore                               |          | 0.082            |          | 0.119            |          | $-$0.094 |          | 0.034            |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.105           | )        | (0.125           | )        | (0.128           | )        | (0.174           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Junior                                  |          | $-$0.066 |          | $-$0.016 |          | $-$0.125 |          | $-$0.085 |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.127           | )        | (0.133           | )        | (0.142           | )        | (0.155           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| **Panel C. AI experience and beliefs**                                                                                                                          |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Frequent AI user (above median)         |          | 0.334            | $^{***}$ | 0.359            | $^{***}$ | 0.241            | $^{*}$   | 0.349            | $^{**}$  |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.108           | )        | (0.116           | )        | (0.145           | )        | (0.164           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| Early AI adopter (before Fall 2024)     |          | 0.176            | $^{*}$   | 0.161            |          | $-$0.012 |          | $-$0.071 |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.094           | )        | (0.103           | )        | (0.111           | )        | (0.131           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| High AI proficiency (above median)      |          | 0.231            | $^{**}$  | 0.264            | $^{**}$  | 0.093            |          | 0.151            |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.092           | )        | (0.103           | )        | (0.112           | )        | (0.146           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| High perceived AI effect (above median) |          | 0.001            |          | $-$0.185 |          | 0.070            |          | $-$0.081 |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-|                                         |          | (0.110           | )        | (0.134           | )        | (0.113           | )        | (0.128           | )        |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
-| $N$ (Students)                          |          | 107              |          | 102              |          | 107              |          | 102              |          |
-+-----------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
++-----------------------------------------------+----------+-----------------------------------------------------------+-----------------------------------------------------------+
+|                                               |          | Bivariate regression                                      | Multivariate regression                                   |
++:==============================================+:=========+=================:+:=========+=================:+:========:+=================:+:=========+=================:+:========:+
+| 3-5                                           |          | Used account     |          | Self-reported    |          | Used account     |          | Self-reported    |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | \(1\)            |          | \(2\)            |          | \(3\)            |          | \(4\)            |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| **Panel A. Demographic characteristics**                                                                                                                              |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Male                                          |          | 0.102            |          | 0.113            |          | 0.064            |          | 0.014            |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.102           | )        | (0.110           | )        | (0.114           | )        | (0.114           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| White                                         |          | $-$0.202 | $^{*}$   | $-$0.065 |          | $-$0.170 |          | 0.059            |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.106           | )        | (0.112           | )        | (0.119           | )        | (0.141           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| International student                         |          | 0.141            |          | 0.088            |          | 0.106            |          | 0.171            |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.114           | )        | (0.127           | )        | (0.151           | )        | (0.148           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Private high school                           |          | 0.010            |          | $-$0.077 |          | $-$0.126 |          | $-$0.244 | $^{**}$  |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.096           | )        | (0.106           | )        | (0.113           | )        | (0.107           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| **Panel B. Academic background**                                                                                                                                      |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Natural-science major                         |          | $-$0.063 |          | $-$0.167 |          | $-$0.109 |          | $-$0.123 |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.100           | )        | (0.106           | )        | (0.133           | )        | (0.133           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Social-science major                          |          | 0.118            |          | 0.258            | $^{**}$  | 0.125            |          | 0.281            | $^{**}$  |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.096           | )        | (0.101           | )        | (0.124           | )        | (0.130           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| High GPA (at or above median)                 |          | $-$0.144 |          | $-$0.114 |          | 0.007            |          | $-$0.005 |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.090           | )        | (0.100           | )        | (0.113           | )        | (0.127           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Freshman                                      |          | $-$0.143 |          | $-$0.071 |          | $-$0.214 |          | 0.015            |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.099           | )        | (0.109           | )        | (0.140           | )        | (0.150           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Sophomore                                     |          | 0.059            |          | 0.119            |          | $-$0.104 |          | 0.043            |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.105           | )        | (0.125           | )        | (0.131           | )        | (0.178           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Junior                                        |          | $-$0.034 |          | $-$0.016 |          | $-$0.125 |          | $-$0.029 |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.124           | )        | (0.133           | )        | (0.146           | )        | (0.161           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| **Panel C. AI experience and beliefs**                                                                                                                                |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Frequent AI user (at or above median)         |          | 0.357            | $^{***}$ | 0.359            | $^{***}$ | 0.283            | $^{*}$   | 0.325            | $^{**}$  |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.113           | )        | (0.116           | )        | (0.148           | )        | (0.162           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| Early AI adopter (before Fall 2024)           |          | 0.117            |          | 0.161            |          | $-$0.050 |          | $-$0.069 |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.096           | )        | (0.103           | )        | (0.113           | )        | (0.131           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| High AI proficiency (at or above median)      |          | 0.208            | $^{**}$  | 0.264            | $^{**}$  | 0.096            |          | 0.165            |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.096           | )        | (0.103           | )        | (0.119           | )        | (0.148           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| High perceived AI effect (at or above median) |          | $-$0.025 |          | $-$0.171 |          | 0.066            |          | $-$0.089 |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+|                                               |          | (0.121           | )        | (0.139           | )        | (0.116           | )        | (0.133           | )        |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
+| $N$ (Students)                                |          | 107              |          | 102              |          | 103              |          | 98               |          |
++-----------------------------------------------+----------+------------------+----------+------------------+----------+------------------+----------+------------------+----------+
 
 : Determinants of AI Use Among AI-Allowed Students
 
@@ -1246,73 +1016,28 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 
 <div class="singlespace">
 
-*Notes:* This table reports the association between student characteristics and AI use among treated students. Columns 1–2 are bivariate; columns 3–4 include all characteristics simultaneously. "Used account" (columns 1, 3) is based on ChatGPT server logs; "Self-reported" (columns 2, 4) is collected in Session Two. All variables are indicators. High GPA is above the sample median. Frequent AI user reports above-median frequency of AI use during the semester (occasional or more frequent). Early AI adopter first used AI for academics before Fall 2024. High AI proficiency exceeds the median self-assessed proficiency. High perceived AI effect indicates an above-median perceived treatment effect on test performance (believed score with AI minus believed counterfactual). All specifications include session (strata) fixed effects. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports the association between student characteristics and AI use among treated students. Columns 1–2 are bivariate; columns 3–4 include all characteristics simultaneously. "Used account" (columns 1, 3) is based on ChatGPT server logs; "Self-reported" (columns 2, 4) is collected in Session Two. All variables are indicators. High GPA is at or above the sample median. Frequent AI user reports AI use during the semester at or above the median frequency (occasional or more frequent). Early AI adopter first used AI for academics before Fall 2024. High AI proficiency is self-assessed proficiency at or above the median. High perceived AI effect is a perceived treatment effect on test performance (believed score with AI minus believed counterfactual) at or above the median of 0 questions, so the reference group is the students who expect AI to lower their score. Missing characteristics are set to zero. Every specification includes an indicator for missingness. All specifications include session (strata) fixed effects. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
 <div class="center">
 
-<div id="tab:test_score_by_topic">
+<div id="tab:integrity">
 
-+-----------------+-------------+------------------------------------------------------------------------------------+-------------+--------------------------------------------------------------------------+---+
-|                 |             | Session One                                                                        |             | Session Two                                                              |   |
-+:================+:============+=================:+:============+=================:+:============+=================:+:============+=================:+:============+============:+:============+============:+:==+
-| 3-7             |             | Control          |             |                  |             |                  |             | Control          |             |             |             |             |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Outcome         |             | mean             |             | ITT              |             | TOT              |             | mean             |             | ITT         |             | TOT         |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             | \(1\)            |             | \(2\)            |             | \(3\)            |             | \(4\)            |             | \(5\)       |             | \(6\)       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| **Panel A. Blockchain**                                                                                                                                                                                     |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Self$-$assessed |             | 4.795            |             | 0.548            | $^{*}$      | 0.843            | $^{*}$      | 3.895            |             | 0.211       |             | 0.317       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.299           | )           | (0.457           | )           |                  |             | (0.362      | )           | (0.533      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Frac. correct   |             | 0.528            |             | 0.054            |             | 0.084            |             | 0.584            |             | 0.026       |             | 0.041       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.053           | )           | (0.083           | )           |                  |             | (0.037      | )           | (0.058      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Test score (SD  | )           | $-$0.139 |             | 0.211            |             | 0.332            |             | 0.469            |             | 0.139       |             | 0.216       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.211           | )           | (0.328           | )           |                  |             | (0.197      | )           | (0.303      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| $N$             |             | 39               |             | 77               |             | 77               |             | 38               |             | 75          |             | 75          |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| **Panel B. CRISPR**                                                                                                                                                                                         |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Self$-$assessed |             | 4.735            |             | $-$0.082 |             | $-$0.135 |             | 3.606            |             | 0.174       |             | 0.363       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.307           | )           | (0.505           | )           |                  |             | (0.509      | )           | (1.045      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Frac. correct   |             | 0.647            |             | 0.087            |             | 0.124            |             | 0.470            |             | 0.062       |             | 0.126       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.062           | )           | (0.089           | )           |                  |             | (0.068      | )           | (0.150      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Test score (SD  | )           | 0.330            |             | 0.344            |             | 0.488            |             | $-$0.134 |             | 0.325       |             | 0.664       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.245           | )           | (0.352           | )           |                  |             | (0.356      | )           | (0.791      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| $N$             |             | 34               |             | 69               |             | 69               |             | 33               |             | 66          |             | 66          |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| **Panel C. Carbon capture**                                                                                                                                                                                 |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Self$-$assessed |             | 4.839            |             | 0.185            |             | 0.284            |             | 4.000            |             | 0.113       |             | 0.171       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.409           | )           | (0.632           | )           |                  |             | (0.375      | )           | (0.574      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Frac. correct   |             | 0.516            |             | 0.107            | $^{*}$      | 0.164            | $^{*}$      | 0.413            |             | 0.012       |             | 0.020       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.062           | )           | (0.098           | )           |                  |             | (0.034      | )           | (0.055      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| Test score (SD  | )           | $-$0.187 |             | 0.420            | $^{*}$      | 0.647            | $^{*}$      | $-$0.433 |             | 0.064       |             | 0.107       |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-|                 |             |                  |             | (0.245           | )           | (0.387           | )           |                  |             | (0.180      | )           | (0.289      | ) |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
-| $N$             |             | 31               |             | 65               |             | 65               |             | 31               |             | 63          |             | 63          |   |
-+-----------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+---+
+  ------------------------------------------ -- --------- -- -------- ---------- -------- ----------
+                                                  Control                                 
+  Outcome                                            mean         ITT                 TOT 
+                                                    \(1\)       \(2\)               \(3\) 
+  Caught by proctor                                 0.029       0.056 $^{*}$        0.080 $^{*}$
+                                                               (0.031 )            (0.045 )
+  Used unauthorized resources, Session One          0.010       0.096 $^{***}$      0.135 $^{***}$
+                                                               (0.032 )            (0.045 )
+  Any integrity violation                           0.039       0.136 $^{***}$      0.191 $^{***}$
+                                                               (0.043 )            (0.060 )
+  $N$ (Students)                                      102         205                 205 
+  ------------------------------------------ -- --------- -- -------- ---------- -------- ----------
 
-: The Impact of Generative AI on Learning, by Topic
+  : Effects of Generative AI Access on Academic Integrity
 
 </div>
 
@@ -1320,89 +1045,39 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 
 <div class="singlespace">
 
-*Notes:* This table replicates the main test-score results (Table 4) separately by assigned topic. Each panel restricts the sample to students assigned the indicated topic. All specifications mirror those in the main table: ITT estimates from OLS with double-lasso-selected controls (Belloni, Chernozhukov, and Hansen, 2014) and strata fixed effects; TOT estimates instrument ChatGPT use with random assignment. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports treatment effects of AI access on rule violations during the Session One knowledge test. The knowledge tests prohibited all students from using external resources. Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Caught by proctor is an indicator for being flagged by a proctor during the Session One knowledge test. Used unauthorized resources, Session One is an indicator for answering "Yes, during Session 1 only" to the exit-survey question, asked at the end of Session Two, "Did you use any unauthorized resources or assistance (such as looking up answers online or using AI tools) while completing the multiple choice questions in either session?"; no student reported a violation in Session Two. Any integrity violation is an indicator for either. Column 1 reports the control-group mean. Column 2 reports intent-to-treat (ITT) estimates. Column 3 reports treatment-on-the-treated (TOT) estimates from two-stage least squares, instrumenting actual ChatGPT use with random treatment assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
 <div class="center">
 
-<div id="tab:robustness">
+<div id="tab:writ_style_long">
 
-+------------------+----------------+------------------------------------------------------------------------------------------+----------------+------------------------------------------------------------------------------------+---------+
-|                  |                | Session One                                                                              |                | Session Two                                                                        |         |
-+:=================+:===============+=================:+:===============+=================:+:===============+=================:+:===============+===============:+:===============+===============:+:===============+===============:+:========+
-| 3-7              |                | Control          |                |                  |                |                  |                | Control        |                |                |                |                |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Outcome          |                | mean             |                | ITT              |                | TOT              |                | mean           |                | ITT            |                | TOT            |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                | \(1\)            |                | \(2\)            |                | \(3\)            |                | \(4\)          |                | \(5\)          |                | \(6\)          |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| **Panel A. Excluding failed attention check**                                                                                                                                                                                      |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Self$-$assessed  |                | 4.750            |                | 0.304            |                | 0.492            |                | 3.823          |                | 0.409          | $^{*}$         | 0.641          | $^{*}$  |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.238           | )              | (0.386           | )              |                |                | (0.243         | )              | (0.384         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Fraction correct |                | 0.550            |                | 0.097            | $^{**}$        | 0.155            | $^{**}$        | 0.508          |                | 0.055          | $^{*}$         | 0.086          | $^{*}$  |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.039           | )              | (0.062           | )              |                |                | (0.030         | )              | (0.048         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Test score (SD)  |                | $-$0.053 |                | 0.381            | $^{**}$        | 0.611            | $^{**}$        | 0.068          |                | 0.287          | $^{*}$         | 0.452          | $^{*}$  |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.153           | )              | (0.246           | )              |                |                | (0.158         | )              | (0.252         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| $N$              |                | 64               |                | 131              |                | 131              |                | 62             |                | 127            |                | 127            |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| **Panel B. Excluding failed comprehension**                                                                                                                                                                                        |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Self$-$assessed  |                | 4.819            |                | 0.067            |                | 0.101            |                | 3.793          |                | 0.112          |                | 0.165          |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.223           | )              | (0.337           | )              |                |                | (0.236         | )              | (0.346         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Fraction correct |                | 0.583            |                | 0.062            | $^{*}$         | 0.092            | $^{*}$         | 0.500          |                | 0.066          | $^{***}$       | 0.100          | $^{**}$ |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.037           | )              | (0.055           | )              |                |                | (0.025         | )              | (0.039         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Test score (SD)  |                | 0.078            |                | 0.243            | $^{*}$         | 0.362            | $^{*}$         | 0.026          |                | 0.350          | $^{***}$       | 0.527          | $^{**}$ |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.145           | )              | (0.218           | )              |                |                | (0.134         | )              | (0.205         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| $N$              |                | 83               |                | 167              |                | 167              |                | 82             |                | 161            |                | 161            |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| **Panel C. Excluding studied between sessions**                                                                                                                                                                                    |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Self$-$assessed  |                | 4.786            |                | $-$0.026 |                | $-$0.038 |                | 3.832          |                | 0.128          |                | 0.188          |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.191           | )              | (0.283           | )              |                |                | (0.201         | )              | (0.293         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Fraction correct |                | 0.563            |                | 0.067            | $^{**}$        | 0.100            | $^{**}$        | 0.500          |                | 0.044          | $^{**}$        | 0.065          | $^{**}$ |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.032           | )              | (0.048           | )              |                |                | (0.021         | )              | (0.033         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Test score (SD)  |                | $-$0.001 |                | 0.263            | $^{**}$        | 0.393            | $^{**}$        | 0.026          |                | 0.230          | $^{**}$        | 0.343          | $^{**}$ |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.125           | )              | (0.188           | )              |                |                | (0.112         | )              | (0.171         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| $N$              |                | 103              |                | 210              |                | 210              |                | 101            |                | 203            |                | 203            |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| **Panel D. Excluding looked-up topic**                                                                                                                                                                                             |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Self$-$assessed  |                | 4.763            |                | $-$0.027 |                | $-$0.040 |                | 3.811          |                | 0.175          |                | 0.255          |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.193           | )              | (0.285           | )              |                |                | (0.205         | )              | (0.297         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Fraction correct |                | 0.573            |                | 0.056            | $^{*}$         | 0.084            | $^{*}$         | 0.504          |                | 0.044          | $^{**}$        | 0.065          | $^{*}$  |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.033           | )              | (0.050           | )              |                |                | (0.022         | )              | (0.033         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| Test score (SD)  |                | 0.038            |                | 0.219            | $^{*}$         | 0.330            | $^{*}$         | 0.048          |                | 0.231          | $^{**}$        | 0.342          | $^{*}$  |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-|                  |                |                  |                | (0.131           | )              | (0.199           | )              |                |                | (0.115         | )              | (0.174         | )       |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
-| $N$              |                | 97               |                | 201              |                | 201              |                | 95             |                | 193            |                | 193            |         |
-+------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------------+----------------+----------------+----------------+----------------+----------------+---------+
++-------------------------+---+-------------------------------------------+---+----------------------------------------------------------------------+---+
+|                         |   | Session One (with AI)                     |   | Session Two (without AI)                                             |   |
++:========================+:==+========:+:======+=======:+:======+=======:+:==+=========:+:=========+=================:+:=========+=================:+:==+
+| 3-7                     |   | Control |       |        |       |        |   | Control  |          |                  |          |                  |   |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+| Outcome                 |   | mean    |       | ITT    |       | TOT    |   | mean     |          | ITT              |          | TOT              |   |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+|                         |   | \(1\)   |       | \(2\)  |       | \(3\)  |   | \(4\)    |          | \(5\)            |          | \(6\)            |   |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+| Length index            |   | 0.000   |       | 0.132  |       | 0.190  |   | 0.000    |          | 0.042            |          | 0.059            |   |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+|                         |   |         |       | (0.120 | )     | (0.173 | ) |          |          | (0.115           | )        | (0.163           | ) |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+| Readability index       |   | 0.000   |       | 0.061  |       | 0.087  |   | 0.000    |          | 0.004            |          | 0.006            |   |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+|                         |   |         |       | (0.088 | )     | (0.127 | ) |          |          | (0.082           | )        | (0.116           | ) |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+| Lexical diversity index |   | 0.000   |       | 0.106  |       | 0.154  |   | 0.000    |          | $-$0.115 |          | $-$0.162 |   |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+|                         |   |         |       | (0.115 | )     | (0.165 | ) |          |          | (0.123           | )        | (0.175           | ) |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
+| $N$ (Students)          |   | 104     |       | 210    |       | 210    |   | 102      |          | 204              |          | 204              |   |
++-------------------------+---+---------+-------+--------+-------+--------+---+----------+----------+------------------+----------+------------------+---+
 
-: Robustness of the Main Results to Sample Restrictions
+: Effects of AI Access on Essay Writing Style
 
 </div>
 
@@ -1410,47 +1085,47 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 
 <div class="singlespace">
 
-*Notes:* This table replicates the main test-score results (Table 4) under alternative sample restrictions. Each panel restricts the sample: *Excluding failed attention check* drops participants who failed the attention check; *Excluding failed comprehension* drops those who answered fewer than five of five comprehension questions correctly; *Excluding studied between sessions* drops those who reported studying the topic between sessions; *Excluding looked-up topic* drops those who reported looking up the topic between sessions. All specifications mirror those in the main table: ITT estimates from OLS with double-lasso-selected controls (Belloni, Chernozhukov, and Hansen, 2014) and strata fixed effects; TOT estimates instrument ChatGPT use with random assignment. Heteroskedasticity-robust standard errors in parentheses. The $N$ row reports the test-score sample size for each panel. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports treatment effects of AI access on three z-scored writing style indices, standardized relative to the control group. Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Length index averages the z-scores of tokens, words, and sentences. Readability index averages four z-scored measures (sentence length, syllables per word, Flesch–Kincaid grade level, and Flesch Reading Ease), with signs oriented so that higher values indicate easier readability. Lexical diversity index averages the z-scored type–token ratio and hapax proportion. Appendix Figure 9 reports results for the individual characteristics. Columns 1 and 4 report the control-group mean. Columns 2 and 5 report intent-to-treat (ITT) estimates. Columns 3 and 6 report treatment-on-the-treated (TOT) estimates from two-stage least squares, instrumenting actual ChatGPT use with random treatment assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
 <div class="center">
 
-<div id="tab:distributional_long">
+<div id="tab:essay_quality_dims">
 
-+-------------------+---+--------------------------------------------------------------+---+--------------------------------------------------------------+---------+
-|                   |   | Session One                                                  |   | Session Two                                                  |         |
-+:==================+:==+========:+:====+=================:+:=======+=================:+:==+========:+:====+=================:+:=======+=================:+:========+
-| 3-7               |   | Control |     |                  |        |                  |   | Control |     |                  |        |                  |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-| Outcome           |   | mean    |     | ITT              |        | TOT              |   | mean    |     | ITT              |        | TOT              |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-|                   |   | \(1\)   |     | \(2\)            |        | \(3\)            |   | \(4\)   |     | \(5\)            |        | \(6\)            |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-| Above 20% correct |   | 0.990   |     | $-$0.010 |        | $-$0.014 |   | 0.951   |     | 0.034            |        | 0.050            |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-|                   |   |         |     | (0.016           | )      | (0.024           | ) |         |     | (0.025           | )      | (0.036           | )       |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-| Above 40% correct |   | 0.827   |     | 0.080            | $^{*}$ | 0.118            |   | 0.804   |     | 0.005            |        | 0.007            |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-|                   |   |         |     | (0.048           | )      | (0.072           | ) |         |     | (0.051           | )      | (0.075           | )       |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-| Above 60% correct |   | 0.577   |     | 0.096            |        | 0.142            |   | 0.353   |     | 0.122            | $^{*}$ | 0.181            | $^{**}$ |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-|                   |   |         |     | (0.064           | )      | (0.094           | ) |         |     | (0.062           | )      | (0.092           | )       |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-| Above 80% correct |   | 0.317   |     | 0.019            |        | 0.029            |   | 0.098   |     | 0.044            |        | 0.064            |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-|                   |   |         |     | (0.061           | )      | (0.093           | ) |         |     | (0.042           | )      | (0.061           | )       |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-| 100% correct      |   | 0.106   |     | 0.037            |        | 0.055            |   | 0.010   |     | $-$0.009 |        | $-$0.013 |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-|                   |   |         |     | (0.043           | )      | (0.064           | ) |         |     | (0.009           | )      | (0.013           | )       |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
-| $N$               |   | 104     |     | 211              |        | 211              |   | 102     |     | 204              |        | 204              |         |
-+-------------------+---+---------+-----+------------------+--------+------------------+---+---------+-----+------------------+--------+------------------+---------+
++----------------+---+-------------------------------------------+---------+-------------------------------------------+---------+
+|                |   | Session One                               |         | Session Two                               |         |
++:===============+:==+========:+:====+=======:+:========+=======:+:========+========:+:====+=======:+:========+=======:+:========+
+| 3-7            |   | Control |     |        |         |        |         | Control |     |        |         |        |         |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+| Outcome        |   | mean    |     | ITT    |         | TOT    |         | mean    |     | ITT    |         | TOT    |         |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+|                |   | \(1\)   |     | \(2\)  |         | \(3\)  |         | \(4\)   |     | \(5\)  |         | \(6\)  |         |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+| Accuracy       |   | 6.049   |     | 0.340  | $^{*}$  | 0.489  | $^{*}$  | 4.626   |     | 0.261  |         | 0.375  |         |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+|                |   |         |     | (0.174 | )       | (0.249 | )       |         |     | (0.169 | )       | (0.246 | )       |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+| Evidence       |   | 5.568   |     | 0.231  |         | 0.335  |         | 3.654   |     | 0.431  | $^{**}$ | 0.623  | $^{**}$ |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+|                |   |         |     | (0.209 | )       | (0.304 | )       |         |     | (0.180 | )       | (0.269 | )       |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+| Relevance      |   | 6.229   |     | 0.167  |         | 0.240  |         | 5.313   |     | 0.291  |         | 0.405  |         |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+|                |   |         |     | (0.219 | )       | (0.315 | )       |         |     | (0.193 | )       | (0.271 | )       |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+| Organization   |   | 5.235   |     | 0.446  | $^{**}$ | 0.651  | $^{**}$ | 4.611   |     | 0.236  |         | 0.333  |         |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+|                |   |         |     | (0.211 | )       | (0.308 | )       |         |     | (0.210 | )       | (0.297 | )       |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+| Writing style  |   | 5.707   |     | 0.398  | $^{**}$ | 0.592  | $^{**}$ | 5.020   |     | 0.378  | $^{**}$ | 0.546  | $^{**}$ |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+|                |   |         |     | (0.194 | )       | (0.292 | )       |         |     | (0.171 | )       | (0.255 | )       |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
+| $N$ (Students) |   | 103     |     | 207    |         | 207    |         | 97      |     | 198    |         | 198    |         |
++----------------+---+---------+-----+--------+---------+--------+---------+---------+-----+--------+---------+--------+---------+
 
-: The Distributional Impact of Generative AI on Test Scores
+: Effects of AI Access on Essay Quality, by Dimension
 
 </div>
 
@@ -1458,83 +1133,67 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 
 <div class="singlespace">
 
-*Notes:* This table reports treatment effects of AI access on the probability of scoring at or above various thresholds in Session One and Session Two. Each row reports the effect of being assigned to the AI-allowed group on the probability of achieving at least the indicated threshold of correct responses. Columns 1 and 4 report the control group mean. Columns 2 and 5 report intent-to-treat (ITT) estimates. Columns 3 and 6 report treatment-on-the-treated (TOT) estimates from two-stage least squares, instrumenting actual ChatGPT use with random treatment assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports treatment effects of AI access on the five essay quality dimensions, averaging human and AI grades. Each row reports the effect of being assigned to the AI-allowed group on the indicated dimension. Each dimension is scored on a 0–10 scale. Each row is one student-level regression on the average of the human graders' mean score and the AI grader's score for that dimension. Columns 1–3 report Session One results (when AI-allowed students had access to ChatGPT); columns 4–6 report Session Two results (when all students wrote without AI access). Intent-to-treat (ITT) estimates report the effect of being assigned to the AI-allowed group; treatment-on-the-treated (TOT) estimates instrument ChatGPT use with random assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
+<div class="landscape">
+
 <div class="center">
 
-<div id="tab:writ_char_long">
+<div id="tab:usage_baseline">
 
-+-----------------------+--------------+----------------------------------------------------------------------------------+--------------+----------------------------------------------------------------------------------+---+
-|                       |              | Session One                                                                      |              | Session Two                                                                      |   |
-+:======================+:=============+=============:+:=============+=================:+:=============+=================:+:=============+=============:+:=============+=================:+:=============+=================:+:==+
-| 3-7                   |              | Control      |              |                  |              |                  |              | Control      |              |                  |              |                  |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Outcome               |              | mean         |              | ITT              |              | TOT              |              | mean         |              | ITT              |              | TOT              |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              | \(1\)        |              | \(2\)            |              | \(3\)            |              | \(4\)        |              | \(5\)            |              | \(6\)            |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| **Panel A. Length**                                                                                                                                                                                                       |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Essay is empty        |              | 0.000        |              | 0.009            |              | 0.014            |              | 0.029        |              | 0.009            |              | 0.013            |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (0.009           | )            | (0.014           | )            |              |              | (0.017           | )            | (0.025           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Tokens                |              | 202.981      |              | 17.857           |              | 27.559           |              | 150.869      |              | 10.756           |              | 15.808           |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (12.422          | )            | (19.193          | )            |              |              | (8.140           | )            | (11.990          | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Words                 |              | 347.875      |              | 16.769           |              | 25.025           |              | 276.424      |              | 12.993           |              | 19.380           |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (20.193          | )            | (30.143          | )            |              |              | (15.499          | )            | (23.154          | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Sentences             |              | 16.433       |              | 0.505            |              | 0.770            |              | 12.545       |              | $-$0.070 |              | $-$0.103 |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (1.012           | )            | (1.540           | )            |              |              | (0.693           | )            | (1.019           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| **Panel B. Readability**                                                                                                                                                                                                  |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Sentence length       |              | 27.119       |              | $-$4.655 |              | $-$6.947 |              | 25.565       |              | $-$1.816 |              | $-$2.677 |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (4.688           | )            | (7.009           | )            |              |              | (3.346           | )            | (4.935           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Syllables/word        |              | 1.775        |              | 0.010            |              | 0.015            |              | 1.713        |              | 0.007            |              | 0.010            |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (0.016           | )            | (0.024           | )            |              |              | (0.017           | )            | (0.025           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| FK grade level        |              | 15.936       |              | $-$1.736 |              | $-$2.591 |              | 14.597       |              | $-$0.626 |              | $-$0.923 |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (1.820           | )            | (2.723           | )            |              |              | (1.276           | )            | (1.882           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Flesch ease           |              | 29.108       |              | 4.155            |              | 6.201            |              | 35.946       |              | 1.255            |              | 1.850            |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (4.837           | )            | (7.239           | )            |              |              | (3.392           | )            | (4.999           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| **Panel C. Lexical diversity**                                                                                                                                                                                            |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| TTR                   |              | 0.723        |              | 0.006            |              | 0.010            |              | 0.717        |              | $-$0.014 |              | $-$0.020 |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (0.010           | )            | (0.016           | )            |              |              | (0.011           | )            | (0.017           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Hapax prop.           |              | 0.579        |              | 0.003            |              | 0.005            |              | 0.565        |              | $-$0.017 |              | $-$0.025 |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (0.014           | )            | (0.021           | )            |              |              | (0.017           | )            | (0.024           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| **Panel D. Homogeneity and similarity**                                                                                                                                                                                   |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Cosine sim.           |              | 0.774        |              | 0.001            |              | 0.001            |              | 0.762        |              | $-$0.005 |              | $-$0.007 |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (0.007           | )            | (0.010           | )            |              |              | (0.013           | )            | (0.019           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| Reading material sim. |              | 0.746        |              | $-$0.004 |              | $-$0.006 |              | 0.704        |              | 0.001            |              | 0.001            |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-|                       |              |              |              | (0.009           | )            | (0.014           | )            |              |              | (0.013           | )            | (0.019           | ) |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
-| $N$                   |              | 104          |              | 209              |              | 209              |              | 99           |              | 199              |              | 199              |   |
-+-----------------------+--------------+--------------+--------------+------------------+--------------+------------------+--------------+--------------+--------------+------------------+--------------+------------------+---+
++:-----------------------------------------+:----------+-------------:+:----------+-----------:+:----------+----------:+:----------+----------:+:----------+-------------:+:----------+
+|                                          |           | Augmentation |           | Automation |           | Mixed     |           | Non-user  |           | AI-forbidden |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+|                                          |           | \(1\)        |           | \(2\)      |           | \(3\)     |           | \(4\)     |           | \(5\)        |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| **Panel A. Research assistant's classification**                                                                                                                                    |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Age                                      |           | 20.3         |           | 20.0       |           | 20.6      |           | 19.9      |           | 19.9         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Male (percent)                           |           | 26.1         |           | 71.4       |           | 30.0      |           | 21.9      |           | 41.3         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| White (percent)                          |           | 45.7         |           | 42.9       |           | 30.0      |           | 62.5      |           | 52.4         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| International student (percent)          |           | 23.3         |           | 14.3       |           | 40.0      |           | 12.5      |           | 31.7         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| College GPA                              |           | 3.63         |           | 3.75       |           | 3.68      |           | 3.67      |           | 3.71         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| SAT score                                |           | 1348         |           | 1355       |           | 1377      |           | 1434      |           | 1391         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Study hours per week                     |           | 16.2         |           | 15.6       |           | 16.8      |           | 16.7      |           | 16.7         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Baseline self-assessed knowledge (0–10) |           | 1.4          |           | 1.3        |           | 1.4       |           | 1.7       |           | 1.6          |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Baseline percent correct                 |           | 26.5         |           | 42.9       |           | 37.0      |           | 28.8      |           | 30.6         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| $N$ (Students)                           |           | 46           |           | 7          |           | 20        |           | 32        |           | 104          |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| **Panel B. LLM classification**                                                                                                                                                     |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Age                                      |           | 20.4         |           | 20.1       |           | 20.5      |           | 19.9      |           | 19.9         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Male (percent)                           |           | 26.3         |           | 55.6       |           | 17.6      |           | 21.9      |           | 41.3         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| White (percent)                          |           | 52.6         |           | 33.3       |           | 23.5      |           | 62.5      |           | 52.4         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| International student (percent)          |           | 22.2         |           | 33.3       |           | 31.2      |           | 12.5      |           | 31.7         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| College GPA                              |           | 3.68         |           | 3.68       |           | 3.58      |           | 3.67      |           | 3.71         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| SAT score                                |           | 1337         |           | 1390       |           | 1360      |           | 1434      |           | 1391         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Study hours per week                     |           | 16.4         |           | 14.3       |           | 18.1      |           | 16.7      |           | 16.7         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Baseline self-assessed knowledge (0–10) |           | 1.3          |           | 1.6        |           | 1.2       |           | 1.7       |           | 1.6          |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| Baseline percent correct                 |           | 25.3         |           | 42.2       |           | 31.8      |           | 28.8      |           | 30.6         |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
+| $N$ (Students)                           |           | 38           |           | 18         |           | 17        |           | 32        |           | 104          |           |
++------------------------------------------+-----------+--------------+-----------+------------+-----------+-----------+-----------+-----------+-----------+--------------+-----------+
 
-: Effects of AI Access on Individual Essay Characteristics
+: Baseline Characteristics by Type of AI Use
 
 </div>
 
@@ -1542,174 +1201,9 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 
 <div class="singlespace">
 
-*Notes:* This table reports treatment effects on individual essay characteristics. Each row reports the effect of being assigned to the AI-allowed group on the indicated outcome. Essay is empty is an indicator equal to one if the essay contains no text. Tokens is the number of content tokens in the essay (after removing stopwords, numbers, and punctuation). Words is the total number of words. Sentences is the total number of sentences. Sentence length is the mean number of words per sentence. Syllables/word is the mean number of syllables per word. FK grade level is the Flesch-Kincaid Grade Level. Flesch ease is the Flesch Reading Ease Score (0–100, higher indicates easier readability). TTR is the Type-Token Ratio. Hapax prop. is the share of words appearing only once. Cosine sim. is the average pairwise cosine similarity within treatment $\times$ topic $\times$ prompt cells. Reading material sim. is the average cosine similarity between each essay and the provided reading material. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* This table reports unadjusted means by how students in the AI-allowed condition used the provided ChatGPT account, with the AI-forbidden group in column 5 as the reference. In Panel A, a research assistant labeled each conversation (Section 5.3). In Panel B, an LLM (Anthropic's Claude Fable 5.1) labeled the same conversations (Appendix 9.6). In both panels, we group students by the same rule. A student is an automation user if at least one conversation is labeled Automation and none Augmentation or Mixed, an augmentation user if at least one is labeled Augmentation and none Automation or Mixed, a mixed user if the conversations include a Mixed conversation or both an Automation and an Augmentation conversation, and a non-user if the account has no conversation. Students whose conversations were all classified as Other are omitted. Columns 4 and 5 do not depend on the labels and are the same in both panels. The rows are characteristics measured at intake and the baseline test.
 
 </div>
-
-<div class="center">
-
-<div id="tab:essay_quality_by_grader">
-
-+---------------+-------------+-------------------------------------------------------------------------------+-------------+---------------------------------------------------------------------+---------+
-|               |             | Session One                                                                   |             | Session Two                                                         |         |
-+:==============+:============+============:+:============+=================:+:============+=================:+:============+============:+:============+============:+:============+============:+:========+
-| 3-7           |             | Control     |             |                  |             |                  |             | Control     |             |             |             |             |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Outcome       |             | mean        |             | ITT              |             | TOT              |             | mean        |             | ITT         |             | TOT         |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             | \(1\)       |             | \(2\)            |             | \(3\)            |             | \(4\)       |             | \(5\)       |             | \(6\)       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| **Panel A. Human graders**                                                                                                                                                                      |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Accuracy      |             | 7.087       |             | 0.064            |             | 0.095            |             | 6.119       |             | 0.178       |             | 0.262       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.173           | )           | (0.258           | )           |             |             | (0.210      | )           | (0.313      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Evidence      |             | 5.950       |             | 0.035            |             | 0.053            |             | 4.674       |             | 0.387       |             | 0.569       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.220           | )           | (0.329           | )           |             |             | (0.238      | )           | (0.360      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Relevance     |             | 7.192       |             | $-$0.006 |             | $-$0.008 |             | 6.383       |             | 0.279       |             | 0.415       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.207           | )           | (0.308           | )           |             |             | (0.217      | )           | (0.327      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Organization  |             | 6.235       |             | 0.162            |             | 0.242            |             | 5.548       |             | 0.261       |             | 0.385       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.205           | )           | (0.306           | )           |             |             | (0.227      | )           | (0.339      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Writing style |             | 6.401       |             | 0.121            |             | 0.180            |             | 5.580       |             | 0.418       | $^{**}$     | 0.616       | $^{**}$ |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.194           | )           | (0.289           | )           |             |             | (0.204      | )           | (0.311      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| $N$           |             | 104         |             | 210              |             | 210              |             | 97          |             | 197         |             | 197         |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| **Panel B. AI graders**                                                                                                                                                                         |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Accuracy      |             | 6.404       |             | 0.413            | $^{*}$      | 0.630            | $^{*}$      | 4.222       |             | 0.466       | $^{**}$     | 0.689       | $^{**}$ |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.212           | )           | (0.324           | )           |             |             | (0.232      | )           | (0.349      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Evidence      |             | 6.337       |             | 0.117            |             | 0.175            |             | 3.465       |             | 0.264       |             | 0.395       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.268           | )           | (0.399           | )           |             |             | (0.225      | )           | (0.339      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Relevance     |             | 6.721       |             | 0.211            |             | 0.318            |             | 5.687       |             | 0.449       | $^{*}$      | 0.656       | $^{*}$  |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.264           | )           | (0.397           | )           |             |             | (0.235      | )           | (0.348      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Organization  |             | 5.625       |             | 0.353            |             | 0.537            |             | 5.020       |             | 0.124       |             | 0.182       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.252           | )           | (0.384           | )           |             |             | (0.245      | )           | (0.361      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| Writing style |             | 6.548       |             | 0.352            |             | 0.535            |             | 5.980       |             | 0.246       |             | 0.370       |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-|               |             |             |             | (0.216           | )           | (0.330           | )           |             |             | (0.198      | )           | (0.301      | )       |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-| $N$           |             | 104         |             | 209              |             | 209              |             | 99          |             | 198         |             | 198         |         |
-+---------------+-------------+-------------+-------------+------------------+-------------+------------------+-------------+-------------+-------------+-------------+-------------+-------------+---------+
-
-: Effects of AI Access on Essay Quality, by Dimension and Grader Type
-
-</div>
-
-</div>
-
-<div class="singlespace">
-
-*Notes:* This table reports treatment effects on essay quality dimensions, separately for human and AI graders. Each row reports the effect of being assigned to the AI-allowed group on the indicated essay quality dimension. Each dimension is scored on a 0–10 scale. Panel A reports results from human graders (Prolific workers, 3–4 graders per essay); Panel B reports results from AI grading (Claude Opus, one score per essay). Both sets of regressions are at the student level—human grades are averaged across each essay's graders. Columns 1–3 report Session One results (when AI-allowed students had access to ChatGPT); columns 4–6 report Session Two results (when all students wrote without AI access). Intent-to-treat (ITT) estimates report the effect of being assigned to the AI-allowed group; treatment-on-the-treated (TOT) estimates instrument ChatGPT use with random assignment. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014). Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
-
-</div>
-
-<div class="center">
-
-<div id="tab:heterogeneity_student">
-
-+---------------------+------+---------------------------------------------------------------------------+--------+------------------------------------------------------------------------+--------+
-|                     |      | Session One                                                               |        | Session Two                                                            |        |
-+:====================+:=====+=================:+:=======+=================:+:========+=================:+:=======+=================:+:=====+=================:+:=======+=================:+:=======+
-| 3-7                 |      | Test             |        | Overall          |         | Quality          |        | Test             |      | Overall          |        | Quality          |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | score            |        | quality          |         | index            |        | score            |      | quality          |        | index            |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | \(1\)            |        | \(2\)            |         | \(3\)            |        | \(4\)            |      | \(5\)            |        | \(6\)            |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| Treated $\times$                                                                                                                                                                         |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| Female              |      | 0.458            | $^{*}$ | $-$0.136 |         | $-$0.151 |        | $-$0.115 |      | 0.014            |        | $-$0.022 |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.259           | )      | (0.338           | )       | (0.349           | )      | (0.259           | )    | (0.289           | )      | (0.295           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| International       |      | 0.331            |        | $-$0.159 |         | $-$0.221 |        | 0.456            |      | 0.289            |        | 0.342            |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.295           | )      | (0.384           | )       | (0.388           | )      | (0.287           | )    | (0.288           | )      | (0.295           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| Nonwhite            |      | 0.257            |        | $-$0.063 |         | $-$0.009 |        | 0.195            |      | 0.140            |        | 0.201            |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.263           | )      | (0.300           | )       | (0.305           | )      | (0.252           | )    | (0.289           | )      | (0.295           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| Public HS           |      | $-$0.314 |        | $-$0.346 |         | $-$0.190 |        | $-$0.205 |      | $-$0.475 | $^{*}$ | $-$0.508 | $^{*}$ |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.263           | )      | (0.308           | )       | (0.314           | )      | (0.240           | )    | (0.279           | )      | (0.281           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| STEM                |      | 0.188            |        | 0.220            |         | 0.244            |        | $-$0.150 |      | 0.134            |        | 0.090            |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.259           | )      | (0.322           | )       | (0.318           | )      | (0.259           | )    | (0.291           | )      | (0.303           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| Frequent AI user    |      | 0.216            |        | 0.343            |         | 0.291            |        | 0.040            |      | $-$0.154 |        | $-$0.271 |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.322           | )      | (0.308           | )       | (0.307           | )      | (0.275           | )    | (0.318           | )      | (0.325           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| Early AI adopter    |      | 0.006            |        | 0.645            | $^{**}$ | 0.561            | $^{*}$ | 0.150            |      | 0.004            |        | 0.001            |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.261           | )      | (0.288           | )       | (0.293           | )      | (0.240           | )    | (0.280           | )      | (0.282           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| High AI proficiency |      | $-$0.139 |        | 0.210            |         | 0.033            |        | $-$0.034 |      | 0.063            |        | 0.032            |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-|                     |      | (0.282           | )      | (0.317           | )       | (0.329           | )      | (0.253           | )    | (0.300           | )      | (0.299           | )      |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-| $N$                 |      | 211              |        | 209              |         | 209              |        | 204              |      | 197              |        | 197              |        |
-+---------------------+------+------------------+--------+------------------+---------+------------------+--------+------------------+------+------------------+--------+------------------+--------+
-
-: Heterogeneity of Treatment Effects by Student Characteristics
-
-</div>
-
-</div>
-
-<div class="singlespace">
-
-*Notes:* This table reports heterogeneity of treatment effects by student characteristics. Each row reports the coefficient on the interaction $\text{Treated} \times \text{Subgroup indicator}$ from a regression that also includes the treatment indicator and the subgroup indicator as main effects. All specifications use controls selected by double-lasso on the full sample (Belloni, Chernozhukov, and Hansen, 2014), with strata fixed effects. Heteroskedasticity-robust standard errors in parentheses. Subgroups defined by median splits use the full-sample median. The reported $N$ is the maximum analysis sample; the prior-AI-experience rows (frequency of AI use, early adoption, and AI proficiency) are estimated on up to seven fewer students who did not report these characteristics, so the effective sample size varies by row. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
-
-</div>
-
-<div class="center">
-
-<div id="tab:belop_long">
-
-  ------------------------------------ -- --------- -- ------------------- ---------- ------------------- ----------
-                                            Control                                                       
-  Outcome                                      mean                    ITT                            TOT 
-                                              \(1\)                  \(2\)                          \(3\) 
-  Perceived AI gain on self (pp)             25.200      $-$21.403 $^{***}$     $-$30.945 $^{***}$
-                                                                    (3.454 )                       (5.379 )
-  Perceived AI gain on others (pp)           14.060       $-$3.497               $-$5.159 
-                                                                    (3.059 )                       (4.509 )
-  Absolute error, self (vs actual)           27.159      $-$11.931 $^{***}$     $-$17.342 $^{***}$
-                                                                    (2.479 )                       (3.710 )
-  Absolute error, others (vs actual)         20.956       $-$3.398               $-$4.959 
-                                                                    (2.157 )                       (3.184 )
-  $N$                                           100                    201                            201 
-  ------------------------------------ -- --------- -- ------------------- ---------- ------------------- ----------
-
-  : Treatment Effects on Belief Accuracy
-
-</div>
-
-</div>
-
-<div class="singlespace">
-
-*Notes:* This table reports treatment effects of AI access on belief accuracy. The sample is students who attended Session Two. Outcomes are in percentage points: "Perceived AI gain on self" is the signed predicted treatment effect on the student's own Session Two test score; "Perceived AI gain on others" is the predicted effect on others' scores; the "Absolute error" rows report $|\text{perceived gain} - \text{actual ITT}|$, where the actual ITT is the Session Two estimate from Table 4. Column (1) reports the control-group mean of each outcome; columns (2) and (3) report ITT and TOT estimates. All specifications include controls selected through a double-lasso procedure (Belloni, Chernozhukov, and Hansen, 2014) with strata fixed effects. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
@@ -1718,32 +1212,32 @@ Zheng, Lianmin, Chiang, Wei-Lin, Sheng, Ying, Zhuang, Siyuan, Wu, Zhanghao, Zhua
 
 We wrote original texts on each of the three topics, designing them so that participants faced similar cognitive demands across topics. Each text follows a parallel structure, beginning with an overview of the technology, followed by its historical development, technical underpinnings, core applications, and limitations. The texts are information-rich but self-contained, requiring no prior knowledge of the topic. The full texts are available in the [Supplementary Materials](https://www.dropbox.com/scl/fi/pzzmqwikxweqzrofrnzt9/ai-learning-supplementary.pdf?rlkey=zjg1lf7cmzno304na3bgq58bn&st=gtj3nlqa&dl=0).
 
-The reading materials are 1,253–1,399 words long, or about 5.0–5.6 minutes of reading at an average silent reading speed of 250 words per minute for college students (Carver, 1992; Brysbaert, 2019). They are closely matched across several readability metrics (Appendix Table 17). Flesch-Kincaid grade levels of 15.1–15.9 place them at a late-undergraduate reading level. Measures of lexical and syntactic complexity, including sentence and word length, also indicate a consistent level of difficulty across topics.
+The reading materials are 1,248–1,382 words long, or about 5.0–5.5 minutes of reading at an average silent reading speed of 250 words per minute for college students (Carver, 1992; Brysbaert, 2019). They are closely matched across several readability metrics (Appendix Table 14). Flesch–Kincaid grade levels of 15.1–15.9 place them at a late-undergraduate reading level. Measures of lexical and syntactic complexity, including sentence and word length, also indicate a consistent level of difficulty across topics.
 
 <div class="center">
 
 <div id="tab:readability">
 
 +----------------------------------+---------------------------------------+
-|                                  | Learning Topic:                       |
+|                                  | Learning topic:                       |
 +:=================================+:==========:+:==============:+:=======:+
 | 2-4 Metric                       | Blockchain | Carbon Capture | CRISPR  |
 +----------------------------------+------------+----------------+---------+
-| Flesch-Kincaid Grade Level       | 15.90      | 15.76          | 15.11   |
+| Flesch–Kincaid grade level      | 15.90      | 15.76          | 15.11   |
 +----------------------------------+------------+----------------+---------+
-| SMOG Index                       | 16.75      | 17.28          | 16.50   |
+| SMOG index                       | 16.75      | 17.28          | 16.50   |
 +----------------------------------+------------+----------------+---------+
-| Automated Readability Index      | 17.75      | 16.26          | 15.86   |
+| Automated readability index      | 17.75      | 16.26          | 15.86   |
 +----------------------------------+------------+----------------+---------+
-| Type-Token Ratio                 | 0.51       | 0.49           | 0.51    |
+| Type–token ratio                | 0.51       | 0.49           | 0.51    |
 +----------------------------------+------------+----------------+---------+
-| Average Sentence Length          | 21.59      | 24.15          | 20.80   |
+| Average sentence length          | 21.59      | 24.15          | 20.80   |
 +----------------------------------+------------+----------------+---------+
-| Average Word Length              | 6.43       | 6.09           | 6.07    |
+| Average word length              | 6.43       | 6.09           | 6.07    |
 +----------------------------------+------------+----------------+---------+
-| Word Count                       | 1,253      | 1,333          | 1,399   |
+| Word count                       | 1,248      | 1,315          | 1,382   |
 +----------------------------------+------------+----------------+---------+
-| Estimated Reading Time (250 wpm) | 5.0 min    | 5.3 min        | 5.6 min |
+| Estimated reading time (250 wpm) | 5.0 min    | 5.3 min        | 5.5 min |
 +----------------------------------+------------+----------------+---------+
 
 : Readability Metrics for Topic Texts
@@ -1754,12 +1248,12 @@ The reading materials are 1,253–1,399 words long, or about 5.0–5.6 minutes o
 
 <div class="singlespace">
 
-*Notes:* This table presents readability metrics for the three reading materials. Estimated reading times assume an average silent reading speed of 250 words per minute for college students (Carver, 1992; Brysbaert, 2019).
+*Notes:* This table presents readability metrics for the three reading materials. Estimated reading times assume an average silent reading speed of 250 words per minute for college students (Carver, 1992; Brysbaert, 2019). Word counts are those of the texts as delivered to participants.
 
 </div>
 
 ## Writing Assessment Prompts
-This appendix presents the essay prompts we developed for each of the three topics. For each topic, we designed two complementary prompts of comparable difficulty. Each prompt requires participants to analyze relationships between concepts, evaluate the relative importance of different factors, and support their analysis with specific examples. Each participant is randomly assigned to receive one prompt in Session One and the other in Session Two.
+This appendix presents the essay prompts we developed for each of the three topics. For each topic, we designed two complementary prompts of comparable difficulty. Each prompt requires participants to analyze relationships between concepts, evaluate the relative importance of different factors, and support their analysis with specific examples. Each participant is randomly assigned to receive one prompt in Session One and the other in Session Two.[^24]
 
 **Blockchain Technology**
 
@@ -1783,12 +1277,12 @@ Before grading, each grader completes a comprehension check verifying their unde
 
 Graders evaluate each essay on five rubric dimensions plus an overall quality rating, each on a 0–10 scale. *Accuracy of Content* measures the factual correctness of the information presented in the essay. *Use of Evidence and Examples* assesses the integration of specific evidence, examples, and data from the reading to support arguments. *Relevance to the Prompt* evaluates how well the essay addresses the specific prompt and stays on topic throughout. *Organization and Structure* measures the logical structure, coherence, flow, and effectiveness of transitions. *Writing Style and Clarity* assesses clarity, readability, grammar, and precision of language. *Overall Essay Quality* captures the grader's holistic assessment of the essay. Graders also report their prior familiarity with each of the three topics (blockchain, carbon capture, and CRISPR) on a 0–10 scale before beginning the grading task.
 
-Each essay is evaluated by three to four independent graders. We use the overall quality rating as our benchmark measure of essay quality and report results for each dimension separately.
+Each essay is evaluated by three to four independent graders.[^25] We use the overall quality rating as our benchmark measure of essay quality and report results for each dimension separately.[^26]
 
 ## AI Essay Grading
-We complement our human grading with AI-generated scores to provide an independent assessment of essay quality. We use Anthropic's Claude Opus 4.8 to grade each essay on the same five rubric dimensions plus the overall quality rating, using the same 0–10 scale as the Prolific graders.
+We complement our human grading with AI-generated scores to provide an independent assessment of essay quality. We use Anthropic's Claude Fable 5.1 to grade each essay on the same five rubric dimensions plus the overall quality rating, using the same 0–10 scale as the Prolific graders.
 
-For each essay, we make six separate API calls—one per grading dimension—to avoid cross-contamination between scores. Each call includes a system prompt establishing the grading context, the dimension-specific rubric, two calibration essays with suggested scores, and the student essay to be graded. The calibration essays are the same examples shown to human graders during training, ensuring that human and AI graders share a common scoring anchor. We constrain the model's output to a JSON schema: a brief justification followed by an integer score on the 0–10 scale. Requiring the justification first lets the score reflect the model's stated reasoning.
+For each essay, we make six separate API calls—one per grading dimension—to avoid cross-contamination between scores. Each call includes a system prompt establishing the grading context, a description of the dimension, two calibration essays with their suggested scores and rationales for that dimension, and the student essay to be graded. The calibration essays, scores, and rationales are the ones shown to human graders during training, ensuring that human and AI graders share a common scoring anchor. We ask the model for a brief justification followed by an integer score on the 0–10 scale.
 
 The system prompt is as follows:\
 
@@ -1796,33 +1290,29 @@ The system prompt is as follows:\
 
 </div>
 
-For each dimension, the user prompt includes the dimension name, a description of what the dimension measures, and the scoring scale. The dimensions and their scales are as follows:
+For each dimension, the user prompt includes the dimension name and a description of what the dimension measures. The descriptions are as follows:
 
 <div class="centering">
 
 </div>
 
-<div class="centering">
-
-</div>
-
-The prompt also includes two calibration essays with suggested scores for the relevant dimension. After presenting the calibration material, the prompt provides the student's assigned topic, the exact prompt the student was shown in that session, and the essay text. Students saw a different prompt in each of the two sessions, so grading against the session-specific prompt ensures the relevance dimension reflects the task the student actually faced. Empty essays, or those with fewer than 20 characters, are skipped and recorded as missing without querying the model.
+The prompt also includes the two calibration essays, the essay prompt they answer, and their suggested scores and rationales for the relevant dimension. After presenting the calibration material, the prompt provides the student's assigned topic, the exact prompt the student was shown in that session, and the essay text. Empty essays, or those with fewer than 20 characters, are skipped and recorded as missing without querying the model.
 
 ## SAT Score Imputation
-We lack admissions test scores (SAT or ACT) for approximately 26 percent of participants (Middlebury College has test-optional admissions). To include these students in our regressions, we impute SAT scores for students with missing scores using baseline covariates and assign them to decile bins alongside students with observed scores.
+We lack admissions test scores (SAT or ACT) for approximately 26 percent of the 256 students who signed up (Middlebury College has test-optional admissions). To include these students in our regressions, we impute SAT scores for students with missing scores using baseline covariates and assign them to decile bins alongside students with observed scores.
 
-We estimate an OLS regression of SAT scores on baseline characteristics among the 189 students with observed scores. The predictors are college GPA, high school GPA, age, gender, race and ethnicity indicators (Black, Latino, Asian, with white as the omitted category), international student status, public and private high school indicators, academic field indicators (natural sciences, social sciences, humanities and arts), weekly study hours, whether the student has declared a major, cohort fixed effects, baseline self-assessment of topic knowledge, and baseline number of test questions answered correctly (out of five).
+We estimate an OLS regression of SAT scores on baseline characteristics among the 189 students with observed scores. The predictors are college GPA, high school GPA, age, gender, race and ethnicity indicators (Black, Latino, Asian, with white as the omitted category), international student status, public and private high school indicators, academic field indicators (natural sciences, social sciences, humanities and arts), weekly study hours, whether the student has declared a major, cohort fixed effects, baseline self-assessment of topic knowledge, and baseline number of test questions answered correctly (out of five).[^27]
 
 We include a missing indicator (equal to one for imputed observations) in the pool of potential controls, so the double-lasso procedure can account for any residual differences between observed and imputed groups. The imputed SAT scores are used only for bin assignment; they do not enter the regression directly as a continuous covariate.
 
 ## Classification of ChatGPT Conversations
-During Session One, participants in the AI-allowed condition interacted with ChatGPT through monitored accounts, generating conversation logs that we classified using an LLM (Anthropic's Claude Opus 4).
+During Session One, participants in the AI-allowed condition interacted with ChatGPT through monitored accounts, generating conversation logs that we classified using an LLM (Anthropic's Claude Fable 5.1). The use-type groups in the paper come from a research assistant's hand coding of the same logs (Section 5.3). We use the LLM labels described here as a check on that coding.
 
 ### Prompt-Level Classification.
 
 We classify each student prompt into one of six categories that mirror the self-reported usage types from Figure fig:ai_usage_type: (1) *Explaining concepts*—asking ChatGPT to explain, clarify, or teach a concept from the reading; (2) *Summarizing readings*—asking ChatGPT to summarize or condense the reading material; (3) *Drafting responses*—asking ChatGPT to write, draft, or generate essay text; (4) *Proofreading*—asking ChatGPT to check grammar, spelling, or typos; (5) *Editing responses*—asking ChatGPT to revise, improve, rephrase, or restructure existing text; and (6) *Other*—anything that does not fit the above categories.
 
-For each prompt, we provide the LLM with the full system prompt establishing the experimental context—that students were given a reading passage on a science topic and asked to write an essay—along with descriptions of each category. The classifier returns a single category label. Across all 435 student prompts, the distribution is: Explaining concepts (44 percent), Other (26 percent), Drafting responses (11 percent), Editing responses (10 percent), Summarizing readings (7 percent), and Proofreading (2 percent).
+For each prompt, we provide the LLM with the full system prompt establishing the experimental context—that students were given a reading passage on a science topic and asked to write an essay—along with descriptions of each category. The classifier returns a single category label. Across all 435 student prompts, the distribution is: Explaining concepts (49.0 percent), Other (21.6 percent), Editing responses (12.6 percent), Drafting responses (10.3 percent), Summarizing readings (5.5 percent), and Proofreading (0.5 percent).
 
 The exact system prompt provided to the LLM is:\
 
@@ -1830,7 +1320,7 @@ The exact system prompt provided to the LLM is:\
 
 </div>
 
-To illustrate, Appendix Table 18 provides representative examples of student prompts classified under each category.
+To illustrate, Appendix Table 15 provides representative examples of student prompts classified under each category.
 
 <div class="center">
 
@@ -1840,12 +1330,12 @@ To illustrate, Appendix Table 18 provides representative examples of student pr
   ---------------------- --------------------------------------------------------------------------------------------------------------------------------------------
   Explaining concepts    "easy definition and understanding of crispr"
                          "how might the cas9 attach to the wrong spot in crispr"
-                         "when is climate change irriversible"
-  Summarizing readings   "summary with bullet points and main takeaways from this document"
-                         "Give a brief overview on CRISPR technology and then explain why CRISPR differs from other gene editing technology"
+                         "Give a brief overview on CRISPR technology and then explain why CRISPR differs from other gene editing technology..."
+  Summarizing readings   "summary with bullet points and main takeaways from this document..."
+                         "Can you give me a summary of this article?"
   Drafting responses     "wirte approximately 500 word response to the following prompt: analyze the three main barriers to scaling carbon capture technologies..."
-                         "Write a response paper of at least 500 words"
-  Editing responses      "rewrite this to make the argument clearer"
+                         "Write a response paper of at least 500 words..."
+  Editing responses      "Make this more approachable and simpler for a regular reader"
                          "rewrite the whole thing now"
   Proofreading           "use appropriate grammer and capitalization"
   Other                  "keyboard shortcuts to copy and paste"
@@ -1867,11 +1357,11 @@ To illustrate, Appendix Table 18 provides representative examples of student pr
 
 We also classify each full conversation—the complete sequence of student and ChatGPT messages—into one of four categories: (1) *Automation*, where the AI does the work for the student (generating essay text, producing draft paragraphs, or creating content that could be pasted directly into the essay); (2) *Augmentation*, where the AI works with the student (explaining concepts, answering clarifying questions, or providing feedback on the student's own writing); (3) *Mixed*, where the conversation contains substantial elements of both; and (4) *Other*, where the conversation is off-topic, unrelated to the academic task, or consists of testing or experimenting with ChatGPT without engaging with the reading or essay.
 
-For each conversation, we provide the LLM with the full exchange between the student and ChatGPT, along with descriptions of each category. Across all ChatGPT conversations, the distribution is: Augmentation (49 percent), Automation (31 percent), Mixed (5 percent), and Other (15 percent).
+For each conversation, we provide the LLM with the full exchange between the student and ChatGPT, along with descriptions of each category. Across all ChatGPT conversations, the distribution is: Augmentation (49 percent), Automation (26 percent), Mixed (18 percent), and Other (7 percent).
 
-To illustrate the distinction, we reproduce excerpts from conversations classified under each category. Appendix Figures 12 and 13 show selected exchanges; full transcripts are available via the hyperlinked URLs.
+To illustrate the distinction, we reproduce excerpts from conversations classified under each category. Appendix Figures 14 and 15 show selected exchanges.
 
-The exact system prompt provided to Claude Opus 4 is:\
+The exact system prompt provided to the LLM is:\
 
 <div class="centering">
 
@@ -1879,44 +1369,41 @@ The exact system prompt provided to Claude Opus 4 is:\
 
 <figure id="fig:chat_auto1" data-latex-placement="H">
 <div class="singlespace">
-<p><em>Notes:</em> This figure shows an excerpt of a ChatGPT conversation classified as automation. Full transcript: <a href="https://chatgpt.com/share/681d3c21-9844-8012-b4f0-6a573222bd5b" class="uri">https://chatgpt.com/share/681d3c21-9844-8012-b4f0-6a573222bd5b</a>.</p>
+<p><em>Notes:</em> This figure shows an excerpt of a ChatGPT conversation classified as automation. The student’s first prompt is verbatim. The bracketed text summarizes the other turns.</p>
 </div>
 <figcaption>Automation Example: Student Delegates Writing to ChatGPT</figcaption>
 </figure>
 
 <figure id="fig:chat_aug1" data-latex-placement="H">
 <div class="singlespace">
-<p><em>Notes:</em> This figure shows an excerpt of a ChatGPT conversation classified as augmentation. Full transcript: <a href="https://chatgpt.com/share/681d3d15-f188-8009-98d9-3d88b76fd1d5" class="uri">https://chatgpt.com/share/681d3d15-f188-8009-98d9-3d88b76fd1d5</a>.</p>
+<p><em>Notes:</em> This figure shows an excerpt of a ChatGPT conversation classified as augmentation. The student’s three prompts are verbatim. The bracketed text summarizes ChatGPT’s replies.</p>
 </div>
 <figcaption>Augmentation Example: Student Uses ChatGPT as an Explainer</figcaption>
 </figure>
 
-### Use in Heterogeneity Analysis.
-
-We use the conversation-level classification to construct student-level indicators of AI use type. A student is classified as an *automation user* if any of their conversations was labeled as Automation or Mixed, and as an *augmentation user* if any was labeled as Augmentation or Mixed. These groups are neither mutually exclusive nor collectively exhaustive: students with both types of conversations appear in both subsamples, and the "Other" category is excluded from the heterogeneity analysis. These indicators are defined only for treated students who used ChatGPT; control students are excluded from the classification by construction. In the heterogeneity analysis (Table 8), we compare each subgroup of treated students separately against the full control group.
-
 ## Literature Comparison
 We surveyed experimental papers on generative AI and learning outcomes published or circulated between 2023 and 2026. We required that each study satisfy seven criteria: (1) a randomized experimental design; (2) an effect size reported in standard deviations or convertible from reported statistics; (3) a standard error or confidence interval (reported or back-calculable); (4) an outcome measuring learning on an unassisted assessment, excluding tasks where AI was available during evaluation; (5) a clean no-AI control, rather than an active comparison such as human tutoring or structured hints; (6) a total sample size of at least 50 participants; and (7) a sample composed of students, rather than working professionals or general online participants.
 
-Appendix Table 19 summarizes the 13 included studies; we describe each below.
+Appendix Table 16 summarizes the 14 included studies; we describe each below.
 
 <div id="tab:literature_summary">
 
-  Study                                  Domain            $N$ Design                 Outcome                      Estimates
-  -------------------------------------- ------------- ------- ---------------------- ---------------------------- -----------
-  Ba, Zhang, and Yi (2024)               Medicine           77 RCT                    Unassisted exam              1
-  Bassner et al. (2026)                  Coding            275 RCT                    Unassisted post-test         2
-  Bastani et al. (2025)                  Math              839 Cluster RCT            Unassisted exam              2
-  Dai et al. (2025)                      Physics           349 RCT ($\times 2$)       Unassisted exam              3
-  De Simone et al. (2025)                Language          759 RCT                    Unassisted post-test         2
-  Fischer, Rau, and Rilke (2025)         Economics         334 Lab RCT                Unassisted exam              2
-  Gan et al. (2024)                      Medicine          110 RCT                    Unassisted exam              1
-  Hou et al. (2026)                      Engineering        95 RCT                    Unassisted post-test         2
-  Huang et al. (2025)                    Medicine          187 RCT                    Unassisted skill test        1
-  Kavadella et al. (2024)                Medicine           77 RCT                    Unassisted exam              1
-  Kazemitabaar et al. (2023)             Coding             69 RCT                    Post-test + 1-wk retention   2
-  LearnLM Team (2026)                    Math            1,763 Cluster RCT            Unassisted exam              1
-  Lehmann, Cornelius, and Sting (2025)   Coding            176 Lab RCT ($\times 2$)   Unassisted post-test         2
+  Study                                  Domain            $N$ Design                 Outcome
+  -------------------------------------- ------------- ------- ---------------------- ----------------------------
+  Ba, Zhang, and Yi (2024)               Medicine           77 RCT                    Unassisted exam
+  Bassner et al. (2026)                  Coding            275 RCT                    Unassisted post-test
+  Bastani et al. (2025)                  Math              839 Cluster RCT            Unassisted exam
+  Dai et al. (2025)                      Physics           349 RCT ($\times 2$)       Unassisted exam
+  De Simone et al. (2025)                Language          759 RCT                    Unassisted post-test
+  Fischer, Rau, and Rilke (2025)         Economics         334 Lab RCT                Unassisted exam
+  Franco, Irmert, and Isaksson (2026)    Language          572 Lab RCT                Unassisted exam
+  Gan et al. (2024)                      Medicine          110 RCT                    Unassisted exam
+  Hou et al. (2026)                      Engineering        95 RCT                    Unassisted post-test
+  Huang et al. (2025)                    Medicine          187 RCT                    Unassisted skill test
+  Kavadella et al. (2024)                Medicine           70 RCT                    Unassisted exam
+  Kazemitabaar et al. (2023)             Coding             69 RCT                    Post-test + 1-wk retention
+  LearnLM Team (2026)                    Math            1,423 Cluster RCT            Unassisted exam
+  Lehmann, Cornelius, and Sting (2025)   Coding            176 Lab RCT ($\times 2$)   Unassisted post-test
 
   : Included Studies in Literature Comparison
 
@@ -1924,7 +1411,7 @@ Appendix Table 19 summarizes the 13 included studies; we describe each below.
 
 <div class="singlespace">
 
-*Notes:* This table lists the studies included in our literature comparison. $N$ is the total sample across all arms included in our comparison. "Estimates" indicates the number of point estimates included in Figure 3. All studies compare AI access to a no-AI control on unassisted assessments.
+*Notes:* This table lists the studies included in our literature comparison. $N$ is the total sample across all arms included in our comparison. All studies compare AI access to a no-AI control on unassisted assessments.
 
 </div>
 
@@ -1934,41 +1421,43 @@ Bassner et al. (2026) randomized 452 introductory-programming students at TU Mun
 
 Bastani et al. (2025) conducted a cluster-randomized trial with 839 Turkish high school students learning math on an online platform. Students were assigned to base GPT-4 access, GPT-4 with a tutoring prompt that withheld direct answers, or a no-AI control, and took an unassisted math exam after the practice period. Although base GPT-4 students solved more practice problems during the AI-assisted phase, this advantage reversed on the unassisted exam: the base group scored $-$0.19 SD relative to the control, while the tutor-prompted group scored $-$0.01 SD. We converted the authors' raw-scale standard errors to SD units by dividing by the control-arm standard deviation (0.277).
 
-Dai et al. (2025) ran two randomized experiments with grade-10 physics students at a Chinese high school (Experiment 1: $N = 121$; Experiment 2: $N = 266$), providing LLM-generated feedback on regular homework over five weeks. In Experiment 1, treated students received recommended problems with AI heuristic hints; in Experiment 2, students could request AI help on demand while studying, either choosing the feedback type themselves or receiving the system's choice. Effects on the unassisted end-of-term physics exam are small and insignificant in all three AI arms relative to no-intervention controls (0.03–0.21 SD). Exam scores are standardized, so regression coefficients are effect sizes directly.
+Dai et al. (2025) ran two randomized experiments with grade-10 physics students at a Chinese high school (Experiment 1: $N = 83$ in the two arms we use; Experiment 2: $N = 266$), providing LLM-generated feedback on regular homework over five weeks. In Experiment 1, treated students received recommended problems with AI heuristic hints, and we exclude the study's third arm, which received recommended problems without AI hints; in Experiment 2, students could request AI help on demand while studying, either choosing the feedback type themselves or receiving the system's choice. Effects on the unassisted end-of-term physics exam are small and insignificant in all three AI arms relative to no-intervention controls (0.03–0.21 SD). Exam scores are standardized, so regression coefficients are effect sizes directly.
 
-De Simone et al. (2025) studied 759 secondary school students in Nigeria randomly assigned to practice English language skills with an AI chatbot or a no-AI control. Students showed gains on unassisted post-tests in English skills (0.24 SD) and on the school's regular third-term curricular exam at the end of the intervention (0.21 SD). They also report a "total" estimate bundling AI and digital literacy skills directly taught by the intervention; we exclude it because it captures treatment-specific content rather than general learning.
+De Simone et al. (2025) studied 759 secondary school students in Nigeria randomly assigned to practice English language skills with an AI chatbot or a no-AI control. Students showed gains on unassisted post-tests in English skills (0.24 SD) and on the school's regular third-term curricular exam at the end of the intervention (0.21 SD). The authors also report a "total" estimate bundling AI and digital literacy skills directly taught by the intervention; we exclude it because it captures treatment-specific content rather than general learning.
 
 Fischer, Rau, and Rilke (2025) randomized 334 university students in Berlin to study two microeconomics textbook excerpts with a GPT-4-based tutor grounded in the readings—available either throughout the session or only after ten minutes of independent reading—or with the textbook alone. On an incentivized, unassisted 25-question exam, unrestricted AI tutoring raised performance by 0.34 SD, while restricted access produced a statistically insignificant 0.13 SD. Test scores are standardized, so the reported coefficients are effect sizes directly.
 
-Gan et al. (2024) randomized 110 third-year medical students at Jinan University to a one-week orthopedics review using ChatGPT-4 or conventional internet resources. The ChatGPT group scored 0.40 SD higher on an unassisted 214-item orthopedics exam. We computed the effect size and standard error from reported means and standard deviations.
+Franco, Irmert, and Isaksson (2026) randomized 572 students at the University of Nottingham to study Esperanto in a proctored lab session—a 15-minute lesson followed by about 20 minutes of practice questions—with a browsing-only control, unrestricted ChatGPT access, or ChatGPT access plus brief written guidance on learning-oriented use. On an incentivized, unassisted 15-question exam, neither AI arm differs from the control (0.04 SD for unrestricted access, $-$0.12 SD for guided access), and students with AI attempt fewer practice questions.[^28]
 
-Hou et al. (2026) randomized 95 undergraduates with no prior construction-related coursework to review construction-engineering material with a generative-AI assistant—with or without a structured prompting framework—or with lecture slides only. On an unassisted post-test combining multiple-choice and open-ended items, guided AI use raised total scores by 0.86 SD, while unguided use produced a near-zero effect (0.09 SD). We computed effect sizes and standard errors from reported means and standard deviations.
+Gan et al. (2024) randomized 125 third-year medical students at Jinan University to a one-week orthopedics review using ChatGPT-4 or conventional internet resources, 110 of whom were analyzed after 15 withdrawals. The ChatGPT group scored 0.40 SD higher on an unassisted 214-item orthopedics exam. We computed the effect size and standard error from reported means and standard deviations.
+
+Hou et al. (2026) randomized 95 undergraduates with no prior construction-related coursework to review construction-engineering material with a generative AI assistant—with or without a structured prompting framework—or with lecture slides only. On an unassisted post-test combining multiple-choice and open-ended items, guided AI use raised total scores by 0.86 SD, while unguided use produced a near-zero effect (0.09 SD). We computed effect sizes and standard errors from reported means and standard deviations.
 
 Huang et al. (2025) randomized 187 dental students at Wuhan University to one week of operative-skills training with instructional videos plus ChatGPT-3.5 or the same videos alone. The ChatGPT group scored 0.67 SD higher on an unassisted virtual-reality skill assessment. We computed the effect size and standard error from reported means and standard deviations.
 
-Kavadella et al. (2024) randomized 77 second-year dental students at European University Cyprus to complete a radiation-biology assignment using ChatGPT or conventional literature search. On an unannounced, unassisted ten-question exam, the ChatGPT group scored 0.52 SD higher. We computed the effect size and standard error from reported means and standard deviations.
+Kavadella et al. (2024) randomized 77 second-year dental students at European University Cyprus to complete a radiation-biology assignment using ChatGPT or conventional literature search. On an unannounced, unassisted ten-question exam, which 70 of the 77 sat, the ChatGPT group scored 0.52 SD higher. We computed the effect size and standard error from reported means and standard deviations.
 
-Kazemitabaar et al. (2023) ran a 10-session randomized trial with 69 K-12 learners (ages 10–17, novice programmers) using OpenAI Codex to support Python authoring tasks. AI access produced large performance gains during training (1.67 SD) but no detectable difference on an immediate unassisted post-test ($-$0.05 SD; the baseline group scored slightly higher, 62.9 versus 61.3 percent) and only a marginal difference on a one-week retention test of code modification (0.41 SD). Standard errors were back-calculated from the reported $N$ and standardized effect size.
+Kazemitabaar et al. (2023) ran a ten-session randomized trial with 69 K–12 learners (ages 10–17, novice programmers) using OpenAI Codex to support Python authoring tasks. AI access produced large performance gains during training (1.67 SD) but no detectable difference on an immediate unassisted post-test ($-$0.05 SD; the baseline group scored slightly higher, 62.9 versus 61.3 percent) and only a marginal difference on a one-week retention test of code modification (0.41 SD). Standard errors were back-calculated from the reported $N$ and standardized effect size.
 
-LearnLM Team (2026) conducted a preregistered trial randomizing 48 mathematics classrooms (1,763 grade 7–8 students) in Sierra Leone to integrate Gemini's Guided Learning feature into half of weekly lessons for eight weeks or to continue standard instruction. The intent-to-treat effect on an unassisted, IRT-scaled endline mathematics assessment is 0.26 SD, with standard errors clustered at the classroom level.
+LearnLM Team (2026) conducted a preregistered trial randomizing 48 mathematics classrooms (1,763 grade 7–8 students enrolled, 1,423 in the analyzed balanced panel) in Sierra Leone to integrate Gemini's Guided Learning feature into half of weekly lessons for eight weeks or to continue standard instruction. The intent-to-treat effect on an unassisted, IRT-scaled endline mathematics assessment is 0.26 SD, with standard errors clustered at the classroom level.
 
 Lehmann, Cornelius, and Sting (2025) ran two laboratory experiments with German university students learning Python programming (Study 2: $N = 107$; Study 3: $N = 69$). In both, treated students used ChatGPT during practice and then completed a 20-question unassisted coding post-test. Effects are 0.25 SD (Study 2) and 0.42 SD (Study 3), neither individually significant at conventional levels. Study 2 included an unintended copy-paste restriction that may have affected the treatment.
 
-The random-effects grand mean in Figure 3 uses DerSimonian and Laird (1986) weights, accounting for between-study heterogeneity through a variance component estimated from study-level effects. The pooled estimate combines all 26 point estimates: 22 from the literature and 4 from this paper.
+The random-effects grand mean in Figure 3 uses DerSimonian and Laird (1986) weights, accounting for between-study heterogeneity through a variance component estimated from study-level effects. The pool is the 24 literature estimates, aggregated within each study by inverse-variance weighting so that each of the 14 studies enters once (our own estimates are excluded).
 
 # Student Beliefs About AI and Learning
-This section analyzes student responses to an open-ended question included in the Session Two survey: "In your opinion, how does generative AI (e.g., ChatGPT) affect student learning in college? Please explain your reasoning." Of 204 students who attended both sessions, all 204 provided a non-missing response. We analyze these responses in two ways: sentiment analysis to show the measure carries signal rather than noise, and causal-graph coding, following Andre et al. (2026), to characterize how students reason about AI and learning.
+This appendix analyzes student responses to an open-ended question included in the Session Two survey: "In your opinion, how does generative AI (e.g., ChatGPT) affect student learning in college? Please explain your reasoning." All 205 students who attended both sessions answered the question. We analyze these responses in two ways: sentiment analysis to show the measure carries signal rather than noise, and causal-graph coding, following Andre et al. (2026), to characterize how students reason about AI and learning.
 
 ## Validating the Open-Ended Response Measure
-We validate our open-ended response measure using VADER (Valence Aware Dictionary and sEntiment Reasoner), a lexicon-based sentiment analysis tool (Hutto and Gilbert, 2014). VADER assigns each response a compound sentiment score ranging from $-1$ (most negative) to $+1$ (most positive). Appendix Figure 14 plots the distribution of these scores. Responses skew positive, with most students expressing net-positive sentiment about AI's effect on learning and a minority expressing negative sentiment.
+We validate our open-ended response measure using VADER (Valence Aware Dictionary and sEntiment Reasoner), a lexicon-based sentiment analysis tool (Hutto and Gilbert, 2014). VADER assigns each response a compound sentiment score ranging from $-1$ (most negative) to $+1$ (most positive). Appendix Figure 16 plots the distribution of these scores. Responses skew positive, with most students expressing net-positive sentiment about AI's effect on learning and a minority expressing negative sentiment.
 
 <figure id="fig:vader_hist" data-latex-placement="H">
 <embed src="results/hist-vader-sentiment.pdf" />
-<p><em>Notes:</em> This figure plots the distribution of compound sentiment scores across students who responded to the open-ended question about how generative AI affects student learning. Scores are computed using Hutto and Gilbert (2014)’s VADER algorithm and range from <span class="math inline">−1</span> (most negative) to <span class="math inline">+1</span> (most positive). The dashed vertical line marks the mean.</p>
+<p><em>Notes:</em> This figure plots the distribution of compound sentiment scores across students who responded to the open-ended question about how generative AI affects student learning. Scores are computed using the VADER algorithm of Hutto and Gilbert (2014) and range from <span class="math inline">−1</span> (most negative) to <span class="math inline">+1</span> (most positive). The dashed vertical line marks the mean.</p>
 <figcaption>Distribution of AI Sentiment Scores</figcaption>
 </figure>
 
-To assess whether the open-ended responses carry a relevant signal, we test whether their sentiment tracks students' actual AI use. Sentiment relates more strongly to students' AI use outside the experiment than to their take-up within it. Appendix Figure fig:vader_experiment presents binned scatterplots relating compound sentiment to two measures of AI use. Panel A relates sentiment to whether an AI-allowed student used AI during Session One. A regression of AI use on the sentiment score yields a positive but statistically insignificant coefficient ($\hat{\beta} = 0.059$, $p = 0.520$). Panel B shows that students who express more positive views about AI's effect on learning use AI somewhat more for academic work during the semester ($\hat{\beta} = 0.105$, $p = 0.103$). This pattern is consistent with the open-ended responses capturing a relevant signal.
+To assess whether the open-ended responses carry a relevant signal, we test whether their sentiment tracks students' actual AI use. Appendix Figure fig:vader_experiment presents binned scatterplots relating compound sentiment to two measures of AI use. Sentiment is weakly related to both measures. Panel A relates sentiment to whether an AI-allowed student used AI during Session One. A regression of AI use on the sentiment score yields a positive but statistically insignificant coefficient ($\hat{\beta} = 0.041$, $p = 0.647$). Panel B shows that students who express more positive views about AI's effect on learning use AI somewhat more for academic work during the semester ($\hat{\beta} = 0.107$, $p = 0.096$). This pattern is consistent with the open-ended responses capturing a relevant signal.
 
 <figure data-latex-placement="H">
 <figure>
@@ -1977,20 +1466,20 @@ To assess whether the open-ended responses carry a relevant signal, we test whet
 </figure>
 <figure>
 <embed src="results/vader_ai_freq.pdf" />
-<figcaption>Panel B. Uses AI for academics frequently</figcaption>
+<figcaption>Panel B. Frequently uses AI for academics</figcaption>
 </figure>
-<p><em>Notes:</em> This figure presents the relationship between AI sentiment and AI usage. Panel A restricts to students in the AI-allowed condition and shows the proportion who used AI during Session One (from usage logs). Panel B shows an indicator for using AI for academic purposes frequently or very frequently during the semester, for all respondents. Each point represents the mean outcome for respondents within sentiment score bins. Sentiment scores are compound scores computed using Hutto and Gilbert (2014)’s VADER algorithm applied to responses to the open-ended question about AI and learning. Positive values indicate positive sentiment and negative values indicate negative sentiment. The dashed lines show OLS best-fit lines estimated on the microdata.</p>
-<figcaption>Panel B. Uses AI for academics frequently</figcaption>
+<p><em>Notes:</em> This figure presents the relationship between AI sentiment and AI usage. Panel A restricts to students in the AI-allowed condition and shows the proportion who used AI during Session One (from usage logs). Panel B shows an indicator for using AI for academic purposes frequently or very frequently during the semester, for all respondents. Each point represents the mean outcome for respondents within sentiment score bins. Sentiment scores are compound scores computed using the VADER algorithm of Hutto and Gilbert (2014) applied to responses to the open-ended question about AI and learning. Positive values indicate positive sentiment and negative values indicate negative sentiment. The dashed lines show OLS best-fit lines estimated on the microdata.</p>
+<figcaption>Panel B. Frequently uses AI for academics</figcaption>
 </figure>
 
 ## Narratives as Causal Graphs
-We characterize the content of the open-ended responses by coding each one as a causal graph, following Andre et al. (2026)'s analysis of how households and experts explain macroeconomic events. In their setting respondents explain why inflation rose, and the explanation is coded as a chain of cause-and-effect links running from a driving factor to inflation. We adapt their method in one substantive way: their links are unsigned, because in the episode they study inflation only rose, whereas AI can raise or lower learning. Each link in our graphs therefore carries a sign. We represent each response as a signed causal graph from a source node, AI use, to a sink node, learning, passing through the mechanisms the student names. A link is positive if the student describes the mechanism as raising learning and negative if as lowering it.
+We characterize the content of the open-ended responses by coding each one as a causal graph, following Andre et al. (2026), who analyze how households and experts explain macroeconomic events. In their setting respondents explain why inflation rose, and the explanation is coded as a chain of cause-and-effect links running from a driving factor to inflation. We adapt their method in one substantive way: their links are unsigned, because in the episode they study inflation only rose, whereas AI can raise or lower learning. Each link in our graphs therefore carries a sign. We represent each response as a signed causal graph from a source node, AI use, to a sink node, learning, passing through the mechanisms the student names. A link is positive if the student describes the mechanism as raising learning and negative if as lowering it.
 
-We proceed in two steps. First, we develop the codebook. Using the full set of student responses, we catalog the distinct mechanisms students raise, and consolidate near-synonyms into fifteen mechanisms. Second, we code every response against this fixed codebook with an LLM. We group the mechanisms by their effect on learning. Seven promote it: explanation and tutoring, efficiency, information access, brainstorming, personalized feedback, access and equity, and engagement. Eight harm it: shortcutting and cheating, cognitive offloading, skill atrophy, dependency, inaccuracy, reduced productive struggle, retention loss, and reduced human contact. A final node, *mode of use*, marks responses that make the effect explicitly conditional ("it depends on how you use it"). This node is a mediator between AI use and the channels rather than a channel itself: AI use feeds mode of use, which branches into channels that raise learning and channels that lower it, so conditionality is encoded by the node carrying both a promoting and a harming arm.
+We proceed in two steps. First, we develop the codebook. Using the full set of student responses, we catalog the distinct mechanisms students raise, and consolidate near-synonyms into fifteen mechanisms. Second, we code every response against this fixed codebook with an LLM. We group the mechanisms by their effect on learning. Seven promote it: explanation and tutoring, efficiency, information access, brainstorming, personalized feedback, access and equity, and engagement. Eight harm it: shortcutting and cheating, cognitive offloading, skill atrophy, dependency, inaccuracy, reduced productive struggle, retention loss, and reduced human contact. A final node, *mode of use*, appears when the student's channels branch according to how AI is used ("it depends on how you use it"). This node is a mediator between AI use and the channels rather than a channel itself: AI use feeds mode of use, which branches into channels that raise learning and channels that lower it, so conditionality is encoded by the node carrying both a promoting and a harming arm.
 
 To illustrate how the coding works, Appendix Figure fig:dag_examples shows the directed acyclic graphs of three specific students. The coder assigns each response an overall valence: the student's bottom-line judgment of whether AI helps learning (Panel A), harms it (Panel B), or depends on how it is used (Panel C). The Panel A student concludes that AI helps learning yet flags the temptation to shortcut; the Panel B student concludes that AI harms learning yet credits AI with explaining difficult concepts. The pattern extends beyond these two students: 20 percent of net-positive narratives name at least one harming channel, and 27 percent of net-negative narratives name at least one promoting channel.
 
-The taxonomy also maps onto the use classification in the main text. Explanation, feedback, and brainstorming are channels in which AI works *with* the student; shortcutting and offloading are channels in which AI works *for* the student. The coder accordingly classifies the manner of use each response describes: *augmentation* when the student describes working with AI (asking it to explain, give feedback, or check work), *automation* when the student describes AI doing the work in their place, both, or unspecified.
+The taxonomy also maps onto the use classification in the main text. Explanation, feedback, and brainstorming are channels in which AI works *with* the student; shortcutting and offloading are channels in which AI works *for* the student. The coder accordingly classifies how each response frames AI use: *augmentation* when the student describes working with AI (asking it to explain, give feedback, or check work), *automation* when the student describes AI doing the work in their place, both, or unspecified.
 
 <figure data-latex-placement="H">
 <figure>
@@ -2005,103 +1494,103 @@ The taxonomy also maps onto the use classification in the main text. Explanation
 <embed src="results/fig_dag_example_conditional.pdf" />
 <figcaption>Panel C. A conditional narrative</figcaption>
 </figure>
-<p><em>Notes:</em> Each panel pairs a student’s verbatim open-ended response (left) with the response coded as a signed causal graph from AI use to learning (right), following Andre et al. (2026), so the mapping from text to graph can be assessed directly. Green links denote mechanisms the student describes as promoting learning, maroon links mechanisms that harm it, and navy the mode-of-use node.</p>
+<p><em>Notes:</em> Each panel pairs a student’s verbatim open-ended response (left) with the response coded as a signed causal graph from AI use to learning (right), following Andre et al. (2026), so the mapping from text to graph can be assessed directly. Green links denote mechanisms the student describes as promoting learning, red links mechanisms that harm it, and navy the mode-of-use node.</p>
 <figcaption>Panel C. A conditional narrative</figcaption>
 </figure>
 
-We code each response with an LLM (Claude Opus 4.8). The majority of responses ($98$ percent) can be represented as a causal graph; the rest are non-substantive (e.g., "I don't know"). As a validation, we code every response a second time with a model from a different developer (OpenAI's GPT-5.5) and compute their inter-rater agreement statistic, the pooled probability that a code assigned by one rater is also assigned by the other. Agreement matches the trained human coders in Andre et al. (2026): 0.88 for the individual mechanisms (0.88 in their data), 0.97 for the coarser promotes-versus-harms grouping (0.94 and 0.93), and 0.73 for the signed links (0.77), with the mechanism and link statistics far above their random-coding benchmarks of 0.32 and 0.21, respectively. The two models agree on a response's overall valence 94 percent of the time and on its augmentation-versus-automation framing 85 percent of the time.[^28]
+We code each response with an LLM (Claude Opus 4.8). The majority of responses ($98$ percent) can be represented as a causal graph; the rest are non-substantive (e.g., "I don't know"). As a validation, we code every response a second time with a model from a different developer (OpenAI's GPT-5.5) and compute their inter-rater agreement statistic, the pooled probability that a code assigned by one rater is also assigned by the other. Agreement matches that of the trained human coders in Andre et al. (2026): 0.88 for the individual mechanisms (0.88 in their data), 0.97 and 0.97 for the coarser grouping into any promoting and any harming channel (0.94 and 0.93), and 0.73 for the signed links (0.77), with the mechanism and link statistics far above their random-coding benchmarks of 0.33 and 0.22, respectively. The two models agree on a response's overall valence 94 percent of the time and on its augmentation-versus-automation framing 85 percent of the time.[^29]
 
 ## The Narratives of College Students
 ### The Average Narrative.
 
-The average narrative contains 3.6 mechanisms and 6.4 links, and 96 percent of coded responses mention more than one mechanism. Among students naming any mechanism, 69 percent name both a promoting and a harming channel, and 69 percent of coded responses frame AI's effect as explicitly conditional. The most common single node is mode of use (54 percent), and the most common promoting and harming mechanisms are explanation and tutoring (40 percent) and shortcutting and cheating (42 percent).
+The average narrative contains 3.1 mechanisms and 6.5 links, and 94 percent of coded responses mention more than one mechanism. Among students naming any mechanism, 69 percent name both a promoting and a harming channel, and 69 percent of coded responses say that the effect depends on how AI is used. The most common single node is mode of use (55 percent), and the most common promoting and harming mechanisms are explanation and tutoring (40 percent) and shortcutting and cheating (43 percent).
 
 ### Variation Across Students.
 
-We ask how narratives vary with student characteristics. Appendix Table 20 regresses each of six narrative features—three *sophistication* measures (the number of mechanisms, the number of signed links, and an indicator for naming more than one mechanism) and the three *framing* measures (augmentation, automation, and conditional-on-use)—on the randomized treatment and the full set of student characteristics from Appendix Table 9.
+We ask how narratives vary with student characteristics. Appendix Table 17 regresses each of six narrative features—three *sophistication* measures (the number of mechanisms, the number of signed links, and an indicator for naming more than one mechanism) and three *framing* measures (augmentation, automation, and conditional-on-use)—on the randomized treatment and the full set of student characteristics from Appendix Table 9.
 
-Among the AI-experience measures, only self-assessed proficiency predicts how students frame AI. Students with above-median proficiency are 17.0 percentage points more likely than less proficient students to frame AI as augmentation ($p = 0.019$) and 11.9 pp less likely to frame it as automation ($p = 0.065$). Early adopters—those who first used AI for academics before Fall 2024—do not differ from later adopters on any narrative feature, and randomized AI access shifts none of the six: the largest treatment difference, a 7.2 pp lower automation share among treated students, is imprecisely estimated ($p = 0.205$). Framing thus tracks how well students use AI, not how often they use it, how early they began, or whether they received a single session of access.
+Among the AI-experience measures, only self-assessed proficiency predicts how students frame AI. Students with proficiency at or above the median are 16.3 percentage points (pp) more likely than less proficient students to frame AI as augmentation ($p = 0.024$) and 12.4 pp less likely to frame it as automation ($p = 0.054$). Early adopters (those who first used AI for academics before Fall 2024) do not differ from later adopters on any narrative feature. Randomized AI access lowers the share framing AI as automation by 9.8 pp ($p = 0.083$) and the share naming more than one mechanism by 7.3 pp ($p = 0.092$). Framing thus tracks self-assessed proficiency rather than frequency of use or early adoption.
 
-Demographics, academic background, and beliefs, by contrast, do predict narratives. Men name 0.39 fewer mechanisms and 0.74 fewer links than women (both marginally significant; $p = 0.093$ and $p = 0.073$), the same gender difference Andre et al. (2026) document in narratives about inflation. Students with above-median GPAs are 8.8 pp more likely to name more than one mechanism ($p = 0.037$). Framing varies instead with field of study and beliefs about AI. Natural-science majors are 29 pp more likely to condition AI's effect on how it is used ($p = 0.002$) and 19.9 pp less likely to frame it as automation ($p = 0.004$). Students who expect large AI effects on their own test scores frame AI the same way: they are 13.0 pp less likely to frame it as automation ($p = 0.028$) and 15.1 pp more likely to condition its effect on use, though the latter is marginally significant ($p = 0.063$).
+Demographics, academic background, and beliefs, by contrast, do predict narratives. Men name 0.41 fewer mechanisms and 0.78 fewer links than women ($p = 0.042$ and $p = 0.055$), the same gender difference Andre et al. (2026) document in narratives about inflation. Students with GPAs at or above the median name 0.45 more mechanisms ($p = 0.025$). Framing varies instead with field of study and beliefs about AI. Natural-science majors are 30.6 pp more likely to condition AI's effect on how it is used ($p = 0.001$) and 21.4 pp less likely to frame it as automation ($p = 0.002$). Students who expect large AI effects on their own test scores frame AI the same way: they are 16.4 pp less likely to frame it as automation ($p = 0.006$) and 17.2 pp more likely to condition its effect on use ($p = 0.044$).
 
 <div class="center">
 
 <div id="tab:narr_covariates">
 
 +--------------------------+----------------+-------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                          |                | Narrative sophistication                                                                                    | Use-mode framing                                                                                    |
+|                          |                | Narrative sophistication                                                                                    | Framing of AI use                                                                                   |
 +:=========================+:===============+=================:+:===============+=================:+:===============+===================:+:==============:+=================:+:===============+=================:+:===============+=================:+:========:+
 | 3-8 (lr)9-14             |                | \# mech.         |                | \# links         |                | $>$1 mech. |                | Augment.         |                | Automat.         |                | Condit.          |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
 |                          |                | \(1\)            |                | \(2\)            |                | \(3\)              |                | \(4\)            |                | \(5\)            |                | \(6\)            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| AI access (randomized)   |                | 0.083            |                | 0.297            |                | $-$0.044   |                | $-$0.013 |                | $-$0.072 |                | 0.055            |          |
+| AI access (randomized)   |                | 0.131            |                | 0.425            |                | $-$0.073   | $^{*}$         | $-$0.018 |                | $-$0.098 | $^{*}$         | 0.066            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.241           | )              | (0.449           | )              | (0.033             | )              | (0.060           | )              | (0.057           | )              | (0.076           | )        |
+|                          |                | (0.208           | )              | (0.439           | )              | (0.043             | )              | (0.061           | )              | (0.056           | )              | (0.078           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
 | **Panel A. Demographic characteristics**                                                                                                                                                                                                           |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Male                     |                | $-$0.387 | $^{*}$         | $-$0.740 | $^{*}$         | $-$0.026   |                | $-$0.062 |                | 0.010            |                | $-$0.035 |          |
+| Male                     |                | $-$0.407 | $^{**}$        | $-$0.782 | $^{*}$         | $-$0.039   |                | $-$0.060 |                | $-$0.008 |                | $-$0.035 |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.229           | )              | (0.411           | )              | (0.032             | )              | (0.056           | )              | (0.058           | )              | (0.073           | )        |
+|                          |                | (0.199           | )              | (0.404           | )              | (0.040             | )              | (0.057           | )              | (0.056           | )              | (0.074           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| White                    |                | 0.163            |                | 0.422            |                | $-$0.026   |                | 0.087            |                | $-$0.022 |                | $-$0.107 |          |
+| White                    |                | 0.301            |                | 0.590            |                | 0.008              |                | 0.084            |                | $-$0.005 |                | $-$0.106 |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.228           | )              | (0.405           | )              | (0.036             | )              | (0.069           | )              | (0.062           | )              | (0.076           | )        |
+|                          |                | (0.200           | )              | (0.405           | )              | (0.043             | )              | (0.071           | )              | (0.062           | )              | (0.076           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| International            |                | $-$0.204 |                | 0.025            |                | 0.000              |                | 0.081            |                | $-$0.040 |                | $-$0.089 |          |
+| International student    |                | 0.026            |                | $-$0.089 |                | 0.016              |                | 0.102            |                | 0.022            |                | $-$0.120 |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.308           | )              | (0.559           | )              | (0.042             | )              | (0.089           | )              | (0.079           | )              | (0.102           | )        |
+|                          |                | (0.266           | )              | (0.558           | )              | (0.047             | )              | (0.094           | )              | (0.075           | )              | (0.107           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Private high school      |                | 0.136            |                | 0.085            |                | $-$0.002   |                | 0.013            |                | $-$0.020 |                | 0.011            |          |
+| Private high school      |                | 0.122            |                | 0.213            |                | 0.004              |                | $-$0.007 |                | $-$0.058 |                | 0.035            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.243           | )              | (0.442           | )              | (0.037             | )              | (0.066           | )              | (0.071           | )              | (0.084           | )        |
+|                          |                | (0.195           | )              | (0.421           | )              | (0.043             | )              | (0.069           | )              | (0.070           | )              | (0.088           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
 | **Panel B. Academic background**                                                                                                                                                                                                                   |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Natural Sciences         |                | $-$0.101 |                | 0.082            |                | 0.025              |                | $-$0.106 |                | $-$0.199 | $^{***}$       | 0.291            | $^{***}$ |
+| Natural-science major    |                | $-$0.324 |                | 0.027            |                | $-$0.018   |                | $-$0.106 |                | $-$0.214 | $^{***}$       | 0.306            | $^{***}$ |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.274           | )              | (0.487           | )              | (0.053             | )              | (0.072           | )              | (0.067           | )              | (0.093           | )        |
+|                          |                | (0.238           | )              | (0.497           | )              | (0.064             | )              | (0.072           | )              | (0.068           | )              | (0.094           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Social Sciences          |                | 0.003            |                | 0.221            |                | 0.042              |                | 0.041            |                | $-$0.065 |                | 0.060            |          |
+| Social-science major     |                | $-$0.026 |                | 0.141            |                | 0.015              |                | 0.053            |                | $-$0.084 |                | 0.070            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.273           | )              | (0.473           | )              | (0.039             | )              | (0.069           | )              | (0.074           | )              | (0.091           | )        |
+|                          |                | (0.231           | )              | (0.461           | )              | (0.045             | )              | (0.070           | )              | (0.074           | )              | (0.091           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| High GPA                 |                | 0.391            |                | 0.643            |                | 0.088              | $^{**}$        | $-$0.011 |                | $-$0.006 |                | 0.011            |          |
+| High GPA                 |                | 0.451            | $^{**}$        | 0.605            |                | 0.069              |                | $-$0.004 |                | $-$0.025 |                | 0.005            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.243           | )              | (0.431           | )              | (0.042             | )              | (0.069           | )              | (0.063           | )              | (0.079           | )        |
+|                          |                | (0.200           | )              | (0.423           | )              | (0.047             | )              | (0.070           | )              | (0.060           | )              | (0.079           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Freshman                 |                | 0.567            | $^{**}$        | 0.971            | $^{*}$         | 0.003              |                | $-$0.113 |                | $-$0.052 |                | 0.143            |          |
+| Freshman                 |                | 0.468            | $^{*}$         | 1.069            | $^{**}$        | $-$0.005   |                | $-$0.115 |                | $-$0.084 |                | 0.156            | $^{*}$   |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.286           | )              | (0.506           | )              | (0.050             | )              | (0.073           | )              | (0.078           | )              | (0.092           | )        |
+|                          |                | (0.249           | )              | (0.507           | )              | (0.058             | )              | (0.075           | )              | (0.077           | )              | (0.092           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Sophomore                |                | 0.351            |                | 0.669            |                | 0.041              |                | 0.035            |                | $-$0.058 |                | 0.078            |          |
+| Sophomore                |                | 0.268            |                | 0.522            |                | 0.036              |                | 0.062            |                | $-$0.040 |                | 0.044            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.380           | )              | (0.687           | )              | (0.048             | )              | (0.114           | )              | (0.085           | )              | (0.115           | )        |
+|                          |                | (0.312           | )              | (0.675           | )              | (0.068             | )              | (0.116           | )              | (0.086           | )              | (0.115           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Junior                   |                | 0.481            |                | 0.797            |                | 0.051              |                | $-$0.108 |                | 0.020            |                | 0.029            |          |
+| Junior                   |                | 0.506            | $^{*}$         | 0.773            |                | 0.055              |                | $-$0.106 |                | 0.022            |                | 0.030            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.305           | )              | (0.537           | )              | (0.034             | )              | (0.076           | )              | (0.079           | )              | (0.097           | )        |
+|                          |                | (0.257           | )              | (0.541           | )              | (0.050             | )              | (0.077           | )              | (0.077           | )              | (0.097           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
 | **Panel C. AI experience and beliefs**                                                                                                                                                                                                             |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Frequent AI user         |                | 0.319            |                | 0.610            |                | $-$0.034   |                | 0.008            |                | $-$0.078 |                | 0.082            |          |
+| Frequent AI user         |                | 0.293            |                | 0.602            |                | $-$0.034   |                | 0.018            |                | $-$0.082 |                | 0.068            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.282           | )              | (0.497           | )              | (0.033             | )              | (0.073           | )              | (0.059           | )              | (0.078           | )        |
+|                          |                | (0.252           | )              | (0.505           | )              | (0.042             | )              | (0.074           | )              | (0.059           | )              | (0.079           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| Early AI adopter         |                | $-$0.198 |                | $-$0.294 |                | $-$0.002   |                | 0.031            |                | 0.003            |                | 0.005            |          |
+| Early AI adopter         |                | $-$0.261 |                | $-$0.275 |                | $-$0.037   |                | 0.033            |                | $-$0.011 |                | 0.004            |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.249           | )              | (0.434           | )              | (0.033             | )              | (0.059           | )              | (0.055           | )              | (0.068           | )        |
+|                          |                | (0.213           | )              | (0.431           | )              | (0.041             | )              | (0.059           | )              | (0.053           | )              | (0.069           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| High AI proficiency      |                | 0.115            |                | 0.313            |                | $-$0.036   |                | 0.170            | $^{**}$        | $-$0.119 | $^{*}$         | $-$0.028 |          |
+| High AI proficiency      |                | 0.110            |                | 0.275            |                | 0.039              |                | 0.163            | $^{**}$        | $-$0.124 | $^{*}$         | $-$0.013 |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.291           | )              | (0.522           | )              | (0.029             | )              | (0.072           | )              | (0.064           | )              | (0.084           | )        |
+|                          |                | (0.267           | )              | (0.528           | )              | (0.050             | )              | (0.072           | )              | (0.064           | )              | (0.084           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| High perceived AI effect |                | 0.462            | $^{*}$         | 0.765            |                | 0.016              |                | $-$0.048 |                | $-$0.130 | $^{**}$        | 0.151            | $^{*}$   |
+| High perceived AI effect |                | 0.351            |                | 0.964            | $^{**}$        | $-$0.022   |                | $-$0.063 |                | $-$0.164 | $^{***}$       | 0.172            | $^{**}$  |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-|                          |                | (0.258           | )              | (0.480           | )              | (0.042             | )              | (0.067           | )              | (0.059           | )              | (0.081           | )        |
+|                          |                | (0.217           | )              | (0.454           | )              | (0.051             | )              | (0.069           | )              | (0.059           | )              | (0.085           | )        |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
-| $N$ (Students)           |                | 200              |                | 200              |                | 200                |                | 200              |                | 200              |                | 200              |          |
+| $N$ (Students)           |                | 196              |                | 196              |                | 196                |                | 196              |                | 196              |                | 196              |          |
 +--------------------------+----------------+------------------+----------------+------------------+----------------+--------------------+----------------+------------------+----------------+------------------+----------------+------------------+----------+
 
 : Correlates of Students' Narratives
@@ -2112,7 +1601,7 @@ Demographics, academic background, and beliefs, by contrast, do predict narrativ
 
 <div class="singlespace">
 
-*Notes:* Each column reports an OLS regression of the indicated narrative feature on all rows jointly, estimated on the codable open-ended responses. Outcomes come from each student's coded causal graph: the number of mechanisms, the number of signed links, an indicator for naming more than one mechanism, and indicators for the augmentation, automation, and conditional-on-use framings. All characteristics are indicators, defined as in Appendix Table 9; missing values are set to zero, with missing indicators included. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
+*Notes:* Each column reports an OLS regression of the indicated narrative feature on all rows jointly, estimated on the codable open-ended responses. Outcomes come from each student's coded causal graph: the number of mechanisms, the number of signed links, an indicator for naming more than one mechanism, and indicators for the augmentation, automation, and conditional-on-use framings. All characteristics are indicators, defined as in Appendix Table 9 with the medians recomputed in this sample: frequent AI user indicates use during the semester at or above this sample's median (frequently or more often), and high perceived AI effect is a perceived gain of at least one question; missing values are set to zero, with missing indicators included. Heteroskedasticity-robust standard errors in parentheses. $^{***}$ $p < 0.01$; $^{**}$ $p < 0.05$; $^{*}$ $p < 0.10$.
 
 </div>
 
@@ -2120,16 +1609,16 @@ Demographics, academic background, and beliefs, by contrast, do predict narrativ
 
 We next ask whether students' narratives come in recurring types or "clusters." Following Andre et al. (2026), we measure the distance between two narratives as the fraction of their combined signed links that the two do not have in common (the Jaccard distance), group narratives with agglomerative hierarchical clustering with average linkage, and choose the number of clusters to maximize the average silhouette, a standard measure of how well each narrative fits its own cluster relative to the nearest alternative.
 
-Four narrative types cover 94.0 percent of coded responses, while the rest scatter across small clusters (Appendix Figure fig:narr_clusters). The modal type (45 percent) is the double-edged narrative, in which mode of use feeds both an explanation channel and a shortcutting channel. An augmentation type (32 percent) chains efficiency, information access, and explanation to higher learning, though many of these narratives also flag accuracy concerns, and an automation type (10 percent) chains shortcutting and offloading to lower learning. The remaining type is smaller and one-sided: a deskilling narrative (7.0 percent), in which skill atrophy and offloading erode critical thinking.
+Four narrative types cover 94 percent of coded responses, while the rest scatter across small clusters (Appendix Figure fig:narr_clusters). The modal type (47 percent) is the double-edged narrative, in which mode of use feeds both an explanation channel and a shortcutting channel. An augmentation type (28 percent) chains efficiency, information access, and explanation to higher learning, though many of these narratives also flag accuracy concerns, and an automation type (10 percent) chains shortcutting and offloading to lower learning. The remaining type is smaller and one-sided: a deskilling narrative (8 percent), in which skill atrophy and offloading erode critical thinking.
 
 <figure data-latex-placement="H">
 <figure>
 <embed src="results/fig_dag_cluster_double_edged.pdf" />
-<figcaption>Panel A. Double-edged (45 percent)</figcaption>
+<figcaption>Panel A. Double-edged (47 percent)</figcaption>
 </figure>
 <figure>
 <embed src="results/fig_dag_cluster_augmentation.pdf" />
-<figcaption>Panel B. Augmentation (32 percent)</figcaption>
+<figcaption>Panel B. Augmentation (28 percent)</figcaption>
 </figure>
 <figure>
 <embed src="results/fig_dag_cluster_automation.pdf" />
@@ -2137,64 +1626,379 @@ Four narrative types cover 94.0 percent of coded responses, while the rest scatt
 </figure>
 <figure>
 <embed src="results/fig_dag_cluster_deskilling.pdf" />
-<figcaption>Panel D. Deskilling (7.0 percent)</figcaption>
+<figcaption>Panel D. Deskilling (8 percent)</figcaption>
 </figure>
 <p><em>Notes:</em> This figure shows the average causal graph within each narrative cluster; panel headings report each cluster’s share of coded narratives. We form the clusters with agglomerative hierarchical clustering, using average linkage on the Jaccard distance between signed-link sets and choosing the number of clusters to maximize the average silhouette. We show the four clusters with at least eight responses and, within each panel, omit mechanisms below 20 percent and links below 6 percent.</p>
-<figcaption>Panel D. Deskilling (7.0 percent)</figcaption>
+<figcaption>Panel D. Deskilling (8 percent)</figcaption>
 </figure>
 
-[^1]: For example, Bastani et al. (2025) test GPT-4 with guardrails that provide teacher-designed hints rather than direct solutions in Turkish high-school math classes; Xu et al. (2025) add metacognitive prompts to a generative-AI learning environment for Chinese college students; Kim et al. (2025) restrict AI to tutoring after students attempt each problem on a math practice platform; De Simone et al. (2025) study teacher-guided sessions with Microsoft Copilot in after-school English classes in Nigeria; Poulidis, Bastani, and Bastani (2025) compare a system-regulated AI that auto-delivers tips at key moments with on-demand AI in a 12-week chess training program; and Kumar et al. (2025) expose online adults practicing math problems to explanations pre-generated by GPT-4 under a hidden tutoring prompt, rather than to the chatbot itself.
+# Conceptual Framework
+This appendix presents the complete model of Section 5.2. Students do research and write to produce an essay and acquire knowledge. We distinguish AI that helps students understand the material from AI that writes the essay in their place, and we show how the two capabilities affect effort, knowledge, and the incentive to delegate. We first present a baseline model without AI and then introduce the two AI capabilities and derive how each changes effort and knowledge relative to the baseline.
 
-[^2]: For example, Kestin et al. (2025) compare AI with in-class active learning in a college physics course, LearnLM Team (2024) with static pre-written hints and human tutoring across a range of tutoring scenarios, Kreijkes et al. (2026) with note-taking on reading-comprehension tasks in secondary schools, and Chung et al. (2026) compare an AI tutor that adapts the order and difficulty of practice problems to each student with a fixed-sequence version of the same tutor in a high-school Python course.
+## Setup
 
-[^3]: For example, a student assigned to carbon capture may be asked to "analyze the three main barriers to scaling carbon capture technologies (technical limitations, economic costs, and policy challenges)," identify which barrier is most critical, and support their analysis with specific examples.
+A student chooses cognitive effort in research, $r \geq 0$ (e.g., reading and searching), and writing, $w \geq 0$ (e.g., drafting, editing, note-taking, and organizing). Both activities produce knowledge (denoted by $K$), that is, lead to learning. Writing also produces the essay the student submits, and the quality of that essay reflects the knowledge the student has acquired. Without AI, knowledge and Session One essay quality are $$\begin{align}
+    K &= \theta_r r + \theta_w w, 
+    Q_1 &= w + \phi K, \end{align}$$ where $\theta_r, \theta_w > 0$ are the returns to effort in each activity and $\phi \geq 0$ measures how much of the student's knowledge shows in the essay. We focus on the case $\phi > 0$. Writing raises essay quality directly, and both activities raise it through the knowledge they produce, so the reward for essay quality enters both effort decisions.
 
-[^4]: Texts range from 1,253 to 1,399 words (Appendix Table 17). At an average silent reading speed of approximately 250 words per minute for college students (Carver, 1992; Brysbaert, 2019), the estimated reading time is 5.0 to 5.6 minutes per text. The full text of the learning materials is available in the [Supplementary Materials](https://www.dropbox.com/scl/fi/pzzmqwikxweqzrofrnzt9/ai-learning-supplementary.pdf?rlkey=zjg1lf7cmzno304na3bgq58bn&st=gtj3nlqa&dl=0).
+The student values knowledge at $\omega_K > 0$ per unit and essay quality at $\omega_Q > 0$ per unit. These valuations combine intrinsic interest with external rewards. In our experiment, the lottery tickets paid for correct test answers and for essay quality contribute to them. In ordinary coursework, grades and the future returns to skill are external incentives, while interest in the topic is an intrinsic incentive. Effort $x$ in each activity costs $x^2/(2\mu)$, with $\mu > 0$. The cost is convex, so each additional unit of effort costs more than the last, and a higher $\mu$ lowers the marginal cost of effort.
 
-[^5]: When scheduling, we encouraged students to sign up for a Session Two slot approximately one week after their Session One slot, but allowed flexibility to accommodate scheduling constraints. The average gap between sessions was 6.99 days. Most students scheduled their second session exactly seven days after Session One (61.4 percent), and 80.5 percent attended within six to eight days.
+## The Student's Problem Without AI
 
-[^6]: We note four main deviations from the experimental protocol that occurred during early time slots. First, the initial Session One verbal welcome script did not mention AI permissions or restrictions; students learned their treatment condition only through written platform instructions. We introduced verbal acknowledgment of treatment conditions starting with the second Session One time slot. Second, the initial Session One included a timer that malfunctioned, displaying available time after the 35-minute limit had elapsed. We removed the timer for subsequent sessions. Third, the first Session Two time slot lacked a waiting room, requiring students to manually track time before leaving. We introduced a virtual waiting room for all following sessions. Fourth, a technical glitch during one Session Two time slot prevented students from completing the essay on the platform. We added extra time, asked affected students to write their essays in Microsoft Word, and entered those essays into the dataset manually. All analyses include session fixed effects to account for these protocol variations.
+We begin by studying the student's problem without access to AI. The student solves $$\begin{align}
+ \max_{r, w \geq 0} \; \underbrace{\omega_K \big(\theta_r r + \theta_w w\big)}_{\substack{\text{Value of} \ \text{knowledge}}} + \underbrace{\omega_Q \big[w + \phi \big(\theta_r r + \theta_w w\big)\big]}_{\substack{\text{Reward for} \ \text{essay quality}}} - \underbrace{\frac{r^2 + w^2}{2\mu}}_{\substack{\text{Cost of} \ \text{effort}}}.
+\end{align}$$
 
-[^7]: We asked students for both SAT and ACT scores. Most students took the SAT. When students provided ACT but not SAT scores, we use concordance tables to convert ACT scores to SAT equivalents.
+The objective is strictly concave in $(r, w)$, so the first-order conditions give the unique solution $$\begin{align}
+    r_0 = \mu \big(\omega_K + \phi \omega_Q\big) \theta_r \quad \text{ and } \quad w_0 = \mu \big[\big(\omega_K + \phi \omega_Q\big) \theta_w + \omega_Q\big]. \end{align}$$
 
-[^8]: The pool of potential controls includes: (1) demographic characteristics—age, gender, race/ethnicity indicators (Black, Latino, Asian, white), international student status, and public/private high school attendance; (2) academic background—cohort fixed effects, declared major status, field-of-study indicators (natural sciences, social sciences, humanities/arts), self-reported study hours per week, college GPA, SAT score, and high school GPA (each entered continuously and as decile bins), and an indicator for taking a standardized admissions test; (3) baseline measures—pre-learning self-assessed knowledge, pre-learning test score, prior experience with similar tasks, and comprehension check score; (4) experimental design features—topic fixed effects, writing prompt version, Session Two assessment order, and lab location; and (5) missing-data indicators. For students who did not take a standardized admissions test, we impute SAT scores from baseline covariates to assign them to bins, as described in Appendix 9.5.
+Substituting these choices into equation eq:app_baseline_outputs gives an expression for learning without AI:
 
-[^9]: This measure may capture dimensions of learning that multiple-choice questions cannot test, though we acknowledge that it requires accurate self-knowledge and is subject to the usual biases of subjective questions, such as social desirability bias.
+$$\begin{align}
+ K_0 = \underbrace{\mu \omega_K \big(\theta_r^2 + \theta_w^2\big)}_{\substack{\text{Value of} \ \text{knowledge}}} + \underbrace{\mu \omega_Q \big[\theta_w + \phi \big(\theta_r^2 + \theta_w^2\big)\big]}_{\substack{\text{Reward for} \ \text{essay quality}}}.
+\end{align}$$
 
-[^10]: Two considerations motivate our use of AI grading: a growing literature validates LLMs as evaluators of text quality (Chiang and Lee, 2023; Liu et al., 2023; Zheng et al., 2023), and our learning topics (blockchain, carbon capture, CRISPR) are technical subjects on which human graders recruited from a general population may have limited expertise.
+Equation eq:app_baseline_knowledge makes explicit the two sources of learning. The first term is the knowledge the student acquires through research and writing because they value knowledge. The second term is the knowledge that the reward for essay quality generates: producing the essay requires writing, and writing produces knowledge; and because the essay shows what the student knows, the reward also induces research and writing that add to knowledge.
 
-[^11]: As a validation exercise, we confirm that the embeddings capture content variation: average within-topic cosine similarity is 0.74, compared to 0.15 across topics, and essays responding to the same prompt are more similar to each other (0.78) than essays on the same topic but a different prompt (0.71).
+## Introducing AI
 
-[^12]: Jabarian and Imas (2025) evaluate four AI text detectors and find that Pangram achieves near-zero false positive and false negative rates, even when AI-generated text is modified using "humanizer" tools.
+We extend the baseline model by giving the student access to AI, which enters through two non-mutually exclusive capabilities. First, used for augmentation, AI raises the return to research effort by $\tau \geq 0$. The parameter $\tau$ is a reduced form for the many channels through which AI makes each unit of research effort more productive. AI can act as a tutor that explains confusing material, as a research assistant that finds relevant and more rigorous sources faster, as a summarizer that condenses reading to what matters most, as an illustrator that produces visualizations on demand, and as an examiner that quizzes the student on what they have read. For concreteness, we refer to this capability as tutoring. Second, the student may automate the process of writing the essay by delegating this task to AI. Let $m \in \{0, 1\}$ indicate delegation.[^30] Let $\bar{Q} \geq 0$ denote the quality of the AI-written essay.[^31]
 
-[^13]: Pangram's plagiarism checker matches sentences against the open web—webpages, books, news articles, and other publicly indexable sources (Masrour, 2025).
+With AI, knowledge and Session One essay quality are $$\begin{align}
+    K &= (\theta_r + \tau)\, r + \theta_w w, 
+    Q_1 &= (1 - m)\, (w + \phi K) + m \bar{Q}. end{align}$$
 
-[^14]: The near-exclusive use of ChatGPT is consistent with surveys of adoption among college students (Hirabayashi et al., 2024; Stöhr, Ou, and Malmström, 2024; Contractor and Reyes, 2026) and the U.S. working-age population (Bick, Blandin, and Deming, 2026).
+Delegation saves the student the time that writing the essay would have taken. Let $v \geq 0$ denote the student's valuation of this time. It is distinct from the cognitive effort that delegation saves, whose cost the cost-of-effort term already captures. Given AI access and the tutoring gain, the student solves $$\begin{align}
+ \max_{r, w \geq 0,\; m \in \{0,1\}} \; \underbrace{\omega_K K}_{\substack{\text{Value of} \ \text{knowledge}}} + \underbrace{\omega_Q \big[(1 - m)\, (w + \phi K) + m \bar{Q}\big]}_{\substack{\text{Reward for} \ \text{essay quality}}} + \underbrace{m v}_{\substack{\text{Value of} \ \text{recovered time}}} - \underbrace{\frac{r^2 + w^2}{2\mu}}_{\substack{\text{Cost of} \ \text{effort}}},
+\end{align}$$ where $K = (\theta_r + \tau)\, r + \theta_w w$.
 
-[^15]: Appendix Table 9 reports correlates of AI take-up among treated students. Frequent prior AI use is the strongest and most robust predictor; self-assessed proficiency and early adoption also predict take-up in bivariate specifications. Take-up is also higher among racial minorities, as white students are significantly less likely to use AI. We find no significant association between take-up and either perceived benefits or GPA; men are directionally more likely to adopt than women, but the difference is imprecise.
+For a given delegation choice, the first-order conditions yield: $$\begin{align}
+    r^*(\tau, m) = \mu \tilde{\omega}_m (\theta_r + \tau) \quad \text{ and } \quad  w^*(\tau, m) = \mu \big[\tilde{\omega}_m \theta_w + \omega_Q (1 - m)\big], \end{align}$$ where $\tilde{\omega}_m \equiv \omega_K + \phi \omega_Q (1 - m)$ is the value of a unit of knowledge given the delegation choice: $\omega_K + \phi \omega_Q$ for a student who writes the essay, as in the baseline, and $\omega_K$ for a student who delegates, because the student's knowledge no longer raises the quality of the submitted essay.
 
-[^16]: The high rate of "other" uses in the revealed data largely reflects conversational turns (e.g., "yes," "sure"), synonym lookups, and off-topic questions—prompts that students would not consider a distinct use of AI when responding to a survey.
+Equation eq:app_effort nests the baseline effort levels of equation eq:app_baseline_effort and shows how each capability changes effort, holding the other fixed. Tutoring raises research effort by $\mu \tilde{\omega}_m \tau$, because the return to research effort is higher, and leaves writing effort unchanged. Delegation removes the reward for essay quality from the research and writing decisions. Thus, both types of effort decrease. In particular, writing effort falls by $\mu \omega_Q (1 + \phi \theta_w)$ because the student's writing no longer determines the submitted essay, and research effort falls by $\mu \phi \omega_Q (\theta_r + \tau)$, because the knowledge research produces no longer improves the essay. In proportional terms, research effort falls by the fraction $\phi \omega_Q / (\omega_K + \phi \omega_Q)$ and writing effort by the larger fraction $\omega_Q (1 + \phi \theta_w) / [(\omega_K + \phi \omega_Q) \theta_w + \omega_Q]$, so delegation lowers the share of effort devoted to writing.[^32] Notably, writing effort remains positive even with delegation ($m = 1$) because students still get the learning benefit of writing, for example when they take notes or organize their ideas.
 
-[^17]: Jackson and Mackevicius (2024) estimate that increasing per-pupil spending by $1,000 for four years raises test scores by 0.031 SD. Linearly extrapolating, producing an effect of $\hat{\beta} = 0.266$ SD requires $$1{,}000 \times \hat{\beta} / 0.031 \approx $8{,}600$ per student. While this comparison is necessarily rough, it suggests that AI access can produce learning gains at a fraction of the cost of conventional education spending.
+Substituting the effort choices into the knowledge equation yields the level of learning with AI: $$\begin{align}
+ K^*(\tau, m) = \mu \tilde{\omega}_m \big[(\theta_r + \tau)^2 + \theta_w^2\big] + \mu \omega_Q \theta_w (1 - m).
+\end{align}$$
 
-[^18]: That 12.8 percent of control-group text is flagged as AI-generated likely reflects a combination of control students using AI, false positives, and students whose natural writing style resembles AI-generated text—a pattern consistent with recent evidence that exposure to LLMs shifts human communication patterns toward AI-like prose (Yakura et al., 2024).
+The effect of AI access on knowledge, the model's counterpart of the treatment effect on test scores, is $$\begin{align}
+    \Delta K &= \underbrace{\mu \big(\omega_K + \phi \omega_Q\big) \big[(\theta_r + \tau)^2 - \theta_r^2\big]}_{\substack{\text{Gain from} \ \text{tutoring}}} - \underbrace{\mu \omega_Q \big[\theta_w + \phi \big(\theta_r^2 + \theta_w^2\big)\big] m}_{\substack{\text{Learning displaced} \ \text{by delegation}}} - \underbrace{\mu \phi \omega_Q \big[(\theta_r + \tau)^2 - \theta_r^2\big] m}_{\substack{\text{Gain from tutoring} \ \text{lost by delegating}}}. \end{align}$$
 
-[^19]: A token is the basic text unit used by language models to process text, corresponding roughly to a short word or sub-word fragment.
+Equation eq:app_deltaK shows that the impact of AI on learning is ex ante ambiguous and it depends on the relative size of three forces. The first one is the gain from tutoring for a student who writes the essay. It combines the increase in the knowledge that each unit of research effort produces with the increase in research effort that the higher return induces. The second force is the learning displaced by delegation: the knowledge that the reward for essay quality generates when the student writes the essay, through writing directly and through the research and writing that the essay value of knowledge motivates. The third force is that the knowledge that tutoring produces no longer improves the submitted essay, so research effort responds less to the higher return. The effect of AI access on knowledge therefore depends on whether the student delegates and, if so, on whether the gain from tutoring exceeds the two losses from delegation. Appendix Figure 17 plots the change in knowledge against the tutoring gain for a student who writes the essay and for the same student when delegating, and shows the two losses from delegation, whose sum widens with the tutoring gain. We now turn to the choice of whether to delegate.
 
-[^20]: Appendix Table 14 reports dimension-level estimates separately for human and AI graders in raw points. Appendix Figure 8 reports the same estimates in SD units.
+<figure id="fig:app_deltaK" data-latex-placement="H">
+<div class="singlespace">
+<p><em>Notes:</em> The figure plots the change in knowledge relative to no AI, <span class="math inline"><em>K</em><sup>*</sup>(<em>τ</em>, <em>m</em>) − <em>K</em><sub>0</sub></span>, against the tutoring gain, for a student who writes the essay (<span class="math inline"><em>m</em> = 0</span>) and for the same student when delegating (<span class="math inline"><em>m</em> = 1</span>), with research and writing effort chosen optimally in each case. The curves are drawn for <span class="math inline"><em>μ</em> = <em>ω</em><sub><em>K</em></sub> = <em>ω</em><sub><em>Q</em></sub> = <em>θ</em><sub><em>r</em></sub> = <em>θ</em><sub><em>w</em></sub> = <em>ϕ</em> = 1</span>. The values are illustrative, so the axes show no scale. The two curves are two counterfactual choices for the same student, holding everything else fixed, not average outcomes for two groups of students. The shaded area between the curves is the loss from delegation, the sum of the last two terms of equation <a href="#eq:app_deltaK" data-reference-type="eqref" data-reference="eq:app_deltaK">[eq:app_deltaK]</a>. The darker band is the learning displaced by delegation, which does not depend on the tutoring gain. The lighter band is the gain from tutoring lost by delegating, which grows with the tutoring gain, so the delegation curve rises more slowly and the gap between the curves widens. The braces show the two parts at the largest tutoring gain drawn. At the marked point on the no-AI line, the gain from tutoring equals the two losses from delegation.</p>
+</div>
+<figcaption>The Effect of AI Access on Knowledge With and Without Delegation</figcaption>
+</figure>
 
-[^21]: This finding is consistent with student perceptions documented by Ravšelj et al. (2025): students believe using ChatGPT might encourage cheating (44.9 percent), unethical behavior (32.8 percent), or plagiarism (43.5 percent), with 56.9 percent endorsing at least one of these concerns.
+## The Decision to Delegate Work to the AI
+The student compares the utility obtained with and without delegation, each evaluated at the effort levels of equation eq:app_effort. Substituting those effort levels into the objective function gives the utility under each choice, $$\begin{align}
+    V_m = \underbrace{\frac{\mu}{2}\, \tilde{\omega}_m^2 (\theta_r + \tau)^2}_{\substack{\text{Net benefit of} \ \text{research effort}}} + \underbrace{\frac{\mu}{2} \big[\tilde{\omega}_m \theta_w + \omega_Q (1 - m)\big]^2}_{\substack{\text{Net benefit of} \ \text{writing effort}}} + \underbrace{m \big(\omega_Q \bar{Q} + v\big)}_{\substack{\text{AI-written essay} \ \text{and recovered time}}}. end{align}$$
 
-[^22]: Students were not informed that they would complete additional assessments in Session Two. We find no evidence that students prepared between sessions: only 5 percent of students reported looking up extra information about the topic, and fewer than 1 percent reported studying it, with no significant differences between treatment and control groups ($p = 0.196$ and $p = 0.319$, respectively).
+The student delegates when $$\begin{align}
+    V_1 - V_0 &= \omega_Q \bar{Q} + v - \frac{\mu}{2} \Big[\big(\tilde{\omega}_0^2 - \omega_K^2\big) (\theta_r + \tau)^2 + \big(\tilde{\omega}_0 \theta_w + \omega_Q\big)^2 - \omega_K^2 \theta_w^2\Big] \geq 0 
+    &\iff \overbrace{\underbrace{\omega_Q \bar{Q}}_{\substack{\text{Reward for the} \ \text{AI-written essay}}} + \underbrace{v}_{\substack{\text{Value of} \ \text{recovered time}}}}^{\text{Benefit of delegation}} [1.5ex]
+    &\qquad \geq \overbrace{\underbrace{\mu \omega_K \omega_Q \big[\theta_w + \phi \big((\theta_r + \tau)^2 + \theta_w^2\big)\big]}_{\substack{\text{Value of the} \ \text{forgone knowledge}}} + \underbrace{\frac{\mu \omega_Q^2}{2} \big[(1 + \phi \theta_w)^2 + \phi^2 (\theta_r + \tau)^2\big]}_{\substack{\text{Own-essay reward} \ \text{net of extra effort}}}}^{\text{Cost of delegation}}. \end{align}$$
 
-[^23]: This retention effect is consistent with the two other studies that measure learning retention, both of which report positive effects: Lira et al. (2025) estimates 0.41 SD on a 24-hour retention test of cover-letter writing, and Kazemitabaar et al. (2023) estimates 0.41 SD on a one-week code-modification test.
+Equation eq:app_delegate clarifies the sources that determine the decision to delegate. On the benefit side, a higher-quality AI-written essay ($\bar{Q}$) and a higher value of recovered time ($v$) make delegation more attractive. The cost of delegation is the value of the knowledge that a student with AI gives up by delegating, $\omega_K [K^*(\tau, 0) - K^*(\tau, 1)]$, plus the reward the student's own essay would have earned, net of the extra effort it would have taken. A higher value of knowledge makes delegation less attractive, since $\partial (V_1 - V_0)/\partial \omega_K = -\mu \omega_Q [\theta_w + \phi ((\theta_r + \tau)^2 + \theta_w^2)] < 0$: students who value learning more are less willing to give up the knowledge that the essay reward induces. Less costly effort (a higher $\mu$), a higher return to writing effort ($\theta_w$), a larger role of knowledge in the essay ($\phi$), and a larger tutoring gain ($\tau$) also make delegation less attractive, the last because a student who writes the essay captures the essay value of the knowledge that tutoring produces: $\partial (V_1 - V_0)/\partial \tau = -\mu \phi \omega_Q (2 \omega_K + \phi \omega_Q)(\theta_r + \tau) < 0$.
 
-[^24]: Similar mixed usage patterns appear in observational data: Contractor and Reyes (2026) in survey responses from Middlebury undergraduates, Handa et al. (2025) and OpenAI (2025) in large-scale Claude and ChatGPT logs, and Ammari et al. (2025) in ChatGPT logs from undergraduates at another U.S. university.
+Whether delegation hurts or helps essay quality is ambiguous. A student who delegates submits an essay of quality $\bar{Q}$ in place of the essay they would have written, whose quality is $w^*(\tau, 0) + \phi K^*(\tau, 0)$ by equations eq:app_effort and eq:app_knowledge. Solving equation eq:app_delegate at equality for $\bar{Q}$ gives the quality of the AI-written essay at which the student is indifferent between delegating and writing. This threshold is below the quality of the student's own essay: the AI-written essay can be worse than the student's own by $(\mu \omega_Q / 2) [(1 + \phi \theta_w)^2 + \phi^2 (\theta_r + \tau)^2] + v / \omega_Q$ and the student still delegates. The first term is the effort that delegation saves, net of the knowledge that effort would have produced, and the second is the value of recovered time, both in units of essay quality. A student whose AI-written essay falls in that range delegates to a worse essay, trading essay quality for the effort and time that delegation saves. A student whose AI-written essay is better than their own delegates to a better one. The model therefore allows a gain in essay quality without a gain in knowledge, and it does not require an essay-quality gain whenever the student delegates. For a student who writes the essay, tutoring raises its quality through the knowledge it produces, by $\phi$ times the gain from tutoring in equation eq:app_deltaK, so a gain in essay quality can also come with a gain in knowledge.
 
-[^25]: Becker et al. (2025) find that experienced open-source developers predicted AI tools would speed them up by 24 percent and, after the study, still believed AI had accelerated their work by roughly 20 percent. The actual measured effect was a 19 percent *slowdown*.
+Equation eq:app_delegate also makes clear that delegation is endogenous to the incentives the student faces. The value of knowledge, $\omega_K$, combines the student's intrinsic motivation to learn with the external rewards for learning: the lottery tickets for correct test answers in our experiment, or grades and the returns to skill in a course. A student with a higher $\omega_K$ is less willing to delegate and also supplies more effort in both activities, so students who delegate and students who do not delegate already differ in motivation and incentives before AI enters. The reward for essay quality and the value of recovered time, which outside the laboratory come from grades and from competing demands on the student's time, shift the decision as well. A higher reward for essay quality discourages delegation: it raises the quality the AI-written essay must reach, since the student at the threshold delegates to an essay worse than their own.
 
-[^26]: The lower average perceived effect among treated students reflects two shifts in the distribution of beliefs relative to control students (Appendix Figure 11): more mass at zero (no perceived effect) and less mass at large positive values (five or more questions).
+## Relationship Between the Model and the Experiment
+The experiment measures the model's outputs. Both tests measure $K$. The Session One essay measures $Q_1$. The Session Two essay is written without AI, so its quality reflects the student's writing effort during the assessment and, through $\phi$, the knowledge the student retains. The time-use survey reports minutes, which relate to effort loosely, as discussed below, and the learning-experience measures relate to the cost of effort. We take each result in turn and end with three implications.
 
-[^27]: Appendix Table 20 reports how students' narratives about AI and learning vary with their characteristics. Self-assessed AI proficiency is the strongest predictor of framing: conditional on demographics and frequency of use, above-median-proficiency students are more likely to frame AI as augmentation and less likely to frame it as automation.
+### Test Scores.
 
-[^28]: Two checks confirm that the coding is not model-specific. Coding every response a third time with a different model from the primary coder's developer (Anthropic's Claude Sonnet 4.6) gives nearly identical agreement with the primary coder (0.86 for mechanisms, 0.66 for links, and 0.92 for valence). Agreement declines with model capability: within the OpenAI line, GPT-5.5 reaches mechanism and link agreement of 0.88 and 0.73, whereas two smaller models reach 0.76 and 0.52, and 0.70 and 0.47. All remain far above the random-coding benchmarks, but we use frontier models for both coders.
+AI access raised test scores in both sessions (Section 4.2). In the model, treated students' scores measure $K^*(\tau, m)$ and control students' scores measure $K_0$. Random assignment equalizes the two groups' preferences and returns to effort in expectation, so the Session One effect is the average of $\Delta K$ in equation eq:app_deltaK across treated students, each with their own tutoring gain and delegation choice, including students who did not use AI, for whom $\tau = 0$ and $m = 0$, so $\Delta K = 0$. Through the lens of the model, a positive average effect means that, averaged across treated students, the gain from tutoring exceeded the two losses from delegation.
+
+### Essays.
+
+The Session One essay measures $Q_1$. For a student who writes the essay, tutoring raises its quality through the knowledge it produces. For a student who delegates (and the rise in the share of text flagged as AI-generated shows that many treated students did), the submitted essay can be better or worse than the student's own. The model therefore does not sign the average Session One essay effect. The unaided Session Two essay reflects retained knowledge and writing effort during the assessment. The direct contribution of AI-written text to the first essay, $m \bar{Q}$, does not enter it. Knowledge gains can appear in both the follow-up test and the unaided essay, whereas the features of AI-written text cannot.
+
+### Time Allocation.
+
+Treated students shifted time from writing toward research (Table 6, Panel B). In the model, both AI capabilities lower the share of effort devoted to writing: a higher $\tau$ raises research effort without changing writing effort, and delegation lowers effort in both activities, writing by proportionally more.[^33]
+
+### The Learning Experience.
+
+Treated students enjoyed the task more (Table 6, Panel C). One interpretation is that AI changes the cost of effort, a channel that the decomposition in equation eq:app_deltaK holds fixed.[^34] Holding constant the delegation choice, equation eq:app_knowledge implies $$\begin{align}
+    \frac{\partial K^*}{\partial \mu} = \tilde{\omega}_m \big[(\theta_r + \tau)^2 + \theta_w^2\big] + \omega_Q \theta_w (1 - m) > 0. end{align}$$
+
+Less costly effort induces more research and writing effort and raises knowledge.
+
+### Additional Implications.
+
+The model delivers three implications that the experiment can examine descriptively by use type.
+
+First, a delegating student's Session One essay advantage comes from $\bar{Q}$ and is absent from unaided work, whereas knowledge, whether from tutoring or from the student's own research and writing, persists into the unaided assessments, including the unaided essay, which expresses knowledge through $\phi$. The essay advantage of automation users should therefore be concentrated in Session One, any test-score advantage should appear in both sessions, and an essay advantage of augmentation users, which can arise only through knowledge, should appear in both sessions.
+
+Second, the two capabilities move effort in different directions. Relative to a student without AI, tutoring raises research effort and leaves writing effort unchanged, whereas delegation lowers writing effort and frees time, which in the laboratory students could use only by stopping early and browsing. Augmentation users should therefore do more research than control students, and automation users should write less than control students and stop earlier. The model does not sign automation users' research effort relative to control students, since tutoring raises it and delegation lowers it. Holding the tutoring gain fixed, however, automation users differ from augmentation users only by the delegation effect in equation eq:app_effort, which lowers effort in both activities. Section 5.3 reports that automation users spend less time on research and less time overall than augmentation users.
+
+Third, the choice to delegate reveals the student's incentives and type. By the delegation condition, students who delegate place a lower value on knowledge or a higher value on recovered time, expect a better AI-written essay, or gain less from tutoring, so predetermined characteristics that correlate with these parameters should predict use type. Appendix Table 13 shows that they do: automation users enter with higher baseline test scores than augmentation users, which the model can rationalize through a higher $\bar{Q}$ for better-prepared students.
+
+<div class="singlespace">
+
+# References
+<div class="thebibliography">
+
+Acemoglu, D. and Restrepo, P. (2019). Automation and new tasks: How technology displaces and reinstates labor. *Journal of Economic Perspectives*, 33(2):3–30.
+
+Andre, P., Haaland, I., Roth, C., Wiederholt, M., and Wohlfart, J. (2026). Narratives about the macroeconomy. *The Review of Economic Studies*. Forthcoming.
+
+Autor, D., Rodchenko, T., Martin, J., Iscenko, Z., Strand, S., Pearl, D., and Ferere, M. (2026). Does AI assistance enhance or erode expertise? Evidence from a three-month field experiment in patent drafting. NBER Working Paper 35720, National Bureau of Economic Research.
+
+Ba, H., Zhang, L., and Yi, Z. (2024). Enhancing clinical skills in pediatric trainees: A comparative study of ChatGPT-assisted and traditional teaching methods. *BMC Medical Education*, 24:558.
+
+Babcock, P. (2010). Real costs of nominal grade inflation? New evidence from student course evaluations. *Economic Inquiry*, 48(4):983–996.
+
+Bassner, P., Lenk-Ostendorf, B., Beinstingel, R., Wasner, T., and Krusche, S. (2026). Less stress, better scores, same learning: The dissociation of performance and learning in AI-supported programming education. *Computers and Education: Artificial Intelligence*, 10:100537.
+
+Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., and Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. *Proceedings of the National Academy of Sciences*, 122(26):e2422633122.
+
+Becker, J., Rush, N., Barnes, B., and Rein, D. (2025). Measuring the impact of early-2025 AI on experienced open-source developer productivity. Technical report, METR.
+
+Belloni, A., Chernozhukov, V., and Hansen, C. (2014). High-dimensional methods and inference on structural and treatment effects. *Journal of Economic Perspectives*, 28(2):29–50.
+
+Bettinger, E. P., Fox, L., Loeb, S., and Taylor, E. S. (2017). Virtual classrooms: How online college courses affect student success. *American Economic Review*, 107(9):2855–2875.
+
+Bowden, A. B., Rodriguez, V., and Weingarten, Z. (2026). The unintended consequences of academic leniency. *American Economic Journal: Economic Policy*. Forthcoming.
+
+Brynjolfsson, E., Li, D., and Raymond, L. (2025). Generative AI at work. *The Quarterly Journal of Economics*, 140(2):889–942.
+
+Brynjolfsson, E. and Mitchell, T. (2017). What can machine learning do? Workforce implications. *Science*, 358(6370):1530–1534.
+
+Brysbaert, M. (2019). How many words do we read per minute? A review and meta-analysis of reading rate. *Journal of Memory and Language*, 109:104047.
+
+Bulman, G. and Fairlie, R. W. (2016). Technology and education: Computers, software, and the internet. In Hanushek, E. A., Machin, S. J., and Woessmann, L., editors, *Handbook of the Economics of Education*, volume 5, pages 239–280. Elsevier.
+
+Caldwell, J. E. (2007). Clickers in the large classroom: Current research and best-practice tips. *CBE—Life Sciences Education*, 6(1):9–20.
+
+Camerer, C. F., Dreber, A., Forsell, E., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Almenberg, J., Altmejd, A., Chan, T., Heikensten, E., Holzmeister, F., Imai, T., Isaksson, S., Nave, G., Pfeiffer, T., Razen, M., and Wu, H. (2016). Evaluating replicability of laboratory experiments in economics. *Science*, 351(6280):1433–1436.
+
+Carter, S. P., Greenberg, K., and Walker, M. S. (2017). The impact of computer usage on academic performance: Evidence from a randomized trial at the United States Military Academy. *Economics of Education Review*, 56:118–132.
+
+Carver, R. P. (1992). Reading rate: Theory, research, and practical implications. *Journal of Reading*, 36(2):84–95.
+
+Chatterji, A., Cunningham, T., Deming, D. J., Hitzig, Z., Ong, C., Shan, C. Y., and Wadman, K. (2025). How people use ChatGPT. NBER Working Paper 34255, National Bureau of Economic Research.
+
+Chi, M. T. H. and Wylie, R. (2014). The ICAP framework: Linking cognitive engagement to active learning outcomes. *Educational Psychologist*, 49(4):219–243.
+
+Chiang, C.-H. and Lee, H.-y. (2023). Can large language models be an alternative to human evaluations? In *Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics*, pages 15607–15631. Association for Computational Linguistics.
+
+Choi, J. H., Monahan, A. B., and Schwarcz, D. (2024). Lawyering in the age of artificial intelligence. *Minnesota Law Review*, 109(1):147–218.
+
+Chung, A. T.-H., Zhang, B., Kung, L.-C., Bastani, H., and Bastani, O. (2026). Effective personalized AI tutors via LLM-guided reinforcement learning. SSRN Working Paper 6423358.
+
+Claybaugh, A. (2025). Re-centering academics at Harvard College: Update on grading and workload. Technical report, Office of Undergraduate Education, Harvard College.
+
+Contractor, Z. and Reyes, G. (2025). Generative AI in higher education: Evidence from an elite college. IZA Discussion Paper 18055, IZA Institute of Labor Economics.
+
+Contractor, Z. and Reyes, G. (2026). Experimental evidence on the learning impact of generative AI. AEA RCT Registry. August 12.
+
+Cristia, J., Ibarrarán, P., Cueto, S., Santiago, A., and Severín, E. (2017). Technology and child development: Evidence from the One Laptop per Child program. *American Economic Journal: Applied Economics*, 9(3):295–320.
+
+Cruces, G., Fernández Meijide, D., Galiani, S., Gálvez, R. H., and Lombardi, M. (2026). Does generative AI narrow education-based productivity gaps? Evidence from a randomized experiment. NBER Working Paper 34851, National Bureau of Economic Research.
+
+Cui, K. Z., Demirer, M., Jaffe, S., Musolff, L., Peng, S., and Salz, T. (2026). The effects of generative AI on high-skilled work: Evidence from three field experiments with software developers. *Management Science*. Forthcoming.
+
+Dai, X., Wen, Z., Jiang, J., Liu, H., and Zhang, Y. (2025). How students use AI feedback matters: Experimental evidence on physics achievement and autonomy. arXiv preprint arXiv:2505.08672.
+
+De Simone, M. E., Tiberti, F., Barrón Rodríguez, M., Manolio, F., Mosuro, W., and Dikoru, E. J. (2025). From chalkboards to chatbots: Evaluating the impact of generative AI on learning outcomes in Nigeria. Policy Research Working Paper 11125, World Bank.
+
+Dell'Acqua, F., Ayoubi, C., Lifshitz, H., Sadun, R., Mollick, E., Mollick, L., Han, Y., Goldman, J., Nair, H., Taub, S., and Lakhani, K. R. (2025). The cybernetic teammate: A field experiment on generative AI reshaping teamwork and expertise. NBER Working Paper 33641, National Bureau of Economic Research.
+
+Dell'Acqua, F., McFowland, III, E., Mollick, E., Lifshitz, H., Kellogg, K. C., Rajendran, S., Krayer, L., Candelon, F., and Lakhani, K. R. (2026). Navigating the jagged technological frontier: Field experimental evidence of the effects of artificial intelligence on knowledge worker productivity and quality. *Organization Science*, 37(2):403–423.
+
+DerSimonian, R. and Laird, N. (1986). Meta-analysis in clinical trials. *Controlled Clinical Trials*, 7(3):177–188.
+
+Dettling, L. J., Goodman, S., and Smith, J. (2018). Every little bit counts: The impact of high-speed internet on the transition to college. *The Review of Economics and Statistics*, 100(2):260–273.
+
+Doshi, A. R. and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances*, 10(28):eadn5290.
+
+Emi, B. and Spero, M. (2024). Technical report on the Pangram AI-generated text classifier. Technical report, Pangram Labs.
+
+Escueta, M., Nickow, A. J., Oreopoulos, P., and Quan, V. (2020). Upgrading education with technology: Insights from experimental research. *Journal of Economic Literature*, 58(4):897–996.
+
+Figlio, D. N., Rush, M., and Yin, L. (2013). Is it live or is it internet? Experimental estimates of the effects of online instruction on student learning. *Journal of Labor Economics*, 31(4):763–784.
+
+Fischer, M., Rau, H. A., and Rilke, R. M. (2025). tutoring enhances student learning without crowding out reading effort. IZA Discussion Paper 18338, IZA Institute of Labor Economics.
+
+Franco, C., Irmert, N., and Isaksson, S. (2026). Does AI help or hurt learning? SSRN Working Paper 6425840.
+
+Gallegos, S. (2026). Guidance over adoption: Experimental evidence on AI-assisted learning. IZA Discussion Paper 18513, IZA Institute of Labor Economics.
+
+Gan, W., Ouyang, J., Li, H., Xue, Z., Zhang, Y., Dong, Q., Huang, J., Zheng, X., and Zhang, Y. (2024). Integrating ChatGPT in orthopedic education for medical undergraduates: Randomized controlled trial. *Journal of Medical Internet Research*, 26:e57037.
+
+Glickenhaus, B., Thai, K., Russell, J., Masrour, E., Han, Y., Spero, M., Emi, B., and Aerts, A. (2026). 4 model card. Technical report, Pangram Labs.
+
+Hirabayashi, S., Jain, R., Jurković, N., and Wu, G. (2024). Harvard undergraduate survey on generative AI. arXiv preprint arXiv:2406.00833.
+
+Hou, X., Xiao, B., Liu, H., and Mueller, S. (2026). The role of instructional guidance in generative AI-assisted learning: Empirical evidence from construction engineering education. arXiv preprint arXiv:2606.05509.
+
+Huang, S., Wen, C., Bai, X., Li, S., Wang, S., Wang, X., and Yang, D. (2025). Exploring the application capability of ChatGPT as an instructor in skills education for dental medical students: Randomized controlled trial. *Journal of Medical Internet Research*, 27:e68538.
+
+Hutto, C. and Gilbert, E. (2014). : A parsimonious rule-based model for sentiment analysis of social media text. In *Proceedings of the International AAAI Conference on Weblogs and Social Media (ICWSM)*, volume 8, pages 216–225.
+
+Jabarian, B. and Imas, A. (2025). Artificial writing and automated detection. NBER Working Paper 34223, National Bureau of Economic Research.
+
+Jensen, R. (2010). The (perceived) returns to education and the demand for schooling. *The Quarterly Journal of Economics*, 125(2):515–548.
+
+Jia, N., Luo, X., Fang, Z., and Liao, C. (2024). When and how artificial intelligence augments employee creativity. *Academy of Management Journal*, 67(1):5–32.
+
+Kanazawa, K., Kawaguchi, D., Shigeoka, H., and Watanabe, Y. (2026). , skill, and productivity: The case of taxi drivers. *Management Science*, 72(2):1376–1388.
+
+Kavadella, A., Dias da Silva, M. A., Kaklamanos, E. G., Stamatopoulos, V., and Giannakopoulos, K. (2024). Evaluation of ChatGPT's real-life implementation in undergraduate dental education: Mixed methods study. *JMIR Medical Education*, 10:e51344.
+
+Kazemitabaar, M., Chow, J., Ma, C. K. T., Ericson, B. J., Weintrop, D., and Grossman, T. (2023). Studying the effect of AI code generators on supporting novice learners in introductory programming. In *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*. ACM.
+
+Kestin, G., Miller, K., Klales, A., Milbourne, T., and Ponti, G. (2025). tutoring outperforms in-class active learning: An RCT introducing a novel research-based design in an authentic educational setting. *Scientific Reports*, 15:17458.
+
+Kim, D., Mitrofanov, D., Wen, Q., and Xu, T. (2025). Generative AI can improve performance and engagement without harming learning. SSRN Working Paper 5929576.
+
+Kraft, M. A. (2020). Interpreting effect sizes of education interventions. *Educational Researcher*, 49(4):241–253.
+
+Kreijkes, P., Kewenig, V., Kuvalja, M., Lee, M., Vitello, S., Hofman, J. M., Sellen, A., Rintel, S., Goldstein, D. G., Rothschild, D. M., Tankelevitch, L., and Oates, T. (2026). Effects of LLM use and note-taking on reading comprehension and memory: A randomised experiment in secondary schools. *Computers & Education*, 243:105514.
+
+Kumar, H., Rothschild, D. M., Goldstein, D. G., and Hofman, J. M. (2025). Math education with large language models: Peril or promise? In *Artificial Intelligence in Education (AIED 2025)*, Lecture Notes in Computer Science. Springer.
+
+LearnLM Team (2025). tutoring can safely and effectively support students: An exploratory RCT in UK classrooms. Technical report, Google DeepMind and Eedi.
+
+LearnLM Team (2026). Teaching with Gemini: Measuring the impact of Guided Learning on student mathematics progress in Sierra Leone. Technical report, Google DeepMind and Fab AI.
+
+Lee, H.-P., Sarkar, A., Tankelevitch, L., Drosos, I., Rintel, S., Banks, R., and Wilson, N. (2025). The impact of generative AI on critical thinking: Self-reported reductions in cognitive effort and confidence effects from a survey of knowledge workers. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*. ACM.
+
+Lehmann, M., Cornelius, P. B., and Sting, F. J. (2025). meets the classroom: When do large language models harm learning? SSRN Working Paper 4941259.
+
+Lewin, C., Somekh, B., and Steadman, S. (2008). Embedding interactive whiteboards in teaching and learning: The process of change in pedagogic practice. *Education and Information Technologies*, 13(4):291–303.
+
+Liu, G., Christian, B., Dumbalska, T., Bakker, M. A., and Dubey, R. (2026). assistance reduces persistence and hurts independent performance. arXiv preprint arXiv:2604.04721.
+
+Liu, Y., Iter, D., Xu, Y., Wang, S., Xu, R., and Zhu, C. (2023). : NLG evaluation using GPT-4 with better human alignment. In *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing*, pages 2511–2522. Association for Computational Linguistics.
+
+Malamud, O. and Pop-Eleches, C. (2011). Home computer use and the development of human capital. *The Quarterly Journal of Economics*, 126(2):987–1027.
+
+Masrour, E. (2025). Introducing Pangram's plagiarism detection. Pangram Labs blog post.
+
+Masrour, E., Emi, B. N., and Spero, M. (2025). : Detecting adversarially modified AI generated text. In *Proceedings of the 1st Workshop on Detecting AI Generated Content (GenAIDetect), COLING*, pages 71–86.
+
+Meincke, L., Nave, G., and Terwiesch, C. (2025). decreases idea diversity in brainstorming. *Nature Human Behaviour*, 9(6):1107–1109.
+
+Moon, K., Green, A. E., and Kushlev, K. (2025). Homogenizing effect of large language models (LLMs) on creative diversity: An empirical comparison of human and ChatGPT writing. *Computers in Human Behavior: Artificial Humans*, 6:100207.
+
+Moon, K., Kushlev, K., Bank, A., Lira Luttges, B., Viskontas, I., Kaufman, J. C., Johnson, D. R., Duckworth, A. L., and Green, A. (2026). The link between diverse words and original ideas is weakening in the AI-era college admissions. PsyArXiv preprint, <https://doi.org/10.31234/osf.io/jsz58_v6>.
+
+Mozannar, H., Bansal, G., Fourney, A., and Horvitz, E. (2024). Reading between the lines: Modeling user behavior and costs in AI-assisted programming. In *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems*. ACM.
+
+Nickow, A., Oreopoulos, P., and Quan, V. (2024). The promise of tutoring for PreK–12 learning: A systematic review and meta-analysis of the experimental evidence. *American Educational Research Journal*, 61(1):74–107.
+
+Noy, S. and Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654):187–192.
+
+OpenAI (2025). Building an AI-ready workforce: A look at college student ChatGPT adoption in the US. Technical report, OpenAI.
+
+OpenAI (2026). Scaling AI for everyone. Technical report, OpenAI.
+
+Peng, S., Kalliamvakou, E., Cihon, P., and Demirer, M. (2023). The impact of AI on developer productivity: Evidence from GitHub Copilot. arXiv preprint arXiv:2302.06590.
+
+Poulidis, S., Bastani, H., and Bastani, O. (2025). Self-regulated AI use hinders long-term learning. SSRN Working Paper 5604932.
+
+Ravšelj, D., Keržič, D., Tomaževič, N., Umek, L., Brezovar, N., et al. (2025). Higher education students' perceptions of ChatGPT: A global study of early reactions. *PLOS ONE*, 20(2):e0315011.
+
+Reimers, N. and Gurevych, I. (2019). Sentence-BERT: Sentence embeddings using Siamese BERT-networks. In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing*, pages 3982–3992. Association for Computational Linguistics.
+
+Risko, E. F. and Gilbert, S. J. (2016). Cognitive offloading. *Trends in Cognitive Sciences*, 20(9):676–688.
+
+Shen, J. H. and Tamkin, A. (2026). How AI impacts skill formation. arXiv preprint arXiv:2601.20245.
+
+Song, K., Tan, X., Qin, T., Lu, J., and Liu, T.-Y. (2020). : Masked and permuted pre-training for language understanding. In *Advances in Neural Information Processing Systems*, volume 33, pages 16857–16867.
+
+Stöhr, C., Ou, A. W., and Malmström, H. (2024). Perceptions and usage of AI chatbots among students in higher education across genders, academic levels and fields of study. *Computers and Education: Artificial Intelligence*, 7:100259.
+
+Strömberg, D., Lei, V., and Wu, Y. (2026). The generative AI learning penalty: Evidence from Chinese secondary education. CEPR Discussion Paper 21577, Centre for Economic Policy Research.
+
+Thai, K., Emi, B., Masrour, E., and Iyyer, M. (2026). : Quantifying the extent of AI editing in text. In *International Conference on Learning Representations (ICLR)*.
+
+Vigdor, J. L., Ladd, H. F., and Martinez, E. (2014). Scaling the digital divide: Home computer technology and student achievement. *Economic Inquiry*, 52(3):1103–1119.
+
+Wiswall, M. and Zafar, B. (2015). Determinants of college major choice: Identification using an information experiment. *The Review of Economic Studies*, 82(2):791–824.
+
+Xu, X., Qiao, L., Cheng, N., Liu, H., and Zhao, W. (2025). Enhancing self-regulated learning and learning experience in generative AI environments: The critical role of metacognitive support. *British Journal of Educational Technology*, 56(5):1842–1863.
+
+Yakura, H., Lopez-Lopez, E., Brinkmann, L., de la Serna, I., Kirfel, L., Gupta, P., Soraperra, I., Eisenmann, T. F., Wulff, D. U., and Rahwan, I. (2024). Empirical evidence of large language model's influence on human spoken communication. arXiv preprint arXiv:2409.01754.
+
+Zheng, L., Chiang, W.-L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z., Li, Z., Li, D., Xing, E. P., Zhang, H., Gonzalez, J. E., and Stoica, I. (2023). Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. In *Advances in Neural Information Processing Systems*, volume 36, pages 46595–46623.
+
+</div>
+
+</div>
+
+[^1]: For example, Bastani et al. (2025) test GPT-4 with guardrails that provide teacher-designed hints rather than direct solutions in Turkish high school math classes; Xu et al. (2025) add metacognitive prompts to a generative AI learning environment for Chinese college students; Kim et al. (2025) restrict AI to tutoring after students attempt each problem on a math practice platform; De Simone et al. (2025) study teacher-guided sessions with Microsoft Copilot in after-school English classes in Nigeria; Poulidis, Bastani, and Bastani (2025) compare a system-regulated AI that auto-delivers tips at key moments with a version that students could also query on demand in a 12-week chess training program; and Kumar et al. (2025) expose online adults practicing math problems to explanations pre-generated by GPT-4 under a hidden tutoring prompt, rather than to the chatbot itself.
+
+[^2]: For example, Kestin et al. (2025) compare AI with in-class active learning in a college physics course, LearnLM Team (2025) with static pre-written hints and human tutoring on a secondary school mathematics platform, Kreijkes et al. (2026) with note-taking on reading-comprehension tasks in secondary schools, and Chung et al. (2026) compare an AI tutor that adapts the order and difficulty of practice problems to each student with a fixed-sequence version of the same tutor in a high school Python course.
+
+[^3]: See, among others, Noy and Zhang (2023); Peng et al. (2023); Choi, Monahan, and Schwarcz (2024); Jia et al. (2024); Brynjolfsson, Li, and Raymond (2025); Dell'Acqua et al. (2025); Cruces et al. (2026); Cui et al. (2026); Dell'Acqua et al. (2026); Kanazawa et al. (2026).
+
+[^4]: For example, a student assigned to carbon capture may be asked to "analyze the three main barriers to scaling carbon capture technologies (technical limitations, economic costs, and policy challenges)," identify which barrier is most critical, and support their analysis with specific examples.
+
+[^5]: Texts range from 1,248 to 1,382 words (Appendix Table 14). At an average silent reading speed of approximately 250 words per minute for college students (Brysbaert, 2019), the estimated reading time is 5.0 to 5.5 minutes per text. The full text of the learning materials is available in the [Supplementary Materials](https://www.dropbox.com/scl/fi/pzzmqwikxweqzrofrnzt9/ai-learning-supplementary.pdf?rlkey=zjg1lf7cmzno304na3bgq58bn&st=gtj3nlqa&dl=0).
+
+[^6]: When scheduling, we encouraged students to sign up for a Session Two slot approximately one week after their Session One slot, but allowed flexibility to accommodate scheduling constraints. Among students who attended Session Two, the average gap between sessions was 6.98 days. Most returned exactly seven days after Session One (61.0 percent), and 80.0 percent returned within six to eight days.
+
+[^7]: We note four main deviations from the experimental protocol that occurred during early time slots. First, the initial Session One verbal welcome script did not mention AI permissions or restrictions; students learned their treatment condition only through written platform instructions. We introduced verbal acknowledgment of treatment conditions starting with the second Session One time slot. Second, the initial Session One included a timer that malfunctioned, displaying available time after the 35-minute limit had elapsed. We removed the timer for subsequent sessions. Third, the first Session Two time slot lacked a waiting room, requiring students to manually track time before leaving. We introduced a virtual waiting room for all following sessions. Fourth, a technical glitch during one Session Two time slot prevented students from completing the essay on the platform. We added extra time, asked affected students to write their essays in Microsoft Word, and entered those essays into the dataset manually. All analyses include session fixed effects to account for these protocol variations.
+
+[^8]: Our sample is relatively large by the standards of in-person laboratory experiments in economics. For example, Camerer et al. (2016) replicate 18 between-subjects laboratory experiments published in the *American Economic Review* and the *Quarterly Journal of Economics* between 2011 and 2014. Among these, the median sample size is 120, and only two exceed ours.
+
+[^9]: Appendix Table 8 compares the sample with the Middlebury student body. The sample overrepresents women and first-year students and matches the student body on college GPA.
+
+[^10]: We asked students for both SAT and ACT scores. Most students took the SAT. When students provided ACT but not SAT scores, we use concordance tables to convert ACT scores to SAT equivalents.
+
+[^11]: The pool of potential controls includes: (1) demographic characteristics—age, gender, race/ethnicity indicators (Black, Latino, Asian, white), international student status, and public/private high school attendance; (2) academic background—cohort fixed effects, declared major status, field-of-study indicators (natural sciences, social sciences, humanities/arts), self-reported study hours per week, college GPA and SAT score (each entered continuously and as decile bins), high school GPA (as four letter-grade bands), and an indicator for taking a standardized admissions test; (3) baseline measures—pre-learning self-assessed knowledge, pre-learning test score, prior experience with similar tasks, and comprehension check score; (4) experimental design features—topic fixed effects, writing prompt version, Session Two assessment order, and lab location; and (5) missing-data indicators. For students who did not take a standardized admissions test, we impute SAT scores from baseline covariates to assign them to bins, as described in Appendix 9.5.
+
+[^12]: Two considerations motivate our use of AI grading: a growing literature finds that LLM ratings of text quality track human ratings (Chiang and Lee, 2023; Liu et al., 2023; Zheng et al., 2023), and our learning topics (blockchain, carbon capture, CRISPR) are technical subjects on which human graders recruited from a general population may have limited expertise.
+
+[^13]: Jabarian and Imas (2025) evaluate four AI text detectors and find that Pangram achieves near-zero false positive and false negative rates, even when AI-generated text is modified using "humanizer" tools.
+
+[^14]: Pangram's plagiarism checker matches sentences against the open web: webpages, books, news articles, and other publicly indexable sources (Masrour, 2025).
+
+[^15]: As a validation exercise, we confirm that the embeddings capture content variation: average within-topic cosine similarity is 0.76, compared with 0.16 across topics, and essays responding to the same prompt are more similar to each other (0.79) than essays on the same topic but a different prompt (0.72).
+
+[^16]: The near-exclusive use of ChatGPT is consistent with surveys of adoption among college students (Hirabayashi et al., 2024; Stöhr, Ou, and Malmström, 2024; Contractor and Reyes, 2025).
+
+[^17]: Appendix Table 9 reports correlates of AI take-up among treated students. Frequent AI use for academic purposes is the strongest and most robust predictor. Self-assessed proficiency also predicts take-up in bivariate specifications, while early adoption does not. White students are less likely to use the provided account in the bivariate specification. We find no significant association between take-up and either AI's perceived benefits or GPA.
+
+[^18]: The high rate of "other" uses in the logs largely reflects conversational turns (e.g., "yes," "sure"), synonym lookups, and off-topic questions: prompts that students would likely not consider a distinct use of AI when responding to our survey.
+
+[^19]: One concern in interpreting these results as pure learning is that AI access increases the likelihood of rule violations on the Session One test (Appendix Table 10). Proctor-observed violations rise by $\hat{\beta} = 5.6$ pp ($p = 0.076$), while self-reported violations rise by $\hat{\beta} = 9.6$ pp ($p = 0.003$). As a back-of-the-envelope calculation, we multiply each measure's treatment effect by the test-score gap between violators and non-violators (22.1 pp for proctor-observed violations and 16.4 pp for self-reported ones). The implied contribution of violations to the ITT is 1.2 pp under the proctor measure and 1.6 pp under the self-report measure, or 17 and 22 percent of the estimate. Excluding students who violated the rules as captured by proctors, by self-reports, or by both a proctor and a self-report reduces the learning effect to 0.24 SD, 0.15 SD, and 0.27 SD, respectively. Adding a violation indicator to the regression gives similar results: the Session One ITT falls to 0.25 SD under the proctor measure and 0.21 SD under self-reports. We note that no student violated the rules in Session Two, by either proctor observation or self-report.
+
+[^20]: That 6.6 percent of control-group text is flagged as AI-generated likely reflects a combination of control students using AI, false positives, and students whose natural writing style resembles AI-generated text, a pattern consistent with recent evidence that exposure to LLMs shifts human spoken language toward words that LLMs favor (Yakura et al., 2024).
+
+[^21]: To check the hand coding, we also ask an LLM to label all conversations with the same four categories (see Appendix 9.6 for the full prompt). We compare the two coders on three indicators: whether a conversation includes automation (labeled Automation or Mixed), whether it includes augmentation (labeled Augmentation or Mixed), and whether it is off-topic (labeled Other). Agreement is 87 percent on the automation indicator, 82 percent on the augmentation indicator, and 100 percent on the off-topic indicator.
+
+[^22]: Becker et al. (2025) find that experienced open-source developers predicted AI tools would speed them up by 24 percent and, after the study, still believed AI had accelerated their work by roughly 20 percent. The actual measured effect was a 19 percent *slowdown*.
+
+[^23]: Appendix Table 17 reports how students' narratives about AI and learning vary with their characteristics. Students with GPA at or above the median describe more channels through which AI affects learning. Students at or above the median in self-assessed AI proficiency are more likely to frame AI as augmentation and less likely to frame it as automation.
+
+[^24]: Three participants received the same prompt in both sessions: two who completed Session Two through the emergency link and one whose Session Two login was recovered from a wrong account.
+
+[^25]: Two Session Two essays that were assigned to two grading batches received seven and eight ratings.
+
+[^26]: Each grading packet listed the prompt of the essay. For three Session One essays the packet showed the topic's other prompt rather than the prompt the student had received, because those students saw the same prompt in both sessions and the packets assumed the prompts alternated. We set to missing the human ratings of those three essays and three further ratings whose packet recorded no prompt. Six Session Two essays restored after the grading round have AI grades but no human ratings. These scores enter only the AI-graded outcomes, since the combined human-and-AI measures require both graders.
+
+[^27]: Predictors with missing values enter as zero together with an indicator for missingness, so all 189 students with an observed score contribute to the regression and every student without a score receives a prediction.
+
+[^28]: The paper reports coefficients on the 0–15 exam scale but not the score's standard deviation; we standardize by a standard deviation of 1.9, backed out from the residual standard deviation implied by the reported regression standard errors and consistent with the 1.7–2.0 range implied by the control group's mean and tail shares under normality.
+
+[^29]: Two checks confirm that the coding is not model-specific. Coding every response a third time with a different model from the primary coder's developer (Anthropic's Claude Sonnet 4.6) gives nearly identical agreement with the primary coder (0.85 for mechanisms, 0.66 for links, and 92 percent for valence). Agreement rises with model capability: within the OpenAI line, GPT-5.5 reaches mechanism and link agreement of 0.88 and 0.73, whereas two smaller models reach 0.77 and 0.53, and 0.70 and 0.47. All remain far above the random-coding benchmarks, but we use frontier models for both coders.
+
+[^30]: We model delegation as a binary decision for simplicity. In practice there are gradations: students can have AI write parts of the essay, or use it for narrower purposes such as proofreading or paraphrasing. The model also abstracts from the combination of an AI draft with the student's own revisions. It treats delegation as the extreme case in which the submitted essay is AI-written, whereas the empirical automation category of Section 5.3 includes partial delegation. Allowing $m$ to vary continuously between 0 and 1 would not change the solution: the student's utility, maximized over effort, is convex in $m$, so the student would still choose one of the two corners. Interior delegation would require, for example, diminishing returns to delegating a larger share of the essay.
+
+[^31]: Both $\tau$ and $\bar{Q}$ depend on the capabilities of the AI model, which may explain why students made little use of language models before ChatGPT. They may also depend on the student's academic preparation, knowledge of the topic, and prompting skill, which would make them vary across students and add a second source of selection into use types. For simplicity, we take them as given parameters when solving for effort and delegation.
+
+[^32]: The difference between the two fractions is $\omega_K \omega_Q / \{(\omega_K + \phi \omega_Q) [(\omega_K + \phi \omega_Q) \theta_w + \omega_Q]\} > 0$. Delegation removes the direct reward for writing, which is a larger part of the motive for writing than the essay value of knowledge is of the motive for research.
+
+[^33]: The time-use estimates measure minutes, whereas $r$ and $w$ in equation eq:app_effort measure cognitive effort, which also depends on how intensively a student works during those minutes. The two move in the same direction here, but not necessarily one for one.
+
+[^34]: We note that other interpretations are possible: students may enjoy the task more because they are learning more or because less writing is required.
