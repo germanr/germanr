@@ -127,6 +127,46 @@
             line-height: 1.7;
         }
 
+        /* Public Goods: screenshot on the left, entry styled like a paper on the right */
+        article.public-good {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        a.pg-thumb {
+            display: block;
+            flex: 0 0 260px;
+            max-width: 100%;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+            transition: box-shadow .15s;
+        }
+        a.pg-thumb:hover {
+            box-shadow: 0 0 11px rgba(33, 33, 33, .25);
+        }
+        a.pg-thumb img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .pg-text {
+            flex: 1 1 320px;
+            min-width: 0;
+            padding-top: 2px;
+        }
+        .pg-text .p_abstract_p {
+            margin-bottom: 0;
+        }
+        @media (max-width: 640px) {
+            a.pg-thumb {
+                flex-basis: 100%;
+            }
+        }
+
         /* Print styles */
         @media print {
             .skip-link,
@@ -259,16 +299,6 @@
                                 <strong>Upcoming trips:</strong> I’ll be in Pittsburgh (November 21) and Houston
                                 for the Southern Economic Association meetings (November 22–23). If you’ll be around,
                                 I’d love to grab coffee and chat about research.
-                            </p>
-                        </div>
-                        <div role="note" aria-label="Atlas announcement"
-                             style="border-left: 4px solid #1D4E89; background-color: #f8fafc; border-radius: 0 4px 4px 0; padding: 0.75rem 1.25rem; margin-top: 1rem;">
-                            <p style="margin: 0; line-height: 1.7;">
-                                <strong>New: The AI &amp; Human Skill Atlas.</strong> Research on how AI
-                                affects learning is growing fast. Building on my
-                                <a href="/papers/cr_ai_learning.pdf" class="n_link" target="_blank" rel="noopener">work with Zara Contractor</a>,
-                                I built a <a href="https://aiskillatlas.org" class="n_link" target="_blank" rel="noopener">living atlas</a>
-                                that collects the evidence in one place. Feedback welcome!
                             </p>
                         </div>
                     </div>
@@ -697,6 +727,42 @@
                                     <div class="px-4 card info" id="abstract-fairness">
                                         <p class="text-justify">
                                             A common assumption in the literature is that the level of income inequality shapes individuals' beliefs about whether the income distribution is fair ("fairness views," for short). However, individuals do not directly observe income inequality (which often leads to large misperceptions), nor do they consider all inequities to be unfair. In this paper, we empirically assess the link between objective measures of income inequality and fairness views in a context of high but decreasing income inequality. We combine opinion poll data with harmonized data from household surveys of 18 Latin American countries from 1997–2015. We report three main findings. First, we find a strong and statistically significant relationship between income inequality and unfairness views across countries and over time. Unfairness views evolved in the same direction as income inequality for 17 out of the 18 countries in our sample. Second, individuals who are older, unemployed, and left-wing are, on average, more likely to perceive the income distribution as very unfair. Third, fairness views and income inequality have predictive power for individuals' self-reported propensity to mobilize and protest independent of each other, suggesting that these two variables capture different channels through which changes in the income distribution can affect social unrest.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="PublicGoods" aria-labelledby="public-goods-heading">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <hr class="my-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <h2 class="section" id="public-goods-heading">Public Goods</h2>
+
+                                <!-- AI & HUMAN SKILL ATLAS -->
+                                <article class="public-good">
+                                    <a href="https://aiskillatlas.org" class="pg-thumb" target="_blank" rel="noopener">
+                                        <img src="images/ai-skill-atlas.png" alt="Screenshot of the AI &amp; Human Skill Atlas home page"
+                                             width="1200" height="701" loading="lazy" decoding="async">
+                                    </a>
+                                    <div class="pg-text">
+                                        <h3 class="paper-title">
+                                            <a href="https://aiskillatlas.org" target="_blank" rel="noopener">The AI &amp; Human Skill Atlas</a>
+                                        </h3>
+                                        <p class="p_title_p" style="padding-left: 10px;">
+                                            Explore evidence on how generative AI affects learning.
+                                        </p>
+                                        <p class="p_abstract_p" style="padding-left: 10px;">
+                                            <a href="https://aiskillatlas.org/about/" class="n_link" target="_blank" rel="noopener">About</a> |
+                                            <a href="https://aiskillatlas.org/about/#data-releases" class="n_link" target="_blank" rel="noopener">Download data</a> |
+                                            <span>Updated October 2026</span>
                                         </p>
                                     </div>
                                 </article>
